@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🏍️</text></svg>">
+    <title>Прошивка гироскутера под радиоуправление: полный гайд — Мото Гид</title>
+    <meta name="description" content="Инструкция по прошивке платы гироскутера для пульта ДУ. Настройка Bluetooth, схемы подключения и особенности модификации контроллера.">
+    <link rel="canonical" href="https://moto-gid.vercel.app/articles/p/pr/proshivka-platy-giroskutera-pod-radioupravlenie.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Прошивка гироскутера под радиоуправление: полный гайд">
+    <meta property="og:description" content="Инструкция по прошивке платы гироскутера для пульта ДУ. Настройка Bluetooth, схемы подключения и особенности модификации контроллера.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780130877">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🏍️</span>
+                <span class="pb-logo-text">Мото Гид</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/mopedy-i-skutery/" class="pb-dropdown-item">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/" class="pb-dropdown-item">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/" class="pb-dropdown-item">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/" class="pb-dropdown-item">📐 Самоделки и Чертежи</a>
+<a href="/category/remont-dvigatelej/" class="pb-dropdown-item">🔧 Ремонт Двигателей</a>
+<a href="/category/elektrika-i-provodka/" class="pb-dropdown-item">⚡ Электрика и Проводка</a>
+<a href="/category/zakony-i-prava/" class="pb-dropdown-item">⚖️ Законы и Права</a>
+<a href="/category/raskhodniki-i-masla/" class="pb-dropdown-item">🛢️ Расходники и Масла</a>
+<a href="/category/tyuning-i-modernizatsiya/" class="pb-dropdown-item">🚀 Тюнинг и Модернизация</a>
+<a href="/category/elektromototekhnika/" class="pb-dropdown-item">🔋 Электромототехника</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/elektromototekhnika/">Электромототехника</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Прошивка гироскутера под радиоуправление: полный гайд</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#выбор-аппаратной-платформы-и-контроллера">Выбор аппаратной платформы и контроллера</a></li><li><a href="#необходимые-инструменты-и-программное-обеспечение">Необходимые инструменты и программное обеспечение</a></li><li><a href="#схема-подключения-радиоуправления">Схема подключения радиоуправления</a></li><li><a href="#алгоритм-прошивки-и-настройка-баланса">Алгоритм прошивки и настройка баланса</a></li><li><a href="#особенности-работы-с-bluetooth-и-wi-fi-модулями">Особенности работы с Bluetooth и Wi-Fi модулями</a></li><li><a href="#диагностика-ошибок-и-безопасность">Диагностика ошибок и безопасность</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-sdelat-iz-giroskutera-elektrovelosiped.html">Как сделать электровелосипед из гироскутера: инструкция</a></li><li><a href="/articles/n/na/na-skolko-khvataet-zaryada-giroskutera.html">На сколько хватает заряда гироскутера: факторы, тесты, советы 2026</a></li><li><a href="/articles/s/sv/svecha-zazhiganiya-dlya-benzogeneratora-f6tc.html">Свеча зажигания F6TC для бензогенератора: выбор, установка и уход</a></li><li><a href="/articles/d/do/doska-na-dvukh-kolesakh-kak-nazyvaetsya.html">Доска на двух колесах: название, виды и правила выбора</a></li><li><a href="/articles/n/na/na-elektrovelosiped-nado-prava.html">Нужны ли права на электровелосипед в 2026 году? Разбираем закон</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Прошивка платы гироскутера под радиоуправление: руководство</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#выбор-аппаратной-платформы-и-контроллера">Выбор аппаратной платформы и контроллера</a></li><li><a href="#необходимые-инструменты-и-программное-обеспечение">Необходимые инструменты и программное обеспечение</a></li><li><a href="#схема-подключения-радиоуправления">Схема подключения радиоуправления</a></li><li><a href="#алгоритм-прошивки-и-настройка-баланса">Алгоритм прошивки и настройка баланса</a></li><li><a href="#особенности-работы-с-bluetooth-и-wi-fi-модулями">Особенности работы с Bluetooth и Wi-Fi модулями</a></li><li><a href="#диагностика-ошибок-и-безопасность">Диагностика ошибок и безопасность</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Модернизация стандартного гироскутера в полноценный радиоуправляемый транспорт открывает перед владельцем уникальные возможности, недоступные в заводской конфигурации. Превращение устройства в робота или платформу для видеосъемки требует глубокого вмешательства в программный код контроллера. Стандартные платы, установленные на заводе, блокируют внешние команды, prioritizing безопасность пешехода, но ограничивая функционал для энтузиастов.</p>
+
+<p>Для реализации проекта вам потребуется не только физическое подключение модуля связи, но и замена или перепрограммирование основного управляющего чипа. Процесс этот технически сложен и несет риски полного вывода электроники из строя при ошибках в алгоритмах балансировки. Однако результат стоит усилий: вы получаете платформу, способную выполнять трюки, двигаться по заданным координатам или работать в связке с VR-очками.</p>
+
+<h2 id="выбор-аппаратной-платформы-и-контроллера">Выбор аппаратной платформы и контроллера</h2>
+
+<p>Первым шагом является определение типа установленной материнской платы, так как от этого зависит метод доступа к памяти микроконтроллера. Большинство бюджетных моделей используют закрытые чипы, на которых невозможно изменить логику работы без полной замены "мозгов". Вам необходимо искать платы на базе процессоров <strong>STM32</strong> или специализированных контроллеров с открытой архитектурой, поддерживающих перепрошивку через UART или SWD интерфейсы.</p>
+
+<p>Если в вашем устройстве стоит плата с маркировкой 6.0S или 7.0S, шансы на успех минимальны без замены компонента, так как их ПО защищено от записи.</p>
+
+<p>Оптимальным решением для начинающих моддеров является покупка универсальной платы с поддержкой <em>Arduino</em> или специализированных контроллеров для самобалансирующихся роботов, таких как <em>Mini Balance</em>. Эти устройства позволяют загружать кастомный код, написанный на C++ или в среде IDE, что дает полный контроль над моторами.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> При выборе новой платы обязательно сверьте вольтаж батареи и токовую нагрузку моторов. Установка слаботочного контроллера на мощные двигатели приведет к мгновенному выгоранию силовых ключей (MOSFET).</p>
+</blockquote>
+
+<p>Также стоит обратить внимание на наличие свободных пинов для подключения приемника. Стандартные гироскутеры не имеют выводов под PWM-сигналы, необходимые для сервоприводов или радиоаппаратуры, поэтому этот момент нужно предусмотреть заранее.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед покупкой новой платы измерьте расстояние между крепежными отверстиями в корпусе гироскутера — многие универсальные контроллеры имеют нестандартный форм-фактор и потребуют изготовления переходной пластины из текстолита или алюминия.</p></aside>
+
+<h2 id="необходимые-инструменты-и-программное-обеспечение">Необходимые инструменты и программное обеспечение</h2>
+
+<p>Для успешной прошивки вам понадобится набор специфического оборудования, без которого процесс превратится в гадание на кофейной гуще. Базовый набор включает в себя программатор, совместимый с вашим чипом (чаще всего это ST-Link V2 для процессоров STM), а также преобразователь уровней TTL-USB для отладки через консоль.</p>
+
+<p>Программная часть требует установки специализированных сред разработки и утилит для заливки бинарных файлов.</p>
+
+<ul>
+<li>🛠️ <strong>ST-Link Utility</strong> или <em>OpenOCD</em> для прямой записи.hex файлов в память микроконтроллера.</li>
+<li>💻 <strong>Arduino IDE</strong> с установленными библиотеками для работы с гироскопами (например, библиотека <em>MPU6050</em> или <em>BNO055</em>).</li>
+<li>📡 <strong>Termite</strong> или <em>Putty</em> для мониторинга логов и отладки связи в реальном времени.</li>
+<li>🔌 <strong>Паяльная станция</strong> с тонким жалом для распайки проводов на контактные площадки без замыкания соседних дорожек.</li>
+</ul>
+
+<p>Не забудьте подготовить источник питания с регулируемым напряжением, чтобы безопасно тестировать плату вне корпуса перед окончательной сборкой.</p>
+
+<div class="pb-poll" id="poll-e236194d"><div class="pb-poll-question">📊 Какой программатор вы планируете использовать?</div><div class="pb-poll-option" data-poll="e236194d" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">ST-Link V2</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="e236194d" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">USB-TTL (CH340)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="e236194d" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">J-Link</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="e236194d" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Arduino как ISP</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="e236194d" data-idx="4" onclick="pbPollVote(this)"><span class="pb-poll-label">У меня уже есть свой</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="схема-подключения-радиоуправления">Схема подключения радиоуправления</h2>
+
+<p>Интеграция радиоуправления требует создания моста между приемником сигнала (RX) и управляющим микроконтроллером. В классической схеме сигналы газа (Throttle) и поворота (Steering) подаются на аналоговые или цифровые входы процессора, где они интерпретируются как целевая скорость вращения колес.</p>
+
+<p>Стандартные протоколы радиоуправления, такие как SBUS или PPM, требуют обработки прерываний, что может нагружать процессор, занятый вычислениями баланса.</p>
+
+<p>Более простым вариантом является использование обычных PWM-сигналов, которые легко считываются функцией <code>pulseIn()</code> или через таймеры микроконтроллера. Подключение осуществляется напрямую к свободным GPIO пинам, назначенным в прошивке под каналы управления.</p>
+
+<pre><code>// Пример назначения пинов в коде
+<p>const int PIN_THROTTLE = PA0;</p>
+<p>const int PIN_STEERING = PA1;</p>
+<p>attachInterrupt(digitalPinToInterrupt(PIN_THROTTLE), readThrottle, CHANGE);</p>
+</code></pre>
+
+<p>Важно обеспечить надежное заземление (GND) между приемником и платой гироскутера, иначе наводки от моторов приведут к хаотичному поведению устройства.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Канал RX</th>
+<th>Функция в гироскутере</th>
+<th>Тип сигнала</th>
+<th>Пин контроллера</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Канал 1 (Газ)</td>
+<td>Скорость движения вперед/назад</td>
+<td>PWM (1000-2000 мкс)</td>
+<td>PA0 (ADC1)</td>
+</tr>
+<tr>
+<td>Канал 2 (Руль)</td>
+<td>Разница скоростей колес (поворот)</td>
+<td>PWM (1000-2000 мкс)</td>
+<td>PA1 (ADC2)</td>
+</tr>
+<tr>
+<td>Канал 3 (Акс)</td>
+<td>Переключение режимов (Спорт/Эко)</td>
+<td>Логический уровень</td>
+<td>PB5</td>
+</tr>
+<tr>
+<td>Канал 4 (Свободный)</td>
+<td>Включение подсветки или звукового сигнала</td>
+<td>Логический уровень</td>
+<td>PB6</td>
+</tr>
+</tbody>
+</table></div>
+
+<details class="pb-accordion"><summary>Что делать, если сигналы не читаются?</summary><div class="pb-accordion-body"><p>Если осциллограф или логический анализатор показывает отсутствие импульсов, проверьте частоту работы приемника. Некоторые современные протоколы (Crossfire, Ghost) работают на высоких скоростях и требуют аппаратного UART, а не программной эмуляции. В таком случае в прошивке необходимо переназначить пины на аппаратные порты USART.</p></div></details>
+
+<h2 id="алгоритм-прошивки-и-настройка-баланса">Алгоритм прошивки и настройка баланса</h2>
+
+<p>Самый критичный этап — это загрузка нового кода, который объединяет логику балансировки и обработку команд с пульта. Ошибка в коэффициентах ПИД-регулятора (PID) приведет к тому, что гироскутер начнет вибрировать или упадет сразу после включения.</p>
+
+<p>Исходный код должен содержать цикл опроса гироскопа с частотой не менее 500 Гц для поддержания стабильности.</p>
+
+<p>В функции основного цикла (<code>loop</code>) необходимо сначала считывать данные с акселерометра и гироскопа, фильтровать их (например, через фильтр Калмана или комплементарный фильтр), а затем рассчитывать управляющее воздействие на моторы. Только после этого считываются значения с каналов радиоуправления и корректируют целевой угол наклона.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Никогда не тестируйте новую прошивку, поднимая гироскутер в воздух без фиксации колес. При резком срабатывании моторов устройство может вырваться из рук и нанести травму. Используйте тиски или специальный стенд для первых запусков.</p>
+</blockquote>
+
+<p>Настройка осуществляется методом подбора коэффициентов <strong>Kp</strong> (пропорциональный), <strong>Ki</strong> (интегральный) и <strong>Kd</strong> (дифференциальный). Начните с малого значения Kp и постепенно увеличивайте его до появления легкой вибрации, затем добавьте Kd для гашения колебаний.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Подготовка к первому запуску</h4><label class="check-item"><input type="checkbox"><span>Проверить полярность подключения моторов</span></label><label class="check-item"><input type="checkbox"><span>Убедиться в отсутствии КЗ на плате</span></label><label class="check-item"><input type="checkbox"><span>Зафиксировать гироскутер в вертикальном положении</span></label><label class="check-item"><input type="checkbox"><span>Подключить батарею через предохранитель</span></label><label class="check-item"><input type="checkbox"><span>Проверить реакцию на наклон</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<h2 id="особенности-работы-с-bluetooth-и-wi-fi-модулями">Особенности работы с Bluetooth и Wi-Fi модулями</h2>
+
+<p>Помимо классического радиоуправления на частоте 2.4 ГГц, существует возможность управления гироскутером через смартфон по Bluetooth или Wi-Fi. Это требует установки соответствующего модуля, например, <em>HC-05</em>, <em>ESP8266</em> или <em>ESP32</em>, который будет передавать команды на основной контроллер через UART.</p>
+
+<p>Преимуществом такого подхода является возможность использования готовых приложений и настройки параметров "на лету" без перепрошивки.</p>
+
+<p>Однако задержка сигнала (latency) по Bluetooth может быть выше, чем у специализированных радиопультов, что делает управление менее отзывчивым на высоких скоростях. Для реализации вам потребуется написать парсер команд, который будет преобразовывать полученные строки или байты в значения скорости.</p>
+
+<pre><code>if (Serial.available() > 0) {
+<p>char command = Serial.read();</p>
+<p>if (command == 'F') targetSpeed += 1;</p>
+<p>if (command == 'B') targetSpeed -= 1;</p>
+<p>}</p>
+</code></pre>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Использование ESP32 предпочтительнее классического Bluetooth, так как этот чип поддерживает как Wi-Fi, так и BLE (Bluetooth Low Energy), обеспечивая лучшую дальность и стабильность соединения в условиях городских помех.</p></aside>
+
+<h2 id="диагностика-ошибок-и-безопасность">Диагностика ошибок и безопасность</h2>
+
+<p>После установки прошивки система требует тщательной отладки. Частой проблемой является дрейф гироскопа, когда устройство самопроизвольно начинает движение в одну сторону. Это лечится программной калибровкой нуля при включении или введением поправочного коэффициента в код.</p>
+
+<p>Также следует настроить защиту от перегрева и перегрузки по току, так как при управлении с пульта пользователь может не чувствовать вибрации, сигнализирующей о предельных режимах работы.</p>
+
+<p>Реализуйте в коде функцию <code>failsafe</code>, которая останавливает моторы при потере сигнала с пульта более чем на 0.5 секунды. Это предотвратит неконтролируемый разгон гироскутера в случае разряда батареи пульта или помех.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Модифицированный гироскутер теряет гарантию и может не соответствовать нормам безопасности для использования в общественных местах. Эксплуатация возможна только на закрытых площадках под ответственность владельца.</p>
+</blockquote>
+
+<p>Регулярно проверяйте затяжку клемм аккумулятора, так как вибрации от работы моторов на новых частотах могут ослабить контакты.</p>
+
+<details class="pb-accordion"><summary>Гироскутер дергается на месте?</summary><div class="pb-accordion-body"><p>Это признак неправильной полярности подключения энкодеров моторов или инвертированного направления вращения в прошивке. Попробуйте поменять местами провода А и В на разъеме мотора или изменить знак коэффициента в функции управления скоростью.</p></div></details>
+
+<h2 id="faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</h2>
+
+<details>
+<summary>Можно ли прошить стандартный гироскутер без замены платы?</summary>
+<p>В 95% случаев это невозможно. Заводские платы имеют закрытый загрузчик и защиту от записи. Даже если вам удастся подключить программатор, вы не сможете стереть защищенные сектора памяти без специального оборудования для дампа.</p>
+</details>
+
+<details>
+<summary>Какой радиус действия будет у радиоуправления?</summary>
+<p>Радиус зависит от выбранного приемника. Стандартные комплекты FlySky или Turnigy обеспечивают уверенную связь до 300-500 метров на открытой местности. При использовании Bluetooth радиус ограничивается 10-30 метрами.</p>
+</details>
+
+<details>
+<summary>Нужно ли калибровать гироскоп после каждой прошивки?</summary>
+<p>Да, калибровка нуля обязательна. Положите гироскутер на ровную поверхность и запустите процедуру калибровки (обычно это удержание кнопки включения или специальная команда в консоли), чтобы контроллер запомнил горизонтальное положение.</p>
+</details>
+
+<details>
+<summary>Подойдет ли эта инструкция для гироскутеров с большими колесами?</summary>
+<p>Принцип тот же, но коэффициенты ПИД-регулятора будут отличаться. Большие колеса имеют большую инерцию, поэтому потребуется увеличить дифференциальную составляющую (Kd) для предотвращения раскачивания.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-sdelat-iz-giroskutera-elektrovelosiped.html" class="pb-related-card">
+                <span class="pb-related-title">Как сделать электровелосипед из гироскутера: инструкция</span>
+                <span class="pb-related-desc">Пошаговая инструкция по переделке гироскутера в электровелосипед. Чертежи, схемы подключения и выбор</span>
+            </a><a href="/articles/n/na/na-skolko-khvataet-zaryada-giroskutera.html" class="pb-related-card">
+                <span class="pb-related-title">На сколько хватает заряда гироскутера: факторы, тесты, советы 2026</span>
+                <span class="pb-related-desc">Реальный запас хода гироскутера: как влияют вес, скорость, батарея и погода. Тесты популярных моделе</span>
+            </a><a href="/articles/s/sv/svecha-zazhiganiya-dlya-benzogeneratora-f6tc.html" class="pb-related-card">
+                <span class="pb-related-title">Свеча зажигания F6TC для бензогенератора: выбор, установка и уход</span>
+                <span class="pb-related-desc">Полный гид по свече F6TC для бензогенератора. Расшифровка маркировки, таблица совместимости, признак</span>
+            </a><a href="/articles/d/do/doska-na-dvukh-kolesakh-kak-nazyvaetsya.html" class="pb-related-card">
+                <span class="pb-related-title">Доска на двух колесах: название, виды и правила выбора</span>
+                <span class="pb-related-desc">Узнайте, как называется доска на двух колесах. Полный гид по гироскутерам, сигвеям и электроскейтам.</span>
+            </a><a href="/articles/n/na/na-elektrovelosiped-nado-prava.html" class="pb-related-card">
+                <span class="pb-related-title">Нужны ли права на электровелосипед в 2026 году? Разбираем закон</span>
+                <span class="pb-related-desc">Полный разбор правил: когда на электровелосипед нужны права, а когда нет. Мощность, скорость, возрас</span>
+            </a><a href="/articles/e/el/elektrovelosiped-350-vatt-nuzhny-li-prava.html" class="pb-related-card">
+                <span class="pb-related-title">Нужны ли права на электровелосипед 350 Вт в 2026 году? Разбор закона</span>
+                <span class="pb-related-desc">Полный разбор: требуются ли права на электровелосипед 350 Вт, как избежать штрафов, технические норм</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🏍️ Мото Гид</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a> · <a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a> · <a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a> · <a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a> · <a href="/category/remont-dvigatelej/">🔧 Ремонт Двигателей</a> · <a href="/category/elektrika-i-provodka/">⚡ Электрика и Проводка</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мото Гид. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

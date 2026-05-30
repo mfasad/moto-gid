@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🏍️</text></svg>">
+    <title>Распиновка коммутатора скутера 2т на 5 проводов: схемы и цвета — Мото Гид</title>
+    <meta name="description" content="Подробная распиновка коммутатора скутера 2т на 5 проводов. Цветовая схема подключения, поиск обрыва, проверка CDI. Диагностика системы зажигания.">
+    <link rel="canonical" href="https://moto-gid.vercel.app/articles/r/ra/raspinovka-kommutatora-skutera-2t-na-5-provodov.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Распиновка коммутатора скутера 2т на 5 проводов: схемы и цвета">
+    <meta property="og:description" content="Подробная распиновка коммутатора скутера 2т на 5 проводов. Цветовая схема подключения, поиск обрыва, проверка CDI. Диагностика системы зажигания.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780130877">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🏍️</span>
+                <span class="pb-logo-text">Мото Гид</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/mopedy-i-skutery/" class="pb-dropdown-item">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/" class="pb-dropdown-item">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/" class="pb-dropdown-item">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/" class="pb-dropdown-item">📐 Самоделки и Чертежи</a>
+<a href="/category/remont-dvigatelej/" class="pb-dropdown-item">🔧 Ремонт Двигателей</a>
+<a href="/category/elektrika-i-provodka/" class="pb-dropdown-item">⚡ Электрика и Проводка</a>
+<a href="/category/zakony-i-prava/" class="pb-dropdown-item">⚖️ Законы и Права</a>
+<a href="/category/raskhodniki-i-masla/" class="pb-dropdown-item">🛢️ Расходники и Масла</a>
+<a href="/category/tyuning-i-modernizatsiya/" class="pb-dropdown-item">🚀 Тюнинг и Модернизация</a>
+<a href="/category/elektromototekhnika/" class="pb-dropdown-item">🔋 Электромототехника</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/elektrika-i-provodka/">Электрика и Проводка</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Распиновка коммутатора скутера 2т на 5 проводов: схемы и цвета</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#принцип-работы-системы-зажигания-cdi">Принцип работы системы зажигания CDI</a></li><li><a href="#цветовая-маркировка-и-назначение-контактов">Цветовая маркировка и назначение контактов</a></li><li><a href="#таблица-соответствия-проводов-и-их-функций">Таблица соответствия проводов и их функций</a></li><li><a href="#диагностика-и-поиск-неисправностей">Диагностика и поиск неисправностей</a></li><li><a href="#схема-подключения-ограничителя-оборотов">Схема подключения ограничителя оборотов</a></li><li><a href="#частые-ошибки-при-замене-коммутатора">Частые ошибки при замене коммутатора</a></li><li><a href="#faq-вопросы-и-ответы-по-распиновке">FAQ: Вопросы и ответы по распиновке</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-podklyuchit-provodku-na-mopede-alfa.html">Как подключить проводку на мопеде Альфа: схема и пошаговая инструкция</a></li><li><a href="/articles/k/ko/komponovochnyj-modul-agat-kv-2.html">Компоновочный модуль Агат КВ-2: устройство, схема и подключение</a></li><li><a href="/articles/k/ka/kak-sdelat-avarijku-na-moped-alfa.html">Аварийка на мопед Альфа: схема подключения и установка</a></li><li><a href="/articles/s/sk/skhema-provodki-alfa-na-iskru.html">Схема проводки Альфа на Искру: подробное руководство 2026</a></li><li><a href="/articles/r/re/regulyator-napryazheniya-alfa-skhema.html">Регулятор напряжения Альфа: схемы, подключение, настройка</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Полная распиновка коммутатора скутера 2т на 5 проводов</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#принцип-работы-системы-зажигания-cdi">Принцип работы системы зажигания CDI</a></li><li><a href="#цветовая-маркировка-и-назначение-контактов">Цветовая маркировка и назначение контактов</a></li><li><a href="#таблица-соответствия-проводов-и-их-функций">Таблица соответствия проводов и их функций</a></li><li><a href="#диагностика-и-поиск-неисправностей">Диагностика и поиск неисправностей</a></li><li><a href="#схема-подключения-ограничителя-оборотов">Схема подключения ограничителя оборотов</a></li><li><a href="#частые-ошибки-при-замене-коммутатора">Частые ошибки при замене коммутатора</a></li><li><a href="#faq-вопросы-и-ответы-по-распиновке">FAQ: Вопросы и ответы по распиновке</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Система зажигания двухтактного двигателя является сердцем любого скутера. Когда мотор начинает троить или глохнуть на высоких оборотах, первое подозрение падает на <strong>коммутатор CDI</strong>. В отличие от четырехтактных аналогов, двухтактники часто используют более простую схему, но именно пятипроводная конфигурация вызывает больше всего вопросов у владельцев техники. Надежное искрообразование критично для стабильной работы поршневой группы.</p>
+
+<p>Понимание того, как работает <em>распиновка коммутатора скутера 2т</em>, позволяет быстро локализовать неисправность без замены всех деталей подряд. Часто проблема кроется не в самом блоке управления, а в окисленных контактах или поврежденной проводке. Пять проводов — это стандарт для многих китайских и брендовых моделей, таких как <em>Honda Dio</em> или <em>Suzuki Sepia</em>. Разберем назначение каждого контакта.</p>
+
+<p>Неправильное подключение или неверная диагностика могут привести к выходу из строя катушки зажигания или даже датчика Холла. Прежде чем менять дорогостоящие узлы, необходимо вооружиться мультиметром и схемой. В этом материале мы детально разберем цветовую маркировку, принципы работы системы CDI и методы проверки каждого провода в отдельности.</p>
+
+<h2 id="принцип-работы-системы-зажигания-cdi">Принцип работы системы зажигания CDI</h2>
+
+<p>Аббревиатура CDI расшифровывается как Capacitor Discharge Ignition, что означает «конденсаторное зажигание». В такой системе энергия накапливается в конденсаторе, а затем мгновенно высвобождается через тиристор на катушку зажигания. Это обеспечивает мощную искру даже на высоких оборотах двигателя, что особенно важно для <strong>двухтактных моторов</strong>, работающих в широком диапазоне частот.</p>
+
+<p>В отличие от батарейной системы зажигания, которая зависит от заряда аккумулятора, стандартная схема на 5 проводов часто питается от генератора (магнето). Это делает запуск возможным даже при полностью разряженной батарее. Однако работа системы напрямую зависит от исправности датчика положения коленвала и корректной подачи сигнала от катушки освещения.</p>
+
+<p>Ключевым элементом здесь является тиристор, который выступает в роли электронного ключа. Он открывается в строго определенный момент, определяемый сигналом с датчика Холла или индуктивного датчика. Если этот сигнал отсутствует или искажен, искры не будет, независимо от состояния самого коммутатора. Поэтому <em>диагностика</em> должна быть комплексной.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Никогда не проверяйте наличие искры, просто соединяя провода на массу без нагрузки. Использование старой свечи или специального тестера обязательно, иначе можно пробить изоляцию обмотки катушки зажигания высоким напряжением.</p>
+</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Используйте только исправную свечу зажигания с правильным калильным числом для проверки искры. Старая свеча с нагаром может давать слабую искру даже при исправной системе.</p></aside>
+
+<h2 id="цветовая-маркировка-и-назначение-контактов">Цветовая маркировка и назначение контактов</h2>
+
+<p>Хотя стандарты могут отличаться в зависимости от производителя (Yamaha, Honda, китайские клоны), существует общепринятая цветовая схема для 5-проводных коммутаторов. Знание этих цветов позволяет быстро идентифицировать цепи без прозвонки всей проводки. Основные цвета: черный, зеленый, синий/белый, красный и белый.</p>
+
+<p>Черный провод обычно является массой или минусом системы, но в некоторых схемах он отвечает за ограничение оборотов. Зеленый провод — это почти всегда «земля» (GND) для всей электроники скутера. Сине-белый провод идет от датчика Холла (пульс-коил) и несет сигнал о положении поршня. Красный провод подает питание от катушки освещения генератора.</p>
+
+<p>Белый провод часто идет на выключатель стоп-сигнала или ограничитель оборотов. В некоторых моделях он может быть желтым или оранжевым. Важно понимать, что <strong>цветовая маркировка</strong> не является абсолютным законом. Китайские производители могут менять цвета от партии к партии, поэтому визуальная проверка без мультиметра недопустима.</p>
+
+<ul>
+<li>🔴 <strong>Красный:</strong> Питание от генератора (переменный ток).</li>
+<li>🟢 <strong>Зеленый:</strong> Общая масса (корпус скутера).</li>
+<li>🔵⚪ <strong>Сине-белый:</strong> Сигнал от датчика Холла (импульс).</li>
+<li>⚫ <strong>Черный:</strong> Ограничитель оборотов или масса (зависит от схемы).</li>
+<li>⚪ <strong>Белый:</strong> Стоп-сигнал или дополнительное ограничение.</li>
+</ul>
+
+<div class="pb-poll" id="poll-0608c547"><div class="pb-poll-question">📊 Какой цвет провода у вашего коммутатора вызывает сомнения?</div><div class="pb-poll-option" data-poll="0608c547" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Черный/Зеленый</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="0608c547" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Красный/Синий</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="0608c547" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Белый/Желтый</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="0608c547" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Все цвета непонятны</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="таблица-соответствия-проводов-и-их-функций">Таблица соответствия проводов и их функций</h2>
+
+<p>Для удобства диагностики свдем основные данные в единую таблицу. Обратите внимание, что напряжение на некоторых контактах присутствует только при вращении стартера или кик-стартера. Постоянное напряжение от аккумулятора на контактах коммутатора в классической схеме CDI отсутствует.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Цвет провода</th>
+<th>Назначение</th>
+<th>Тип сигнала</th>
+<th>Напряжение (при прокрутке)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Красный</td>
+<td>Питание (Power)</td>
+<td>Переменный ток (AC)</td>
+<td>50-100 В</td>
+</tr>
+<tr>
+<td>Зеленый</td>
+<td>Масса (Ground)</td>
+<td>Общий минус</td>
+<td>0 В</td>
+</tr>
+<tr>
+<td>Сине-белый</td>
+<td>Датчик Холла (Trigger)</td>
+<td>Импульс (AC/DC)</td>
+<td>0.5-2 В</td>
+</tr>
+<tr>
+<td>Черный</td>
+<td>Ограничитель (Kill)</td>
+<td>Замыкание на массу</td>
+<td>0 В (при глушении)</td>
+</tr>
+<tr>
+<td>Белый</td>
+<td>Стоп-сигнал/Тахо</td>
+<td>Импульс/Постоянный</td>
+<td>12 В (при торможении)</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Данные в таблице являются усредненными. В зависимости от конкретной модели скутера, например <em>Yamaha Jog</em> или <em>Honda Today</em>, параметры могут незначительно отличаться. Главное — понимать логическую связь между проводами, а не слепо полагаться на цвет изоляции.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Красный провод всегда несет питание от генератора. Если на нем нет напряжения при прокрутке двигателя, проблема в катушке освещения или обрыве цепи, а не в коммутаторе.</p></aside>
+
+<h2 id="диагностика-и-поиск-неисправностей">Диагностика и поиск неисправностей</h2>
+
+<p>Процесс поиска поломки должен быть последовательным. Начинайте всегда с проверки массы. Плохой контакт «минуса» на раме скутера может имитировать поломку любого электронного компонента. Окисление контактов в разъеме коммутатора — частая проблема, особенно после мойки техники или езды по лужам.</p>
+
+<p>Используйте мультиметр в режиме измерения сопротивления (Ом) для проверки целостности проводов. Отсоедините разъем коммутатора и проверьте сопротивление между зеленым проводом разъема и массой скутера. Оно должно стремиться к нулю. Если сопротивление высокое, зачистите контакт массы.</p>
+
+<p>Далее проверьте датчик Холла. Сопротивление между сине-белым и зеленым проводом обычно составляет от 100 до 500 Ом, в зависимости от модели. Если прибор показывает обрыв (бесконечность) или короткое замыкание (ноль), датчик неисправен. Замена одного коммутатора в этом случае не поможет.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Первичная диагностика зажигания</h4><label class="check-item"><input type="checkbox"><span>Проверить массу (зеленый провод)</span></label><label class="check-item"><input type="checkbox"><span>Замерить сопротивление датчика Холла</span></label><label class="check-item"><input type="checkbox"><span>Проверить наличие напряжения на красном проводе</span></label><label class="check-item"><input type="checkbox"><span>Осмотреть разъем на окислы</span></label><label class="check-item"><input type="checkbox"><span>Заменить свечу на заведомо исправную</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> При измерении сопротивления датчика Холла убедитесь, что зажигание выключено. Подача напряжения на щупы мультиметра в режиме омметра может вывести прибор из строя.</p>
+</blockquote>
+
+<h2 id="схема-подключения-ограничителя-оборотов">Схема подключения ограничителя оборотов</h2>
+
+<p>Одной из функций пятипроводного коммутатора является ограничение максимальной скорости скутера. Это реализовано через черный или белый провод. Когда вы замыкаете этот провод на массу (через выключатель на руле или блок управления), коммутатор меняет угол опережения зажигания или пропускает искры, не давая двигателю раскрутиться.</p>
+
+<p>Для снятия ограничения (что не рекомендуется делать без доработки поршневой и вариатора) этот провод часто просто отключают или перерезают. Однако будьте осторожны: на некоторых моделях разрыв цепи ограничения может привести к тому, что двигатель вообще перестанет заводиться, так как цепь массы будет разорвана.</p>
+
+<p>Если вы хотите проверить работу ограничителя, подайте 12 вольт на соответствующий провод (обычно черный) от аккумулятора. Двигатель должен заглохнуть или перестать набирать обороты. Если реакции нет, возможно, проблема в самом механизме ограничения внутри <strong>CDI блока</strong>.</p>
+
+<details class="pb-accordion"><summary>Как работает ограничение скорости?</summary><div class="pb-accordion-body"><p>Внутри коммутатора стоит схема, которая при получении сигнала с провода ограничения начинает подавать искру с опозданием. Топливная смесь не успевает сгорать полностью, мощность падает, и скутер не разгоняется выше 40-50 км/ч.</p></div></details>
+
+<h2 id="частые-ошибки-при-замене-коммутатора">Частые ошибки при замене коммутатора</h2>
+
+<p>Самая распространенная ошибка — покупка первого попавшегося коммутатора с похожим разъемом. Даже если количество проводов совпадает, внутренняя схема (AC CDI или DC CDI) может отличаться. Установка <em>DC коммутатора</em> вместо <em>AC</em> (или наоборот) приведет к отсутствию искры и потенциальному повреждению проводки.</p>
+
+<p>Второй ошибкой является игнорирование состояния катушки зажигания. Пробитая катушка создает повышенную нагрузку на коммутатор. Новый блок может сгореть через несколько минут работы, если не устранить первопричину. Всегда проверяйте сопротивление первичной и вторичной обмоток катушки перед установкой нового CDI.</p>
+
+<p>Третья ошибка — плохой контакт в разъеме. «Скрутки» и изоляция изолентой недопустимы в цепях высокого напряжения и импульсных сигналов. Используйте пайку и термоусадку или качественные клеммы. Вибрация скутера быстро нарушит контакт в скрутке, и искра пропадет.</p>
+
+<ul>
+<li>🛑 Не перепутайте AC и DC коммутаторы (проверьте наличие аккумулятора в цепи питания).</li>
+<li>🛑 Не игнорируйте проверку катушки зажигания и свечного колпачка.</li>
+<li>🛑 Избегайте использования скруток в проводке зажигания.</li>
+</ul>
+
+<p>Помните, что электрика скутера — это замкнутая система. Вмешательство в один узел влияет на другие. Если после замены коммутатора проблема не исчезла, вернитесь к началу диагностики и перепроверьте все соединения. Возможно, дело не в детали, а в качестве контакта.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> На современных моделях скутеров параметры работы двигателя могут контролироваться электронным блоком управления (ECU). Замена стандартного CDI на тюнинговый без перепрошивки ECU может вызвать конфликт систем и ошибку двигателя.</p>
+</blockquote>
+
+<h2 id="faq-вопросы-и-ответы-по-распиновке">FAQ: Вопросы и ответы по распиновке</h2>
+
+<details>
+<summary>Можно ли проверить коммутатор без стенда?</summary>
+<p>Полноценно проверить работу тиристора и конденсатора внутри коммутатора без специального стенда невозможно. Можно лишь проверить наличие питания и сигнала на входах. Если входные сигналы в норме, а искры нет — коммутатор неисправен и требует замены.</p>
+</details>
+
+<details>
+<summary>Почему нет искры, хотя все провода целые?</summary>
+<p>Причина может быть в пробое катушки зажигания, неисправности датчика Холла (не дает импульс) или отсутствии массы. Также проверьте свечу: она может быть залита бензином или иметь пробитый изолятор.</p>
+</details>
+
+<details>
+<summary>В чем разница между 4 и 5 проводными коммутаторами?</summary>
+<p>Пятый провод обычно отвечает за функцию ограничения скорости или тахометр. В остальном принцип работы идентичен. 4-проводные модели часто не имеют вынесенного ограничителя или используют другую логику работы.</p>
+</details>
+
+<details>
+<summary>Можно ли использовать автомобильный коммутатор на скутере?</summary>
+<p>Нет, категорически нельзя. Системы зажигания, напряжения и углы опережения у автомобилей и скутеров кардинально отличаются. Это приведет к детонации и разрушению двигателя.</p>
+</details>
+
+<details>
+<summary>Какой мультиметр лучше использовать для диагностики?</summary>
+<p>Подойдет любой цифровой мультиметр с функцией прозвонки и измерения сопротивления до 2000 Ом. Для измерения напряжения на выходе генератора желателен прибор с возможностью измерения переменного напряжения до 200 В.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-podklyuchit-provodku-na-mopede-alfa.html" class="pb-related-card">
+                <span class="pb-related-title">Как подключить проводку на мопеде Альфа: схема и пошаговая инструкция</span>
+                <span class="pb-related-desc">Детальное руководство по подключению электропроводки на мопеде Альфа 110cc. Схемы, инструменты, ошиб</span>
+            </a><a href="/articles/k/ko/komponovochnyj-modul-agat-kv-2.html" class="pb-related-card">
+                <span class="pb-related-title">Компоновочный модуль Агат КВ-2: устройство, схема и подключение</span>
+                <span class="pb-related-desc">Полный разбор компоновочного модуля Агат КВ-2. Инструкция по подключению, электрическая схема, табли</span>
+            </a><a href="/articles/k/ka/kak-sdelat-avarijku-na-moped-alfa.html" class="pb-related-card">
+                <span class="pb-related-title">Аварийка на мопед Альфа: схема подключения и установка</span>
+                <span class="pb-related-desc">Подробная инструкция, как сделать аварийную сигнализацию на мопед Альфа. Схемы, выбор реле, подключе</span>
+            </a><a href="/articles/s/sk/skhema-provodki-alfa-na-iskru.html" class="pb-related-card">
+                <span class="pb-related-title">Схема проводки Альфа на Искру: подробное руководство 2026</span>
+                <span class="pb-related-desc">Пошаговая инструкция по подключению проводки от мотоцикла Альфа к скутеру Искра: схемы, распиновка, </span>
+            </a><a href="/articles/r/re/regulyator-napryazheniya-alfa-skhema.html" class="pb-related-card">
+                <span class="pb-related-title">Регулятор напряжения Альфа: схемы, подключение, настройка</span>
+                <span class="pb-related-desc">Подробный разбор схемы и подключения регулятора напряжения Альфа. Инструкция по настройке, коды ошиб</span>
+            </a><a href="/articles/m/mo/moped-alfa-skhema-elektroprovodki-110-kubov.html" class="pb-related-card">
+                <span class="pb-related-title">Схема электропроводки мопеда Альфа 110сс: подробный разбор и ремонт</span>
+                <span class="pb-related-desc">Распиновка, цветовая маркировка и пошаговый ремонт электропроводки Alfa 110. Скачайте схему в высоко</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🏍️ Мото Гид</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a> · <a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a> · <a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a> · <a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a> · <a href="/category/remont-dvigatelej/">🔧 Ремонт Двигателей</a> · <a href="/category/elektrika-i-provodka/">⚡ Электрика и Проводка</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мото Гид. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

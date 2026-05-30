@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🏍️</text></svg>">
+    <title>DC CDI коммутатор: схема, устройство и проверка системы — Мото Гид</title>
+    <meta name="description" content="Подробная схема DC CDI коммутатора зажигания. Разбор принципа работы, отличия от AC, диагностика неисправностей и таблица совместимости.">
+    <link rel="canonical" href="https://moto-gid.vercel.app/articles/d/dc/dc-cdi-kommutator-skhema.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="DC CDI коммутатор: схема, устройство и проверка системы">
+    <meta property="og:description" content="Подробная схема DC CDI коммутатора зажигания. Разбор принципа работы, отличия от AC, диагностика неисправностей и таблица совместимости.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780130877">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🏍️</span>
+                <span class="pb-logo-text">Мото Гид</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/mopedy-i-skutery/" class="pb-dropdown-item">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/" class="pb-dropdown-item">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/" class="pb-dropdown-item">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/" class="pb-dropdown-item">📐 Самоделки и Чертежи</a>
+<a href="/category/remont-dvigatelej/" class="pb-dropdown-item">🔧 Ремонт Двигателей</a>
+<a href="/category/elektrika-i-provodka/" class="pb-dropdown-item">⚡ Электрика и Проводка</a>
+<a href="/category/zakony-i-prava/" class="pb-dropdown-item">⚖️ Законы и Права</a>
+<a href="/category/raskhodniki-i-masla/" class="pb-dropdown-item">🛢️ Расходники и Масла</a>
+<a href="/category/tyuning-i-modernizatsiya/" class="pb-dropdown-item">🚀 Тюнинг и Модернизация</a>
+<a href="/category/elektromototekhnika/" class="pb-dropdown-item">🔋 Электромототехника</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/elektrika-i-provodka/">Электрика и Проводка</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">DC CDI коммутатор: схема, устройство и проверка системы</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#отличия-dc-cdi-от-ac-систем-зажигания">Отличия DC CDI от AC систем зажигания</a></li><li><a href="#принцип-работы-и-внутренняя-схема">Принцип работы и внутренняя схема</a></li><li><a href="#распиновка-разъемов-и-подключение">Распиновка разъемов и подключение</a></li><li><a href="#диагностика-неисправностей-мультиметром">Диагностика неисправностей мультиметром</a></li><li><a href="#влияние-ограничителя-оборотов">Влияние ограничителя оборотов</a></li><li><a href="#совместимость-и-замена-блоков">Совместимость и замена блоков</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/s/sk/skhema-podklyucheniya-sveta-na-mopede-alfa.html">Схема подключения света на мопеде Альфа: электросхема и монтаж</a></li><li><a href="/articles/r/re/regulyator-napryazheniya-dlya-skutera.html">Регулятор напряжения для скутера: выбор, проверка, замена</a></li><li><a href="/articles/z/za/zazhiganie-cdi-chto-eto-takoe.html">Зажигание CDI: что это такое, принцип работы и ремонт</a></li><li><a href="/articles/s/sk/skhema-provodki-na-moped-alfa-110-kubov.html">Схема проводки мопеда Альфа 110 кубов — подробная инструкция</a></li><li><a href="/articles/c/ch/chto-takoe-kommutator-na-mopede.html">Коммутатор на мопеде: принцип работы, виды и неисправности</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Схема и устройство DC CDI коммутатора зажигания</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#отличия-dc-cdi-от-ac-систем-зажигания">Отличия DC CDI от AC систем зажигания</a></li><li><a href="#принцип-работы-и-внутренняя-схема">Принцип работы и внутренняя схема</a></li><li><a href="#распиновка-разъемов-и-подключение">Распиновка разъемов и подключение</a></li><li><a href="#диагностика-неисправностей-мультиметром">Диагностика неисправностей мультиметром</a></li><li><a href="#влияние-ограничителя-оборотов">Влияние ограничителя оборотов</a></li><li><a href="#совместимость-и-замена-блоков">Совместимость и замена блоков</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Система зажигания современного скутера или мотоцикла — это сердце, которое заставляет двигатель работать ровно и эффективно. Среди множества вариантов электронных блоков управления наиболее распространенной и надежной считается система <strong>DC CDI</strong>. В отличие от своих предшественников, работающих от генератора переменного тока, этот тип коммутатора получает питание напрямую от аккумуляторной батареи.</p>
+
+<p>Понимание того, как устроена <em>DC CDI схема</em>, необходимо каждому владельцу мототехники, который хочет самостоятельно диагностировать проблемы с запуском или нестабильной работой двигателя. Знание распиновки разъемов и принципа преобразования напряжения позволяет избежать лишних трат на замену исправных деталей. Ниже мы детально разберем внутреннее устройство, отличия от AC-систем и методы проверки работоспособности.</p>
+
+<h2 id="отличия-dc-cdi-от-ac-систем-зажигания">Отличия DC CDI от AC систем зажигания</h2>
+<p>Главное различие кроется в источнике питания. Классические <strong>AC CDI</strong> блоки получают энергию непосредственно от зарядной катушки генератора (статора). Это означает, что напряжение на входе постоянно меняется в зависимости от оборотов двигателя. В системе <em>DC CDI</em> питание подается от аккумулятора, который выдает стабильные 12 вольт постоянного тока.</p>
+
+<p>Благодаря использованию постоянного тока, <strong>искра</strong> в системе DC CDI становится более мощной и стабильной, особенно на низких оборотах холостого хода. В системах переменного тока на малых оборотах катушка генератора может не выдавать достаточного напряжения для качественного искрообразования. Именно поэтому современные модели скутеров и мотоциклов массово переходят на DC-стандарт.</p>
+
+<p>Визуально отличить блоки можно по количеству контактов и маркировке. AC-коммутаторы часто имеют 4 контакта, тогда как DC-версии обычно оснащены 5 или 6 пинами. Однако количество контактов не всегда является гарантированным индикатором, поэтому лучше сверяться с электрической схемой конкретной модели мототехники.</p>
+
+<div class="pb-poll" id="poll-9c82757d"><div class="pb-poll-question">📊 Какой тип зажигания установлен на вашем скутере?</div><div class="pb-poll-option" data-poll="9c82757d" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">AC CDI (питание от генератора)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="9c82757d" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">DC CDI (питание от АКБ)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="9c82757d" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Транзисторное (TCI)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="9c82757d" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Не знаю / Карбюраторное</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="принцип-работы-и-внутренняя-схема">Принцип работы и внутренняя схема</h2>
+<p>Внутреннее устройство <strong>DC CDI</strong> представляет собой сложную электронную цепь, преобразующую низкое напряжение батареи в высоковольтный импульс. Первым этапом работы является входной каскад, где напряжение 12В стабилизируется и подается на тиристор и конденсатор. Ключевым элементом здесь является <em>тиристор</em>, который выполняет роль электронного ключа.</p>
+
+<p>Процесс накопления энергии происходит в конденсаторе. Как только блок управления двигателем (или датчик Холла) посылает сигнал о необходимости искры, тиристор открывается. Заряженный конденсатор мгновенно разряжается через первичную обмотку катушки зажигания. Это создает мощное магнитное поле, которое при коллапсе генерирует высокое напряжение во вторичной обмотке.</p>
+
+<p>Для корректной работы схемы критически важно состояние <strong>датчика положения коленвала</strong>. Он синхронизирует момент искрообразования с тактом сжатия в цилиндре. Если сигнал с датчика приходит с задержкой или искажен, двигатель будет троить или глохнуть, даже если сам коммутатор полностью исправен.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>При установке нового DC CDI всегда проверяйте полярность подключения. Ошибка в полярности может мгновенно вывести из строя внутренние диоды и тиристоры блока.</p></aside>
+
+<h2 id="распиновка-разъемов-и-подключение">Распиновка разъемов и подключение</h2>
+<p>Стандартная схема подключения <strong>DC CDI</strong> включает в себя несколько обязательных линий. Основное питание (+12В) обычно приходит через замок зажигания, что позволяет обесточить систему при выключении ключа. Масса (Ground) должна быть надежно соединена с рамой или минусом аккумулятора для обеспечения стабильной работы.</p>
+
+<p>Линия управления (<em>Trigger</em>) идет от датчика Холла или импульсной катушки. Именно по этому проводу приходит слабый сигнал, инициирующий разряд конденсатора. Отдельный провод идет на катушку зажигания (<strong>HT Output</strong>), передавая уже сформированный высоковольтный импульс на свечу.</p>
+
+<p>Ниже приведена таблица типичной цветовой маркировки проводов для большинства китайских скутеров и мотоциклов с DC зажиганием. Помните, что цвета могут варьироваться в зависимости от производителя проводки.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Функция контакта</th>
+<th>Типичный цвет провода</th>
+<th>Назначение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Питание (+12V DC)</td>
+<td>Красный или Черный</td>
+<td>Подача напряжения от АКБ</td>
+</tr>
+<tr>
+<td>Масса (GND)</td>
+<td>Зеленый или Черно-белый</td>
+<td>Общий минус цепи</td>
+</tr>
+<tr>
+<td>Сигнал датчика (Trigger)</td>
+<td>Синий/Желтый или Белый</td>
+<td>Импульс от датчика Холла</td>
+</tr>
+<tr>
+<td>Выход на катушку (HV)</td>
+<td>Черно-желтый</td>
+<td>Передача искры на свечу</td>
+</tr>
+<tr>
+<td>Ограничитель оборотов</td>
+<td>Серый или Розовый</td>
+<td>Сигнал от спидометра/ЭБУ</td>
+</tr>
+</tbody>
+</table></div>
+
+<blockquote>
+<p>⚠️ Внимание: Цвета проводов в таблице являются усредненными. Перед подключением нового блока обязательно используйте мультиметр для проверки наличия напряжения на соответствующих пинах разъема вашей проводки, так как китайские производители часто меняют цветовую гамму.</p>
+</blockquote>
+
+<h2 id="диагностика-неисправностей-мультиметром">Диагностика неисправностей мультиметром</h2>
+<p>Проверка <strong>DC CDI</strong> начинается с анализа входящего напряжения. Переведите мультиметр в режим измерения постоянного тока (DC Volts). Подключите черный щуп к массе, а красный к пину питания в разъеме коммутатора. При включенном зажигании вы должны увидеть напряжение, близкое к 12.5–13.5 Вольта.</p>
+
+<p>Если питание в норме, следующим шагом становится проверка сигнала с датчика. Переключите прибор в режим измерения переменного тока (AC Volts), так как сигнал от датчика Холла часто имеет переменную составляющую, или используйте режим прозвонки для проверки целостности цепи датчика. При прокрутке стартером на экране мультиметра должны появляться скачки напряжения.</p>
+
+<p>Наиболее частой поломкой является пробой внутреннего тиристора или выход из строя конденсатора. В домашних условиях без осциллографа диагностировать внутреннюю неисправность компонента сложно. Если входное питание и сигнал датчика есть, а искры нет — с вероятностью 90% <em>коммутатор</em> требует замены.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Диагностика системы зажигания</h4><label class="check-item"><input type="checkbox"><span>Проверить напряжение на входе CDI (12В)</span></label><label class="check-item"><input type="checkbox"><span>Проверить массу на корпусе блока</span></label><label class="check-item"><input type="checkbox"><span>Прозвонить цепь от датчика Холла</span></label><label class="check-item"><input type="checkbox"><span>Замерить сопротивление первичной обмотки катушки</span></label><label class="check-item"><input type="checkbox"><span>Проверить наличие искры на свече</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<h2 id="влияние-ограничителя-оборотов">Влияние ограничителя оборотов</h2>
+<p>Многие владельцы мототехники сталкиваются с ситуацией, когда скутер не развивает полную скорость. Часто виновником становится встроенный в схему <strong>DC CDI</strong> ограничитель оборотов (Restrictor). Этот модуль получает сигнал от генератора или датчика скорости и искусственно прерывает искрообразование при достижении определенного порога.</p>
+
+<p>В некоторых моделях ограничитель реализован программно внутри микроконтроллера, и отключить его заменой проводов невозможно. В других случаях используется отдельный провод (часто серый), который замыкается на массу или получает сигнал от спидометра. Разрыв этой цепи может снять ограничение, но это следует делать с осторожностью.</p>
+
+<p>Снятие ограничений может привести к перегреву двигателя и сокращению его ресурса. Заводские настройки рассчитаны на оптимальный баланс между динамикой и надежностью. Модернизация системы зажигания должна сопровождаться улучшением системы охлаждения и настройкой карбюратора.</p>
+
+<details class="pb-accordion"><summary>Почему срезает ограничитель?</summary><div class="pb-accordion-body"><p>Ограничитель срабатывает не только по скорости, но и по времени работы на высоких оборотах. Если вы разгоняетесь быстро, но долго держите газ «в пол», блок может временно отключить искру для защиты поршневой группы.</p></div></details>
+
+<h2 id="совместимость-и-замена-блоков">Совместимость и замена блоков</h2>
+<p>При покупке нового <strong>DC CDI</strong> важно учитывать не только тип питания, но и форму сигнала. Существуют блоки с разными углами опережения зажигания (Advance Curve). Установка блока с неправильной кривой опережения может привести к детонации или, наоборот, к потере тяги на низах.</p>
+
+<p>Универсальные блоки зажигания часто имеют переключатели или настраиваемые параметры, что делает их подходящими для широкого спектра техники. Однако для спортивных двигателей лучше использовать специализированные программируемые модели, которые позволяют точно настроить момент искры под конкретные характеристики мотора.</p>
+
+<p>Перед установкой нового устройства рекомендуется осмотреть разъем. Контакты должны быть чистыми, без окисления. Плохой контакт в разъеме может имитировать неисправность самого коммутатора, создавая паразитное сопротивление в цепи управления.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Не используйте DC CDI коммутаторы на технике, изначально рассчитанной на AC систему, без переделки проводки. Подача переменного тока на вход постоянного блока мгновенно сожжет его внутреннюю электронику.</p>
+</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Главное правило замены: Никогда не подключайте «плюс» от генератора (AC) на вход питания DC CDI. Это фатальная ошибка, ведущая к дорогому ремонту.</p></aside>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Можно ли проверить DC CDI без подключения к мотоциклу?</summary>
+<p>Полноценно проверить работу блока вне мотоцикла сложно, так как ему нужен сигнал от датчика Холла для генерации искры. Однако можно проверить целостность внутренних цепей мультиметром в режиме прозвонки диодов, сравнивая показания с заведомо исправным аналогом.</p>
+</details>
+
+<details>
+<summary>Почему греется корпус коммутатора?</summary>
+<p>Незначительный нагрев является нормой для работающей электроники. Если же корпус становится слишком горячим (невозможно держать руку), это указывает на короткое замыкание внутри блока или неправильную работу катушки зажигания, создающую избыточную нагрузку.</p>
+</details>
+
+<details>
+<summary>В чем разница между 4-pin и 5-pin DC CDI?</summary>
+<p>Основное отличие заключается в наличии дополнительного провода управления ограничителем оборотов или тахометром в 5-пиновых версиях. 4-пиновые блоки обычно имеют более простую схему без сложных функций ограничения, но могут быть несовместимы по разъему.</p>
+</details>
+
+<details>
+<summary>Можно ли использовать автомобильную катушку с DC CDI?</summary>
+<p>Теоретически да, если сопротивления обмоток совместимы. Однако мотоциклетные CDI рассчитаны на специфические параметры индуктивности. Использование автомобильной катушки может привести к слабому искрообразованию или перегреву коммутатора.</p>
+</details>
+
+<details>
+<summary>Как продлить срок службы DC CDI?</summary>
+<p>Главный враг электроники — влага и вибрация. Убедитесь, что разъемы надежно заизолированы, а сам блок закреплен через резиновые демпферы. Регулярная очистка контактов от окисления также значительно повышает надежность системы.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/s/sk/skhema-podklyucheniya-sveta-na-mopede-alfa.html" class="pb-related-card">
+                <span class="pb-related-title">Схема подключения света на мопеде Альфа: электросхема и монтаж</span>
+                <span class="pb-related-desc">Полная схема подключения света на мопеде Альфа. Инструкция по установке фары, поворотников и генерат</span>
+            </a><a href="/articles/r/re/regulyator-napryazheniya-dlya-skutera.html" class="pb-related-card">
+                <span class="pb-related-title">Регулятор напряжения для скутера: выбор, проверка, замена</span>
+                <span class="pb-related-desc">Как выбрать регулятор напряжения для скутера 50сс/150сс? Признаки неисправности, схемы подключения, </span>
+            </a><a href="/articles/z/za/zazhiganie-cdi-chto-eto-takoe.html" class="pb-related-card">
+                <span class="pb-related-title">Зажигание CDI: что это такое, принцип работы и ремонт</span>
+                <span class="pb-related-desc">Полный разбор системы зажигания CDI: устройство, схема, диагностика неисправностей и отличия от конт</span>
+            </a><a href="/articles/s/sk/skhema-provodki-na-moped-alfa-110-kubov.html" class="pb-related-card">
+                <span class="pb-related-title">Схема проводки мопеда Альфа 110 кубов — подробная инструкция</span>
+                <span class="pb-related-desc">Разбираем электросхему мопеда Альфа 110 кубов: цветовая маркировка, подключение генератора, катушки </span>
+            </a><a href="/articles/c/ch/chto-takoe-kommutator-na-mopede.html" class="pb-related-card">
+                <span class="pb-related-title">Коммутатор на мопеде: принцип работы, виды и неисправности</span>
+                <span class="pb-related-desc">Подробный гид по устройству коммутатора на мопеде. Признаки поломки, виды CDI, способы проверки и за</span>
+            </a><a href="/articles/n/ne/ne-rabotaet-zazhiganie-na-mopede.html" class="pb-related-card">
+                <span class="pb-related-title">Не работает зажигание на мопеде: причины и ремонт 2026</span>
+                <span class="pb-related-desc">Почему не срабатывает зажигание на мопеде? Диагностика неисправностей, проверка катушки, свечи, гене</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🏍️ Мото Гид</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a> · <a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a> · <a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a> · <a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a> · <a href="/category/remont-dvigatelej/">🔧 Ремонт Двигателей</a> · <a href="/category/elektrika-i-provodka/">⚡ Электрика и Проводка</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мото Гид. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

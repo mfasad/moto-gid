@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🏍️</text></svg>">
+    <title>Схема подключения коммутатора скутера: цвета проводов и диагностика — Мото Гид</title>
+    <meta name="description" content="Подробная инструкция по подключению коммутатора скутера. Разбор схем AC/DC, расшифровка цветов проводов, поиск неисправностей и советы по замене.">
+    <link rel="canonical" href="https://moto-gid.vercel.app/articles/s/sk/skhema-podklyucheniya-kommutatora-skutera.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Схема подключения коммутатора скутера: цвета проводов и диагностика">
+    <meta property="og:description" content="Подробная инструкция по подключению коммутатора скутера. Разбор схем AC/DC, расшифровка цветов проводов, поиск неисправностей и советы по замене.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780130877">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🏍️</span>
+                <span class="pb-logo-text">Мото Гид</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/mopedy-i-skutery/" class="pb-nav-active">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/mopedy-i-skutery/" class="pb-dropdown-item">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/" class="pb-dropdown-item">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/" class="pb-dropdown-item">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/" class="pb-dropdown-item">📐 Самоделки и Чертежи</a>
+<a href="/category/remont-dvigatelej/" class="pb-dropdown-item">🔧 Ремонт Двигателей</a>
+<a href="/category/elektrika-i-provodka/" class="pb-dropdown-item">⚡ Электрика и Проводка</a>
+<a href="/category/zakony-i-prava/" class="pb-dropdown-item">⚖️ Законы и Права</a>
+<a href="/category/raskhodniki-i-masla/" class="pb-dropdown-item">🛢️ Расходники и Масла</a>
+<a href="/category/tyuning-i-modernizatsiya/" class="pb-dropdown-item">🚀 Тюнинг и Модернизация</a>
+<a href="/category/elektromototekhnika/" class="pb-dropdown-item">🔋 Электромототехника</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/mopedy-i-skutery/">Мопеды и Скутеры</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Схема подключения коммутатора скутера: цвета проводов и диагностика</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#принцип-работы-и-типы-систем-зажигания">Принцип работы и типы систем зажигания</a></li><li><a href="#расшифровка-цветовой-маркировки-проводов">Расшифровка цветовой маркировки проводов</a></li><li><a href="#пошаговая-инструкция-по-подключению-и-замене">Пошаговая инструкция по подключению и замене</a></li><li><a href="#диагностика-неисправностей-и-поиск-проблем">Диагностика неисправностей и поиск проблем</a></li><li><a href="#тюнинг-зажигания-и-установка-спортивных-коммутаторов">Тюнинг зажигания и установка спортивных коммутаторов</a></li><li><a href="#частые-ошибки-при-монтаже-и-эксплуатации">Частые ошибки при монтаже и эксплуатации</a></li><li><a href="#вопросы-и-ответы-faq">Вопросы и ответы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/n/ne/ne-postupaet-benzin-v-karbyurator-na-skutere-4t-prichiny.html">Не поступает бензин в карбюратор скутера 4т: причины и ремонт</a></li><li><a href="/articles/m/ma/maksi-skuter-yamakha-madzhesti-400.html">Ямаха Маджести 400: характеристики, расход топлива и ремонт</a></li><li><a href="/articles/p/po/pochemu-ne-zavoditsya-skuter-s-knopki.html">Скутер не заводится с кнопки: 10 причин и способы устранения</a></li><li><a href="/articles/p/po/pochemu-chikhaet-moped-alfa.html">Почему чихает мопед Альфа: 7 причин и как устранить</a></li><li><a href="/articles/e/el/elektro-spidometr-na-alfu.html">Электронный спидометр на Альфу: выбор, установка и настройка</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Схема подключения коммутатора скутера: полная инструкция</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#принцип-работы-и-типы-систем-зажигания">Принцип работы и типы систем зажигания</a></li><li><a href="#расшифровка-цветовой-маркировки-проводов">Расшифровка цветовой маркировки проводов</a></li><li><a href="#пошаговая-инструкция-по-подключению-и-замене">Пошаговая инструкция по подключению и замене</a></li><li><a href="#диагностика-неисправностей-и-поиск-проблем">Диагностика неисправностей и поиск проблем</a></li><li><a href="#тюнинг-зажигания-и-установка-спортивных-коммутаторов">Тюнинг зажигания и установка спортивных коммутаторов</a></li><li><a href="#частые-ошибки-при-монтаже-и-эксплуатации">Частые ошибки при монтаже и эксплуатации</a></li><li><a href="#вопросы-и-ответы-faq">Вопросы и ответы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Запуск двигателя — это момент, определяющий исправность всей системы зажигания. В современных скутерах ключевую роль в этом процессе играет <strong>коммутатор</strong>, или CDI-модуль. Он отвечает за формирование искры в строго определенный момент, обеспечивая сгорание топливной смеси. Любая неисправность в этом узле приводит к тому, что техника отказывается заводиться или работает с перебоями, требуя немедленного вмешательства.</p>
+
+<p>Понимание того, как работает <em>схема подключения коммутатора скутера</em>, необходимо каждому владельцу двухколесной техники. Это знание позволяет быстро локализовать проблему без дорогостоящей диагностики в сервисе. В данном руководстве мы детально разберем типы систем, цветовую маркировку проводов и методы проверки работоспособности модуля в полевых условиях.</p>
+
+<h2 id="принцип-работы-и-типы-систем-зажигания">Принцип работы и типы систем зажигания</h2>
+
+<p>Современные китайские и японские скутеры оснащаются двумя основными типами систем зажигания, которые кардинально отличаются по питанию и способу управления искрообразованием. Первым типом является система <strong>AC-CDI</strong> (переменный ток), где питание поступает непосредственно с генератора (статора). Она считается более простой и надежной, но имеет ограничение по максимальным оборотам двигателя.</p>
+
+<p>Второй тип — это система <strong>DC-CDI</strong> (постоянный ток). Здесь коммутатор получает питание от аккумуляторной батареи через замок зажигания и выпрямитель. Такая схема позволяет двигателю развивать более высокие обороты и стабильнее работать на холостом ходу, однако она критически зависит от состояния аккумулятора и бортовой сети. Определить тип вашей системы можно по наличию провода, идущего на замок зажигания.</p>
+
+<p>Внутри корпуса модуля находится микросхема, которая получает сигнал от датчика положения коленвала (ДПКВ) и датчика Холла. На основе этих данных <em>электронный блок управления</em> рассчитывает угол опережения зажигания. Ошибка в расчетах или сбой сигнала приводят к тому, что искра либо не появляется вовсе, либо возникает слишком рано или поздно, вызывая детонацию.</p>
+
+<ul>
+<li>🔋 <strong>AC-CDI:</strong> Питание от генератора, независимость от аккумулятора, ограничение оборотов.</li>
+<li>⚡ <strong>DC-CDI:</strong> Питание от батареи, стабильный искрообразование на высоких оборотах, зависимость от АКБ.</li>
+<li>📉 <strong>Гибридные системы:</strong> Встречаются редко, могут иметь особенности в прошивке.</li>
+</ul>
+
+<div class="pb-poll" id="poll-7927702d"><div class="pb-poll-question">📊 Какой тип зажигания у вашего скутера?</div><div class="pb-poll-option" data-poll="7927702d" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">AC (от генератора)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="7927702d" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">DC (от аккумулятора)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="7927702d" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Не знаю</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="7927702d" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">У меня электроскутер</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="расшифровка-цветовой-маркировки-проводов">Расшифровка цветовой маркировки проводов</h2>
+
+<p>Стандартная схема подключения коммутатора скутера опирается на цветовую кодировку проводов, которая едина для большинства производителей мототехники. Однако стоит помнить, что китайские заводы иногда могут отступать от стандартов, поэтому перед заменой всегда сверяйтесь с инструкцией к конкретной модели. Основные провода отвечают за питание, массу, сигнал с датчиков и блокировку.</p>
+
+<p>Самый важный провод — это <mark>сигнальный провод от датчика Холла</mark>, который обычно имеет сине-белую изоляцию. Именно он сообщает коммутатору о положении поршня. Если этот контакт нарушен, искры не будет ни при каких условиях. Провод питания (в системах DC) обычно красный, а провод блокировки зажигания — черно-белый.</p>
+
+<p>Для наглядности рассмотрим основные цвета и их назначение в таблице ниже. Обратите внимание, что цвета катушки зажигания (высоковольтный провод) и провода, идущего на статор, могут варьироваться в зависимости от года выпуска.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Цвет провода</th>
+<th>Назначение</th>
+<th>Тип системы</th>
+<th>Примечание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Красный</td>
+<td>Плюс питания (+12В)</td>
+<td>Только DC</td>
+<td>Идет от замка зажигания</td>
+</tr>
+<tr>
+<td>Черно-белый</td>
+<td>Блокировка зажигания (Kill-switch)</td>
+<td>AC и DC</td>
+<td>Замыкание на массу глушит мотор</td>
+</tr>
+<tr>
+<td>Сине-белый</td>
+<td>Сигнал с датчика Холла</td>
+<td>AC и DC</td>
+<td>Критически важен для запуска</td>
+</tr>
+<tr>
+<td>Зеленый</td>
+<td>Масса (Минус)</td>
+<td>AC и DC</td>
+<td>Соединен с рамой</td>
+</tr>
+<tr>
+<td>Оранжевый</td>
+<td>Выход на катушку зажигания</td>
+<td>AC и DC</td>
+<td>Высоковольтный импульс</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Если вы видите, что цвета проводов на вашем скутере не совпадают с таблицей, не спешите соединять их "наугад". Используйте мультиметр в режиме прозвонки, чтобы отследить путь провода до соответствующего узла (генератора, катушки или замка).</p>
+
+<h2 id="пошаговая-инструкция-по-подключению-и-замене">Пошаговая инструкция по подключению и замене</h2>
+
+<p>Процесс замены коммутатора обычно не требует специальных инструментов, кроме отвертки и ключей для снятия пластиковой обшивки. Перед началом работ обязательно отключите клемму аккумулятора, чтобы избежать короткого замыкания в бортовой сети. Найдите старый модуль, который чаще всего расположен под сиденьем или в районе ног, за боковой пластиковой панелью.</p>
+
+<p>Аккуратно отсоедините разъемы проводов. Не тяните за сами провода, держитесь за пластиковые колодки. Осмотрите контакты на предмет окисления или нагара — это частая причина плохого контакта. Если разъемы чистые, установите новый коммутатор, соблюдая форму ключей на разъеме, чтобы не перепутать полярность.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка перед заменой</h4><label class="check-item"><input type="checkbox"><span>Отключить аккумулятор</span></label><label class="check-item"><input type="checkbox"><span>Снять пластик</span></label><label class="check-item"><input type="checkbox"><span>Осмотреть разъемы</span></label><label class="check-item"><input type="checkbox"><span>Проверить предохранитель</span></label><label class="check-item"><input type="checkbox"><span>Установить новый модуль</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<p>После физической установки необходимо проверить работу системы. Подключите аккумулятор и попробуйте запустить двигатель. Если стартер крутит, но искры нет, проверьте наличие напряжения на красном проводе (для DC систем) с помощью мультиметра. Напряжение должно быть не менее 12 Вольт.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Никогда не проверяйте наличие искры, замыкая высоковольтный провод на массу руками или держа свечу в руке без изоляции. Напряжение в системе зажигания может достигать 20 000 Вольт и выше, что опасно для жизни и может повредить электронику коммутатора.</p>
+</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед установкой нового коммутатора нанесите немного диэлектрической смазки на контакты разъемов. Это предотвратит окисление от влаги и вибрации в будущем.</p></aside>
+
+<h2 id="диагностика-неисправностей-и-поиск-проблем">Диагностика неисправностей и поиск проблем</h2>
+
+<p>Часто проблема кроется не в самом коммутаторе, а в сопутствующих элементах цепи. Прежде чем покупать новую деталь, проведите комплексную диагностику. Начните со свечи зажигания: выкрутите её, наденьте колпачок и прижмите резьбой к металлической части двигателя. При прокрутке стартера должна проскакивать яркая синяя искра.</p>
+
+<p>Если искра слабая или отсутствует, проверьте высоковольтный провод и колпачок свечи. Со временем изоляция может треснуть, и напряжение уходит на массу. Также стоит проверить датчик Холла, расположенный на генераторе. Его сопротивление должно находиться в диапазоне, указанном в сервисной книге (обычно от 50 до 150 Ом).</p>
+
+<p>В системах DC-CDI частой причиной отказа является неисправный замок зажигания или обрыв провода блокировки. Если черно-белый провод случайно замкнут на массу где-то в проводке, коммутатор будет постоянно находиться в режиме "глушения" двигателя, даже если ключ повернут в положение ON.</p>
+
+<details class="pb-accordion"><summary>Как проверить катушку зажигания без стенда?</summary><div class="pb-accordion-body"><p>Измерьте сопротивление первичной и вторичной обмоток мультиметром. Для первичной обмотки норма — 0.1-0.5 Ом, для вторичной — 2-5 кОм. Если сопротивление бесконечное или близко к нулю, катушка неисправна.</p></div></details>
+
+<h2 id="тюнинг-зажигания-и-установка-спортивных-коммутаторов">Тюнинг зажигания и установка спортивных коммутаторов</h2>
+
+<p>Многие энтузиасты стремятся увеличить мощность двигателя путем установки тюнинговых коммутаторов, часто называемых "безлимитниками". Эти устройства снимают программное ограничение максимальных оборотов, заложенное заводом-изготовителем. Однако стоит понимать, что просто снятие лимита не даст прироста мощности без доработки впуска, выпуска и вариатора.</p>
+
+<p>Спортивные модели CDI часто имеют регулировку угла опережения зажигания (Advance). Смещение угла позволяет раньше поджигать смесь, что полезно на высоких оборотах, но может привести к детонации и перегреву поршневой группы на низких оборотах. Эксперименты с настройками требуют тщательного контроля температуры двигателя.</p>
+
+<p>При установке неоригинального оборудования убедитесь, что распиновка разъема совпадает. Иногда для установки универсального тюнинг-коммутатора требуется перепаивать фишку или использовать переходник. Неправильное подключение может мгновенно вывести из строя катушку зажигания.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Установка "безлимитного" коммутатора на стоковую поршневую группу (50 куб. см) без настройки карбюратора может привести к прогару поршня из-за обеднения смеси на высоких оборотах. Будьте осторожны с тюнингом.</p>
+</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Тюнинг зажигания эффективен только в комплексе с доработкой ЦПГ и выхлопа. Сам по себе спортивный CDI лишь раскрывает потенциал уже модернизированного двигателя.</p></aside>
+
+<h2 id="частые-ошибки-при-монтаже-и-эксплуатации">Частые ошибки при монтаже и эксплуатации</h2>
+
+<p>Одной из самых распространенных ошибок является игнорирование состояния массы. Плохой контакт зеленого провода с рамой скутера приводит к тому, что ток ищет обходные пути, вызывая сбои в работе электроники. Зачистите место крепления массового провода до блеска металла перед установкой.</p>
+
+<p>Также владельцы часто путают типы коммутаторов, пытаясь поставить AC-модуль на скутер с DC-системой и наоборот. Внешне они могут выглядеть идентично, но внутренняя схема питания различна. Такой модуль просто не заработает или сгорит при первом запуске.</p>
+
+<p>Не забывайте о защите от влаги. Хотя разъемы имеют резиновые уплотнители, вода может затекать внутрь корпуса при мойке под высоким давлением. Располагайте коммутатор так, чтобы вода стекала с него, а не скапливалась вокруг.</p>
+
+<ul>
+<li>🛠️ <strong>Плохая масса:</strong> Окисление контакта на раме вызывает хаотичные пропуски зажигания.</li>
+<li>🔌 <strong>Несоответствие типа:</strong> Установка AC вместо DC (и наоборот) приводит к полному отказу системы.</li>
+<li>💧 <strong>Попадание воды:</strong> Коррозия контактов внутри разъема нарушает передачу сигналов.</li>
+</ul>
+
+<h2 id="вопросы-и-ответы-faq">Вопросы и ответы (FAQ)</h2>
+
+<details>
+<summary>Можно ли проверить коммутатор мультиметром?</summary>
+<p>Полноценно проверить внутреннюю логику коммутатора обычным мультиметром невозможно, так как это активный электронный прибор. Мультиметром можно лишь проверить целостность внешних цепей, наличие питания и сопротивление обмоток катушки. Для точной диагностики требуется осциллограф или метод подстановки заведомо исправного модуля.</p>
+</details>
+
+<details>
+<summary>Почему искра есть, но скутер не заводится?</summary>
+<p>Наличие искры не гарантирует запуск. Проблема может быть в отсутствии топлива (неисправен бензокран, забит карбюратор), низкой компрессии в цилиндре или неверном угле зажигания (сбиты метки на генераторе). Также проверьте, не залита ли свеча бензином.</p>
+</details>
+
+<details>
+<summary>В чем разница между 4-pin и 6-pin коммутаторами?</summary>
+<p>Количество пинов (контактов) указывает на функционал. 4-pin обычно используются в простых системах AC без отдельного вывода на тахометр или ограничителя. 6-pin и более сложные версии могут иметь дополнительные провода для питания (DC), подключения тахометра или более сложной схемы ограничения оборотов.</p>
+</details>
+
+<details>
+<summary>Сгорит ли коммутатор, если перепутать полярность?</summary>
+<p>В системах DC, где есть жесткая привязка к плюсу и минусу аккумулятора, переполюсовка почти гарантированно выведет коммутатор из строя мгновенно. В системах AC риск ниже, но неправильное подключение сигнальных проводов также может повредить внутреннюю микросхему.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/n/ne/ne-postupaet-benzin-v-karbyurator-na-skutere-4t-prichiny.html" class="pb-related-card">
+                <span class="pb-related-title">Не поступает бензин в карбюратор скутера 4т: причины и ремонт</span>
+                <span class="pb-related-desc">Почему нет бензина в карбюраторе на 4-тактном скутере? Полный разбор причин: от крана до вакуумного </span>
+            </a><a href="/articles/m/ma/maksi-skuter-yamakha-madzhesti-400.html" class="pb-related-card">
+                <span class="pb-related-title">Ямаха Маджести 400: характеристики, расход топлива и ремонт</span>
+                <span class="pb-related-desc">Полный обзор Yamaha Majesty 400: технические данные, реальный расход бензина, типичные поломки и сов</span>
+            </a><a href="/articles/p/po/pochemu-ne-zavoditsya-skuter-s-knopki.html" class="pb-related-card">
+                <span class="pb-related-title">Скутер не заводится с кнопки: 10 причин и способы устранения</span>
+                <span class="pb-related-desc">Разбираемся, почему скутер не реагирует на кнопку старта: от разряженного аккумулятора до неисправно</span>
+            </a><a href="/articles/p/po/pochemu-chikhaet-moped-alfa.html" class="pb-related-card">
+                <span class="pb-related-title">Почему чихает мопед Альфа: 7 причин и как устранить</span>
+                <span class="pb-related-desc">Мопед Альфа чихает в карбюратор или глушитель? Разбираем причины: от свечи до топливной системы. Пош</span>
+            </a><a href="/articles/e/el/elektro-spidometr-na-alfu.html" class="pb-related-card">
+                <span class="pb-related-title">Электронный спидометр на Альфу: выбор, установка и настройка</span>
+                <span class="pb-related-desc">Как подобрать и установить электронный спидометр на мопед Альфа: схемы подключения, популярные модел</span>
+            </a><a href="/articles/p/pr/propali-skorostya-na-mopede-alfa.html" class="pb-related-card">
+                <span class="pb-related-title">Пропали скорости на мопеде Альфа: причины и ремонт своими руками</span>
+                <span class="pb-related-desc">Почему не переключаются передачи на мопеде Alpha? Разбираем поломки КПП, сцепления и троса — от диаг</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🏍️ Мото Гид</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a> · <a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a> · <a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a> · <a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a> · <a href="/category/remont-dvigatelej/">🔧 Ремонт Двигателей</a> · <a href="/category/elektrika-i-provodka/">⚡ Электрика и Проводка</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мото Гид. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

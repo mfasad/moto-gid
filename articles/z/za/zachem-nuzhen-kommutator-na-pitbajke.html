@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🏍️</text></svg>">
+    <title>Зачем нужен коммутатор на питбайке: устройство и диагностика — Мото Гид</title>
+    <meta name="description" content="Полный гид по системе зажигания питбайка. Как работает коммутатор, признаки неисправности и методы проверки CDI блока. Ответы экспертов.">
+    <link rel="canonical" href="https://moto-gid.vercel.app/articles/z/za/zachem-nuzhen-kommutator-na-pitbajke.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Зачем нужен коммутатор на питбайке: устройство и диагностика">
+    <meta property="og:description" content="Полный гид по системе зажигания питбайка. Как работает коммутатор, признаки неисправности и методы проверки CDI блока. Ответы экспертов.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780130877">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🏍️</span>
+                <span class="pb-logo-text">Мото Гид</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/" class="pb-nav-active">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/mopedy-i-skutery/" class="pb-dropdown-item">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/" class="pb-dropdown-item">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/" class="pb-dropdown-item">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/" class="pb-dropdown-item">📐 Самоделки и Чертежи</a>
+<a href="/category/remont-dvigatelej/" class="pb-dropdown-item">🔧 Ремонт Двигателей</a>
+<a href="/category/elektrika-i-provodka/" class="pb-dropdown-item">⚡ Электрика и Проводка</a>
+<a href="/category/zakony-i-prava/" class="pb-dropdown-item">⚖️ Законы и Права</a>
+<a href="/category/raskhodniki-i-masla/" class="pb-dropdown-item">🛢️ Расходники и Масла</a>
+<a href="/category/tyuning-i-modernizatsiya/" class="pb-dropdown-item">🚀 Тюнинг и Модернизация</a>
+<a href="/category/elektromototekhnika/" class="pb-dropdown-item">🔋 Электромототехника</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/pitbajki-i-enduro/">Питбайки и Эндуро</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Зачем нужен коммутатор на питбайке: устройство и диагностика</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#принцип-работы-системы-cdi">Принцип работы системы CDI</a></li><li><a href="#основные-функции-и-назначение-узла">Основные функции и назначение узла</a></li><li><a href="#различия-между-ac-и-dc-коммутаторами">Различия между AC и DC коммутаторами</a></li><li><a href="#признаки-неисправности-коммутатора">Признаки неисправности коммутатора</a></li><li><a href="#методы-проверки-и-диагностики">Методы проверки и диагностики</a></li><li><a href="#выбор-replacement-и-особенности-установки">Выбор replacement и особенности установки</a></li><li><a href="#влияние-тюнинга-на-систему-зажигания">Влияние тюнинга на систему зажигания</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/s/sn/snyatie-perednego-kolesa-enduro.html">Как снять переднее колесо эндуро: пошаговая инструкция 2026</a></li><li><a href="/articles/p/po/pochemu-ne-prokachivayutsya-tormoza-na-enduro.html">Почему не прокачиваются тормоза на эндуро: причины и решения</a></li><li><a href="/articles/p/pr/propala-iskra-na-pitbajke-125.html">Пропала искра на питбайке 125: причины и ремонт своими руками</a></li><li><a href="/articles/p/pr/progasi-smart-maks-150-pitbajk.html">Как прогасить Смарт Макс 150: настройка и обслуживание питбайка</a></li><li><a href="/articles/k/ka/kakoj-moped-vybrat-dlya-bezdorozhya.html">Какой мопед выбрать для бездорожья: ТОП-7 моделей 2026 года</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Зачем нужен коммутатор на питбайке: функции и диагностика</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#принцип-работы-системы-cdi">Принцип работы системы CDI</a></li><li><a href="#основные-функции-и-назначение-узла">Основные функции и назначение узла</a></li><li><a href="#различия-между-ac-и-dc-коммутаторами">Различия между AC и DC коммутаторами</a></li><li><a href="#признаки-неисправности-коммутатора">Признаки неисправности коммутатора</a></li><li><a href="#методы-проверки-и-диагностики">Методы проверки и диагностики</a></li><li><a href="#выбор-replacement-и-особенности-установки">Выбор replacement и особенности установки</a></li><li><a href="#влияние-тюнинга-на-систему-зажигания">Влияние тюнинга на систему зажигания</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Многие начинающие райдеры, сталкиваясь с проблемами запуска двигателя или нестабильной работой мотора, первым делом проверяют свечу зажигания или карбюратор, напрочь забывая о ключевом элементе электрической цепи — <strong>коммутаторе</strong>. Этот небольшой пластиковый блок часто называют "черным ящиком" системы зажигания, и именно от его корректной работы зависит, получит ли двигатель искру в нужный момент.</p>
+
+<p>Без исправного <em>CDI (Capacitor Discharge Ignition)</em> питбайк превращается в груду металла, так как маховик генератора может вращаться сколько угодно, но высоковольтный разряд на свече просто не возникнет. В этой статье мы детально разберем физику процесса, отличия разных типов блоков и научимся определять, когда пришло время заменить этот узел.</p>
+
+<p>Понимание принципа работы этого компонента критически важно для любого владельца мототехники, желающего самостоятельно обслуживать своего двухколесного друга. <strong>Игнорирование</strong> симптомов неисправности коммутатора может привести к тому, что вы будете бесконечно менять свечи и проверять катушку, тратя время и деньги впустую.</p>
+
+<h2 id="принцип-работы-системы-cdi">Принцип работы системы CDI</h2>
+
+<p>Коммутатор на питбайке выполняет роль электронного управляющего центра, который определяет точный момент подачи искры в цилиндр. В отличие от старых контактных систем зажигания, здесь нет механических прерывателей, которые со временем изнашиваются. Вся магия происходит внутри микросхем, обрабатывающих сигналы от <strong>датчика Холла</strong> или индукционной катушки.</p>
+
+<p>Процесс зарядки и разрядки конденсатора происходит за доли секунды. Когда поршень приближается к верхней мертвой точке, блок управления фиксирует положение коленвала и мгновенно сбрасывает накопленный заряд на первичную обмотку катушки зажигания. Именно в этот момент возникает <em>высоковольтный импульс</em>, пробивающий зазор свечи.</p>
+
+<p>Современные <strong>коммутаторы</strong> также выполняют функцию ограничителя оборотов. Если двигатель достигает предельных значений RPM, система искусственно прекращает подачу искры, чтобы спасти мотор от разрушения. Это особенно актуально для стоковых моделей питбайков, где защита двигателя встроена на программном уровне.</p>
+
+<p>Надежность системы зависит от качества компонентов внутри корпуса. Дешевые китайские аналоги часто страдают от плохой пайки или низкого качества конденсаторов, что приводит к сбоям под нагрузкой или при нагреве.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед снятием коммутатора обязательно отключите клемму аккумулятора, если ваша модель питбайка оснащена электростартером и аккумулятором, чтобы избежать короткого замыкания в проводке.</p></aside>
+
+<h2 id="основные-функции-и-назначение-узла">Основные функции и назначение узла</h2>
+
+<p>Главная задача устройства — формирование искры, но это лишь вершина айсберга. Качественный блок управления обеспечивает стабильную работу мотора во всем диапазоне оборотов. Он адаптирует угол опережения зажигания в зависимости от частоты вращения коленчатого вала, обеспечивая оптимальное сгорание топливной смеси.</p>
+
+<p>Кроме того, <strong>коммутатор</strong> защищает электрическую цепь от перегрузок. В момент разряда конденсатора токи могут достигать значительных величин, и исправная электроника гарантирует, что эти импульсы не повредят катушку зажигания или генератор. Нарушение этой функции часто приводит к перегреву и оплавлению контактов.</p>
+
+<ul>
+<li>🔥 Точное формирование угла опережения зажигания для максимальной мощности двигателя.</li>
+<li>⚡ Накопление энергии в конденсаторе и мгновенная ее передача на катушку.</li>
+<li>🛡️ Ограничение максимальных оборотов двигателя (Rev Limiter) для защиты поршневой группы.</li>
+<li>📡 Обработка сигналов от датчика положения коленвала (ДПКВ) или импульсной катушки.</li>
+</ul>
+
+<p>Стоит отметить, что на разных моделях питбайков алгоритмы работы могут отличаться. Например, на <em>YX 140</em> или <em>Zongshen 125</em> кривые опережения зажигания могут быть настроены по-разному, что влияет на характер тяги и отклик ручки газа.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Коммутатор — это не просто выключатель, а сложный электронный блок, определяющий эффективность сгорания топлива и ресурс двигателя вашего питбайка.</p></aside>
+
+<h2 id="различия-между-ac-и-dc-коммутаторами">Различия между AC и DC коммутаторами</h2>
+
+<p>Одной из самых частых ошибок при подборе запчасти является путаница между системами питания. На питбайках встречаются два основных типа коммутаторов: работающие от переменного тока (<strong>AC</strong>) и от постоянного тока (<strong>DC</strong>). Неправильный выбор приведет к тому, что искры не будет вовсе, либо блок сгорит мгновенно.</p>
+
+<p>Системы <em>AC-CDI</em> получают энергию непосредственно от зарядной катушки генератора (обычно это бело-желтый или желтый провод). Они более распространены на простых китайских питбайках объемом 50-125 кубов, так как не требуют исправного аккумулятора для работы двигателя.</p>
+
+<p>Варианты <strong>DC-CDI</strong> запитываются от бортовой сети 12В (через замок зажигания и аккумулятор). Такие системы обычно устанавливаются на более мощные модели с электростартером и полноценным электрооборудованием. Они обеспечивают более стабильную искру на низких оборотах, что облегчает запуск в холодную погоду.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Никогда не пытайтесь подключить DC-коммутатор в цепь AC, и наоборот. Полярность и тип входного напряжения у них принципиально разные. Это гарантированно выведет новый блок из строя за секунды.</p>
+</blockquote>
+
+<p>Визуально отличить их можно по разъемам и маркировке, но надежнее всего использовать мультиметр. Проверка напряжения на входе питания при включенном зажигании (но незаведенном двигателе) даст однозначный ответ: если есть 12В — это DC, если 0В (до запуска) — скорее всего AC.</p>
+
+<details class="pb-accordion"><summary>Можно ли переделать AC на DC?</summary><div class="pb-accordion-body"><p>Теоретически это возможно, но требует полной переделки системы зарядки генератора, установки реле-регулятора и аккумулятора. Для обычного питбайка это нецелесообразно и сложно в реализации.</p></div></details>
+
+<h2 id="признаки-неисправности-коммутатора">Признаки неисправности коммутатора</h2>
+
+<p>Диагностика системы зажигания начинается с исключения самых простых причин, но если свеча сухая и искры нет, подозрение падает на блок управления. Существует ряд характерных симптомов, которые указывают на то, что <strong>коммутатор</strong> "умирает" или уже вышел из строя.</p>
+
+<p>Часто проблема проявляется не сразу, а по мере прогрева двигателя. Микротрещины в пайке или дефекты полупроводников внутри корпуса могут вызывать отказ системы при повышении температуры. Мотоцикл заводится на холодную, но глохнет через 5-10 минут езды и не заводится, пока полностью не остынет.</p>
+
+<p>Еще один тревожный звоночек — это "плавающие" обороты или провалы тяги. Если двигатель дергается при резком открытии дросселя, возможно, коммутатор не успевает формировать искру с нужной частотой или дает сбой при повышении нагрузки.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Симптом</th>
+<th>Вероятная причина</th>
+<th>Действие</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Нет искры вообще</td>
+<td>Обрыв внутри блока или отсутствие питания</td>
+<td>Проверить разъемы и заменить блок</td>
+</tr>
+<tr>
+<td>Искра есть, но слабая</td>
+<td>Деградация конденсатора или тиристора</td>
+<td>Замена коммутатора</td>
+</tr>
+<tr>
+<td>Двигатель глохнет на горячую</td>
+<td>Термическое разрушение контактов внутри</td>
+<td>Дать остыть, проверить, заменить</td>
+</tr>
+<tr>
+<td>Пропуски зажигания под нагрузкой</td>
+<td>Некорректная работа ограничителя оборотов</td>
+<td>Проверка проводки и замена</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Также стоит обратить внимание на внешний вид самого устройства. Если пластиковый корпус оплавлен, имеет следы копоти или вздулся, то <strong>диагноз</strong> очевиден — компонент требует немедленной замены. Эксплуатировать технику с таким дефектом опасно.</p>
+
+<div class="pb-poll" id="poll-49c6ba59"><div class="pb-poll-question">📊 Сталкивались ли вы с внезапной потерей искры на питбайке?</div><div class="pb-poll-option" data-poll="49c6ba59" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Да, коммутатор сгорал</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="49c6ba59" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Нет, всегда была катушка</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="49c6ba59" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Проблема была в свече</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="49c6ba59" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">У меня электростартер, все ок</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="методы-проверки-и-диагностики">Методы проверки и диагностики</h2>
+
+<p>Прежде чем бежать в магазин за новой деталью, необходимо провести грамотную диагностику. Простая замена "наугад" может не решить проблему, если причина кроется в проводке или катушке. Алгоритм проверки должен быть последовательным и логичным.</p>
+
+<p>Первым делом проверьте наличие массы и питание на разъеме коммутатора. Используйте мультиметр в режиме вольтметра. Для DC-систем напряжение должно быть близко к 12В при включенном зажигании. Для AC-систем проверьте сопротивление зарядной катушки генератора, которое обычно составляет несколько сотен Ом.</p>
+
+<p>Далее следует проверить сигнал от датчика Холла или импульсной катушки. При прокрутке стартером на соответствующих контактах разъема должно появляться переменное напряжение или изменяться сопротивление, в зависимости от типа датчика. Если сигнал есть, питание есть, а искры нет — виноват <em>коммутатор</em>.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Алгоритм поиска неисправности</h4><label class="check-item"><input type="checkbox"><span>Проверить наличие искры на новой свече</span></label><label class="check-item"><input type="checkbox"><span>Замерить напряжение на входе коммутатора</span></label><label class="check-item"><input type="checkbox"><span>Проверить целостность катушки зажигания</span></label><label class="check-item"><input type="checkbox"><span>Осмотреть разъемы на окисление</span></label><label class="check-item"><input type="checkbox"><span>Установить заведомо исправный блок</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<p>Самый надежный способ проверки — метод подстановки. Найдите рабочий коммутатор от аналогичного питбайка (например, у друга в гараже) и подключите его. Если мотоцикл завелся и работает ровно, то ваш блок неисправен. Это экономит время и исключает ошибки измерений.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Не используйте метод "проверки на искру", замыкая высоковольтный провод на массу без свечи в колпачке. Это создает чрезмерную нагрузку на коммутатор и катушку, что может добить исправный, но ослабленный блок.</p>
+</blockquote>
+
+<h2 id="выбор-replacement-и-особенности-установки">Выбор replacement и особенности установки</h2>
+
+<p>При покупке нового блока важно обращать внимание не только на количество пинов в разъеме, но и на маркировку. Китайские производители часто используют одинаковые корпуса для разных схем. Номер детали, выбитый на пластике (например, <code>JH200</code> или <code>CDI-110</code>), должен совпадать с оригиналом.</p>
+
+<p>Существуют универсальные модели с переключателями режимов работы, но их применение на питбайках не всегда оправдано. Штатные <strong>коммутаторы</strong> лучше согласованы с конкретным двигателем. Если вы планируете тюнинг (расточку цилиндра, установку другого распредвала), тогда имеет смысл рассмотреть спортивные версии с отключенным ограничителем оборотов.</p>
+
+<p>Установка новой детали требует аккуратности. Окисленные контакты в разъеме — частая причина проблем. Рекомендуется обработать клеммы специальным спреем для контактов или просто зачистить их перед подключением. Надежная фиксация разъема предотвратит вибрационный обрыв проводов.</p>
+
+<p>Помните, что даже самый дорогой спортивный блок не даст прироста мощности, если двигатель находится в плохом техническом состоянии. Компрессия, настройка карбюратора и состояние клапанов важнее, чем тип системы зажигания.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>При установке нового коммутатора всегда проверяйте плотность посадки разъема — вибрация питбайка способна расшатать даже новые контакты за один сезон.</p></aside>
+
+<h2 id="влияние-тюнинга-на-систему-зажигания">Влияние тюнинга на систему зажигания</h2>
+
+<p>Многие энтузиасты стремятся выжать максимум из своего питбайка, устанавливая тюнинговые коммутаторы. Такие устройства часто имеют сдвинутый угол опережения зажигания для лучшей продувки цилиндра на высоких оборотах. Однако это палка о двух концах.</p>
+
+<p>Слишком раннее зажигание может привести к детонации и перегреву поршневой группы. Если вы ставите нештатный <em>CDI</em>, обязательно следите за температурой двигателя и цветом свечи. Белый налет на электродах свидетельствует о слишком бедной смеси или чрезмерно раннем зажигании.</p>
+
+<p>Также существуют блоки с функцией "контроля запуска" (Launch Control), которые ограничивают обороты при замкнутом дросселе, позволяя эффектно стартовать с пробуксовкой. Для любительской езды по лесу или эндуро такие функции избыточны и могут мешать в сложных ситуациях.</p>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Можно ли починить коммутатор своими руками?</summary>
+<p>В 99% случаев ремонт нецелесообразен. Корпус залит эпоксидной смолой, а стоимость нового блока невысока. Попытки вскрыть его часто приводят к окончательному разрушению платы. Проще купить новый.</p>
+</details>
+
+<details>
+<summary>Почему коммутатор греется во время работы?</summary>
+<p>Небольшой нагрев допустим, так как внутри происходят процессы коммутации токов. Однако если блок горячий настолько, что к нему нельзя прикоснуться, это признак внутренней неисправности или короткого замыкания в цепи катушки.</p>
+</details>
+
+<details>
+<summary>Подойдет ли коммутатор от Honda CRF на китайский питбайк?</summary>
+<p>Только если совпадает тип системы (AC/DC), количество контактов и распиновка разъемов. Физически посадочные места могут отличаться, потребуется крепление на хомуты. Лучше искать аналоги с маркировкой под ваш объем двигателя.</p>
+</details>
+
+<details>
+<summary>Влияет ли разряженный аккумулятор на работу AC-коммутатора?</summary>
+<p>Нет, не влияет. Системы AC-CDI генерируют энергию для искры непосредственно от катушки генератора при вращении двигателя. Аккумулятор нужен только для работы стартера, света и поворотников, если они есть.</p>
+</details>
+
+<details>
+<summary>Как часто нужно менять коммутатор?</summary>
+<p>У этого узла нет регламентного срока замены. Он меняется только по факту неисправности. При бережной эксплуатации и защите от влаги качественный блок может служить годами без нареканий.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/s/sn/snyatie-perednego-kolesa-enduro.html" class="pb-related-card">
+                <span class="pb-related-title">Как снять переднее колесо эндуро: пошаговая инструкция 2026</span>
+                <span class="pb-related-desc">Детальное руководство по демонтажу переднего колеса эндуро: инструменты, порядок действий, типичные </span>
+            </a><a href="/articles/p/po/pochemu-ne-prokachivayutsya-tormoza-na-enduro.html" class="pb-related-card">
+                <span class="pb-related-title">Почему не прокачиваются тормоза на эндуро: причины и решения</span>
+                <span class="pb-related-desc">Воздух в системе, неисправность ГТЦ или банальный брак? Полный разбор причин, почему не удается прок</span>
+            </a><a href="/articles/p/pr/propala-iskra-na-pitbajke-125.html" class="pb-related-card">
+                <span class="pb-related-title">Пропала искра на питбайке 125: причины и ремонт своими руками</span>
+                <span class="pb-related-desc">Искра на питбайке 125 кубов исчезла? Разбираем все причины — от свечи до генератора. Пошаговые инстр</span>
+            </a><a href="/articles/p/pr/progasi-smart-maks-150-pitbajk.html" class="pb-related-card">
+                <span class="pb-related-title">Как прогасить Смарт Макс 150: настройка и обслуживание питбайка</span>
+                <span class="pb-related-desc">Полное руководство по эксплуатации Smart Max 150. Как настроить, обслужить и безопасно обкатать питб</span>
+            </a><a href="/articles/k/ka/kakoj-moped-vybrat-dlya-bezdorozhya.html" class="pb-related-card">
+                <span class="pb-related-title">Какой мопед выбрать для бездорожья: ТОП-7 моделей 2026 года</span>
+                <span class="pb-related-desc">Экспертный обзор мопедов для бездорожья: сравнение питбайков, эндуро и кроссовых моделей. Какой двиг</span>
+            </a><a href="/articles/d/da/datchik-skorosti-na-pitbajk.html" class="pb-related-card">
+                <span class="pb-related-title">Датчик скорости на питбайк: выбор, установка и ремонт</span>
+                <span class="pb-related-desc">Полный гид по датчику скорости питбайка. Как выбрать, установить и настроить спидометр на мототехник</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🏍️ Мото Гид</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a> · <a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a> · <a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a> · <a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a> · <a href="/category/remont-dvigatelej/">🔧 Ремонт Двигателей</a> · <a href="/category/elektrika-i-provodka/">⚡ Электрика и Проводка</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мото Гид. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

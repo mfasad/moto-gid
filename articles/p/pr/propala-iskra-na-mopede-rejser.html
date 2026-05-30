@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🏍️</text></svg>">
+    <title>Пропала искра на мопеде Рейсер: диагностика и ремонт — Мото Гид</title>
+    <meta name="description" content="Почему нет искры на мопеде Racer? Полный гайд по поиску неисправности в системе зажигания CDI и магнето. Проверка свечи, катушки, датчика.">
+    <link rel="canonical" href="https://moto-gid.vercel.app/articles/p/pr/propala-iskra-na-mopede-rejser.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Пропала искра на мопеде Рейсер: диагностика и ремонт">
+    <meta property="og:description" content="Почему нет искры на мопеде Racer? Полный гайд по поиску неисправности в системе зажигания CDI и магнето. Проверка свечи, катушки, датчика.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780130877">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🏍️</span>
+                <span class="pb-logo-text">Мото Гид</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/mopedy-i-skutery/" class="pb-nav-active">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/mopedy-i-skutery/" class="pb-dropdown-item">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/" class="pb-dropdown-item">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/" class="pb-dropdown-item">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/" class="pb-dropdown-item">📐 Самоделки и Чертежи</a>
+<a href="/category/remont-dvigatelej/" class="pb-dropdown-item">🔧 Ремонт Двигателей</a>
+<a href="/category/elektrika-i-provodka/" class="pb-dropdown-item">⚡ Электрика и Проводка</a>
+<a href="/category/zakony-i-prava/" class="pb-dropdown-item">⚖️ Законы и Права</a>
+<a href="/category/raskhodniki-i-masla/" class="pb-dropdown-item">🛢️ Расходники и Масла</a>
+<a href="/category/tyuning-i-modernizatsiya/" class="pb-dropdown-item">🚀 Тюнинг и Модернизация</a>
+<a href="/category/elektromototekhnika/" class="pb-dropdown-item">🔋 Электромототехника</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/mopedy-i-skutery/">Мопеды и Скутеры</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Пропала искра на мопеде Рейсер: диагностика и ремонт</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#первичная-диагностика-и-визуальный-осмотр">Первичная диагностика и визуальный осмотр</a></li><li><a href="#проверка-системы-cdi-и-коммутатора">Проверка системы CDI и коммутатора</a></li><li><a href="#диагностика-катушки-зажигания">Диагностика катушки зажигания</a></li><li><a href="#генератор-и-датчик-холла-импульсная-катушка">Генератор и датчик Холла (Импульсная катушка)</a></li><li><a href="#влияние-датчика-стоп-сигнала-и-боковой-подножки">Влияние датчика стоп-сигнала и боковой подножки</a></li><li><a href="#особенности-проводки-и-массы-на-мопедах-racer">Особенности проводки и массы на мопедах Racer</a></li><li><a href="#частые-вопросы-по-системе-зажигания">Частые вопросы по системе зажигания</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kakoj-skuter-kupit-do-50-kubov.html">Какой скутер до 50 кубов выбрать в 2026: ТОП-10 моделей и советы эксперта</a></li><li><a href="/articles/k/ka/kak-sobrat-moped-delta.html">Как собрать мопед Дельта: пошаговая инструкция с фото и схемами</a></li><li><a href="/articles/p/po/pochemu-proskalzyvaet-kikstarter-na-alfe.html">Почему проскальзывает кикстартер на Альфе: причины и ремонт</a></li><li><a href="/articles/k/ka/kak-razbortirovat-koleso-na-skutere-svoimi-rukami.html">Как разбортировать колесо скутера: инструкция своими руками</a></li><li><a href="/articles/s/sk/skuter-vento-retro-150-otzyvy-vladeltsev.html">Скутер Vento Retro 150: отзывы владельцев и опыт эксплуатации</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Нет искры на мопеде Рейсер: причины и методы устранения</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#первичная-диагностика-и-визуальный-осмотр">Первичная диагностика и визуальный осмотр</a></li><li><a href="#проверка-системы-cdi-и-коммутатора">Проверка системы CDI и коммутатора</a></li><li><a href="#диагностика-катушки-зажигания">Диагностика катушки зажигания</a></li><li><a href="#генератор-и-датчик-холла-импульсная-катушка">Генератор и датчик Холла (Импульсная катушка)</a></li><li><a href="#влияние-датчика-стоп-сигнала-и-боковой-подножки">Влияние датчика стоп-сигнала и боковой подножки</a></li><li><a href="#особенности-проводки-и-массы-на-мопедах-racer">Особенности проводки и массы на мопедах Racer</a></li><li><a href="#частые-вопросы-по-системе-зажигания">Частые вопросы по системе зажигания</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Ситуация, когда <strong>пропала искра на мопеде Рейсер</strong>, является одной из самых частых причин невозможности запуска двигателя. Владельцы китайской мототехники часто сталкиваются с этим после длительной стоянки, попадания под дождь или естественного износа компонентов. Отсутствие разряда на электродах свечи означает, что топливная смесь в цилиндре не воспламеняется, и мотор просто крутит стартером или кик-стартером вхолостую.</p>
+
+<p>Система зажигания на большинстве моделей <em>Racer RC50QT</em> или <em>Racer RC110</em> построена по схеме CDI (Capacitor Discharge Ignition). Это надежная, но капризная к качеству контактов и состоянию проводки система. Прежде чем паниковать и менять все детали подряд, необходимо провести грамотную пошаговую диагностику. Часто проблема кроется не в поломке дорогостоящего узла, а в окисленном контакте или пробитом высоковольтном проводе.</p>
+
+<p>В этой статье мы подробно разберем алгоритм поиска неисправности, от простейшей проверки свечи до тестирования генераторного узла. Вы узнаете, как использовать мультиметр для проверки сопротивлений и какие нюансы характерны именно для мопедов марки <em>Racer</em>. Правильный подход сэкономит вам деньги на покупке ненужных запчастей и время на сборку-разборку пластика.</p>
+
+<h2 id="первичная-диагностика-и-визуальный-осмотр">Первичная диагностика и визуальный осмотр</h2>
+
+<p>Начинать любые ремонтные работы следует с самого простого. Часто <strong>отсутствие искры</strong> вызвано банальными вещами, которые легко упустить из виду. Первым делом необходимо выкрутить свечу зажигания и подключить её к высоковольтному наконечнику. Приложите резьбовую часть свечи к неокрашенной металлической части двигателя (массе) и прокрутите стартер.</p>
+
+<p>Если искра есть, но она слабая (красного или желтого цвета), либо её нет вовсе, осмотрите саму свечу. Нагар черного цвета, мокрый электрод или слишком большой зазор могут препятствовать нормальному искрообразованию. Попробуйте заменить свечу на заведомо исправную, например, марки <em>NGK</em> с калильным числом, соответствующим вашему двигателю.</p>
+
+<blockquote>
+<p>⚠️ Внимание: При проверке искры никогда не держите высоковольтный провод или свечу в руках! Напряжение в системе зажигания может достигать 20 000 Вольт и выше, что чревато сильным ударом током. Используйте изолированные пассатижи или прижимайте свечу к массе только через сухую ветошь.</p>
+</blockquote>
+
+<p>Далее осмотрите высоковольтный провод. На мопедах <em>Racer</em> он часто трескается в местах изгиба у катушки или колпачка свечи. Если изоляция повреждена, искра будет «пробивать» на массу раньше, чем достигнет свечи. Визуально это можно заметить в темное время суток по синим вспышкам вдоль провода при прокрутке стартера.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если высоковольтный провод имеет трещины, временно обмотайте место повреждения изоляционной лентой для проверки. Если искра появилась — провод под замену.</p></aside>
+
+<h2 id="проверка-системы-cdi-и-коммутатора">Проверка системы CDI и коммутатора</h2>
+
+<p>Коммутатор (CDI) — это «мозг» системы зажигания, который формирует момент подачи искры. На мопедах <em>Racer</em> этот блок часто выходит из строя из-за попадания влаги или вибрации. Симптомы неисправного CDI могут быть плавающими: искра то есть, то нет, или двигатель глохнет при нагреве.</p>
+
+<p>Для проверки коммутатора проще всего использовать метод замены. Купите новый блок CDI, подходящий под вашу модель (обычно это 4-контактный или 5-контактный разъем), и установите его вместо старого. Если искра появилась — проблема решена. Однако, если новый блок тоже не дает искры, значит, неисправность кроется глубже в цепи питания или управления.</p>
+
+<p>Обратите внимание на разъем подключения CDI. Контакты внутри фишки часто окисляются или разжимаются. <strong>Плохой контакт</strong> в разъеме имитирует поломку самого устройства. Выньте фишку, осмотрите клеммы, при необходимости подожмите их тонкой отверткой и обработайте контактным спреем.</p>
+
+<div class="pb-poll" id="poll-48bfbf4e"><div class="pb-poll-question">📊 Какой тип зажигания установлен на вашем мопеде?</div><div class="pb-poll-option" data-poll="48bfbf4e" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">AC-CDI (питание от генератора)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="48bfbf4e" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">DC-CDI (питание от аккумулятора)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="48bfbf4e" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Я не знаю</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="48bfbf4e" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">У меня электронное зажигание без аккумулятора</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<p>Также стоит проверить «массу» коммутатора. В некоторых схемах <em>Racer</em> минусовой провод выведен отдельно, в других — масса идет через крепление блока к раме. Убедитесь, что место крепления блока CDI зачищено от краски и ржавчины, обеспечивая надежный электрический контакт с рамой.</p>
+
+<h2 id="диагностика-катушки-зажигания">Диагностика катушки зажигания</h2>
+
+<p>Катушка зажигания служит трансформатором, повышающим напряжение до значений, необходимых для пробоя воздушного зазора в свече. Если катушка неисправна, искры не будет даже при рабочем CDI и генераторе. На мопедах <em>Racer</em> катушки часто расположены под пластиком рядом с двигателем и подвержены воздействию грязи и воды.</p>
+
+<p>Проверка катушки осуществляется мультиметром в режиме измерения сопротивления (Омы). Вам необходимо замерить сопротивление первичной и вторичной обмоток. Для этого снимите катушку и отсоедините все провода. Замеры проводятся между соответствующими контактами.</p>
+
+<p>Ниже приведена таблица с примерными значениями сопротивления для исправной катушки зажигания, характерной для мопедов класса 50-125 куб.см:</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип обмотки</th>
+<th>Контакты для замера</th>
+<th>Нормальное сопротивление</th>
+<th>Признак неисправности</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Первичная</td>
+<td>Низковольтные входы</td>
+<td>0.1 – 0.5 Ом</td>
+<td>Бесконечность или 0 Ом</td>
+</tr>
+<tr>
+<td>Вторичная</td>
+<td>Выход на свечу и вход</td>
+<td>2.0 – 9.0 кОм</td>
+<td>Значительно выше нормы</td>
+</tr>
+<tr>
+<td>Изоляция</td>
+<td>Корпус и любой контакт</td>
+<td>Бесконечность</td>
+<td>Любое значение сопротивления</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Если мультиметр показывает бесконечность (единица на дисплее) на первичной или вторичной обмотке, значит, внутри произошел обрыв провода. Если сопротивление близко к нулю — произошло межвитковое замыкание. В обоих случаях катушка подлежит замене.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Катушка зажигания редко выходит из строя сама по себе. Чаще всего её пробивает из-за неисправной свечи (слишком большой зазор) или попадания воды в колпачок.</p></aside>
+
+<h2 id="генератор-и-датчик-холла-импульсная-катушка">Генератор и датчик Холла (Импульсная катушка)</h2>
+
+<p>Сердцем системы зажигания AC-CDI является генератор, расположенный под маховиком (ротором). Он состоит из статора с обмотками и вращающегося магнита. Если <strong>пропала искра</strong>, и все внешние элементы исправны, проблема может быть внутри двигателя, в генераторном узле.</p>
+
+<p>Нас интересуют две обмотки на статоре: зарядная катушка (питает CDI) и импульсная катушка (датчик положения коленвала, дает сигнал на искру). Чтобы добраться до них, придется снять вентилятор охлаждения и открутить центральную гайку маховика. Используйте специальный съемник, чтобы не повредить вал коленчатого вала.</p>
+
+<ul>
+<li>🔍 <strong>Зарядная катушка</strong>: обычно имеет два провода (часто белый и зеленый/черный). Сопротивление должно быть в районе 80-150 Ом.</li>
+<li>⚡ <strong>Импульсная катушка</strong>: имеет два провода (часто синий и зеленый/черный). Сопротивление обычно составляет 100-200 Ом.</li>
+<li>🚫 <strong>Обмотка освещения</strong>: не влияет на искру, но её тоже можно проверить (желтый провод), сопротивление около 0.5-1 Ом.</li>
+</ul>
+
+<p>При осмотре статора обратите внимание на состояние проводов. На мопедах <em>Racer</em> вибрация часто перетирает изоляцию проводов обмоток о металлический каркас статора, вызывая замыкание на массу. Если провод перетерт, его можно аккуратно зачистить и заизолировать, но лучше заменить весь статор в сборе.</p>
+
+<blockquote>
+<p>⚠️ Внимание: При снятии маховика не допускайте попадания грязи и металлической стружки внутрь картера двигателя. Тщательно очистите резьбу вала и гайки перед обратной сборкой, чтобы избежать дисбаланса ротора.</p>
+</blockquote>
+
+<p>Также проверьте зазор между магнитом ротора и катушками статора. Он должен быть минимальным, но без касания. Если ротор задевает статор, это вызовет механическое повреждение и отсутствие искры.</p>
+
+<h2 id="влияние-датчика-стоп-сигнала-и-боковой-подножки">Влияние датчика стоп-сигнала и боковой подножки</h2>
+
+<p>Многие владельцы забывают, что на современных мопедах <em>Racer</em> установлены системы безопасности, которые принудительно гасят искру. Если у вас пропала искра внезапно, во время движения или после каких-либо манипуляций с проводкой, проверьте эти цепи.</p>
+
+<p>Датчик боковой подножки размыкает цепь зажигания, если подножка опущена при включенной передаче. Контакты этого датчика часто окисляются или залипают. Попробуйте временно отключить разъем датчика подножки (обычно находится возле петли подножки) и проверьте искру.</p>
+
+<p>Аналогичная ситуация с датчиком стоп-сигнала. В некоторых схемах неисправный выключатель тормоза может замыкать цепь зажигания на массу. Отключите фишку от выключателя тормоза (находится на рычаге переднего тормоза или педали заднего) и проверьте, появилась ли искра.</p>
+
+<details class="pb-accordion"><summary>Как временно обойти датчики безопасности?</summary><div class="pb-accordion-body"><p>Для диагностики можно замкнуть контакты в разъеме датчика подножки перемычкой. Это имитирует поднятое положение подножки. Помните, что эксплуатация мопеда с отключенными датчиками безопасности запрещена и опасна!</p></div></details>
+
+<p>Если после отключения этих датчиков искра появилась, проблема не в системе зажигания, а в цепях управления безопасностью. Вам потребуется заменить выключатель или восстановить проводку, а не менять катушку или CDI.</p>
+
+<h2 id="особенности-проводки-и-массы-на-мопедах-racer">Особенности проводки и массы на мопедах Racer</h2>
+
+<p>Китайская мототехника славится своим специфическим подходом к сборке электропроводки. <strong>Плохая масса</strong> — это враг номер один для системы зажигания. Ток ищет путь наименьшего сопротивления, и если основной минусовой провод окислен, искра будет слабой или исчезнет совсем.</p>
+
+<p>Проверьте основной провод массы, идущий от двигателя к раме и аккумулятору. Зачистите контакты до блеска металла. Особое внимание уделите месту крепления двигателя к раме — через подушки двигатель может быть электрически изолирован от рамы, поэтому дополнительный провод массы обязателен.</p>
+
+<p>Проводка на <em>Racer</em> часто имеет тонкую изоляцию, которая плавится от близости к выпускному коллектору. Осмотрите жгут проводов в районе цилиндра. Если изоляция оплавлена и провода замкнули между собой, это может вывести из строя коммутатор.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка электрической части</h4><label class="check-item"><input type="checkbox"><span>Осмотреть все разъемы на окисление</span></label><label class="check-item"><input type="checkbox"><span>Проверить целостность предохранителя</span></label><label class="check-item"><input type="checkbox"><span>Зачистить контакт массы на раме</span></label><label class="check-item"><input type="checkbox"><span>Прозвонить цепь от замка зажигания до CDI</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<p>Иногда проблема кроется в самом замке зажигания. Внутри него контакты могут подгореть, не подавая питание на систему зажигания. Попробуйте замкнуть провода, идущие к замку (обычно красный и черный), минуя его, чтобы исключить эту вероятность.</p>
+
+<h2 id="частые-вопросы-по-системе-зажигания">Частые вопросы по системе зажигания</h2>
+
+<details>
+<summary>Почему искра есть на выкрученной свече, но мопед не заводится?</summary>
+<p>Скорее всего, проблема не в зажигании, а в подаче топлива или компрессии. Искра на воздухе требует меньшего напряжения, чем искра в цилиндре под давлением. Также проверьте, не залита ли свеча бензином.</p>
+</details>
+
+<details>
+<summary>Можно ли поставить CDI от другого мопеда на Racer?</summary>
+<p>Можно, если совпадает количество контактов и тип зажигания (AC или DC). Однако угол опережения зажигания может отличаться, что приведет к потере мощности или перегреву двигателя. Лучше использовать оригинальные запчасти или качественные аналоги.</p>
+</details>
+
+<details>
+<summary>Как отличить AC-CDI от DC-CDI?</summary>
+<p>AC-CDI питается переменным током от генератора (обычно 2 провода питания). DC-CDI питается постоянным током 12В от аккумулятора (обычно 1 провод питания + масса). Путать их нельзя — устройство сгорит или не будет работать.</p>
+</details>
+
+<details>
+<summary>Искра пропадает после прогрева двигателя, в чем причина?</summary>
+<p>Это классический признак неисправности катушки зажигания или модуля CDI. При нагреве внутреннее сопротивление меняется, и возникает обрыв цепи. Также возможно тепловое расширение контактов в разъемах.</p>
+</details>
+
+<details>
+<summary>Влияет ли уровень заряда аккумулятора на искру?</summary>
+<p>На системе AC-CDI аккумулятор не влияет на искру вообще (двигатель заведется и без АКБ). На системе DC-CDI слабый аккумулятор может давать слабую искру, но обычно стартер не крутит раньше, чем пропадет искра.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kakoj-skuter-kupit-do-50-kubov.html" class="pb-related-card">
+                <span class="pb-related-title">Какой скутер до 50 кубов выбрать в 2026: ТОП-10 моделей и советы эксперта</span>
+                <span class="pb-related-desc">Ищем лучший скутер до 50 кубов: сравнение цен, характеристик и отзывов. Какой бренд выбрать — Honda,</span>
+            </a><a href="/articles/k/ka/kak-sobrat-moped-delta.html" class="pb-related-card">
+                <span class="pb-related-title">Как собрать мопед Дельта: пошаговая инструкция с фото и схемами</span>
+                <span class="pb-related-desc">Подробное руководство по сборке мопеда Дельта своими руками: от распаковки до первого запуска. Схемы</span>
+            </a><a href="/articles/p/po/pochemu-proskalzyvaet-kikstarter-na-alfe.html" class="pb-related-card">
+                <span class="pb-related-title">Почему проскальзывает кикстартер на Альфе: причины и ремонт</span>
+                <span class="pb-related-desc">Подробный разбор причин проскальзывания кикстартера на мопеде Альфа. Диагностика, ремонт, замена хра</span>
+            </a><a href="/articles/k/ka/kak-razbortirovat-koleso-na-skutere-svoimi-rukami.html" class="pb-related-card">
+                <span class="pb-related-title">Как разбортировать колесо скутера: инструкция своими руками</span>
+                <span class="pb-related-desc">Пошаговое руководство по разбортовке колеса скутера. Инструменты, техники работы с камерой и шиной, </span>
+            </a><a href="/articles/s/sk/skuter-vento-retro-150-otzyvy-vladeltsev.html" class="pb-related-card">
+                <span class="pb-related-title">Скутер Vento Retro 150: отзывы владельцев и опыт эксплуатации</span>
+                <span class="pb-related-desc">Подробный обзор скутера Vento Retro 150 на основе отзывов реальных владельцев. Надежность двигателя,</span>
+            </a><a href="/articles/m/mo/moped-delta-s-moto-lifan-otzyvy.html" class="pb-related-card">
+                <span class="pb-related-title">Мопед Дельта с двигателем Lifan: честные отзывы владельцев и обзор</span>
+                <span class="pb-related-desc">Подробный обзор мопеда Дельта с мотором Лифан. Реальные отзывы, технические характеристики, плюсы и </span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🏍️ Мото Гид</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a> · <a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a> · <a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a> · <a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a> · <a href="/category/remont-dvigatelej/">🔧 Ремонт Двигателей</a> · <a href="/category/elektrika-i-provodka/">⚡ Электрика и Проводка</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мото Гид. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🏍️</text></svg>">
+    <title>Схема проводки Kayo T2 MX: диагностика и ремонт электрики — Мото Гид</title>
+    <meta name="description" content="Полное руководство по схеме проводки Kayo T2 MX. Как проверить генератор, CDI, катушку зажигания и устранить неисправности электросистемы питбайка.">
+    <link rel="canonical" href="https://moto-gid.vercel.app/articles/s/sk/skhema-provodki-kayo-t2-mx.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Схема проводки Kayo T2 MX: диагностика и ремонт электрики">
+    <meta property="og:description" content="Полное руководство по схеме проводки Kayo T2 MX. Как проверить генератор, CDI, катушку зажигания и устранить неисправности электросистемы питбайка.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780130877">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🏍️</span>
+                <span class="pb-logo-text">Мото Гид</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/mopedy-i-skutery/" class="pb-dropdown-item">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/" class="pb-dropdown-item">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/" class="pb-dropdown-item">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/" class="pb-dropdown-item">📐 Самоделки и Чертежи</a>
+<a href="/category/remont-dvigatelej/" class="pb-dropdown-item">🔧 Ремонт Двигателей</a>
+<a href="/category/elektrika-i-provodka/" class="pb-dropdown-item">⚡ Электрика и Проводка</a>
+<a href="/category/zakony-i-prava/" class="pb-dropdown-item">⚖️ Законы и Права</a>
+<a href="/category/raskhodniki-i-masla/" class="pb-dropdown-item">🛢️ Расходники и Масла</a>
+<a href="/category/tyuning-i-modernizatsiya/" class="pb-dropdown-item">🚀 Тюнинг и Модернизация</a>
+<a href="/category/elektromototekhnika/" class="pb-dropdown-item">🔋 Электромототехника</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/elektrika-i-provodka/">Электрика и Проводка</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Схема проводки Kayo T2 MX: диагностика и ремонт электрики</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#общая-архитектура-электросистемы-kayo-t2">Общая архитектура электросистемы Kayo T2</a></li><li><a href="#генератор-и-система-зажигания-принцип-работы">Генератор и система зажигания: принцип работы</a></li><li><a href="#коммутатор-cdi-и-катушка-зажигания">Коммутатор CDI и катушка зажигания</a></li><li><a href="#замок-зажигания-и-блокировка-двигателя">Замок зажигания и блокировка двигателя</a></li><li><a href="#осветительное-оборудование-и-вспомогательные-цепи">Осветительное оборудование и вспомогательные цепи</a></li><li><a href="#типичные-неисправности-и-методы-их-устранения">Типичные неисправности и методы их устранения</a></li><li><a href="#faq-часто-задаваемые-вопросы-по-электрике-kayo-t2">FAQ: Часто задаваемые вопросы по электрике Kayo T2</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/r/re/rele-sveta-indigo-shtorm.html">Реле света Indigo Storm: выбор, установка и ремонт для мототехники</a></li><li><a href="/articles/k/ka/kak-sdelat-provodku-na-skutere.html">Проводка на скутере: схема, подключение и ремонт своими руками</a></li><li><a href="/articles/n/ne/ne-shuntiruyushchij-regulyator-napryazheniya-skhema.html">Не шунтирующий регулятор напряжения: схема, принцип работы и ремонт</a></li><li><a href="/articles/r/re/rele-povorotov-na-skutere.html">Реле поворотов на скутере: как проверить, заменить и выбрать</a></li><li><a href="/articles/k/ka/kak-podklyuchit-fso-s-tremya-provodami.html">Как подключить ФСО: схема 3-х проводного реле для авто</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Схема проводки Kayo T2 MX: полный разбор и диагностика</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#общая-архитектура-электросистемы-kayo-t2">Общая архитектура электросистемы Kayo T2</a></li><li><a href="#генератор-и-система-зажигания-принцип-работы">Генератор и система зажигания: принцип работы</a></li><li><a href="#коммутатор-cdi-и-катушка-зажигания">Коммутатор CDI и катушка зажигания</a></li><li><a href="#замок-зажигания-и-блокировка-двигателя">Замок зажигания и блокировка двигателя</a></li><li><a href="#осветительное-оборудование-и-вспомогательные-цепи">Осветительное оборудование и вспомогательные цепи</a></li><li><a href="#типичные-неисправности-и-методы-их-устранения">Типичные неисправности и методы их устранения</a></li><li><a href="#faq-часто-задаваемые-вопросы-по-электрике-kayo-t2">FAQ: Часто задаваемые вопросы по электрике Kayo T2</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Электросистема современного питбайка — это не просто набор проводов, а сложный организм, обеспечивающий запуск двигателя, искрообразование и освещение. Владельцы модели <em>Kayo T2 MX</em> часто сталкиваются с необходимостью разобраться в проводке, особенно когда двигатель отказывается запускаться или перестает работать свет. Понимание того, как соединены узлы между собой, является ключом к быстрому устранению неполадок без обращения в сервис.</p>
+
+<p>Схема проводки на этой модели базируется на классической системе CDI с магдино-генератором переменного тока. Несмотря на кажущуюся простоту, путаница в цветовой маркировке проводов или незнание назначения контактов может привести к выходу из строя дорогостоящих компонентов, таких как коммутатор или катушка зажигания. В этой статье мы детально разберем каждый узел электрической цепи питбайка.</p>
+
+<p>Прежде чем приступать к ремонту, важно осознать, что электрика не терпит спешки. Любое вмешательство в <strong>схему проводки</strong> должно начинаться с отключения массы или проверки наличия напряжения. Неправильное соединение плюса и минуса может мгновенно сжечь полупроводниковые элементы. Давайте последовательно пройдемся по всем элементам системы.</p>
+
+<h2 id="общая-архитектура-электросистемы-kayo-t2">Общая архитектура электросистемы Kayo T2</h2>
+
+<p>Основой энергоснабжения в <em>Kayo T2 MX</em> служит генератор переменного тока, расположенный под крышкой статора. Он не имеет аккумулятора в базовой комплектации, поэтому вся энергия потребляется непосредственно в момент выработки. Система работает по принципу"включил — работает", что накладывает определенные требования к исправности всех соединений.</p>
+
+<p>Центральным элементом управления является блок CDI (коммутатор). Именно он получает сигнал от датчика положения коленвала и в нужный момент подает высокое напряжение на катушку. Если <strong>сигнал от генератора</strong> не поступает или имеет неправильную форму, искры не будет, и двигатель не запустится. Важно понимать разницу между силовыми цепями и цепями управления.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Никогда не замыкайте провода генератора на массу при работающем двигателе. Это приведет к мгновенному пробою обмоток статора и выходу генератора из строя.</p>
+</blockquote>
+
+<p>Проводка на раме питбайка обычно собрана в жгуты и защищена гофрой или изолентой. Однако в местах выхода из рамы к двигателю изоляция часто перетирается. Особое внимание следует уделять участкам возле рулевой колонки и под седлом, где вибрация максимальна. Регулярный визуальный осмотр жгутов помогает предотвратить внезапные отказы на трассе.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед разборкой пластика сфотографируйте расположение всех разъемов. Цвета проводов могут отличаться в разных партиях, и фото поможет собрать всё обратно правильно.</p></aside>
+
+<h2 id="генератор-и-система-зажигания-принцип-работы">Генератор и система зажигания: принцип работы</h2>
+
+<p>Генератор на <em>Kayo T2</em> выдает переменный ток, который поступает непосредственно на CDI. В отличие от автомобильных систем, здесь нет выпрямителя для зарядки АКБ, так как батарея отсутствует. Обмотка освещения также питает фару напрямую, из-за чего яркость света зависит от оборотов двигателя.</p>
+
+<p>Для диагностики генератора необходимо знать сопротивление его обмоток. Обычно используется мультиметр в режиме измерения сопротивления (Ом). Нормальные значения могут варьироваться, но критически важно отсутствие обрыва или замыкания на корпус. Если <strong>сопротивление обмотки</strong> бесконечно велико, значит, провод перегорел.</p>
+
+<p>Датчик зажигания (триггер) генерирует импульс, синхронизирующий искру с положением поршня. Зазор между датчиком и маховиком должен быть строго регламентирован. Слишком большой зазор приведет к слабому сигналу, а слишком маленький — к механическому повреждению датчика при вращении ротора.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Цвет провода</th>
+<th>Назначение</th>
+<th>Тип тока</th>
+<th>Нормальное сопротивление</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Зеленый/Белый</td>
+<td>Зарядка CDI (Искра)</td>
+<td>Переменный</td>
+<td>80-150 Ом</td>
+</tr>
+<tr>
+<td>Желтый</td>
+<td>Фара (Свет)</td>
+<td>Переменный</td>
+<td>0.1-0.5 Ом</td>
+</tr>
+<tr>
+<td>Черный/Белый</td>
+<td>Масса (Стоп)</td>
+<td>-</td>
+<td>0 Ом (на массу)</td>
+</tr>
+<tr>
+<td>Синий/Белый</td>
+<td>Датчик положения</td>
+<td>Импульс</td>
+<td>100-200 Ом</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Проверка генератора должна проводиться комплексно. Недостаточно просто прозвонить провода, нужно убедиться в отсутствии межвиткового замыкания, которое может проявляться только под нагрузкой или при нагреве. Если двигатель глохнет после прогрева, проблема часто кроется именно в стареющей изоляции обмоток статора.</p>
+
+<div class="pb-poll" id="poll-98e2dfd8"><div class="pb-poll-question">📊 Сталкивались ли вы с проблемой пропадания искры на горячую?</div><div class="pb-poll-option" data-poll="98e2dfd8" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Да, постоянно</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="98e2dfd8" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Было пару раз</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="98e2dfd8" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Никогда не было</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="98e2dfd8" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Есть другие проблемы</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="коммутатор-cdi-и-катушка-зажигания">Коммутатор CDI и катушка зажигания</h2>
+
+<p>Коммутатор <em>CDI</em> — это"мозг" системы зажигания. Он накапливает энергию в конденсаторе и разряжает её на первичную обмотку катушки зажигания в строго определенный момент. На Kayo T2 MX часто устанавливаются универсальные блоки, которые могут отличаться распиновкой от заводских. При замене важно сверять <strong>схему подключения</strong>, а не только цвет проводов.</p>
+
+<p>Катушка зажигания трансформирует низкое напряжение в высокое (до 20 000 Вольт), необходимое для пробоя зазора свечи. Высоковольтный провод должен быть надежно зафиксирован в колпачке свечи. Окисление контакта внутри колпачка — частая причина нестабильной работы мотора на высоких оборотах.</p>
+
+<p>Диагностика катушки проста: измеряется сопротивление первичной и вторичной обмоток. Если вторичная обмотка показывает обрыв, катушку необходимо заменить. Однако стоит помнить, что неисправный CDI может пробить и новую катушку, поэтому менять нужно осторожно, убедившись в исправности управляющего блока.</p>
+
+<details class="pb-accordion"><summary>Можно ли использовать автомобильную катушку?</summary><div class="pb-accordion-body"><p>Теоретически да, если совпадают параметры сопротивления и тип сигнала CDI. Но автомобильные катушки рассчитаны на постоянное напряжение и dwell-time, отличный от мотоциклетного CDI, что может привести к перегреву и слабому искрообразованию.</p></div></details>
+
+<p>Часто владельцы пытаются улучшить искру, устанавливая более мощные катушки. Это имеет смысл только при тюнинге двигателя и увеличении степени сжатия. Для стокового мотора <em>Kayo T2</em> штатной катушки вполне достаточно, а проблемы с искрой обычно вызваны плохим контактом или слабым генератором.</p>
+
+<h2 id="замок-зажигания-и-блокировка-двигателя">Замок зажигания и блокировка двигателя</h2>
+
+<p>Замок зажигания на питбайках выполняет функцию блокировки системы зажигания путем замыкания цепи на массу. В положении"OFF" провод блокировки (обычно черно-белый) соединяется с рамой, что не дает CDI формировать искру. Это самая простая и надежная схема защиты от угона.</p>
+
+<p>Если двигатель не заводится, часто виноват именно замок или провод, идущий к нему. Провод мог перетереться о раму и постоянно"глушить" зажигание. Для проверки можно временно отключить разъем замка зажигания. Если искра появилась — проблема в замке или проводке до него.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> При проверке замка зажигания не оставляйте разъем отключенным постоянно без установки тумблера. Вы рискуете забыть выключить зажигание, и двигатель не заглохнет при выключении ключа.</p>
+</blockquote>
+
+<p>Многие райдеры заменяют штатный ключ на удобный тумблер"масса". Это упрощает эксплуатацию, особенно если ключ потерялся. При установке тумблера используйте провод достаточного сечения и надежно изолируйте соединения, чтобы влага не вызвала коррозию контактов.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Диагностика цепи блокировки</h4><label class="check-item"><input type="checkbox"><span>Осмотреть провод до замка на предмет перетирания</span></label><label class="check-item"><input type="checkbox"><span>Прозвонить замок в положении OFF (должен звониться)</span></label><label class="check-item"><input type="checkbox"><span>Прозвонить замок в положении ON (не должен звониться)</span></label><label class="check-item"><input type="checkbox"><span>Проверить контакт массы на раме</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="осветительное-оборудование-и-вспомогательные-цепи">Осветительное оборудование и вспомогательные цепи</h2>
+
+<p>Свет на <em>Kayo T2 MX</em> работает напрямую от генератора. Это означает, что на холостых оборотах фара может светить тускло, а на высоких — ярко. Лампы накаливания в таких условиях часто перегорают из-за скачков напряжения при резком открытии дросселя.</p>
+
+<p>Рекомендуется замена штатных ламп на светодиодные элементы, но с осторожностью. Некоторые LED-фары требуют стабильного напряжения и могут мерцать или не работать от переменного тока генератора без выпрямителя. Если вы ставите светодиоды, убедитесь, что они предназначены для работы в сетях переменного тока (AC).</p>
+
+<p>Стоп-сигнал обычно запитан от отдельной обмотки или через простой механический датчик, замыкающий цепь на массу при нажатии педали тормоза. Проверка стоп-сигнала важна не только для безопасности, но и для диагностики общей целостности цепи освещения.</p>
+
+<p>Проводка фары часто проходит через рулевую колонку, где она подвергается постоянному изгибу. Со временем медные жилы ломаются внутри изоляции. Внешне провод выглядит целым, но света нет. Прозвонка цепи от генератора до разъема фары помогает выявить такой скрытый обрыв.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Световое оборудование питбайка работает без аккумулятора, поэтому яркость света напрямую зависит от оборотов двигателя. Установка мощных ламп может перегрузить обмотку генератора.</p></aside>
+
+<h2 id="типичные-неисправности-и-методы-их-устранения">Типичные неисправности и методы их устранения</h2>
+
+<p>Самая распространенная проблема — пропадание искры. В 80% случаев виноват не CDI, а плохой контакт массы или окислившийся разъем. Вибрация питбайка постепенно ослабляет соединения. Протяжка всех доступных болтов и зачистка контактов часто решает проблему лучше покупки новых запчастей.</p>
+
+<p>Второй по частоте случай — пробой высоковольтного провода на корпус. Трещина в изоляции позволяет искре уходить на раму, не доходя до свечи. В темное время суток это можно увидеть как синее свечение в районе катушки или колпачка. Ремонт заключается в замене провода или полной замене катушки.</p>
+
+<p>Если стартер (электростартер) работает медленно или не крутит вовсе, проблема кроется в реле стартера или окислении клемм аккумулятора (если модель оснащена АКБ). На кик-стартерных версиях проблема может быть в механической части, но если есть кнопка запуска, проверяйте силовые контакты.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> При использовании"прикуривания" от другого аккумулятора соблюдайте полярность. Обратная полярность мгновенно выведет из строя выпрямитель-стабилизатор и CDI.</p>
+</blockquote>
+
+<p>Иногда встречается ситуация, когда двигатель заводится и сразу глохнет. Это характерный признак неисправности датчика нейтральной передачи или датчика подножки, если они предусмотрены конструкцией и подключены к цепи блокировки. Отключение этих датчиков для проверки помогает локализовать.</p>
+
+<h2 id="faq-часто-задаваемые-вопросы-по-электрике-kayo-t2">FAQ: Часто задаваемые вопросы по электрике Kayo T2</h2>
+
+<details>
+<summary>Можно ли установить аккумулятор на Kayo T2 MX?</summary>
+<p>Да, это возможно, но потребует установки выпрямителя-стабилизатора (регулятора напряжения). Штатный генератор выдает переменный ток, который нужно преобразовать в постоянный для зарядки АКБ. Также потребуется переделать схему освещения, чтобы свет работал от аккумулятора, а не напрямую от генератора.</p>
+</details>
+
+<details>
+<summary>Почему сгорает лампочка фары после замены?</summary>
+<p>Скорее всего, вы установили обычную лампу накаливания, которая не выдерживает скачков напряжения от генератора на высоких оборотах. Попробуйте использовать светодиодную фару со встроенным драйвером, рассчитанным на переменный ток, или установите стабилизатор напряжения.</p>
+</details>
+
+<details>
+<summary>Как проверить исправность CDI без замены?</summary>
+<p>Проверить CDI мультиметром практически невозможно, так как это сложный электронный блок. Единственный надежный способ — метод исключения. Убедитесь в исправности свечи, катушки, генератора и проводки. Если все компоненты в норме, а искры нет — вероятнее всего, неисправен CDI.</p>
+</details>
+
+<details>
+<summary>Какой зазор свечи зажигания оптимален для Kayo T2?</summary>
+<p>Для двигателей такого объема оптимальный зазор составляет 0.6–0.7 мм. Слишком большой зазор потребует более высокого напряжения для пробоя, что может быть критично при слабой зарядке генератора. Слишком маленький зазор даст слабую искру, ухудшающую сгорание смеси.</p>
+</details>
+
+<details>
+<summary>Можно ли использовать проводку от другой модели питбайка?</summary>
+<p>Можно, но только при условии совпадения типа генератора (AC/DC), расположения разъемов и логики работы замка зажигания. Часто требуется перепаивать фишки под свои разъемы. Главное — соблюдать соответствие цветов проводов их назначению, а не надеяться на стандарты производителя.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/r/re/rele-sveta-indigo-shtorm.html" class="pb-related-card">
+                <span class="pb-related-title">Реле света Indigo Storm: выбор, установка и ремонт для мототехники</span>
+                <span class="pb-related-desc">Подробный гайд по реле света Indigo Storm: как выбрать, установить и отремонтировать для мопедов, ск</span>
+            </a><a href="/articles/k/ka/kak-sdelat-provodku-na-skutere.html" class="pb-related-card">
+                <span class="pb-related-title">Проводка на скутере: схема, подключение и ремонт своими руками</span>
+                <span class="pb-related-desc">Пошаговая инструкция по замене и ремонту электропроводки на скутере: схемы подключения, выбор провод</span>
+            </a><a href="/articles/n/ne/ne-shuntiruyushchij-regulyator-napryazheniya-skhema.html" class="pb-related-card">
+                <span class="pb-related-title">Не шунтирующий регулятор напряжения: схема, принцип работы и ремонт</span>
+                <span class="pb-related-desc">Подробный разбор не шунтирующего регулятора напряжения. Схемы, принцип действия, отличия от шунтирую</span>
+            </a><a href="/articles/r/re/rele-povorotov-na-skutere.html" class="pb-related-card">
+                <span class="pb-related-title">Реле поворотов на скутере: как проверить, заменить и выбрать</span>
+                <span class="pb-related-desc">Подробное руководство по диагностике, ремонту и выбору реле поворотов для скутера. Схемы подключения</span>
+            </a><a href="/articles/k/ka/kak-podklyuchit-fso-s-tremya-provodami.html" class="pb-related-card">
+                <span class="pb-related-title">Как подключить ФСО: схема 3-х проводного реле для авто</span>
+                <span class="pb-related-desc">Подробная инструкция по подключению 3-контактного реле ФСО. Схемы, маркировка выводов, правила безоп</span>
+            </a><a href="/articles/e/el/elektronnaya-pribornaya-panel-na-alfu.html" class="pb-related-card">
+                <span class="pb-related-title">Электронная приборная панель на Альфу: выбор, установка, настройка</span>
+                <span class="pb-related-desc">Как выбрать и установить цифровую приборку на Альфу (110, 126, 150cc). Обзор моделей, схемы подключе</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🏍️ Мото Гид</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a> · <a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a> · <a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a> · <a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a> · <a href="/category/remont-dvigatelej/">🔧 Ремонт Двигателей</a> · <a href="/category/elektrika-i-provodka/">⚡ Электрика и Проводка</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мото Гид. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

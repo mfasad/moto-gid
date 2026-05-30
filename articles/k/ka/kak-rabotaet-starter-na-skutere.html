@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🏍️</text></svg>">
+    <title>Как работает стартер на скутере: схема, устройство и ремонт — Мото Гид</title>
+    <meta name="description" content="Подробный разбор работы электростартера скутера. Принципиальная схема, устройство узла, диагностика неисправностей и ремонт бендикса своими руками.">
+    <link rel="canonical" href="https://moto-gid.vercel.app/articles/k/ka/kak-rabotaet-starter-na-skutere.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как работает стартер на скутере: схема, устройство и ремонт">
+    <meta property="og:description" content="Подробный разбор работы электростартера скутера. Принципиальная схема, устройство узла, диагностика неисправностей и ремонт бендикса своими руками.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780130877">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🏍️</span>
+                <span class="pb-logo-text">Мото Гид</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/mopedy-i-skutery/" class="pb-nav-active">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/mopedy-i-skutery/" class="pb-dropdown-item">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/" class="pb-dropdown-item">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/" class="pb-dropdown-item">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/" class="pb-dropdown-item">📐 Самоделки и Чертежи</a>
+<a href="/category/remont-dvigatelej/" class="pb-dropdown-item">🔧 Ремонт Двигателей</a>
+<a href="/category/elektrika-i-provodka/" class="pb-dropdown-item">⚡ Электрика и Проводка</a>
+<a href="/category/zakony-i-prava/" class="pb-dropdown-item">⚖️ Законы и Права</a>
+<a href="/category/raskhodniki-i-masla/" class="pb-dropdown-item">🛢️ Расходники и Масла</a>
+<a href="/category/tyuning-i-modernizatsiya/" class="pb-dropdown-item">🚀 Тюнинг и Модернизация</a>
+<a href="/category/elektromototekhnika/" class="pb-dropdown-item">🔋 Электромототехника</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/mopedy-i-skutery/">Мопеды и Скутеры</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как работает стартер на скутере: схема, устройство и ремонт</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#общая-схема-электрической-цепи-запуска">Общая схема электрической цепи запуска</a></li><li><a href="#устройство-и-принцип-действия-электромотора">Устройство и принцип действия электромотора</a></li><li><a href="#механика-работы-бендикса-и-обгонной-муфты">Механика работы бендикса и обгонной муфты</a></li><li><a href="#диагностика-неисправностей-системы-запуска">Диагностика неисправностей системы запуска</a></li><li><a href="#ремонт-и-обслуживание-узла-своими-руками">Ремонт и обслуживание узла своими руками</a></li><li><a href="#влияние-температуры-и-сезонная-эксплуатация">Влияние температуры и сезонная эксплуатация</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/s/sk/skuter-stels-skif-50-2t.html">Скутер Стелс Скиф 50 2т: обзор, ремонт и характеристики</a></li><li><a href="/articles/m/mo/moped-alfa-ne-nabiraet-oboroty.html">Мопед Альфа не набирает обороты: причины и ремонт</a></li><li><a href="/articles/a/at/atv-300-buyang-fah300.html">ATV 300 Buyang FAH300: обзор, характеристики и ремонт</a></li><li><a href="/articles/l/lu/luchshij-kruizer-dlya-goroda.html">Лучший круизер для города: выбор мотоцикла в 2026 году</a></li><li><a href="/articles/k/ka/kak-ekhat-na-skutere.html">Как ехать на скутере: инструкция для новичка и правила безопасности</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Принцип работы и устройство электростартера скутера</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#общая-схема-электрической-цепи-запуска">Общая схема электрической цепи запуска</a></li><li><a href="#устройство-и-принцип-действия-электромотора">Устройство и принцип действия электромотора</a></li><li><a href="#механика-работы-бендикса-и-обгонной-муфты">Механика работы бендикса и обгонной муфты</a></li><li><a href="#диагностика-неисправностей-системы-запуска">Диагностика неисправностей системы запуска</a></li><li><a href="#ремонт-и-обслуживание-узла-своими-руками">Ремонт и обслуживание узла своими руками</a></li><li><a href="#влияние-температуры-и-сезонная-эксплуатация">Влияние температуры и сезонная эксплуатация</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Запуск двигателя с кнопки — это одна из ключевых опций комфорта на современном мопеде, отличающая его от старых велосипедов с педалями или простых мотоциклов с кик-стартером. Многие райдеры воспринимают возможность завести <em>скутер</em> одним нажатием как данность, не задумываясь о сложной цепочке процессов, происходящих под пластиком в этот момент.</p>
+
+<p>Однако, когда механизм отказывает, понимание того, как именно работает система запуска, становится критически важным для быстрой диагностики. Вместо хаотичной замены деталей наугад, мастер, знающий теорию, может за несколько минут локализовать проблему: в аккумуляторе, в кнопке, в самом моторчике или в механической части привода.</p>
+
+<p>В этой статье мы детально разберем анатомию <strong>электростартера</strong>, рассмотрим электрическую схему его подключения и изучим нюансы работы бендикса. Эти знания помогут вам самостоятельно устранить распространенные неисправности и продлить жизнь узлу.</p>
+
+<h2 id="общая-схема-электрической-цепи-запуска">Общая схема электрической цепи запуска</h2>
+
+<p>Система запуска современного скутера представляет собой последовательную цепь, где каждый элемент играет роль предохранителя или переключателя. Сигнал от кнопки запуска не идет напрямую на мощный мотор стартера, так как это создало бы огромную нагрузку на тонкие провода руля и саму кнопку.</p>
+
+<p>Вместо этого используется промежуточное звено — <strong>реле стартера</strong> (часто называемое соленоидом). Когда вы нажимаете кнопку на руле, слабый ток поступает на обмотку реле, замыкая его внутренние контакты. Только после этого мощный ток от аккумулятора напрямую подается на электромотор.</p>
+
+<p>Безопасность системы обеспечивают концевые выключатели. Двигатель не запустится, если не соблюдены условия безопасности: рычаг заднего тормоза должен быть выжат, а вариатор (трансмиссия) должен находиться в нейтральном положении. Это предотвращает резкий рывок скутера вперед при запуске.</p>
+
+<blockquote>⚠️ Внимание: Никогда не замыкайте контакты реле стартера отверткой для проверки, если скутер стоит на передаче или без выжатого тормоза. Мгновенный рывок может привести к травме или падению техники.</blockquote>
+
+<p>Для понимания путей прохождения тока полезно знать стандартную последовательность. Ток движется от плюсовой клеммы <em>аккумулятора</em> через главный предохранитель к реле. Управление реле осуществляется через цепь: кнопка старта → концевик тормоза → концевик нейтрали → масса.</p>
+
+<details class="pb-accordion"><summary>Почему горит предохранитель?</summary><div class="pb-accordion-body"><p>Если при нажатии кнопки старта мгновенно сгорает предохранитель, это указывает на короткое замыкание в силовой цепи. Чаще всего виноват сам мотор стартера, у которого замкнули обмотки якоря, или оплавленные контакты реле, слипшиеся в замкнутое положение.</p></div></details>
+
+<h2 id="устройство-и-принцип-действия-электромотора">Устройство и принцип действия электромотора</h2>
+
+<p>Сердцем системы является сам электродвигатель постоянного тока. Внутри пластикового или алюминиевого корпуса скрыты два основных компонента: неподвижный статор с постоянными магнитами и вращающийся якорь (ротор) с обмотками.</p>
+
+<p>Передача тока на вращающийся якорь осуществляется через <strong>коллектор</strong> и <strong>щеточный узел</strong>. Графитовые щетки прижимаются пружинами к медным ламелям коллектора, обеспечивая скользящий контакт. Именно здесь чаще всего возникают проблемы в процессе длительной эксплуатации.</p>
+
+<ul>
+    <li>🔋 <strong>Статор</strong>: содержит мощные магниты, создающие постоянное магнитное поле.</li>
+    <li>⚙️ <strong>Якорь</strong>: металлический вал с намотанными медными обмотками, который вращается под действием электромагнитных сил.</li>
+    <li>🖌️ <strong>Щетки</strong>: расходный материал из графита, передающий энергию на якорь и подверженный естественному износу.</li>
+</ul>
+
+<p>При подаче напряжения якорь начинает вращаться с высокой скоростью, создавая необходимый крутящий момент. Однако сам по себе мотор не может зацепить коленвал двигателя — для этого нужен специальный механический узел, называемый бендиксом.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>При разборке стартера обязательно пометьте положение крышки относительно корпуса. Неправильная сборка может привести к смещению щеток и быстрому выходу узла из строя.</p></aside>
+
+<h2 id="механика-работы-бендикса-и-обгонной-муфты">Механика работы бендикса и обгонной муфты</h2>
+
+<p>Бендикс — это гениальное в своей простоте устройство, которое передает вращение от стартера к двигателю только в одну сторону. Его главная задача — зацепить шестерней венец маховика для прокрутки двигателя и мгновенно отцепиться, когда двигатель завелся и начал вращаться быстрее стартера.</p>
+
+<p>Конструктивно бендикс представляет собой шестерню, насаженную на вал якоря через спиральные шлицы или винтовую нарезку. Внутри шестерни находятся подпружиненные ролики или сухари, заклинивающиеся в специальном корпусе при вращении в рабочем направлении.</p>
+
+<p>Когда вы нажимаете кнопку старта, якорь вращается, и инерция или винтовая нарезка выталкивает шестерню бендикса вперед. Она входит в зацепление с зубчатым венцом на маховике двигателя. Как только двигатель «схватывает» и начинает работать самостоятельно, его обороты превышают обороты стартера.</p>
+
+<p>В этот момент срабатывает эффект <strong>обгонной муфты</strong>. Ролики внутри бендикса расклиниваются, позволяя шестерне вращаться быстрее вала стартера или просто проскальзывать. Это защищает электромотор от разрушительных нагрузок и сверхвысоких оборотов, которые возникли бы, если бы он жестко соединялся с работающим ДВС.</p>
+
+<div class="pb-table-wrap"><table>
+    <thead>
+        <tr>
+            <th>Компонент</th>
+            <th>Функция</th>
+            <th>Частая неисправность</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Шестерня бендикса</td>
+            <td>Зацепление с маховиком</td>
+            <td>Слизывание зубьев, заклинивание</td>
+        </tr>
+        <tr>
+            <td>Ролики/Сухари</td>
+            <td>Блокировка вращения</td>
+            <td>Износ, потеря упругости пружин</td>
+        </tr>
+        <tr>
+            <td>Вилка толкатель</td>
+            <td>Выдвижение шестерни</td>
+            <td>Излом пластикового наконечника</td>
+        </tr>
+        <tr>
+            <td>Втулки вала</td>
+            <td>Центровка якоря</td>
+            <td>Выработка, перекос вала</td>
+        </tr>
+    </tbody>
+</table></div>
+
+<div class="pb-poll" id="poll-0330b732"><div class="pb-poll-question">📊 С какой проблемой при запуске вы сталкивались чаще всего?</div><div class="pb-poll-option" data-poll="0330b732" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Стартер щелкает, но не крутит</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="0330b732" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Стартер крутит, но двигатель не схватывает</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="0330b732" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Полное отсутствие реакции</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="0330b732" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Периодические отказы</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="диагностика-неисправностей-системы-запуска">Диагностика неисправностей системы запуска</h2>
+
+<p>Поиск причины отказа следует начинать с самого простого — проверки напряжения в бортовой сети. Слабый аккумулятор является виновником 80% проблем со стартером. Даже если фары горят ярко, пусковой ток может быть недостаточным для прокрутки двигателя.</p>
+
+<p>Используйте мультиметр для замера напряжения на клеммах АКБ при попытке запуска. Если напряжение падает ниже 9-10 Вольт, аккумулятор требует зарядки или замены. Также проверьте состояние клемм: окисление создает высокое переходное сопротивление, «душа» стартер.</p>
+
+<p>Если аккумулятор исправен, перейдите к проверке цепи управления. Включите зажигание, выжмите тормоз и нажмите кнопку старта. Вы должны услышать отчетливый щелчок реле. Отсутствие щелчка указывает на проблему в кнопке, концевиках или самом реле.</p>
+
+<p>Характерный звук «трещотки» при попытке запуска часто указывает на износ <mark>венца маховика</mark> или шестерни бендикса. Зубья проскальзывают друг по другу, не передавая крутящий момент. В этом случае требуется разборка картера двигателя для замены венца.</p>
+
+<blockquote>⚠️ Внимание: Если стартер гудит и вращается, но двигатель стоит на месте, проблема на 99% механическая. Не пытайтесь «прогазовать» или долго крутить стартер — это сожжет обмотки, но не решит проблему зацепления.</blockquote>
+
+<h2 id="ремонт-и-обслуживание-узла-своими-руками">Ремонт и обслуживание узла своими руками</h2>
+
+<p>Обслуживание стартера не требует сложного оборудования и вполне по силам гаражному мастеру. Для начала необходимо демонтировать узел с двигателя, открутив обычно два или три болта крепления и отсоединив силовой провод.</p>
+
+<p>После снятия разберите корпус. Первым делом осмотрите <strong>щеточный узел</strong>. Если длина щеток менее 5 мм или они имеют глубокие сколы, их необходимо заменить. Зачистите коллектор якоря мелкой наждачной бумагой (нулевкой) до блеска, удалив нагар и окислы.</p>
+
+<p>Особое внимание уделите втулкам (подшипникам скольжения), в которых вращается вал якоря. Наличие люфта приводит к биению якоря, из-за чего он может задевать за магниты статора. При сильном износе втулки подлежат замене или развертыванию под ремонтный размер.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ План обслуживания стартера</h4><label class="check-item"><input type="checkbox"><span>Очистить корпус от грязи и масла</span></label><label class="check-item"><input type="checkbox"><span>Проверить длину и прижим щеток</span></label><label class="check-item"><input type="checkbox"><span>Зачистить коллектор якоря</span></label><label class="check-item"><input type="checkbox"><span>Смазать винтовую нарезку бендикса</span></label><label class="check-item"><input type="checkbox"><span>Проверить люфт вала во втулках</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<p>Смазка механических частей бендикса требует особого подхода. Используйте только термостойкие смазки, предназначенные для высоких нагрузок. Обычный литол на морозе может загустеть, помешав шестерне выйти в зацепление, а на жаре — вытечь.</p>
+
+<p>При сборке убедитесь, что уплотнительные кольца установлены правильно, чтобы внутрь мотора не попадала вода и пыль. Герметичность корпуса — залог долгой службы электрической части.</p>
+
+<h2 id="влияние-температуры-и-сезонная-эксплуатация">Влияние температуры и сезонная эксплуатация</h2>
+
+<p>Зимняя эксплуатация скутера накладывает дополнительные требования к системе запуска. Низкие температуры увеличивают вязкость моторного масла, создавая дополнительное сопротивление вращению коленвала.</p>
+
+<p>В таких условиях исправный стартер может не справиться с прокруткой двигателя, даже если аккумулятор полностью заряжен. Это связано с тем, что пусковой ток, потребляемый стартером, возрастает в разы, вызывая просадку напряжения.</p>
+
+<p>Рекомендуется перед зимним сезоном заменить масло на менее вязкое (если позволяет климат) и проверить плотность электролита в аккумуляторе. Хранение батареи в теплом помещении значительно облегчит утренние запуски.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Зимой эффективнее использовать кик-стартер для первичного прогрева двигателя, и только потом переходить на электростартер, когда масло станет жиже.</p></aside>
+
+<p>Летом главной проблемой становится перегрев. При частых попытках запуска (например, при поиске неисправности в системе зажигания) обмотки стартера могут перегреться. Дайте узлу остыть 5-10 минут перед продолжением работ.</p>
+
+<details>
+    <summary>Почему стартер крутит медленно даже с новым аккумулятором?</summary>
+    <p>Причина может быть в плохом контакте «массы» (минусового провода) на двигателе или раме. Окисление точек крепления проводов создает сопротивление, которое «ворует» мощность. Также возможен износ втулок якоря, создающий механическое трение.</p>
+</details>
+
+<details>
+    <summary>Можно ли завести скутер, если сломался электростартер?</summary>
+    <p>Да, абсолютное большинство скутеров оснащены резервным кик-стартером (рычагом ножного запуска). Он имеет независимый механизм и позволит вам доехать до сервиса или дома, даже если электрическая система запуска полностью мертва.</p>
+</details>
+
+<details>
+    <summary>Как часто нужно менять щетки стартера?</summary>
+    <p>Ресурс щеток зависит от интенсивности эксплуатации и качества самих деталей. В среднем они служат от 15 до 30 тысяч километров. Проверку рекомендуется проводить при каждом втором ТО или если вы заметили снижение скорости вращения стартера.</p>
+</details>
+
+<details>
+    <summary>Что делать, если реле стартера постоянно щелкает?</summary>
+    <p>Быстрое щелканье реле (треск) обычно говорит о том, что аккумулятору не хватает тока, чтобы удержать контакты реле замкнутыми. При попытке пуска напряжение просаживается, реле размыкается, напряжение растет, и цикл повторяется. Зарядите или замените АКБ.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/s/sk/skuter-stels-skif-50-2t.html" class="pb-related-card">
+                <span class="pb-related-title">Скутер Стелс Скиф 50 2т: обзор, ремонт и характеристики</span>
+                <span class="pb-related-desc">Полный обзор скутера Stealth Skiff 50 2t. Технические характеристики, инструкции по ремонту, выбор з</span>
+            </a><a href="/articles/m/mo/moped-alfa-ne-nabiraet-oboroty.html" class="pb-related-card">
+                <span class="pb-related-title">Мопед Альфа не набирает обороты: причины и ремонт</span>
+                <span class="pb-related-desc">Почему мопед Альфа не едет или глохнет? Полный разбор причин: карбюратор, компрессия, вариатор. Инст</span>
+            </a><a href="/articles/a/at/atv-300-buyang-fah300.html" class="pb-related-card">
+                <span class="pb-related-title">ATV 300 Buyang FAH300: обзор, характеристики и ремонт</span>
+                <span class="pb-related-desc">Полный обзор квадроцикла ATV 300 Buyang FAH300. Технические характеристики, типичные неисправности, </span>
+            </a><a href="/articles/l/lu/luchshij-kruizer-dlya-goroda.html" class="pb-related-card">
+                <span class="pb-related-title">Лучший круизер для города: выбор мотоцикла в 2026 году</span>
+                <span class="pb-related-desc">Обзор лучших городских круизеров. Сравнение Yamaha Bolt, Honda Rebel и Indian Scout. Советы по выбор</span>
+            </a><a href="/articles/k/ka/kak-ekhat-na-skutere.html" class="pb-related-card">
+                <span class="pb-related-title">Как ехать на скутере: инструкция для новичка и правила безопасности</span>
+                <span class="pb-related-desc">Полное руководство: как научиться ездить на скутере, старт, торможение, повороты и экипировка. Совет</span>
+            </a><a href="/articles/k/ka/kakoe-maslo-lit-v-skuter-2t.html" class="pb-related-card">
+                <span class="pb-related-title">Какое масло лить в скутер 2т: выбор, пропорции и FAQ</span>
+                <span class="pb-related-desc">Полный гид по выбору масла для двухтактных скутеров. Вязкость, стандарты JASO, пропорции смеси и пос</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🏍️ Мото Гид</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a> · <a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a> · <a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a> · <a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a> · <a href="/category/remont-dvigatelej/">🔧 Ремонт Двигателей</a> · <a href="/category/elektrika-i-provodka/">⚡ Электрика и Проводка</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мото Гид. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🏍️</text></svg>">
+    <title>Электрическая схема проводки электровелосипеда SK8: разбор узлов — Мото Гид</title>
+    <meta name="description" content="Подробная инструкция по подключению проводки e-bike SK8. Схема контроллера, мотора, батареи и дисков. Диагностика поломок и безопасность.">
+    <link rel="canonical" href="https://moto-gid.vercel.app/articles/e/el/elektricheskaya-skhema-provodki-elektrovelosipede-sk8.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Электрическая схема проводки электровелосипеда SK8: разбор узлов">
+    <meta property="og:description" content="Подробная инструкция по подключению проводки e-bike SK8. Схема контроллера, мотора, батареи и дисков. Диагностика поломок и безопасность.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780130877">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🏍️</span>
+                <span class="pb-logo-text">Мото Гид</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/mopedy-i-skutery/" class="pb-dropdown-item">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/" class="pb-dropdown-item">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/" class="pb-dropdown-item">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/" class="pb-dropdown-item">📐 Самоделки и Чертежи</a>
+<a href="/category/remont-dvigatelej/" class="pb-dropdown-item">🔧 Ремонт Двигателей</a>
+<a href="/category/elektrika-i-provodka/" class="pb-dropdown-item">⚡ Электрика и Проводка</a>
+<a href="/category/zakony-i-prava/" class="pb-dropdown-item">⚖️ Законы и Права</a>
+<a href="/category/raskhodniki-i-masla/" class="pb-dropdown-item">🛢️ Расходники и Масла</a>
+<a href="/category/tyuning-i-modernizatsiya/" class="pb-dropdown-item">🚀 Тюнинг и Модернизация</a>
+<a href="/category/elektromototekhnika/" class="pb-dropdown-item">🔋 Электромототехника</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/elektromototekhnika/">Электромототехника</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Электрическая схема проводки электровелосипеда SK8: разбор узлов</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#общая-архитектура-бортовой-электросети">Общая архитектура бортовой электросети</a></li><li><a href="#подключение-аккумуляторной-батареи-и-силовые-линии">Подключение аккумуляторной батареи и силовые линии</a></li><li><a href="#схема-подключения-мотор-колеса-и-датчиков-холла">Схема подключения мотор-колеса и датчиков Холла</a></li><li><a href="#органы-управления-ручка-газа-тормоза-и-дисплей">Органы управления: ручка газа, тормоза и дисплей</a></li><li><a href="#таблица-цветовой-маркировки-проводов-контроллера">Таблица цветовой маркировки проводов контроллера</a></li><li><a href="#диагностика-неисправностей-и-поиск-обрывов">Диагностика неисправностей и поиск обрывов</a></li><li><a href="#меры-безопасности-при-работе-с-высоковольтными-цепями">Меры безопасности при работе с высоковольтными цепями</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/e/el/elektroskuter-sitikoko-kh7-pro.html">Электроскутер CityCoco X7 Pro: обзор характеристик, обзор и тест</a></li><li><a href="/articles/g/gi/giroskuter-skolko-derzhit-zaryad-po-vremeni.html">Сколько держит заряд гироскутер: время и километраж</a></li><li><a href="/articles/g/gi/giroskuter-gorit-krasnaya-lampochka-i-pishchit.html">Гироскутер пищит и горит красная лампочка: причины и ремонт</a></li><li><a href="/articles/g/gi/giroskuter-smart-balance-remont.html">Ремонт гироскутера Smart Balance: полное руководство 2026</a></li><li><a href="/articles/e/el/elektromoped-do-4-kvt.html">Электромопед до 4 кВт: выбор, законы и технические нюансы</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Электрическая схема проводки электровелосипеда SK8</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#общая-архитектура-бортовой-электросети">Общая архитектура бортовой электросети</a></li><li><a href="#подключение-аккумуляторной-батареи-и-силовые-линии">Подключение аккумуляторной батареи и силовые линии</a></li><li><a href="#схема-подключения-мотор-колеса-и-датчиков-холла">Схема подключения мотор-колеса и датчиков Холла</a></li><li><a href="#органы-управления-ручка-газа-тормоза-и-дисплей">Органы управления: ручка газа, тормоза и дисплей</a></li><li><a href="#таблица-цветовой-маркировки-проводов-контроллера">Таблица цветовой маркировки проводов контроллера</a></li><li><a href="#диагностика-неисправностей-и-поиск-обрывов">Диагностика неисправностей и поиск обрывов</a></li><li><a href="#меры-безопасности-при-работе-с-высоковольтными-цепями">Меры безопасности при работе с высоковольтными цепями</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Ремонт и обслуживание электровелосипеда <em>SK8</em> начинаются с глубокого понимания того, как взаимодействуют узлы в единой системе. Электрическая схема проводки электровелосипеде sk8 — это не просто набор цветных проводов, а карта, по которой энергия течет от источника к потребителю. Любая ошибка при подключении может привести к выходу из строя дорогостоящего оборудования, поэтому подходить к вопросу нужно с максимальной ответственностью.</p>
+
+<p>В данном руководстве мы разберем типовую архитектуру электропривода, характерную для моделей класса <em>e-skate</em> и переоборудованных велосипедов. Вы узнаете, как различать силовые линии от сигнальных, и поймете логику работы контроллера. Это знание позволит вам самостоятельно диагностировать неисправности без обращения в сервисный центр.</p>
+
+<h2 id="общая-архитектура-бортовой-электросети">Общая архитектура бортовой электросети</h2>
+
+<p>Основой любой электросистемы является <strong>контроллер</strong>, который выступает в роли мозга устройства. Именно он распределяет ток между аккумулятором и двигателем, реагируя на сигналы ручки газа и педалей. В модели <em>SK8</em> чаще всего используются контроллеры с полевыми транзисторами (MOSFET), способные выдерживать высокие пиковые токи.</p>
+
+<p>Схема строится по принципу замкнутого контура. Батарея отдает энергию, контроллер модулирует ее подачу, а мотор преобразует электричество в механическое вращение. При этом параллельно работают системы защиты: датчики Холла внутри мотора и предохранители в цепи питания. Нарушение целостности любого звена останавливает всю систему.</p>
+
+<p>Особое внимание стоит уделить сечению проводов. Силовые линии, идущие от батареи к контроллеру, должны быть максимально толстыми, чтобы минимизировать падение напряжения. Тонкие провода используются только для передачи управляющих сигналов, таких как данные с дисплея или тахометра.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Никогда не замыкайте силовые контакты батареи напрямую без нагрузки. Это вызовет мгновенный перегрев и может привести к возгоранию литиевых элементов.</p>
+</blockquote>
+
+<div class="pb-poll" id="poll-8a4c9fe8"><div class="pb-poll-question">📊 Какой тип батареи установлен на вашем электровелосипеде?</div><div class="pb-poll-option" data-poll="8a4c9fe8" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Li-Ion 18650</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="8a4c9fe8" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Li-Po (пакеты)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="8a4c9fe8" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Свинцово-кислотная</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="8a4c9fe8" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Не знаю, смотрю схему</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="подключение-аккумуляторной-батареи-и-силовые-линии">Подключение аккумуляторной батареи и силовые линии</h2>
+
+<p>Самый ответственный этап сборки — это подключение источника питания. На схеме электровелосипеда <em>SK8</em> батарея обозначается как высоковольтный узел. Обычно используются разъемы типа <code>XT60</code> или <code>XT90</code>, которые рассчитаны на большие токи разряда.</p>
+
+<p>Плюсовой провод (красный) и минусовой провод (черный) идут напрямую на вход контроллера. Между ними часто устанавливается главный выключатель питания. Если вы видите дополнительный толстый провод с предохранителем, это защита от короткого замыкания, которую нельзя игнорировать или заменять перемычкой.</p>
+
+<p>Важно проверить полярность перед окончательным соединением. Перепутать «плюс» и «минус» на входе контроллера — верный способ сжечь конденсаторы и транзисторы мгновенно. Используйте мультиметр в режиме прозвонки для проверки разъема батареи перед подключением к бортовой сети.</p>
+
+<pre><code>Проверка полярности мультиметром:
+<p>1. Установите переключатель на DC Voltage (20V или выше).</p>
+<p>2. Прикоснитесь красным щупом к предполагаемому "+", черным к "-".</p>
+<p>3. Если на экране положительное число — полярность верная.</p>
+<p>4. Если знак минус перед цифрами — щупы перепутаны.</code></pre></p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед пайкой новых разъемов обязательно залудите концы проводов и используйте термоусадку. Вибрация при езде быстро разрушает неизолированные соединения.</p></aside>
+
+<h2 id="схема-подключения-мотор-колеса-и-датчиков-холла">Схема подключения мотор-колеса и датчиков Холла</h2>
+
+<p>Мотор-колесо в системе <em>SK8</em> является трехфазной машиной. Для его работы контроллер должен подавать напряжение на три фазы в определенной последовательности. Это обеспечивается тремя толстыми проводами, обычно желтого, зеленого и синего цветов.</p>
+
+<p>Помимо силовых фаз, в жгуте проводов мотора находится тонкий разъем с 5 или 6 контактами. Это линия датчиков <strong>Холла</strong>. Они сообщают контроллеру точное положение ротора в каждый момент времени. Без этих сигналов мотор не запустится или будет дергаться на месте.</p>
+
+<p>Цветовая маркировка проводов датчиков Холла может отличаться у разных производителей. Стандартная расцветка включает красный (питание 5В), черный (земля) и три сигнальных провода (желтый, зеленый, синий). Если мотор гудит, но не крутится, проблема чаще всего кроется именно в этом узле.</p>
+
+<ul>
+<li>🔴 Красный провод датчиков: подает питание +5В от контроллера на сенсоры.</li>
+<li>⚫ Черный провод датчиков: является общим минусом (GND) для всей логики.</li>
+<li>🔵🟢🟡 Сигнальные провода: передают импульсы о положении магнитов ротора.</li>
+</ul>
+
+<blockquote>
+<p>⚠️ Внимание: Не пытайтесь вращать мотор руками при отключенном питании, если вы проверяете сопротивление обмоток. Генерация ЭДС может повредить чувствительную электронику контроллера.</p>
+</blockquote>
+
+<h2 id="органы-управления-ручка-газа-тормоза-и-дисплей">Органы управления: ручка газа, тормоза и дисплей</h2>
+
+<p>Управление скоростью осуществляется через ручку газа (акселератор). Внутри нее расположен датчик Холла, который изменяет напряжение на сигнальном проводе в зависимости от угла поворота рукоятки. Стандартный сигнал варьируется в диапазоне от 0.8В до 4.2В.</p>
+
+<p>Система безопасности включает датчики торможения. При нажатии на тормоз (механический или электрический) контроллер должен мгновенно отключить подачу тока на мотор. На схеме это обозначается как <code>Brake Signal</code>. Игнорирование этого подключения лишает вас важного уровня защиты при экстренной остановке.</p>
+
+<p>Дисплей или панель управления соединяется с контроллером через многожильный кабель. По нему передаются данные о скорости, заряде батареи и коды ошибок. Разъемы часто имеют уникальную форму, предотвращающую неправильное подключение, но перепутать контакты внутри фишки вполне реально при ремонте.</p>
+
+<details class="pb-accordion"><summary>Диагностика ручки газа</summary><div class="pb-accordion-body"><p>Если ручка газа не работает, измерьте напряжение на сигнальном проводе (обычно белый или зеленый тонкий). При повороте рукоятки напряжение должно плавно расти. Скачки или отсутствие реакции говорят о неисправности датчика.</p></div></details>
+
+<h2 id="таблица-цветовой-маркировки-проводов-контроллера">Таблица цветовой маркировки проводов контроллера</h2>
+
+<p>Для удобства диагностики ниже приведена сводная таблица, описывающая типовое назначение проводов в жгутах контроллера для электровелосипедов типа <em>SK8</em>. Помните, что производитель может вносить изменения, поэтому сверка с конкретной инструкцией обязательна.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Цвет провода</th>
+<th>Назначение</th>
+<th>Тип сигнала</th>
+<th>Напряжение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Красный (толстый)</td>
+<td>Питание контроллера (+)</td>
+<td>Силовой</td>
+<td>36В - 60В</td>
+</tr>
+<tr>
+<td>Черный (толстый)</td>
+<td>Общий минус (-)</td>
+<td>Силовой</td>
+<td>0В</td>
+</tr>
+<tr>
+<td>Красный (тонкий)</td>
+<td>Питание датчиков/дисплея</td>
+<td>Логический</td>
+<td>+5В</td>
+</tr>
+<tr>
+<td>Зеленый/Белый</td>
+<td>Сигнал ручки газа</td>
+<td>Аналоговый</td>
+<td>1В - 4.2В</td>
+</tr>
+<tr>
+<td>Серый/Коричнев</td>
+<td>Сигнал тормоза (E-ABS)</td>
+<td>Цифровой</td>
+<td>0В / +5В</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Использование тестера позволяет быстро идентифицировать назначение неизвестного провода. Прозванивайте цепь от разъема до компонента, чтобы убедиться в целостности линии. Часто обрыв происходит не в самом проводе, а в месте пайки внутри разъема.</p>
+
+<h2 id="диагностика-неисправностей-и-поиск-обрывов">Диагностика неисправностей и поиск обрывов</h2>
+
+<p>Если электровелосипед <em>SK8</em> перестал ехать, алгоритм поиска неисправности должен быть системным. Начните с проверки напряжения на входе контроллера. Если батарея заряжена, а на входе контроллера напряжения нет, значит, проблема в проводе, разъеме или главном предохранителе.</p>
+
+<p>Далее проверьте линию датчиков Холла. При включенном питании и медленном вращении колеса мультиметр должен показывать изменение напряжения на сигнальных проводах датчиков. Отсутствие изменений указывает на сгоревший сенсор внутри мотора.</p>
+
+<p>Частой проблемой является окисление контактов в местах соединения, особенно после езды в дождь. Разъемы типа <code>waterproof</code> не всегда гарантируют полную герметичность со временем. Осмотрите все стыки на наличие зеленого налета или следов влаги.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Алгоритм поиска обрыва</h4><label class="check-item"><input type="checkbox"><span>Визуальный осмотр всех разъемов</span></label><label class="check-item"><input type="checkbox"><span>Прозвонка силовых линий мультиметром</span></label><label class="check-item"><input type="checkbox"><span>Проверка напряжения на входе контроллера</span></label><label class="check-item"><input type="checkbox"><span>Тест сигнала ручки газа</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="меры-безопасности-при-работе-с-высоковольтными-цепями">Меры безопасности при работе с высоковольтными цепями</h2>
+
+<p>Работа с электрической схемой требует соблюдения строгих правил безопасности. Напряжение в батареях электровелосипедов может достигать 60В и выше, что опасно для жизни при определенных условиях. Всегда отключайте главный выключатель перед началом любых манипуляций с проводкой.</p>
+
+<p>Используйте изолированный инструмент. Обычные отвертки с металлическим жалом могут случайно замкнуть контакты на плате контроллера, вызвав короткое замыкание. Специализированные диэлектрические отвертки снижают этот риск до минимума.</p>
+
+<p>При пайке соединений следите за тем, чтобы не перегреть изоляцию проводов. Расплавленный пластик может оголить жилы, что в будущем приведет к межвитковому замыканию. <mark>Критически важно использовать термостойкую изоляцию, так как провода в мотор-колесе нагреваются до высоких температур.</mark></p>
+
+<blockquote>
+<p>⚠️ Внимание: Если вы заметили запах гари или дым из контроллера, немедленно обесточьте систему. Дальнейшая эксплуатация может привести к полному возгоранию транспортного средства.</p>
+</blockquote>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Почему мотор дергается при старте, но не разгоняется?</summary>
+<p>Скорее всего, нарушена последовательность подключения фазных проводов мотора или неисправен один из датчиков Холла. Попробуйте поменять местами два любых толстых фазных провода (например, желтый и зеленый). Если не помогло — проверяйте разъем датчиков.</p>
+</details>
+
+<details>
+<summary>Можно ли использовать контроллер от другого электровелосипеда на SK8?</summary>
+<p>Это возможно, если совпадают напряжения батареи, мощность мотора и тип датчиков Холла. Однако распиновка разъемов почти всегда отличается, поэтому потребуется перепаивать провода согласно новой электрической схеме.</p>
+</details>
+
+<details>
+<summary>Как проверить, жива ли батарея, если велосипед не включается?</summary>
+<p>Измерьте напряжение на выходном разъеме батареи мультиметром. Если напряжение значительно ниже номинального (например, 20В вместо 36В), сработала защита BMS или одна из ячеек вышла из строя. Требуется диагностика балансировочного разъема.</p>
+</details>
+
+<details>
+<summary>Что делать, если дисплей показывает ошибку, но кода нет в инструкции?</summary>
+<p>Попробуйте отключить все периферийные устройства (свет, дисплей, датчики тормоза) и оставить только мотор и батарею. Если ошибка исчезнет, подключайте устройства по одному, чтобы найти виновника сбоя в системе.</p>
+</details>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Правильная диагностика начинается с проверки питания на входе контроллера. Без стабильного напряжения все остальные элементы системы работать не будут.</p></aside></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/e/el/elektroskuter-sitikoko-kh7-pro.html" class="pb-related-card">
+                <span class="pb-related-title">Электроскутер CityCoco X7 Pro: обзор характеристик, обзор и тест</span>
+                <span class="pb-related-desc">Полный гид по электроскутеру CityCoco X7 Pro. Характеристики батареи, разборка, ремонт контроллера, </span>
+            </a><a href="/articles/g/gi/giroskuter-skolko-derzhit-zaryad-po-vremeni.html" class="pb-related-card">
+                <span class="pb-related-title">Сколько держит заряд гироскутер: время и километраж</span>
+                <span class="pb-related-desc">Как долго работает гироскутер на одном заряде? Реальное время поездки, факторы влияния на батарею и </span>
+            </a><a href="/articles/g/gi/giroskuter-gorit-krasnaya-lampochka-i-pishchit.html" class="pb-related-card">
+                <span class="pb-related-title">Гироскутер пищит и горит красная лампочка: причины и ремонт</span>
+                <span class="pb-related-desc">Почему гироскутер издаёт звуковой сигнал и мигает красным? Разбираем 10+ причин неисправности, спосо</span>
+            </a><a href="/articles/g/gi/giroskuter-smart-balance-remont.html" class="pb-related-card">
+                <span class="pb-related-title">Ремонт гироскутера Smart Balance: полное руководство 2026</span>
+                <span class="pb-related-desc">Пошаговая инструкция по ремонту гироскутеров Smart Balance: диагностика, замена аккумулятора, устран</span>
+            </a><a href="/articles/e/el/elektromoped-do-4-kvt.html" class="pb-related-card">
+                <span class="pb-related-title">Электромопед до 4 кВт: выбор, законы и технические нюансы</span>
+                <span class="pb-related-desc">Полный гид по электроскутерам и мопедам мощностью до 4 кВт. Разбор законодательства, выбор батареи и</span>
+            </a><a href="/articles/d/do/dokumenty-na-elektrovelosiped-dlya-gai.html" class="pb-related-card">
+                <span class="pb-related-title">Документы на электровелосипед для ГАИ в 2026: что нужно и как оформить</span>
+                <span class="pb-related-desc">Полный список документов для регистрации электровелосипеда в ГИБДД: ПТС, СТС, страховка, техосмотр. </span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🏍️ Мото Гид</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a> · <a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a> · <a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a> · <a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a> · <a href="/category/remont-dvigatelej/">🔧 Ремонт Двигателей</a> · <a href="/category/elektrika-i-provodka/">⚡ Электрика и Проводка</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мото Гид. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

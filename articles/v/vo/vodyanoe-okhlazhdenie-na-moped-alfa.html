@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🏍️</text></svg>">
+    <title>Водяное охлаждение на мопед Альфа: установка своими руками — Мото Гид</title>
+    <meta name="description" content="Полное руководство по установке водяного охлаждения на мопед Альфа. Выбор радиатора, помпы, схемы подключения и нюансы тюнинга двигателя 139FMB.">
+    <link rel="canonical" href="https://moto-gid.vercel.app/articles/v/vo/vodyanoe-okhlazhdenie-na-moped-alfa.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Водяное охлаждение на мопед Альфа: установка своими руками">
+    <meta property="og:description" content="Полное руководство по установке водяного охлаждения на мопед Альфа. Выбор радиатора, помпы, схемы подключения и нюансы тюнинга двигателя 139FMB.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780130877">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🏍️</span>
+                <span class="pb-logo-text">Мото Гид</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/mopedy-i-skutery/" class="pb-dropdown-item">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/" class="pb-dropdown-item">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/" class="pb-dropdown-item">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/" class="pb-dropdown-item">📐 Самоделки и Чертежи</a>
+<a href="/category/remont-dvigatelej/" class="pb-dropdown-item">🔧 Ремонт Двигателей</a>
+<a href="/category/elektrika-i-provodka/" class="pb-dropdown-item">⚡ Электрика и Проводка</a>
+<a href="/category/zakony-i-prava/" class="pb-dropdown-item">⚖️ Законы и Права</a>
+<a href="/category/raskhodniki-i-masla/" class="pb-dropdown-item">🛢️ Расходники и Масла</a>
+<a href="/category/tyuning-i-modernizatsiya/" class="pb-dropdown-item">🚀 Тюнинг и Модернизация</a>
+<a href="/category/elektromototekhnika/" class="pb-dropdown-item">🔋 Электромототехника</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/tyuning-i-modernizatsiya/">Тюнинг и Модернизация</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Водяное охлаждение на мопед Альфа: установка своими руками</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#подбор-компонентов-системы-охлаждения">Подбор компонентов системы охлаждения</a></li><li><a href="#доработка-двигателя-и-установка-цпг">Доработка двигателя и установка ЦПГ</a></li><li><a href="#монтаж-радиатора-и-прокладка-магистралей">Монтаж радиатора и прокладка магистралей</a></li><li><a href="#электрическая-часть-и-управление-вентилятором">Электрическая часть и управление вентилятором</a></li><li><a href="#заправка-системы-и-удаление-воздушных-пробок">Заправка системы и удаление воздушных пробок</a></li><li><a href="#обслуживание-и-возможные-проблемы">Обслуживание и возможные проблемы</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-uvelichit-skorost-skutera.html">Как увеличить скорость скутера: 5 проверенных методов тюнинга</a></li><li><a href="/articles/b/br/brp-can-am-maverick-x3.html">BRP Can-Am Maverick X3: обзор, характеристики, тюнинг и ремонт</a></li><li><a href="/articles/t/ty/tyuning-mopeda-alfa-vneshnij.html">Тюнинг мопеда Альфа: внешний стайлинг и обвес своими руками</a></li><li><a href="/articles/c/ch/choper-eto-chto-za-ukrashenie.html">Чопер — что это за украшение? История, стили и как выбрать</a></li><li><a href="/articles/k/ka/kak-sdelat-moped-dlya-stanta.html">Как сделать мопед для станта: пошаговое руководство 2026</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Водяное охлаждение на мопед Альфа: схема установки и нюансы</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#подбор-компонентов-системы-охлаждения">Подбор компонентов системы охлаждения</a></li><li><a href="#доработка-двигателя-и-установка-цпг">Доработка двигателя и установка ЦПГ</a></li><li><a href="#монтаж-радиатора-и-прокладка-магистралей">Монтаж радиатора и прокладка магистралей</a></li><li><a href="#электрическая-часть-и-управление-вентилятором">Электрическая часть и управление вентилятором</a></li><li><a href="#заправка-системы-и-удаление-воздушных-пробок">Заправка системы и удаление воздушных пробок</a></li><li><a href="#обслуживание-и-возможные-проблемы">Обслуживание и возможные проблемы</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Владельцы мопедов серии <em>Alpha</em> с двигателями <em>139FMB</em> и <em>152QMI</em> часто сталкиваются с проблемой перегрева в летнюю жару или при активной езде. Стандартная воздушная система охлаждения, хоть и проста в обслуживании, имеет физический предел эффективности, особенно в городских пробках. Переход на <strong>водяное охлаждение</strong> становится логичным шагом для тех, кто хочет повысить ресурс мотора и стабильность работы под нагрузкой.</p>
+
+<p>Эта процедура требует не только финансовых вложений, но и серьезного подхода к инженерной части. Вам придется модифицировать цилиндр, подбирать компоненты и грамотно размещать их в ограниченном пространстве рамы. <mark>Критически важно использовать цилиндры с рубашкой охлаждения, так как стандартные детали не совместимы с жидкостной системой.</mark> Неправильный монтаж может привести к гидроудару или быстрому выходу из строя помпы.</p>
+
+<p>В данной статье мы подробно разберем процесс конверсии, выбор оборудования и типичные ошибки, которые допускают новички. Вы узнаете, как правильно собрать контур циркуляции и настроить систему так, чтобы она работала безотказно. Это руководство поможет вам превратить обычный скутер в более надежный транспорт, способный выдерживать длительные поездки.</p>
+
+<h2 id="подбор-компонентов-системы-охлаждения">Подбор компонентов системы охлаждения</h2>
+
+<p>Первым этапом является закупка всех необходимых элементов. Рынок предлагает готовые кит-комплекты, но часто надежнее собрать систему самостоятельно из проверенных компонентов. Основой служит цилиндро-поршневая группа (ЦПГ) с водяной рубашкой. Обычно используют детали от <em>Yiben</em> или китайские реплики объемом 70-80 кубов.</p>
+
+<p>Не менее важным элементом является помпа. Для двигателей серии <em>Alpha</em> чаще всего используют механические помпы, приводимые в движение от коленвала, или электрические аналоги. Механический вариант надежнее, так как не зависит от заряда аккумулятора, но требует точной установки в картер.</p>
+
+<ul>
+<li>🔧 Цилиндр с водяной рубашкой и соответствующая головка блока (ГБЦ).</li>
+<li>💧 Помпа (механическая или электрическая) с крыльчаткой.</li>
+<li>❄️ Радиатор охлаждения (алюминиевый, толщиной не менее 16 мм).</li>
+<li>🌡️ Термостат и датчик включения вентилятора.</li>
+</ul>
+
+<p>Выбор радиатора зависит от доступного пространства в раме вашего мопеда. Если штатное место занято аккумулятором или инструментами, придется искать компактные модели от скутеров или даже мотоциклов. Убедитесь, что патрубки радиатора соответствуют диаметру шлангов, которые вы планируете использовать.</p>
+
+<div class="pb-poll" id="poll-25dbdb39"><div class="pb-poll-question">📊 Какой тип помпы вы планируете установить?</div><div class="pb-poll-option" data-poll="25dbdb39" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Механическая (от коленвала)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="25dbdb39" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Электрическая (от АКБ)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="25dbdb39" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Готовый кит-комплект</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="25dbdb39" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Пока не решил</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="доработка-двигателя-и-установка-цпг">Доработка двигателя и установка ЦПГ</h2>
+
+<p>Процесс начинается с полной разборки двигателя. Вам необходимо снять головку цилиндра, поршень и старый цилиндр. Особое внимание уделите чистоте картера — никаких металлических стружек быть не должно. Установка нового цилиндра требует замены прокладок и, возможно, доработки картера под посадочное место помпы.</p>
+
+<p>Если вы используете механическую помпу, ее корпус врезается в картер или устанавливается вместо одной из крышек. Вал помпы должен быть идеально соосен с приводом, иначе сальник быстро потечет. Для электрических помп этот этап проще, но требует протяжки дополнительной проводки.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> При затяжке болтов ГБЦ обязательно используйте динамометрический ключ. Момент затяжки для алюминиевых цилиндров обычно составляет 10-12 Нм. Перетяжка приведет к деформации цилиндра и прорыву газов.</p>
+</blockquote>
+
+<p>Поршень в системах водяного охлаждения часто имеет специальную форму днища или отверстия для лучшей циркуляции масла, хотя основное охлаждение берет на себя жидкость. Установите поршневые кольца, соблюдая ориентацию замков, и аккуратно вставьте поршень в цилиндр, смазав стенки маслом.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Установка ЦПГ</h4><label class="check-item"><input type="checkbox"><span>Очистить привалочные плоскости картера</span></label><label class="check-item"><input type="checkbox"><span>Установить прокладки ГБЦ</span></label><label class="check-item"><input type="checkbox"><span>Затянуть болты крест-накрест</span></label><label class="check-item"><input type="checkbox"><span>Проверить свободное вращение коленвала</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="монтаж-радиатора-и-прокладка-магистралей">Монтаж радиатора и прокладка магистралей</h2>
+
+<p>Размещение радиатора — это творческая задача. В мопедах <em>Alpha</em> нет штатного места под большой радиатор, поэтому его часто крепят перед двигателем, за передним колесом или сбоку рамы под пластиком. Главное условие — обеспечить беспрепятственный поток встречного воздуха.</p>
+
+<p>Для соединения используйте армированные силиконовые шланги. Они выдерживают высокие температуры и не дубеют со временем. Резиновые патрубки от автомобилей могут не подойти по диаметру или жесткости. Все соединения должны быть затянуты хомутами, желательно червячными из нержавеющей стали.</p>
+
+<p>Схема подключения обычно выглядит так: выход из головки блока → термостат → вход в радиатор → выход из радиатора → вход в помпу → выход из помпы → вход в блок цилиндра. Такая последовательность обеспечивает правильную циркуляцию и работу термостата.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Компонент</th>
+<th>Материал</th>
+<th>Рекомендуемый диаметр</th>
+<th>Примечание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Шланги</td>
+<td>Силикон</td>
+<td>16-18 мм</td>
+<td>Армированные, термостойкие</td>
+</tr>
+<tr>
+<td>Хомуты</td>
+<td>Нерж. сталь</td>
+<td>Под диаметр шланга</td>
+<td>С червячным механизмом</td>
+</tr>
+<tr>
+<td>Радиатор</td>
+<td>Алюминий</td>
+<td>-</td>
+<td>Площадь от 0.15 кв.м</td>
+</tr>
+<tr>
+<td>Жидкость</td>
+<td>Антифриз</td>
+<td>-</td>
+<td>G12 или G12+, красный/зеленый</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Избегайте резких перегибов шлангов, которые могут перекрыть поток жидкости. Если трасса получается длинной, предусмотрите дополнительные точки крепления, чтобы шланги не вибрировали и не терлись о раму или горячие части двигателя.</p>
+
+<h2 id="электрическая-часть-и-управление-вентилятором">Электрическая часть и управление вентилятором</h2>
+
+<p>Система управления охлаждением требует подключения датчика температуры и реле вентилятора. Датчик вкручивается в головку блока или в патрубок радиатора. Сигнал от датчика поступает на реле, которое замыкает цепь питания вентилятора при достижении определенной температуры (обычно 90-95 градусов).</p>
+
+<p>Для подключения используйте провода сечением не менее 1.5 кв. мм, так как вентилятор потребляет значительный ток. Обязательно установите предохранитель в цепь питания вентилятора рядом с аккумулятором. Это защитит проводку от возгорания в случае короткого замыкания.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Используйте реле от автомобильной системы охлаждения (например, от ВАЗ или иномарки). Они надежнее китайских аналогов и рассчитаны на большие токи.</p></aside>
+
+<p>Проводку следует аккуратно уложить в гофру и закрепить стяжками под пластиком. Избегайте контакта проводов с горячим выпускным коллектором. Если вы устанавливаете электрическую помпу, ее также нужно подключить через отдельный предохранитель и, желательно, через замок зажигания, чтобы она не работала при заглушенном двигателе.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Никогда не подключайте вентилятор напрямую к аккумулятору без реле и предохранителя. Это может привести к расплавлению проводки и пожару при заклинивании мотора вентилятора.</p>
+</blockquote>
+
+<h2 id="заправка-системы-и-удаление-воздушных-пробок">Заправка системы и удаление воздушных пробок</h2>
+
+<p>После сборки механической части наступает этап заправки. Используйте качественный антифриз, разбавленный дистиллированной водой в пропорции, рекомендованной производителем жидкости. Обычная вода из-под крана приведет к образованию накипи и коррозии алюминиевых деталей.</p>
+
+<p>Заполнение системы должно происходить медленно, чтобы воздух успевал выходить. Часто приходится приподнимать переднюю часть мопеда или снимать шланг в верхней точке контура для стравливания воздуха. Воздушная пробка — главный враг новой системы, она может вызвать локальный перегрев головки блока.</p>
+
+<p>После заправки запустите двигатель и дайте ему поработать на холостых оборотах. Прогрейте мотор до срабатывания вентилятора. В этот момент уровень жидкости в расширительном бачке (если он есть) или в радиаторе может упасть — долейте антифриз до нормы.</p>
+
+<details class="pb-accordion"><summary>Как проверить наличие воздушной пробки?</summary><div class="pb-accordion-body"><p>Если верхний патрубок радиатора горячий, а нижний холодный при прогретом двигателе, значит циркуляция нарушена воздушной пробкой. Необходимо повторно стравить воздух через специальный клапан или ослабив хомут на верхнем патрубке.</p></div></details>
+
+<h2 id="обслуживание-и-возможные-проблемы">Обслуживание и возможные проблемы</h2>
+
+<p>Водяное охлаждение требует регулярного контроля. Раз в сезон проверяйте натяжение ремня привода помпы (если она механическая) и состояние сальников. Осматривайте шланги на предмет трещин и подтеков. Утечка антифриза может быть незаметной, пока объем жидкости не станет критическим.</p>
+
+<p>Чистка радиатора от грязи и пуха — обязательная процедура перед летним сезоном. Забитые соты резко снижают эффективность теплообмена. Продувайте радиатор сжатым воздухом или аккуратно промывайте водой под низким давлением.</p>
+
+<ul>
+<li>🔍 (Регулярно) проверяйте уровень антифриза в расширительном бачке.</li>
+<li>🧹 Очищайте соты радиатора от насекомых и пыли каждые 2000 км.</li>
+<li>🔩 Подтягивайте хомуты шлангов после первых 100 км пробега (усадка резины).</li>
+</ul>
+
+<p>Если вы заметили белый дым из выхлопной трубы или эмульсию на масляном щупе, это признак попадания антифриза в камеру сгорания или картер. В этом случае эксплуатацию нужно немедленно прекратить и проверить прокладку ГБЦ и целостность цилиндра.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Главное преимущество водяного охлаждения — стабильная температура двигателя независимо от скорости движения, что критически важно для городской езды в пробках.</p></aside>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Характеристики совместимости деталей (диаметры патрубков, резьбы датчиков) могут отличаться у разных производителей цилиндров. Всегда проводите примерку деталей перед окончательной сборкой и покупкой расходников.</p>
+</blockquote>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Насколько сильно упадет мощность двигателя после установки водяного охлаждения?</summary>
+<p>При правильной установке потеря мощности минимальна (1-3%) из-за затрат энергии на привод помпы и веса системы. Однако предотвращение перегрева позволяет двигателю работать в оптимальном режиме дольше, что фактически повышает среднюю отдачу мощности на длинных дистанциях.</p>
+</details>
+
+<details>
+<summary>Можно ли использовать тосол вместо антифриза?</summary>
+<p>Использовать старый советский тосол не рекомендуется. Современные двигатели из алюминиевых сплавов требуют антифризы классов G12 или G12+, которые содержат специальные присадки против коррозии алюминия. Тосол может вызвать быструю коррозию рубашки охлаждения.</p>
+</details>
+
+<details>
+<summary>Нужен ли расширительный бачок на мопеде Альфа?</summary>
+<p>Желательно, но не строго обязательно при малом объеме системы. Однако наличие бачка компенсирует тепловое расширение жидкости и упрощает контроль уровня. Без бачка при нагреве лишний антифриз будет вытекать через крышку радиатора.</p>
+</details>
+
+<details>
+<summary>Какую температуру считать нормальной для такого двигателя?</summary>
+<p>Рабочая температура двигателя с водяным охлаждением должна находиться в диапазоне 80-90 градусов Цельсия. Включение вентилятора обычно настраивается на 92-95 градусов. Превышение 100 градусов свидетельствует о неисправности системы.</p>
+</details>
+
+<details>
+<summary>Сложно ли вернуть все обратно на воздушное охлаждение?</summary>
+<p>Процесс обратим, но требует замены цилиндра, головки и снятия всех навесных элементов (радиатор, помпа, шланги). Если вы аккуратно демонтируете детали и сохраните их, возврат на воздушное охлаждение займет несколько часов работы.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-uvelichit-skorost-skutera.html" class="pb-related-card">
+                <span class="pb-related-title">Как увеличить скорость скутера: 5 проверенных методов тюнинга</span>
+                <span class="pb-related-desc">Узнайте, как разогнать скутер. Полный гид по форсировке двигателя, вариатора и выхлопа. Таблицы весо</span>
+            </a><a href="/articles/b/br/brp-can-am-maverick-x3.html" class="pb-related-card">
+                <span class="pb-related-title">BRP Can-Am Maverick X3: обзор, характеристики, тюнинг и ремонт</span>
+                <span class="pb-related-desc">Полный гайд по Can-Am Maverick X3: технические параметры, сравнение модификаций, инструкции по обслу</span>
+            </a><a href="/articles/t/ty/tyuning-mopeda-alfa-vneshnij.html" class="pb-related-card">
+                <span class="pb-related-title">Тюнинг мопеда Альфа: внешний стайлинг и обвес своими руками</span>
+                <span class="pb-related-desc">Полный гид по внешнему тюнингу мопеда Альфа. Установка обвесов, покраска, диски, свет и пластик. Как</span>
+            </a><a href="/articles/c/ch/choper-eto-chto-za-ukrashenie.html" class="pb-related-card">
+                <span class="pb-related-title">Чопер — что это за украшение? История, стили и как выбрать</span>
+                <span class="pb-related-desc">Чопер — это не только мотоцикл, но и стильное украшение. Узнайте, что такое чопер-кольца, браслеты и</span>
+            </a><a href="/articles/k/ka/kak-sdelat-moped-dlya-stanta.html" class="pb-related-card">
+                <span class="pb-related-title">Как сделать мопед для станта: пошаговое руководство 2026</span>
+                <span class="pb-related-desc">Полная инструкция по сборке стант-мопеда своими руками: выбор базы, тюнинг рамы, настройка подвески </span>
+            </a><a href="/articles/s/sa/samodelnye-dugi-na-moped-alfa.html" class="pb-related-card">
+                <span class="pb-related-title">Самодельные дуги на мопед Альфа: чертежи, чертежи, установка</span>
+                <span class="pb-related-desc">Изготовление дуг безопасности на мопед Альфа своими руками. Схемы, выбор труб, технология гибки и по</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🏍️ Мото Гид</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a> · <a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a> · <a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a> · <a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a> · <a href="/category/remont-dvigatelej/">🔧 Ремонт Двигателей</a> · <a href="/category/elektrika-i-provodka/">⚡ Электрика и Проводка</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мото Гид. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

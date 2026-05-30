@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🏍️</text></svg>">
+    <title>Самодельный снегоуборщик для мотоблока: чертежи и сборка — Мото Гид</title>
+    <meta name="description" content="Пошаговая инструкция по созданию навесного снегоуборщика для мотоблока. Чертежи шнека, выбор двигателя, расчеты редуктора и советы по безопасности.">
+    <link rel="canonical" href="https://moto-gid.vercel.app/articles/s/sa/samodelnyj-snegouborshchik-dlya-motobloka.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Самодельный снегоуборщик для мотоблока: чертежи и сборка">
+    <meta property="og:description" content="Пошаговая инструкция по созданию навесного снегоуборщика для мотоблока. Чертежи шнека, выбор двигателя, расчеты редуктора и советы по безопасности.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780130877">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🏍️</span>
+                <span class="pb-logo-text">Мото Гид</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/" class="pb-nav-active">📐 Самоделки и Чертежи</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/mopedy-i-skutery/" class="pb-dropdown-item">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/" class="pb-dropdown-item">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/" class="pb-dropdown-item">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/" class="pb-dropdown-item">📐 Самоделки и Чертежи</a>
+<a href="/category/remont-dvigatelej/" class="pb-dropdown-item">🔧 Ремонт Двигателей</a>
+<a href="/category/elektrika-i-provodka/" class="pb-dropdown-item">⚡ Электрика и Проводка</a>
+<a href="/category/zakony-i-prava/" class="pb-dropdown-item">⚖️ Законы и Права</a>
+<a href="/category/raskhodniki-i-masla/" class="pb-dropdown-item">🛢️ Расходники и Масла</a>
+<a href="/category/tyuning-i-modernizatsiya/" class="pb-dropdown-item">🚀 Тюнинг и Модернизация</a>
+<a href="/category/elektromototekhnika/" class="pb-dropdown-item">🔋 Электромототехника</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/samodelki-i-chertezhi/">Самоделки и Чертежи</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Самодельный снегоуборщик для мотоблока: чертежи и сборка</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#выбор-конструкции-и-принцип-работы-узла">Выбор конструкции и принцип работы узла</a></li><li><a href="#расчет-мощности-и-подбор-материалов">Расчет мощности и подбор материалов</a></li><li><a href="#изготовление-шнекового-механизма-своими-руками">Изготовление шнекового механизма своими руками</a></li><li><a href="#сборка-корпуса-и-системы-выброса">Сборка корпуса и системы выброса</a></li><li><a href="#монтаж-привода-и-подключение-к-мотоблоку">Монтаж привода и подключение к мотоблоку</a></li><li><a href="#тестирование-и-меры-безопасности-при-работе">Тестирование и меры безопасности при работе</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/s/sa/samodelnyj-tritsikl-svoimi-rukami.html">Трицикл своими руками: пошаговое руководство с чертежами и советами</a></li><li><a href="/articles/t/tr/trajk-iz-giroskutera-svoimi-rukami.html">Трайк из гироскутера своими руками: пошаговая инструкция 2026</a></li><li><a href="/articles/k/ka/karpaty-s-dvigatelem-ot-motobloka.html">Карпаты с двигателем от мотоблока: чертежи, сборка, видео</a></li><li><a href="/articles/s/sa/samodelka-s-dvigatelem-ot-motobloka.html">Самоделка с двигателем от мотоблока: чертежи, схемы и сборка</a></li><li><a href="/articles/p/po/podemnik-dlya-motobloka-dlya-smeny-koles-svoimi-rukami.html">Подъемник для мотоблока своими руками: чертежи и инструкция</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Самодельный снегоуборщик для мотоблока: полное руководство по сборке</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#выбор-конструкции-и-принцип-работы-узла">Выбор конструкции и принцип работы узла</a></li><li><a href="#расчет-мощности-и-подбор-материалов">Расчет мощности и подбор материалов</a></li><li><a href="#изготовление-шнекового-механизма-своими-руками">Изготовление шнекового механизма своими руками</a></li><li><a href="#сборка-корпуса-и-системы-выброса">Сборка корпуса и системы выброса</a></li><li><a href="#монтаж-привода-и-подключение-к-мотоблоку">Монтаж привода и подключение к мотоблоку</a></li><li><a href="#тестирование-и-меры-безопасности-при-работе">Тестирование и меры безопасности при работе</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Зимняя чистка приусадебного участка от снега превращается в изнурительный труд, если выполнять её вручную лопатой. Владельцы мотоблоков часто задумываются о том, как механизировать этот процесс, не покупая дорогостоящее заводское оборудование. Создание <strong>самодельного снегоуборщика</strong> становится оптимальным решением, позволяющим сэкономить бюджет и получить агрегат, идеально адаптированный под конкретные условия эксплуатации.</p>
+
+<p>Основная идея конструкции заключается в использовании силового агрегата мотоблока для привода шнекового механизма, который захватывает и выбрасывает снежную массу. Правильно спроектированная и собранная <em>насадка</em> способна справляться даже с глубокими сугробами, которые невозможно преодолеть обычным отвалом. В этой статье мы подробно разберем этапы конструирования, выбора материалов и финальной сборки надежного снегоуборочного модуля.</p>
+
+<h2 id="выбор-конструкции-и-принцип-работы-узла">Выбор конструкции и принцип работы узла</h2>
+
+<p>Перед тем как приступать к изготовлению деталей, необходимо определиться с типом механизма выброса снега. Наиболее эффективным решением для зимних условий считается <strong>шнекороторная схема</strong>. В такой конструкции вращающийся винт (шнек) подгребает снег к центру, где расположен ротор-крыльчатка, который с высокой скоростью выбрасывает массу через желоб в нужном направлении.</p>
+
+<p>Существует два основных варианта привода: активный и пассивный. В пассивном варианте шнек вращается только за счет движения мотоблока вперед, что часто приводит к заклиниванию при плотном снеге. Активный привод, где шнек и ротор вращаются независимо от скорости хода машины, является предпочтительным. Для реализации такого привода потребуется использование ременной или цепной передачи от вала отбора мощности.</p>
+
+<div class="pb-poll" id="poll-e71ccc44"><div class="pb-poll-question">📊 Какой тип снега преобладает в вашем регионе?</div><div class="pb-poll-option" data-poll="e71ccc44" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Рыхлый и пушистый</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="e71ccc44" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Тяжелый и мокрый</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="e71ccc44" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Слежавшийся с коркой</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="e71ccc44" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Ледяные наносы</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<p>Конструкция должна предусматривать возможность регулировки высоты среза и угла выброса. Механизм поворота желоба может быть реализован вручную с помощью тросового привода или тросика Боудена, что позволяет оператору управлять направлением выброса, не останавливая технику. Важно также предусмотреть защиту для ремней и цепей, чтобы исключить попадание снега в движущиеся части трансмиссии.</p>
+
+<h2 id="расчет-мощности-и-подбор-материалов">Расчет мощности и подбор материалов</h2>
+
+<p>Эффективность работы снегоуборщика напрямую зависит от мощности двигателя вашего мотоблока. Для обработки участка площадью до 6 соток с высотой снежного покрова до 20 см достаточно двигателя мощностью 3.5–5 л.с. Если же планируется уборка больших территорий или работа с тяжелым, мокрым снегом, потребуется агрегат класса <em>Нева МБ-2</em> или аналогичный, мощностью от 6 л.с. и выше.</p>
+
+<p>При выборе материалов для рамы и рабочих органов стоит отдавать предпочтение стали марки Ст3 или Ст20. Эти сорта металла обладают достаточной прочностью и свариваемостью. Для изготовления шнека часто используют стальную полосу толщиной 4–5 мм или разрезанную пополам стальную трубу диаметром 100 мм. Использование алюминия для силовых элементов не рекомендуется из-за его хрупкости при низких температурах.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Элемент конструкции</th>
+<th>Рекомендуемый материал</th>
+<th>Толщина/Сечение</th>
+<th>Примечание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Рама корпуса</td>
+<td>Профильная труба</td>
+<td>20×20 мм или 25×25 мм</td>
+<td>Сталь Ст3, антикоррозийная обработка</td>
+</tr>
+<tr>
+<td>Шнек (спираль)</td>
+<td>Стальная лента</td>
+<td>4–5 мм</td>
+<td>Высота витка 100 мм, шаг 50 мм</td>
+</tr>
+<tr>
+<td>Ротор (крыльчатка)</td>
+<td>Стальной лист</td>
+<td>2–3 мм</td>
+<td>Диаметр 250–300 мм, 4 лопасти</td>
+</tr>
+<tr>
+<td>Желоб выброса</td>
+<td>Оцинкованная сталь</td>
+<td>0.8–1.0 мм</td>
+<td>Легкий вес, устойчивость к коррозии</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Важно учитывать, что ширина захвата шнека не должна превышать возможности двигателя. Оптимальной шириной для мотоблоков средней мощности считается 50–60 см. Увеличение ширины захвата приведет к перегрузке мотора и быстрому износу ремней привода.</p>
+
+<h2 id="изготовление-шнекового-механизма-своими-руками">Изготовление шнекового механизма своими руками</h2>
+
+<p>Центральным элементом любого снегоуборщика является шнек. Его изготовление требует точности, так как дисбаланс вызовет сильную вибрацию, разрушающую подшипниковые узлы. Для начала необходимо изготовить оправку из трубы диаметром около 20–25 мм, на которую будут навариваться витки спирали.</p>
+
+<p>Процесс формирования витков можно выполнить двумя способами. Первый — нарезание колец из стальной полосы и их последующая растяжка до нужного шага с одновременной приваркой к валу. Второй, более технологичный способ, предполагает использование готовой трубы большого диаметра, которую разрезают по спирали или кольцами, а затем разводят в прессе. Кромки полученных витков должны быть заточены для лучшего захвата снега.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Для облегчения вращения шнека в мороз смажьте вал литолом или графитовой смазкой перед каждым сезоном — это предотвратит примерзание снега к металлу.</p></aside>
+
+<p>Вал шнека должен быть достаточно массивным, чтобы выдерживать крутящий момент. Обычно используют сплошной кругляк диаметром 20 мм или толстостенную трубу. На концах вала устанавливаются подшипниковые узлы закрытого типа, например, модели <em>UCP204</em> или <em>UCP205</em>, которые защищены от попадания влаги и грязи. Подшипники крепятся к боковым стенкам корпуса через специальные стойки.</p>
+
+<blockquote>
+<p>⚠️ Внимание: При сварке витков шнека соблюдайте шахматный порядок наложения швов, чтобы избежать перекоса вала из-за неравномерного нагрева металла.</p>
+</blockquote>
+
+<h2 id="сборка-корпуса-и-системы-выброса">Сборка корпуса и системы выброса</h2>
+
+<p>Корпус снегоуборщика выполняет функцию кожуха, направляющего снег в ротор. Его геометрия должна обеспечивать плавное перетекание массы без образования заторов. Зазор между краями витков шнека и стенками корпуса должен быть минимальным (2–5 мм), но не допускающим контакта металла о металл.</p>
+
+<p>Для изготовления желоба выброса можно использовать кусок пластиковой канализационной трубы диаметром 110 мм, разрезанной вдоль, или согнуть лист оцинкованной стали. Желоб крепится к корпусу на болтах, что позволяет при необходимости демонтировать его для транспортировки. Поворотный механизм желоба реализуется через ось, проходящую через корпус, с фиксатором положения.</p>
+
+<ul>
+<li>🔩 Используйте болтовые соединения с гроверными шайбами для всех узлов, подверженных вибрации.</li>
+<li>❄️ Обработайте внутренние поверхности корпуса и желоба парафином или силиконовой смазкой для предотвращения налипания снега.</li>
+<li>⚙️ Установите срезные болты в местах крепления шнека к валу — они защитят редуктор при попадании камня или льда.</li>
+</ul>
+
+<p>Ротор-крыльчатка устанавливается сразу за шнеком в камере выброса. Она представляет собой диск с приваренными лопатками. Именно ротор создает воздушный поток, который выдувает снег из желоба на расстояние до 5–8 метров. Балансировка ротора является критически важным этапом сборки.</p>
+
+<details class="pb-accordion"><summary>Секрет балансировки ротора</summary><div class="pb-accordion-body"><p>Положите ротор на два параллельных ножжа или металлических прутка. Если одна сторона перевешивает, она всегда будет оказываться внизу. Сточите лишний металл с тяжелой стороны или приварите грузик с легкой, пока ротор не перестанет самопроизвольно вращаться в любом положении.</p></div></details>
+
+<h2 id="монтаж-привода-и-подключение-к-мотоблоку">Монтаж привода и подключение к мотоблоку</h2>
+
+<p>Передача крутящего момента от двигателя мотоблока к шнеку осуществляется через ременную передачу. Это решение предпочтительнее цепной, так как ремень проскальзывает при заклинивании, спасая двигатель от поломки. Для реализации привода на валу мотоблока и валу шнека устанавливаются шкивы соответствующего диаметра.</p>
+
+<p>Передаточное число подбирается таким образом, чтобы скорость вращения шнека составляла 400–600 об/мин, а ротора — 2000–3000 об/мин. Натяжение ремня регулируется специальным роликом или перемещением двигателя на монтажной плите. Ремень должен быть обернут вокруг шкивов не менее чем на 120 градусов для надежного сцепления.</p>
+
+<pre><code>Схема подключения: Двигатель -> Ремень -> Шкив ввода -> Редуктор -> Вал шнека</code></pre>
+
+<p>Крепление снегоуборщика к мотоблоку производится через адаптерную раму. Она должна жестко фиксировать навесное оборудование, но при этом позволять легко снимать его. Часто используют быстросъемные штифты или болтовые соединения с барашковыми гайками для оперативного монтажа.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка перед запуском</h4><label class="check-item"><input type="checkbox"><span>Затяжка всех болтовых соединений</span></label><label class="check-item"><input type="checkbox"><span>Наличие смазки в подшипниках</span></label><label class="check-item"><input type="checkbox"><span>Свободное вращение шнека рукой</span></label><label class="check-item"><input type="checkbox"><span>Натяжение приводного ремня</span></label><label class="check-item"><input type="checkbox"><span>Целостность защитных кожухов</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<h2 id="тестирование-и-меры-безопасности-при-работе">Тестирование и меры безопасности при работе</h2>
+
+<p>Первый запуск самодельного снегоуборщика следует проводить на холостом ходу, без снежной массы. Необходимо внимательно прислушаться к работе механизма: отсутствие посторонних стуков, гула или сильной вибрации свидетельствует о правильной сборке. После 10–15 минут работы проверьте температуру подшипниковых узлов — они не должны нагреваться выше 50–60 градусов.</p>
+
+<p>При работе с мотоблоком в зимних условиях существует риск обледенения деталей управления. Все тросы газа и сцепления должны быть в исправном состоянии и иметь достаточный запас хода. Оператор обязан использовать защитные очки, так как из желоба могут вылетать мелкие частицы льда или камни, скрытые под снегом.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Категорически запрещается прочищать забившийся желоб или шнек руками при работающем двигателе. Используйте для этого деревянную палку или специальный крюк только после полной остановки агрегата.</p>
+</blockquote>
+
+<p>Если вы планируете использовать снегоуборщик на участках с каменистым покрытием или брусчаткой, обязательно установите лыжи-полозья на нижнюю часть корпуса. Они обеспечат зазор между шнеком и землей, предотвращая повреждение ножей и покрытия дорожек.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Главный критерий качества самодельного снегоуборщика — отсутствие вибрации на рабочих оборотах и стабильный выброс снега без забивания желоба.</p></aside>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Можно ли использовать двигатель от бензопилы для снегоуборщика?</summary>
+<p>Теоретически можно, но это нецелесообразно. Двигатели бензопил (<em>Stihl, Husqvarna</em>) имеют высокую мощность при малом весе, но они рассчитаны на кратковременную работу под нагрузкой. Для длительной уборки снега потребуется переделка системы охлаждения и глушителя, а также создание надежного редуктора, что усложнит конструкцию.</p>
+</details>
+
+<details>
+<summary>Какой материал лучше для лопастей ротора: металл или пластик?</summary>
+<p>Для самодельных конструкций однозначно рекомендуется металл (сталь 2–3 мм). Пластиковые лопасти могут применяться только в заводских моделях из специального морозостойкого композита. Обычный пластик на морозе становится хрупким и разрушится при первом же контакте с плотным снегом или льдом.</p>
+</details>
+
+<details>
+<summary>Почему шнек буксует даже при натянутом ремне?</summary>
+<p>Причина может быть в износе поверхности шкива или попадании масла на ремень. Также возможно, что передаточное число слишком велико для текущего состояния снега. Попробуйте уменьшить ширину захвата или снизить скорость движения мотоблока. Проверьте, не растянут ли ремень сверх допустимого.</p>
+</details>
+
+<details>
+<summary>Нужно ли красить снегоуборщик внутри?</summary>
+<p>Красить внутреннюю поверхность корпуса не обязательно, иногда даже вредно, так как слой краски может отколоться и попасть в механизм. Лучше использовать гладкую оцинкованную сталь или обработать поверхность антифрикционным составом. Внешние части рамы обязательно нужно покрасить для защиты от коррозии.</p>
+</details>
+
+<details>
+<summary>Как увеличить дальность выброса снега?</summary>
+<p>Дальность зависит от скорости вращения ротора и отсутствия потерь в желобе. Убедитесь, что зазор между ротором и корпусом минимален. Гладкая внутренняя поверхность желоба (можно проклеить скотчем или пластиком) также улучшает аэродинамику потока. Не направляйте желоб строго вверх — оптимальный угол 30–45 градусов.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/s/sa/samodelnyj-tritsikl-svoimi-rukami.html" class="pb-related-card">
+                <span class="pb-related-title">Трицикл своими руками: пошаговое руководство с чертежами и советами</span>
+                <span class="pb-related-desc">Как сделать трицикл из подручных материалов: выбор двигателя, рамы, колёс и тормозной системы. Черте</span>
+            </a><a href="/articles/t/tr/trajk-iz-giroskutera-svoimi-rukami.html" class="pb-related-card">
+                <span class="pb-related-title">Трайк из гироскутера своими руками: пошаговая инструкция 2026</span>
+                <span class="pb-related-desc">Как сделать трайк из гироскутера: подробный гайд с чертежами, выбором комплектующих и советами по бе</span>
+            </a><a href="/articles/k/ka/karpaty-s-dvigatelem-ot-motobloka.html" class="pb-related-card">
+                <span class="pb-related-title">Карпаты с двигателем от мотоблока: чертежи, сборка, видео</span>
+                <span class="pb-related-desc">Как сделать квадроцикл Карпаты своими руками из мотоблока. Чертежи рамы, выбор двигателя, трансмисси</span>
+            </a><a href="/articles/s/sa/samodelka-s-dvigatelem-ot-motobloka.html" class="pb-related-card">
+                <span class="pb-related-title">Самоделка с двигателем от мотоблока: чертежи, схемы и сборка</span>
+                <span class="pb-related-desc">Полное руководство по созданию самоделок с двигателем от мотоблока. Чертежи, выбор редуктора, схемы </span>
+            </a><a href="/articles/p/po/podemnik-dlya-motobloka-dlya-smeny-koles-svoimi-rukami.html" class="pb-related-card">
+                <span class="pb-related-title">Подъемник для мотоблока своими руками: чертежи и инструкция</span>
+                <span class="pb-related-desc">Как сделать самодельный подъемник для мотоблока, чтобы быстро менять колеса. Пошаговые схемы, матери</span>
+            </a><a href="/articles/a/ad/adapter-dlya-motobloka-mtz-svoimi-rukami-chertezhi-i-razmery.html" class="pb-related-card">
+                <span class="pb-related-title">Адаптер для мотоблока МТЗ своими руками: чертежи и размеры 2026</span>
+                <span class="pb-related-desc">Пошаговая инструкция по изготовлению адаптера для мотоблока МТЗ: точные чертежи, размеры, материалы </span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🏍️ Мото Гид</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a> · <a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a> · <a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a> · <a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a> · <a href="/category/remont-dvigatelej/">🔧 Ремонт Двигателей</a> · <a href="/category/elektrika-i-provodka/">⚡ Электрика и Проводка</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мото Гид. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

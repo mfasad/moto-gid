@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🏍️</text></svg>">
+    <title>Как проверить катушку зажигания на скутере: диагностика мультиметром — Мото Гид</title>
+    <meta name="description" content="Пошаговая инструкция проверки катушки зажигания на скутере. Замер сопротивления, поиск пробоев и неисправностей. Ремонт системы зажигания своими руками.">
+    <link rel="canonical" href="https://moto-gid.vercel.app/articles/k/ka/kak-proverit-katushku-zazhiganiya-na-skutere.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как проверить катушку зажигания на скутере: диагностика мультиметром">
+    <meta property="og:description" content="Пошаговая инструкция проверки катушки зажигания на скутере. Замер сопротивления, поиск пробоев и неисправностей. Ремонт системы зажигания своими руками.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780130877">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🏍️</span>
+                <span class="pb-logo-text">Мото Гид</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/mopedy-i-skutery/" class="pb-nav-active">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/mopedy-i-skutery/" class="pb-dropdown-item">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/" class="pb-dropdown-item">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/" class="pb-dropdown-item">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/" class="pb-dropdown-item">📐 Самоделки и Чертежи</a>
+<a href="/category/remont-dvigatelej/" class="pb-dropdown-item">🔧 Ремонт Двигателей</a>
+<a href="/category/elektrika-i-provodka/" class="pb-dropdown-item">⚡ Электрика и Проводка</a>
+<a href="/category/zakony-i-prava/" class="pb-dropdown-item">⚖️ Законы и Права</a>
+<a href="/category/raskhodniki-i-masla/" class="pb-dropdown-item">🛢️ Расходники и Масла</a>
+<a href="/category/tyuning-i-modernizatsiya/" class="pb-dropdown-item">🚀 Тюнинг и Модернизация</a>
+<a href="/category/elektromototekhnika/" class="pb-dropdown-item">🔋 Электромототехника</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/mopedy-i-skutery/">Мопеды и Скутеры</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как проверить катушку зажигания на скутере: диагностика мультиметром</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#принцип-работы-и-типы-катушек-на-скутерах">Принцип работы и типы катушек на скутерах</a></li><li><a href="#визуальный-осмотр-и-первичная-диагностика">Визуальный осмотр и первичная диагностика</a></li><li><a href="#проверка-первичной-обмотки-мультиметром">Проверка первичной обмотки мультиметром</a></li><li><a href="#диагностика-вторичной-обмотки">Диагностика вторичной обмотки</a></li><li><a href="#поиск-пробоя-на-корпус-на-массу">Поиск пробоя на корпус (на массу)</a></li><li><a href="#замена-катушки-и-особенности-монтажа">Замена катушки и особенности монтажа</a></li><li><a href="#частые-вопросы-по-диагностике-зажигания">Частые вопросы по диагностике зажигания</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/n/ne/net-iskry-na-skutere-4t.html">Нет искры на скутере 4т: полная диагностика системы зажигания</a></li><li><a href="/articles/k/ka/kak-vybrat-moped-dlya-nachinayushchikh.html">Как выбрать мопед для начинающих: гид по моделям и характеристикам</a></li><li><a href="/articles/r/ri/riga-16-moped-skolko-kubov.html">Рига 16 Мопед: Объем Двигателя, Мощность и Характеристики</a></li><li><a href="/articles/z/za/zadnij-disk-na-moped-alfa.html">Задний диск тормозной на мопед Альфа: выбор и замена</a></li><li><a href="/articles/l/lu/luchshie-skutery-50-kubov.html">Лучшие скутеры 50 кубов 2026: Рейтинг и советы по выбору</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Проверка катушки зажигания на скутере: полная инструкция</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#принцип-работы-и-типы-катушек-на-скутерах">Принцип работы и типы катушек на скутерах</a></li><li><a href="#визуальный-осмотр-и-первичная-диагностика">Визуальный осмотр и первичная диагностика</a></li><li><a href="#проверка-первичной-обмотки-мультиметром">Проверка первичной обмотки мультиметром</a></li><li><a href="#диагностика-вторичной-обмотки">Диагностика вторичной обмотки</a></li><li><a href="#поиск-пробоя-на-корпус-на-массу">Поиск пробоя на корпус (на массу)</a></li><li><a href="#замена-катушки-и-особенности-монтажа">Замена катушки и особенности монтажа</a></li><li><a href="#частые-вопросы-по-диагностике-зажигания">Частые вопросы по диагностике зажигания</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Отсутствие искры — одна из самых частых причин, по которой <strong>скутер</strong> отказывается заводиться. Владельцы двухколесной техники часто грешат на свечи или аккумулятор, забывая о главном элементе системы <strong>зажигания</strong> — катушке. Именно она преобразует низкое напряжение бортовой сети в мощный импульс, способный пробить зазор свечи. Если этот узел выйдет из строя, двигатель не запустится даже с свечой и полностью заряженной батареей.</p>
+
+<p>Диагностика <strong>катушки зажигания</strong> не требует сложного оборудования или глубоких знаний электротехники. Достаточно иметь базовый набор инструментов и мультиметр. В этой статье мы подробно разберем, как выявить неисправность, измерить сопротивление обмоток и понять, подлежит ли узел ремонту или требует замены. Правильная диагностика сэкономит вам время и деньги, исключив покупку заведомо исправных деталей.</p>
+
+<div class="pb-poll" id="poll-59b436cf"><div class="pb-poll-question">📊 Как часто у вас пропадает искра на скутере?</div><div class="pb-poll-option" data-poll="59b436cf" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Раз в сезон</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="59b436cf" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Постоянная проблема</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="59b436cf" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Первый раз столкнулся</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="59b436cf" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Никогда не было</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="принцип-работы-и-типы-катушек-на-скутерах">Принцип работы и типы катушек на скутерах</h2>
+
+<p>Прежде чем приступать к разборке, необходимо понять, с чем именно вы имеете дело. На современных мопедах и скутерах, таких как <em>Honda Dio</em> или <em>Yamaha Jog</em>, чаще всего встречаются два типа систем. Первая — классическая, где катушка получает питание от аккумулятора через коммутатор. Вторая — более распространенная на китайских моделях, где катушка работает напрямую от генератора (импульсной катушки), минуя аккумулятор в момент запуска.</p>
+
+<p>Внутри корпуса устройства находятся две обмотки: первичная и вторичная. <strong>Первичная обмотка</strong> имеет мало витков толстого провода и подключается к источнику низкого напряжения. <strong>Вторичная обмотка</strong> состоит из тысяч витков тонкой проволоки и служит для генерации высокого напряжения (до 20 000 Вольт). Пробой изоляции или обрыв провода в любой из этих обмоток приводит к полному отказу системы.</p>
+
+<p>Конструктивно узел может быть выполнен в виде отдельного бочонка с одним или двумя высоковольтными проводами, либо быть интегрированным в колпачок свечи. В последнем случае диагностика усложняется, так как требуется аккуратный демонтаж резинового чехла для доступа к контактам. Не пытайтесь проверить систему, не отсоединив её от <strong>коммутатора</strong> или генератора, чтобы избежать повреждения измерительного прибора.</p>
+
+<details class="pb-accordion"><summary>Почему катушки греются?</summary><div class="pb-accordion-body"><p>Катушка зажигания нагревается во время работы — это нормальный процесс. Однако чрезмерный перегрев может указывать на короткое замыкание во вторичной обмотке или неисправность коммутатора, который подает импульсы слишком часто или с нарушенной длительностью.</p></div></details>
+
+<h2 id="визуальный-осмотр-и-первичная-диагностика">Визуальный осмотр и первичная диагностика</h2>
+
+<p>Перед тем как вооружиться мультиметром, проведите тщательный визуальный осмотр. Часто причина отсутствия искры лежит на поверхности. Осмотрите корпус на предмет трещин, сколов или следов перегрева (оплавленный пластик). Трещина в корпусе может пропускать влагу внутрь, вызывая пробой высокого напряжения на массу, особенно в дождливую погоду.</p>
+
+<p>Обратите особое внимание на высоковольтный провод и колпачок свечи. Если провод перетерт или колпачок болтается, искра может уходить в сторону, а не на электрод свечи. Окисление контактов на клеммах низковольтного входа также является частой проблемой. Зачистите контакты наждачной бумагой до блеска перед подключением тестера.</p>
+
+<blockquote>⚠️ <strong>Внимание</strong>: Никогда не проверяйте наличие искры, держа высоковольтный провод рукой или используя отвертку с изолированной ручкой на весу. Высокое напряжение может нанести серьезную травму или повредить электронику скутера. Всегда используйте зажим для фиксации провода на массе двигателя.</blockquote>
+
+<p>Если внешних повреждений не выявлено, переходим к инструментальной проверке. Убедитесь, что свеча зажигания исправна. Выкрутите её, наденьте колпачок и прижмите резьбой к металлу двигателя (массе). Попросите помощника крутануть стартер. Если искры нет совсем или она очень слабая (красная, а не синяя), проблема с высокой долей вероятности кроется в катушке или цепях её питания.</p>
+
+<h2 id="проверка-первичной-обмотки-мультиметром">Проверка первичной обмотки мультиметром</h2>
+
+<p>Для проведения замеров вам понадобится цифровой мультиметр, переключенный в режим измерения сопротивления (Ом), обычно это предел 200 Ом. Отсоедините разъем низковольтного подключения от катушки. Вставьте щупы прибора в контакты разъема на самой катушке. Полярность в данном случае не имеет значения.</p>
+
+<p>Нормальное сопротивление первичной обмотки варьируется в зависимости от модели скутера. Для большинства 50-кубовых моторов оно составляет от 0,4 до 2,0 Ом. Если прибор показывает бесконечность (единица на дисплее), значит, в обмотке произошел <strong>обрыв</strong>. Если сопротивление близко к нулю — произошло межвитковое замыкание. В обоих случаях деталь подлежит замене.</p>
+
+<p>Иногда показания могут быть нестабильными. Пошевелите провода внутри разъема. Если цифры на экране скачут, значит, контакт внутри катушки нарушен. Это часто случается на старых моделях, где провод припаян непосредственно к контактной группе без надежной фиксации.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Подготовка к замерам сопротивления</h4><label class="check-item"><input type="checkbox"><span>Выключить зажигание скутера</span></label><label class="check-item"><input type="checkbox"><span>Отсоединить минусовую клемму АКБ</span></label><label class="check-item"><input type="checkbox"><span>Снять разъем с катушки</span></label><label class="check-item"><input type="checkbox"><span>Очистить контакты от окисления</span></label><label class="check-item"><input type="checkbox"><span>Переключить мультиметр в режим Ом</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<h2 id="диагностика-вторичной-обмотки">Диагностика вторичной обмотки</h2>
+
+<p>Проверка высоковольтной части требует большей аккуратности. Один щуп мультиметра подключается к выводу низкого напряжения (любой из двух), а второй — к контакту внутри высоковольтного колпачка. Для этого может потребоваться аккуратно снять резиновый пыльник или выкрутить контактный винт из колпачка.</p>
+
+<p>Сопротивление вторичной обмотки значительно выше и обычно лежит в диапазоне от 2 до 9 кОм (килоОм). Точные значения лучше смотреть в сервисной документации для конкретной модели, например, для <em>Suzuki Address</em> или китайских клонов <em>Honda Lead</em>. Превышение этого значения говорит об обрыве тонкого провода внутри, а занижение — о пробое изоляции между витками.</p>
+
+<p>Таблица ниже приводит ориентировочные значения сопротивления для популярных типов катушек, устанавливаемых на скутеры объемом 50 и 150 кубов:</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип скутера</th>
+<th>Первичная обмотка (Ом)</th>
+<th>Вторичная обмотка (кОм)</th>
+<th>Тип подключения</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Китайский 50 кубов (2Т/4Т)</td>
+<td>0.5 - 1.5</td>
+<td>3.0 - 6.0</td>
+<td>От генератора/АКБ</td>
+</tr>
+<tr>
+<td>Японский 50 кубов (старый)</td>
+<td>0.8 - 1.2</td>
+<td>4.0 - 8.0</td>
+<td>От коммутатора</td>
+</tr>
+<tr>
+<td>Скутер 150 кубов (GY6)</td>
+<td>0.3 - 0.8</td>
+<td>2.5 - 5.0</td>
+<td>От коммутатора DC</td>
+</tr>
+<tr>
+<td>Спортивные вариаторы</td>
+<td>0.4 - 1.0</td>
+<td>3.5 - 7.0</td>
+<td>Усиленная искра</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Помните, что значения могут отличаться в зависимости от производителя. Если ваши замеры сильно отклоняются от табличных данных, это верный признак неисправности. Не игнорируйте даже небольшие отклонения, так как под нагрузкой такая катушка может не выдавать достаточной энергии для воспламенения смеси.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если у вас нет мультиметра, можно временно заменить подозрительную катушку на заведомо исправную от другого скутера. Это самый быстрый способ исключить неисправность без замеров.</p></aside>
+
+<h2 id="поиск-пробоя-на-корпус-на-массу">Поиск пробоя на корпус (на массу)</h2>
+
+<p>Одной из коварных неисправностей является пробой высокого напряжения на корпус катушки. В этом случае обмотки могут показывать нормальное сопротивление, но искра уходит внутрь металлического крепления или на раму, не доходя до свечи. Для проверки установите мультиметр в режим измерения сопротивления на максимальный предел (2000 кОм или 20 МОм).</p>
+
+<p>Подключите один щуп к высоковольтному выходу, а второй прижмите к металлическому кронштейну крепления катушки или к любому чистому металлу на двигателе. Прибор должен показывать бесконечность (единицу в левом углу экрана). Любые другие значения свидетельствуют о нарушении изоляции.</p>
+
+<blockquote>⚠️ <strong>Внимание</strong>: При сборке убедитесь, что металлический хомут крепления не касается токоведущих частей катушки, если конструкция не предусматривает заземления через корпус. Используйте диэлектрические прокладки при необходимости.</blockquote>
+
+<p>Также осмотрите поверхность катушки в темное время суток при заведенном двигателе (если он запускается с перебоями). Синие искрящиеся дорожки на корпусе укажут на место утечки напряжения. Часто это происходит из-за накопившейся грязи или масляного налета, которые становятся проводниками при высоком напряжении.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Пробой на массу часто возникает из-за микротрещин в корпусе, которые не видны днем. Тщательный осмотр в темноте при работающем моторе — лучший способ их обнаружить.</p></aside>
+
+<h2 id="замена-катушки-и-особенности-монтажа">Замена катушки и особенности монтажа</h2>
+
+<p>Если диагностика подтвердила неисправность, катушку необходимо заменить. При покупке новой детали обращайте внимание не только на внешний вид, но и на электрические параметры. Универсальные китайские катушки часто имеют завышенное сопротивление, что приводит к слабой искре на высоких оборотах.</p>
+
+<p>При установке новой катушки обязательно используйте термоусадку или изоляционную ленту на местах соединений, особенно если разъемы не совпадают идеально. Плохой контакт в цепи низкого напряжения приведет к перегреву соединений и быстрому выходу из строя новой детали. Затягивайте крепежные болты с умеренным усилием, чтобы не треснул пластиковый корпус.</p>
+
+<p>После замены проведите контрольный запуск. Дайте двигателю поработать на холостых оборотах 5-10 минут. Периодически ощупывайте корпус катушки (осторожно, чтобы не обжечься). Она должна быть теплой, но не обжигающе горячей. Чрезмерный нагрев говорит о несоответствии параметров или проблемах в системе зажигания в целом.</p>
+
+<blockquote>⚠️ <strong>Внимание</strong>: Параметры работы систем зажигания могут отличаться в зависимости от года выпуска и модификации двигателя. Всегда сверяйтесь с сервисной книжкой вашего скутера перед покупкой запчастей, так как производители могут менять поставщиков компонентов.</blockquote>
+
+<h2 id="частые-вопросы-по-диагностике-зажигания">Частые вопросы по диагностике зажигания</h2>
+
+<details>
+<summary>Можно ли восстановить сгоревшую катушку зажигания?</summary>
+<p>Теоретически можно перемотать обмотки, но на практике это экономически нецелесообразно. Стоимость новой катушки для скутера низкая, а качество заводской намотки и изоляции в кустарных условиях повторить крайне сложно. Проще и надежнее купить новую деталь.</p>
+</details>
+
+<details>
+<summary>Почему есть искра на выкрученной свече, но скутер не заводится?</summary>
+<p>Искра на воздухе (на выкрученной свече) требует меньшего напряжения, чем искра внутри цилиндра под давлением. Если катушка слабая, она может пробивать воздух, но не способна создать разряд в камере сгорания. Также причина может быть в переобогащенной смеси или отсутствии компрессии.</p>
+</details>
+
+<details>
+<summary>Влияет ли заряд аккумулятора на работу катушки?</summary>
+<p>Да, если ваша система зажигания питается от аккумулятора (DC CDI). При низком напряжении АКБ искра будет слабой или нестабильной. В системах AC CDI (питание от генератора) заряд батареи не влияет на искрообразование, но влияет на работу стартера.</p>
+</details>
+
+<details>
+<summary>Как часто нужно менять катушку зажигания?</summary>
+<p>Катушка зажигания — долговечный узел и не имеет регламента замены. Её меняют только при выходе из строя. Однако рекомендуется проверять состояние контактов и целостность изоляции каждые 10 000 км пробега или раз в сезон.</p>
+</details>
+
+<details>
+<summary>Может ли неисправный коммутатор убить новую катушку?</summary>
+<p>Да, это возможно. Если коммутатор формирует неправильные импульсы или короткое замыкание в силовых ключах, он может подать повышенное напряжение или ток на первичную обмотку, что приведет к перегреву и пробою новой катушки. Всегда проверяйте цепь управления.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/n/ne/net-iskry-na-skutere-4t.html" class="pb-related-card">
+                <span class="pb-related-title">Нет искры на скутере 4т: полная диагностика системы зажигания</span>
+                <span class="pb-related-desc">Подробный разбор причин отсутствия искры на 4-тактном скутере. Проверка катушки, свечи, CDI, статора</span>
+            </a><a href="/articles/k/ka/kak-vybrat-moped-dlya-nachinayushchikh.html" class="pb-related-card">
+                <span class="pb-related-title">Как выбрать мопед для начинающих: гид по моделям и характеристикам</span>
+                <span class="pb-related-desc">Сравнение 50 и 125 кубов, выбор двигателя, обзор лучших моделей. Полный гайд по покупке первого мопе</span>
+            </a><a href="/articles/r/ri/riga-16-moped-skolko-kubov.html" class="pb-related-card">
+                <span class="pb-related-title">Рига 16 Мопед: Объем Двигателя, Мощность и Характеристики</span>
+                <span class="pb-related-desc">Сколько кубов у мопеда Рига-16? Полный обзор модели, характеристики двигателя, устройство трансмисси</span>
+            </a><a href="/articles/z/za/zadnij-disk-na-moped-alfa.html" class="pb-related-card">
+                <span class="pb-related-title">Задний диск тормозной на мопед Альфа: выбор и замена</span>
+                <span class="pb-related-desc">Как выбрать и заменить задний тормозной диск на мопед Alpha. Размеры 60-90 мм, отличия от барабана, </span>
+            </a><a href="/articles/l/lu/luchshie-skutery-50-kubov.html" class="pb-related-card">
+                <span class="pb-related-title">Лучшие скутеры 50 кубов 2026: Рейтинг и советы по выбору</span>
+                <span class="pb-related-desc">Топ моделей скутеров 50cc для новичков и города. Обзор надежности, расхода топлива, документов для р</span>
+            </a><a href="/articles/k/ko/kogda-perestali-vypuskat-izh-planeta-5.html" class="pb-related-card">
+                <span class="pb-related-title">Когда перестали выпускать Иж Планета 5: история и причины</span>
+                <span class="pb-related-desc">Узнайте, когда закончилось производство легендарного мотоцикла Иж Планета 5, почему его сняли с конв</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🏍️ Мото Гид</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a> · <a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a> · <a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a> · <a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a> · <a href="/category/remont-dvigatelej/">🔧 Ремонт Двигателей</a> · <a href="/category/elektrika-i-provodka/">⚡ Электрика и Проводка</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мото Гид. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

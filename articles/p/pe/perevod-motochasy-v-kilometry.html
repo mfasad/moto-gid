@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🏍️</text></svg>">
+    <title>Перевод моточасов в километры: калькулятор и формулы — Мото Гид</title>
+    <meta name="description" content="Как перевести моточасы в километры для мотоблока и техники. Коэффициенты Хонда, Ямаха, Лифан. Таблица соответствия и формулы расчета.">
+    <link rel="canonical" href="https://moto-gid.vercel.app/articles/p/pe/perevod-motochasy-v-kilometry.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Перевод моточасов в километры: калькулятор и формулы">
+    <meta property="og:description" content="Как перевести моточасы в километры для мотоблока и техники. Коэффициенты Хонда, Ямаха, Лифан. Таблица соответствия и формулы расчета.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780130877">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🏍️</span>
+                <span class="pb-logo-text">Мото Гид</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/mopedy-i-skutery/" class="pb-dropdown-item">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/" class="pb-dropdown-item">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/" class="pb-dropdown-item">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/" class="pb-dropdown-item">📐 Самоделки и Чертежи</a>
+<a href="/category/remont-dvigatelej/" class="pb-dropdown-item">🔧 Ремонт Двигателей</a>
+<a href="/category/elektrika-i-provodka/" class="pb-dropdown-item">⚡ Электрика и Проводка</a>
+<a href="/category/zakony-i-prava/" class="pb-dropdown-item">⚖️ Законы и Права</a>
+<a href="/category/raskhodniki-i-masla/" class="pb-dropdown-item">🛢️ Расходники и Масла</a>
+<a href="/category/tyuning-i-modernizatsiya/" class="pb-dropdown-item">🚀 Тюнинг и Модернизация</a>
+<a href="/category/elektromototekhnika/" class="pb-dropdown-item">🔋 Электромототехника</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/raskhodniki-i-masla/">Расходники и Масла</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Перевод моточасов в километры: калькулятор и формулы</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#что-такое-моточас-и-почему-он-важнее-пробега">Что такое моточас и почему он важнее пробега</a></li><li><a href="#коэффициенты-пересчета-для-разных-типов-техники">Коэффициенты пересчета для разных типов техники</a></li><li><a href="#формула-расчета-и-влияние-оборотов-двигателя">Формула расчета и влияние оборотов двигателя</a></li><li><a href="#особенности-учета-для-мотоблоков-и-минитракторов">Особенности учета для мотоблоков и минитракторов</a></li><li><a href="#влияние-навесного-оборудования-на-расход-ресурса">Влияние навесного оборудования на расход ресурса</a></li><li><a href="#практические-рекомендации-по-ведению-журнала-то">Практические рекомендации по ведению журнала ТО</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-slit-maslo-s-mopeda-alfa.html">Как слить масло с мопеда Альфа: пошаговая инструкция 2026</a></li><li><a href="/articles/k/ka/kak-podobrat-vizor-na-shlem.html">Как подобрать визор на шлем: размеры, установка, защита</a></li><li><a href="/articles/k/ka/kak-zamenit-maslo-v-motobloke.html">Замена масла в мотоблоке: пошаговая инструкция 2026</a></li><li><a href="/articles/p/pi/pirelli-angel-gt-2.html">Pirelli Angel GT 2: Обзор, тесты и характеристики мотопрок</a></li><li><a href="/articles/k/ka/kakoe-maslo-zalivat-v-dvigatel-skutera-4t-50kub.html">Какое масло заливать в 4Т скутер 50 кубов: экспертный выбор</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как перевести моточасы в километры на мототехнике</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#что-такое-моточас-и-почему-он-важнее-пробега">Что такое моточас и почему он важнее пробега</a></li><li><a href="#коэффициенты-пересчета-для-разных-типов-техники">Коэффициенты пересчета для разных типов техники</a></li><li><a href="#формула-расчета-и-влияние-оборотов-двигателя">Формула расчета и влияние оборотов двигателя</a></li><li><a href="#особенности-учета-для-мотоблоков-и-минитракторов">Особенности учета для мотоблоков и минитракторов</a></li><li><a href="#влияние-навесного-оборудования-на-расход-ресурса">Влияние навесного оборудования на расход ресурса</a></li><li><a href="#практические-рекомендации-по-ведению-журнала-то">Практические рекомендации по ведению журнала ТО</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Вопрос о том, как правильно перевести моточасы в километры, является одним из самых распространенных среди владельцев садовой и мототехники. Владельцы <em>мотоблоков</em>, <em>генераторов</em> и <em>тракторов</em> часто сталкиваются с ситуацией, когда в инструкции по эксплуатации регламент технического обслуживания указан строго в моточасах, а не в пройденном расстоянии. Это создает путаницу, особенно если вы привыкли ориентироваться на спидометр автомобиля.</p>
+
+<p>Суть проблемы кроется в различии условий работы двигателя. Когда вы едете на машине по трассе, двигатель работает в одном ритме, а при вспашке плотной глины на низких оборотах нагрузка на агрегат колоссальна, но пробег при этом минимален. Именно поэтому производители используют <strong>моточасы</strong> как универсальную единицу измерения износа, которая учитывает время работы двигателя независимо от того, движется техника или стоит на месте.</p>
+
+<p>В этой статье мы детально разберем методики пересчета, коэффициенты для разных брендов и объясним, почему простой математический подход здесь не работает без учета специфики эксплуатации вашей техники.</p>
+
+<h2 id="что-такое-моточас-и-почему-он-важнее-пробега">Что такое моточас и почему он важнее пробега</h2>
+
+<p>Моточас — это единица измерения продолжительности работы двигателя, которая эквивалентна одному часу работы на номинальных оборотах. Однако, понятие "номинальные обороты" у каждого производителя свое. Для <em>бензиновых двигателей</em> внутреннего сгорания это обычно средние рабочие обороты, при которых достигается максимальный крутящий момент без перегрузки.</p>
+
+<p>Использование моточасов позволяет более точно определить ресурс <strong>моторесурса</strong> и необходимость замены масла. Если вы будете ориентироваться только на километры, вы рискуете перекатать масло в условиях тяжелых нагрузок. Например, при работе с активной фрезой мотоблок может пройти всего 2 километра за час, но двигатель при этом испытывает нагрузки, сопоставимые с 50 километрами езды по шоссе.</p>
+
+<p>Современные <em>электронные счетчики</em> моточасов часто имеют встроенные алгоритмы, которые учитывают не только время, но и обороты коленчатого вала. Это делает их показания более точными по сравнению с простыми хронометрами. Понимание этой разницы критически важно для продления жизни вашей техники.</p>
+
+<blockquote>⚠️ Внимание: Никогда не игнорируйте регламент замены масла, указанный в моточасах, даже если вам кажется, что техника прошла мало километров. Переработанное масло теряет свои смазывающие свойства и ведет к ускоренному износу поршневой группы.</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Для точного контроля ресурса двигателя установите универсальный электронный счетчик моточасов, который подключается к свечному проводу. Это дешевое устройство окупится за счет своевременного ТО.</p></aside>
+
+<h2 id="коэффициенты-пересчета-для-разных-типов-техники">Коэффициенты пересчета для разных типов техники</h2>
+
+<p>Единой формулы, которая подошла бы для всей техники в мире, не существует. Разные двигатели имеют разные передаточные числа редукторов, диаметр колес и рабочие диапазоны оборотов. Поэтому для перевода используются усредненные <strong>коэффициенты</strong>, которые зависят от типа техники и бренда двигателя.</p>
+
+<p>Наиболее распространенным стандартом для садовой техники с двигателями <em>Honda</em>, <em>Lifan</em> или <em>Zongshen</em> является коэффициент 1 к 10-12. Это означает, что один моточас примерно равен 10-12 километрам пробега при средней нагрузке. Однако для тяжелых <em>минитракторов</em> этот коэффициент может быть снижен до 1 к 5 из-за огромной тяговой нагрузки.</p>
+
+<p>Важно также учитывать тип выполняемых работ. Если вы просто транспортируете груз по ровной дороге, коэффициент будет выше. Если же вы проводите глубокую вспашку или работаете снегоуборщиком с мокрым снегом, коэффициент резко падает, так как "износ" за единицу времени возрастает многократно.</p>
+
+<div class="pb-poll" id="poll-eef0fc19"><div class="pb-poll-question">📊 Какой тип техники у вас?</div><div class="pb-poll-option" data-poll="eef0fc19" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Мотоблок с колесами</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="eef0fc19" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Мотоблок с гусеницами</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="eef0fc19" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Минитрактор</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="eef0fc19" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Снегоуборщик</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="eef0fc19" data-idx="4" onclick="pbPollVote(this)"><span class="pb-poll-label">Генератор</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<p>Ниже приведена таблица с ориентировочными коэффициентами для популярных типов задач. Помните, что это справочные данные, и реальная нагрузка может отличаться.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип техники / Задача</th>
+<th>Двигатель</th>
+<th>Коэффициент (1 м/ч = км)</th>
+<th>Режим нагрузки</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Мотоблок (транспорт)</td>
+<td>Бензиновый 6.5 л.с.</td>
+<td>10 - 12 км</td>
+<td>Средний</td>
+</tr>
+<tr>
+<td>Мотоблок (вспашка)</td>
+<td>Бензиновый 7.0 л.с.</td>
+<td>4 - 6 км</td>
+<td>Высокий</td>
+</tr>
+<tr>
+<td>Минитрактор (косилка)</td>
+<td>Дизель 12 л.с.</td>
+<td>8 - 10 км</td>
+<td>Средний</td>
+</tr>
+<tr>
+<td>Снегоуборщик</td>
+<td>Бензиновый 9.0 л.с.</td>
+<td>3 - 5 км</td>
+<td>Экстремальный</td>
+</tr>
+</tbody>
+</table></div>
+
+<h2 id="формула-расчета-и-влияние-оборотов-двигателя">Формула расчета и влияние оборотов двигателя</h2>
+
+<p>Для тех, кто хочет подойти к вопросу математически точно, существует формула, учитывающая обороты двигателя. Стандартный моточас часто рассчитывается исходя из 3600 оборотов коленчатого вала в минуту, хотя на практике техника редко работает в таком режиме постоянно.</p>
+
+<p>Более точный расчет можно произвести, зная средние обороты, на которых работает ваш <em>агрегат</em>. Формула выглядит следующим образом: реальные моточасы равны отношению фактических оборотов к номинальным, умноженному на время работы. Однако вручную считать это каждый раз неудобно.</p>
+
+<p>Проще всего использовать эмпирическое правило: если двигатель работает на полных оборотах (максимальная мощность), то 1 моточас равен 1 календарному часу. Если работа ведется на холостом ходу или низких оборотах, износ идет медленнее. Но для регламента ТО обычно берут "худший" сценарий, чтобы гарантировать надежность.</p>
+
+<pre><code>Условный расчет износа:
+<p>Износ = (Фактические обороты / Номинальные обороты) * Время работы</code></pre></p>
+
+<p>Стоит отметить, что современные системы управления двигателем в дорогой технике уже делают эти расчеты автоматически. Владельцу остается лишь считать показания на дисплее.</p>
+
+<details class="pb-accordion"><summary>Почему нельзя просто делить на скорость?</summary><div class="pb-accordion-body"><p>Средняя скорость мотоблока при вспашке может составлять всего 0.5 - 1 км/ч. Если вы просто умножите время работы на скорость, вы получите ничтожно малый пробег, который не отражает реального износа масла и фильтров.</p></div></details>
+
+<h2 id="особенности-учета-для-мотоблоков-и-минитракторов">Особенности учета для мотоблоков и минитракторов</h2>
+
+<p>Владельцы <em>мотоблоков</em> часто совершают ошибку, пытаясь приравнять их работу к автомобильной. Конструктивные особенности редукторов мотоблоков таковы, что при активной работе с навесным оборудованием скорость движения крайне низка. При этом крутящий момент на выходном валу максимален.</p>
+
+<p>Для <strong>дизельных двигателей</strong>, которые часто устанавливаются на минитрактора, ситуация еще более специфична. Дизель развивает максимальный момент на низких оборотах, поэтому понятие "моточас" для него может отличаться от бензинового аналога. Ресурс дизеля в моточасах обычно выше, но требования к качеству топлива и интервалам замены масла строже.</p>
+
+<p>При работе с активными фрезами или роторными косилками нагрузка на двигатель скачкообразная. В такие моменты счетчик моточасов должен фиксировать повышенный износ. Если ваш счетчик этого не умеет, рекомендуется сокращать интервал замены масла на 15-20% от рекомендованного.</p>
+
+<blockquote>⚠️ Внимание: Интервалы замены трансмиссионного масла в редукторе мотоблока также привязаны к моточасам, а не к пробегу. Не забывайте менять его согласно инструкции, иначе шестерни редуктора могут выйти из строя.</blockquote>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Контроль ресурса техники</h4><label class="check-item"><input type="checkbox"><span>Записать дату первой заправки</span></label><label class="check-item"><input type="checkbox"><span>Зафиксировать начальные показания счетчика</span></label><label class="check-item"><input type="checkbox"><span>Установить напоминание о ТО через 50 м/ч</span></label><label class="check-item"><input type="checkbox"><span>Проверить уровень масла перед работой</span></label><label class="check-item"><input type="checkbox"><span>Осмотреть воздушный фильтр</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<h2 id="влияние-навесного-оборудования-на-расход-ресурса">Влияние навесного оборудования на расход ресурса</h2>
+
+<p>Тип навесного оборудования напрямую влияет на то, как быстро "накручиваются" моточасы в пересчете на износ. Плуг, требующий большого тягового усилия, нагружает двигатель иначе, чем легкая тележка для перевозки урожая.</p>
+
+<p>Использование <em>щетки</em> или <em>снегоуборочного шнека</em> создает постоянную высокую нагрузку. В таких условиях 1 моточас может быть приравнен к 3-4 километрам условного пробега по трассе. Это связано с тем, что двигатель работает в зоне пиковых нагрузок, температура масла растет, и оно быстрее окисляется.</p>
+
+<p>Напротив, работа в транспортном режиме с прицепом по твердой поверхности позволяет использовать более высокий коэффициент пересчета. Двигатель работает в экономичном режиме, и ресурс расходуется медленнее. Всегда анализируйте, какую работу вы выполняли, прежде чем решать, пора ли менять масло.</p>
+
+<p>Эксперты рекомендуют вести журнал работ, где вы будете записывать не только моточасы, но и тип выполненной операции. Это поможет в будущем точнее прогнозировать сроки следующего обслуживания.</p>
+
+<h2 id="практические-рекомендации-по-ведению-журнала-то">Практические рекомендации по ведению журнала ТО</h2>
+
+<p>Чтобы ваша техника служила долго, недостаточно просто знать формулы. Необходима дисциплина в ведении записей. Заведите простой блокнот или используйте приложение на смартфоне для фиксации моточасов.</p>
+
+<p>Записывайте дату, текущие показания счетчика и вид работ. Это позволит вам отследить динамику износа. Например, если вы заметили, что за сезон вы наработали 100 моточасов только на вспашке, вы поймете, что двигатель подвергался экстремальным нагрузкам.</p>
+
+<p>Не забывайте, что первый обкаточный период требует особого внимания. После первых 5-10 моточасов необходимо обязательно заменить масло, независимо от того, сколько километров вы проехали. В этот период происходит притирка деталей, и в масле накапливается много металлической стружки.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Самый надежный способ продлить жизнь двигателю — менять масло чуть чаще регламента, особенно после сезона тяжелых работ (вспашка целины, уборка снега).</p></aside>
+
+<blockquote>⚠️ Внимание: Технические характеристики и регламенты обслуживания могут отличаться в зависимости от конкретной модели двигателя и года выпуска. Всегда сверяйтесь с официальным руководством пользователя вашей техники, так как производители могут вносить изменения в рекомендации.</blockquote>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Сколько моточасов равен один километр на мотоблоке Нева?</summary>
+<p>Для мотоблоков марки <em>Нева</em> с двигателями Subaru или Honda при транспортной работе принято считать 1 моточас равным 10-12 км. При работе с навесным оборудованием (плуг, фреза) этот эквивалент снижается до 4-6 км из-за высокой нагрузки на двигатель.</p>
+</details>
+
+<details>
+<summary>Можно ли вообще не считать километры, а ориентироваться только на моточасы?</summary>
+<p>Да, это даже предпочтительнее. Моточасы являются более объективным показателем износа двигателя и масла. Пробег на садовой технике часто не отражает реальной нагрузки, так как скорость движения может быть крайне низкой при высоком сопротивлении грунта.</p>
+</details>
+
+<details>
+<summary>Как часто нужно менять масло, если я использую технику редко?</summary>
+<p>Даже если вы не наработали положенные моточасы, масло в двигателе рекомендуется менять не реже одного раза в год, перед началом сезона. Со временем масло теряет свои свойства из-за окисления и накопления конденсата, независимо от пробега.</p>
+</details>
+
+<details>
+<summary>Есть ли разница в пересчете для двухтактных и четырехтактных двигателей?</summary>
+<p>Да, разница существенная. Двухтактные двигатели (часто используются на бензопилах и легких мотоблоках) имеют иной цикл работы и смазываются смесью масла и бензина. Для них понятие "замена масла в картере" не применимо в том же смысле, а ресурс измеряется исключительно в моточасах выработки смеси.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-slit-maslo-s-mopeda-alfa.html" class="pb-related-card">
+                <span class="pb-related-title">Как слить масло с мопеда Альфа: пошаговая инструкция 2026</span>
+                <span class="pb-related-desc">Подробное руководство по замене масла на мопеде Альфа: инструменты, последовательность действий, оши</span>
+            </a><a href="/articles/k/ka/kak-podobrat-vizor-na-shlem.html" class="pb-related-card">
+                <span class="pb-related-title">Как подобрать визор на шлем: размеры, установка, защита</span>
+                <span class="pb-related-desc">Полное руководство по выбору визора для мотоциклетного шлема. Размеры, типы покрытий, антифог и совм</span>
+            </a><a href="/articles/k/ka/kak-zamenit-maslo-v-motobloke.html" class="pb-related-card">
+                <span class="pb-related-title">Замена масла в мотоблоке: пошаговая инструкция 2026</span>
+                <span class="pb-related-desc">Как правильно поменять масло в мотоблоке: выбор масла, периодичность, слив и заливка. Инструкция для</span>
+            </a><a href="/articles/p/pi/pirelli-angel-gt-2.html" class="pb-related-card">
+                <span class="pb-related-title">Pirelli Angel GT 2: Обзор, тесты и характеристики мотопрок</span>
+                <span class="pb-related-desc">Честный отзыв о шинах Pirelli Angel GT 2. Разбор состава смеси, поведение в дождь, ресурс и сравнени</span>
+            </a><a href="/articles/k/ka/kakoe-maslo-zalivat-v-dvigatel-skutera-4t-50kub.html" class="pb-related-card">
+                <span class="pb-related-title">Какое масло заливать в 4Т скутер 50 кубов: экспертный выбор</span>
+                <span class="pb-related-desc">Подробный гайд по выбору масла для 4-тактного скутера 50 кубов: вязкость, бренды, сезонность и ошибк</span>
+            </a><a href="/articles/k/ka/kakoe-maslo-zalivaetsya-v-reduktor-motobloka.html" class="pb-related-card">
+                <span class="pb-related-title">Какое масло заливать в редуктор мотоблока: выбор и инструкция</span>
+                <span class="pb-related-desc">Подробное руководство по выбору масла для редуктора мотоблока: типы, вязкость, бренды и пошаговая ин</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🏍️ Мото Гид</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a> · <a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a> · <a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a> · <a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a> · <a href="/category/remont-dvigatelej/">🔧 Ремонт Двигателей</a> · <a href="/category/elektrika-i-provodka/">⚡ Электрика и Проводка</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мото Гид. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🏍️</text></svg>">
+    <title>Как прошить плату гироскутера: инструкция по обновлению — Мото Гид</title>
+    <meta name="description" content="Подробное руководство по прошивке материнской платы гироскутера. Разбор ошибок, выбор ПО и пошаговая инструкция для ремонта.">
+    <link rel="canonical" href="https://moto-gid.vercel.app/articles/k/ka/kak-proshit-platu-giroskutera.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как прошить плату гироскутера: инструкция по обновлению">
+    <meta property="og:description" content="Подробное руководство по прошивке материнской платы гироскутера. Разбор ошибок, выбор ПО и пошаговая инструкция для ремонта.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780130877">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🏍️</span>
+                <span class="pb-logo-text">Мото Гид</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/mopedy-i-skutery/" class="pb-dropdown-item">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/" class="pb-dropdown-item">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/" class="pb-dropdown-item">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/" class="pb-dropdown-item">📐 Самоделки и Чертежи</a>
+<a href="/category/remont-dvigatelej/" class="pb-dropdown-item">🔧 Ремонт Двигателей</a>
+<a href="/category/elektrika-i-provodka/" class="pb-dropdown-item">⚡ Электрика и Проводка</a>
+<a href="/category/zakony-i-prava/" class="pb-dropdown-item">⚖️ Законы и Права</a>
+<a href="/category/raskhodniki-i-masla/" class="pb-dropdown-item">🛢️ Расходники и Масла</a>
+<a href="/category/tyuning-i-modernizatsiya/" class="pb-dropdown-item">🚀 Тюнинг и Модернизация</a>
+<a href="/category/elektromototekhnika/" class="pb-dropdown-item">🔋 Электромототехника</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/elektromototekhnika/">Электромототехника</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как прошить плату гироскутера: инструкция по обновлению</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#диагностика-неисправностей-и-выбор-прошивки">Диагностика неисправностей и выбор прошивки</a></li><li><a href="#необходимое-оборудование-и-подготовка-рабочего-места">Необходимое оборудование и подготовка рабочего места</a></li><li><a href="#схема-подключения-и-распайка-контактов">Схема подключения и распайка контактов</a></li><li><a href="#программное-обеспечение-для-прошивки">Программное обеспечение для прошивки</a></li><li><a href="#пошаговый-процесс-записи-микрокода">Пошаговый процесс записи микрокода</a></li><li><a href="#калибровка-и-тестирование-после-прошивки">Калибровка и тестирование после прошивки</a></li><li><a href="#частые-вопросы-и-проблемы-faq">Частые вопросы и проблемы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-poluchit-prava-na-elektroskuter.html">Как получить права на электроскутер в 2026 году: пошаговая инструкция</a></li><li><a href="/articles/g/gi/giroskuter-ustrojstvo-i-printsip-raboty.html">Устройство гироскутера: принцип работы, датчики и схема</a></li><li><a href="/articles/s/sm/smart-balance-wheel-65.html">Smart Balance Wheel 6.5 дюймов: выбор, ремонт и настройка</a></li><li><a href="/articles/e/el/elektrobajk-bez-prav-i-registratsii.html">Электробайк без прав и регистрации 2026: законно ли это и как выбрать?</a></li><li><a href="/articles/p/pr/proshivka-giroskutera-pod-ruchku.html">Прошивка гироскутера под ручку: пошаговое руководство и нюансы</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как прошить плату гироскутера: полное руководство</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#диагностика-неисправностей-и-выбор-прошивки">Диагностика неисправностей и выбор прошивки</a></li><li><a href="#необходимое-оборудование-и-подготовка-рабочего-места">Необходимое оборудование и подготовка рабочего места</a></li><li><a href="#схема-подключения-и-распайка-контактов">Схема подключения и распайка контактов</a></li><li><a href="#программное-обеспечение-для-прошивки">Программное обеспечение для прошивки</a></li><li><a href="#пошаговый-процесс-записи-микрокода">Пошаговый процесс записи микрокода</a></li><li><a href="#калибровка-и-тестирование-после-прошивки">Калибровка и тестирование после прошивки</a></li><li><a href="#частые-вопросы-и-проблемы-faq">Частые вопросы и проблемы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Самостоятельная перепрошивка <strong>материнской платы</strong> гироскутера часто становится единственным способом вернуть к жизни устройство, которое внезапно перестало реагировать на команды или начало вести себя неадекватно. Владельцы двухколесных электрических самокатов нередко сталкиваются с ситуацией, когда девайс издает предупреждающие звуки, мигает индикаторами или просто отказывается включаться, хотя батарея полностью заряжена. В таких случаях проблема чаще всего кроется не в физическом повреждении компонентов, а в программном сбое контроллера.</p>
+
+<p>Процесс обновления микропрограммного обеспечения требует определенной технической подготовки и наличия специализированного оборудования. Ошибки в процессе записи кода могут привести к полной неработоспособности устройства, превратив его в"кирпич", который сложно восстановить даже в сервисном центре. Поэтому перед началом работ критически важно изучить модель вашей платы, найти совместимую версию <em>firmware</em> и подготовить стабильное соединение между компьютером и платой управления.</p>
+
+<p>В этой статье мы детально разберем алгоритм действий, необходимые инструменты и подводные камни, с которыми придется столкнуться при восстановлении программного обеспечения <strong>гироскутера</strong>. Мы не будем рассматривать банальные перезагрузки, а сосредоточимся на глубокой процедуре перепрограммирования чипа памяти через интерфейсы связи.</p>
+
+<h2 id="диагностика-неисправностей-и-выбор-прошивки">Диагностика неисправностей и выбор прошивки</h2>
+
+<p>Прежде чем подключать провода к плате, необходимо точно определить характер сбоя. Часто пользователи путают программную ошибку с поломкой датчиков Холла или разбалансировкой аккумуляторной батареи. Если гироскутер вибрирует при попытке старта, но колеса не крутятся, или если он издает прерывистые звуковые сигналы при наклоне, это явные признаки рассинхронизации данных в контроллере.</p>
+
+<p>Ключевым этапом является идентификация модели материнской платы. В мире электрического транспорта существует множество производителей контроллеров, таких как <em>Gotway</em>, <em>Kingsong</em>, <em>Ninebot</em> или безымянные китайские OEM-решения. Универсальной прошивки не существует: попытка залить код от одной модели на плату другой гарантированно выведет устройство из строя.</p>
+
+<blockquote>⚠️ <strong>Внимание:</strong> Никогда не используйте прошивки из непроверенных источников или форумов без четкого указания совместимости с вашей ревизией платы. Несоответствие версии ПО может (сжечь) силовые ключи MOSFET мгновенно при первом запуске.</blockquote>
+
+<p>Для поиска правильного файла вам потребуется разобрать корпус и осмотреть маркировку на текстолите. Обычно номер версии напечатан белым шрифтом рядом с процессором или разъемом подключения дисплея. Также стоит обратить внимание на мощность двигателя и напряжение батареи, так как прошивка часто содержит ограничения по току, специфичные для конкретной конфигурации.</p>
+
+<div class="pb-poll" id="poll-f0b5e1b6"><div class="pb-poll-question">📊 Какая у вас основная проблема с гироскутером?</div><div class="pb-poll-option" data-poll="f0b5e1b6" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Не включается вообще</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="f0b5e1b6" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Мигает индикатор ошибки</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="f0b5e1b6" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Едет рывками</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="f0b5e1b6" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Самостоятельно разгоняется</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="f0b5e1b6" data-idx="4" onclick="pbPollVote(this)"><span class="pb-poll-label">Другое</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="необходимое-оборудование-и-подготовка-рабочего-места">Необходимое оборудование и подготовка рабочего места</h2>
+
+<p>Для успешного выполнения процедуры вам понадобится не только компьютер, но и специфические переходники. Стандартный USB-кабель здесь не подойдет, так как большинство плат гироскутеров используют TTL-интерфейс (UART) для отладки и прошивки. Вам потребуется преобразователь интерфейсов, например, на базе чипа <em>FT232RL</em> или <em>CH340</em>, который преобразует сигналы USB в логические уровни, понятные микроконтроллеру.</p>
+
+<p>Кроме того, критически важно обеспечить стабильное питание платы во время записи. Внутренняя батарея гироскутера может быть отключена или иметь недостаточный заряд для стабильной работы контроллера под нагрузкой процесса записи. Рекомендуется использовать внешний лабораторный блок питания с напряжением, соответствующим номиналу батареи (обычно 36В или 42В), или подключить зарядное устройство напрямую к контактам B+ и B- на плате.</p>
+
+<ul>
+<li>🔌 Адаптер USB-TTL (преобразователь интерфейсов) с поддержкой напряжения 3.3В или 5В.</li>
+<li>🔋 Внешний источник питания или полностью заряженная АКБ гироскутера.</li>
+<li>💻 Ноутбук с операционной системой Windows (большинство утилит не работают на macOS/Linux).</li>
+<li>🧲 Паяльник и тонкие провода для временного подключения к контактам платы (если разъем отсутствует).</li>
+</ul>
+
+<p>Подготовка рабочего места также включает установку драйверов для вашего USB-адаптера. Без корректно установленных драйверов компьютер не увидит подключенное устройство в диспетчере задач. Часто для чипов <em>CH340</em> требуется ручная установка драйверов с официального сайта производителя, так как стандартные средства Windows могут их не распознать.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед пайкой проводов обязательно залудите контактные площадки на плате небольшим количеством припоя — это обеспечит надежный контакт и предотвратит отслаивание дорожек при многократных подключениях.</p></aside>
+
+<h2 id="схема-подключения-и-распайка-контактов">Схема подключения и распайка контактов</h2>
+
+<p>Самый ответственный момент — физическое соединение платы гироскутера с компьютером. Ошибка в подключении проводов может привести к короткому замыканию и выходу из строя как адаптера, так и материнской платы. На большинстве контроллеров присутствует сервисный разъем с маркировкой <code>Tx</code>, <code>Rx</code>, <code>GND</code> и иногда <code>VCC</code>.</p>
+
+<p>Принцип подключения перекрестный: передающий вывод одного устройства должен соединяться с приемным выводом другого. То есть, контакт <code>Tx</code> на плате гироскутера соединяется с контактом <code>Rx</code> на USB-адаптере, и наоборот. Земля (<code>GND</code>) должна быть общей для обоих устройств, иначе обмен данными будет невозможен из-за разности потенциалов.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Контакт на плате гироскутера</th>
+<th>Контакт на USB-TTL адаптере</th>
+<th>Назначение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Tx</code> (Transmit)</td>
+<td><code>Rx</code> (Receive)</td>
+<td>Передача данных от платы</td>
+</tr>
+<tr>
+<td><code>Rx</code> (Receive)</td>
+<td><code>Tx</code> (Transmit)</td>
+<td>Прием данных платой</td>
+</tr>
+<tr>
+<td><code>GND</code> (Ground)</td>
+<td><code>GND</code> (Ground)</td>
+<td>Общая земля</td>
+</tr>
+<tr>
+<td><code>VCC</code> (5V/3.3V)</td>
+<td><code>VCC</code> (не подключать!)</td>
+<td>Питание логики (обычно не нужно)</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>В некоторых моделях, таких как <em>Xiaomi Mi Scooter</em> или их клоны, сервисный порт может быть скрыт под защитной наклейкой или требовать подключения через специфический разъем <em>JST</em>. Если разъем отсутствует, придется аккуратно припаиваться к тестовым точкам на плате. Используйте тонкие провода в силиконовой изоляции, чтобы избежать случайных замыканий на соседние компоненты.</p>
+
+<details class="pb-accordion"><summary>Что делать, если нет маркировки контактов?</summary><div class="pb-accordion-body"><p>Если маркировка стерта, используйте мультиметр в режиме прозвонки. Найдите контакт, соединенный с массой корпуса или минусом батареи — это GND. Контакты Tx и Rx обычно расположены рядом с процессором. Попробуйте подключить питание и измерить напряжение на подозрительных контактах относительно земли: на Tx в простое обычно присутствует логическая единица (3.3В или 5В).</p></div></details>
+
+<h2 id="программное-обеспечение-для-прошивки">Программное обеспечение для прошивки</h2>
+
+<p>Выбор программы зависит от архитектуры процессора, установленного на вашей плате. Большинство бюджетных гироскутеров работают на микроконтроллерах семейства <em>STM32</em> или специализированных чипах <em>Holtek</em>. Для STM32 наиболее популярной утилитой является <em>STM32 ST-LINK Utility</em> или <em>Flash Loader Demonstrator</em>. Для других архитектур могут потребоваться проприетарные утилиты от производителя, которые часто распространяются только в составе закрытых сервисных пакетов.</p>
+
+<p>Процесс настройки софта включает выбор правильного COM-порта, который присвоился вашему USB-адаптеру в системе. Скорость обмена данными (Baud Rate) также должна совпадать с настройками загрузчика платы. Стандартные значения варьируются от 9600 до 115200 бод, но для скоростной записи прошивки часто используются более высокие значения, например, <code>500000</code> или <code>921600</code>.</p>
+
+<p>После загрузки файла прошивки (обычно с расширением <code>.bin</code> или <code>.hex</code>) необходимо проверить контрольную сумму. Некоторые программы делают это автоматически, но ручная проверка через калькулятор CRC лишней не будет. Это гарантирует, что файл не был поврежден при скачивании или сохранении.</p>
+
+<blockquote>⚠️ <strong>Внимание:</strong> Если программа выдает ошибку при попытке соединения (Connection Failed), не пытайтесь сразу перезапускать процесс. Проверьте надежность контакта проводов GND и полярность подключения Tx/Rx. Частая ошибка — перепутанные местами линии приема и передачи.</blockquote>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Готовность к прошивке</h4><label class="check-item"><input type="checkbox"><span>Драйверы адаптера установлены</span></label><label class="check-item"><input type="checkbox"><span>Плата подключена к внешнему питанию</span></label><label class="check-item"><input type="checkbox"><span>Контакты Tx/Rx перекрестно соединены</span></label><label class="check-item"><input type="checkbox"><span>Файл прошивки загружен в программу</span></label><label class="check-item"><input type="checkbox"><span>Порт COM выбран верно</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<h2 id="пошаговый-процесс-записи-микрокода">Пошаговый процесс записи микрокода</h2>
+
+<p>Когда все соединения проверены, а программа настроена, можно приступать к записи. Первым шагом часто требуется перевести микроконтроллер в режим загрузчика (Bootloader mode). Для этого на плате может быть специальная перемычка <code>BOOT0</code>, которую нужно замкнуть на плюс перед подачей питания, или же требуется нажать и удерживать сервисную кнопку при включении.</p>
+
+<p>После успешного обнаружения устройства в программе, инициируйте процесс записи (Program Start / Download). В этот момент критически важно не допускать никаких вибраций или отключений питания. Процесс занимает от 30 секунд до нескольких минут в зависимости от объема памяти и скорости интерфейса.</p>
+
+<pre><code>Алгоритм действий:
+<p>1. Замкнуть перемычку BOOT0 (если требуется).</p>
+<p>2. Подать питание на плату.</p>
+<p>3. Нажать кнопку"Connect" в программе.</p>
+<p>4. Выбрать файл прошивки.bin.</p>
+<p>5. Нажать"Start Programming".</p>
+<p>6. Дождаться сообщения"Download verified successfully".</p>
+<p>7. Отключить питание, разомкнуть перемычку BOOT0.</code></pre></p>
+
+<p>Если процесс завис на определенном проценте, не паникуйте сразу. Иногда индикатор прогресса замирает, но запись идет. Однако, если через 5 минут ничего не изменилось, скорее всего, произошел сбой связи. В таком случае необходимо обесточить систему, перепроверить контакты и попробовать снизить скорость обмена данными в настройках программы.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Успешная верификация прошивки (Verification OK) является единственным гарантом того, что код записан корректно. Не отключайте питание до появления этого сообщения.</p></aside>
+
+<h2 id="калибровка-и-тестирование-после-прошивки">Калибровка и тестирование после прошивки</h2>
+
+<p>После успешной записи новой версии ПО гироскутер почти всегда требует процедуры калибровки. Новая прошивка сбрасывает старые настройки акселерометров и гироскопов, поэтому без калибровки устройство не сможет удерживать равновесие. Обычно эта процедура выполняется комбинацией кнопок включения или через мобильное приложение, если плата поддерживает Bluetooth-связь.</p>
+
+<p>Первый запуск должен проводиться в безопасных условиях: колесо гироскутера должно быть вывешено в воздухе, чтобы при резком старте оно не нанесло травм и не повредило механизм. Внимательно следите за реакцией двигателя: он должен плавно набирать обороты при наклоне и так же плавно тормозить.</p>
+
+<ul>
+<li>🛠️ Выполните калибровку горизонта согласно инструкции для вашей модели.</li>
+<li>🔊 Проверьте работу звуковых уведомлений и индикации заряда.</li>
+<li>🏎️ Протестируйте плавность хода на минимальной скорости перед выездом на улицу.</li>
+</ul>
+
+<p>В некоторых случаях после прошивки может измениться логика работы ограничителей скорости или чувствительность педалей. Это нормальное явление, так как разные версии <em>firmware</em> имеют различные алгоритмы управления. Если поведение устройства кажется опасным, лучше откатиться на предыдущую версию или обратиться к настройкам через сервисное меню.</p>
+
+<blockquote>⚠️ <strong>Внимание:</strong> Технические характеристики и алгоритмы работы контроллеров могут меняться производителем без уведомления. Всегда сверяйте параметры калибровки с официальной документацией для конкретной ревизии платы, так как универсальных значений углов наклона не существует.</blockquote>
+
+<h2 id="частые-вопросы-и-проблемы-faq">Частые вопросы и проблемы (FAQ)</h2>
+
+<details>
+<summary>Что делать, если компьютер не видит плату гироскутера?</summary>
+<p>В первую очередь проверьте диспетчер устройств Windows. Если адаптер отображается с желтым восклицательным знаком, переустановите драйверы (обычно CH340 или FT232). Если устройства нет вовсе, проверьте целостность проводов и надежность контакта GND. Попробуйте заменить USB-кабель или порт.</p>
+</details>
+
+<details>
+<summary>Можно ли прошить гироскутер без разборки корпуса?</summary>
+<p>В 99% случаев это невозможно. Сервисные контакты находятся непосредственно на материнской плате внутри корпуса. Некоторые модели имеют внешние диагностические порты, но они редки и обычно защищены заглушками.</p>
+</details>
+
+<details>
+<summary>Гироскутер пищит после прошивки, что это значит?</summary>
+<p>Скорее всего, не выполнена калибровка датчиков наклона. Также возможен конфликт версий: прошивка не подходит для вашей аппаратной ревизии датчиков Холла. Попробуйте выполнить процедуру калибровки заново.</p>
+</details>
+
+<details>
+<summary>Где скачать оригинальную прошивку для моей модели?</summary>
+<p>Официальные прошивки редко выкладываются в открытый доступ. Их можно найти на специализированных форумах энтузиастов (например, EUC Forum), в группах владельцев конкретных брендов или запросить у поставщика запчастей.</p>
+</details>
+
+<details>
+<summary>Опасно ли менять прошивку на модифицированную (для снятия лимита скорости)?</summary>
+<p>Да, это опасно. Снятие программных ограничений скорости увеличивает нагрузку на батарею и контроллер, для которых они не были рассчитаны. Это может привести к перегреву, возгоранию или разрушению аккумулятора на высокой скорости.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-poluchit-prava-na-elektroskuter.html" class="pb-related-card">
+                <span class="pb-related-title">Как получить права на электроскутер в 2026 году: пошаговая инструкция</span>
+                <span class="pb-related-desc">Нужны ли права на электроскутер? Категории, экзамены, документы и штрафы за езду без прав — разбирае</span>
+            </a><a href="/articles/g/gi/giroskuter-ustrojstvo-i-printsip-raboty.html" class="pb-related-card">
+                <span class="pb-related-title">Устройство гироскутера: принцип работы, датчики и схема</span>
+                <span class="pb-related-desc">Подробный разбор устройства гироскутера: как работают гироскопы, акселерометры и моторы. Принцип бал</span>
+            </a><a href="/articles/s/sm/smart-balance-wheel-65.html" class="pb-related-card">
+                <span class="pb-related-title">Smart Balance Wheel 6.5 дюймов: выбор, ремонт и настройка</span>
+                <span class="pb-related-desc">Полный гид по гироскутерам 6.5 дюймов. Выбор модели, калибровка, ремонт платы, замена аккумулятора и</span>
+            </a><a href="/articles/e/el/elektrobajk-bez-prav-i-registratsii.html" class="pb-related-card">
+                <span class="pb-related-title">Электробайк без прав и регистрации 2026: законно ли это и как выбрать?</span>
+                <span class="pb-related-desc">Разбираемся, какие электробайки можно ездить без прав и регистрации в 2026 году, их технические хара</span>
+            </a><a href="/articles/p/pr/proshivka-giroskutera-pod-ruchku.html" class="pb-related-card">
+                <span class="pb-related-title">Прошивка гироскутера под ручку: пошаговое руководство и нюансы</span>
+                <span class="pb-related-desc">Как самостоятельно прошить гироскутер для управления ручкой: выбор прошивки, инструменты, инструкция</span>
+            </a><a href="/articles/e/el/elektroskuter-100-km-ch.html" class="pb-related-card">
+                <span class="pb-related-title">Электроскутер 100 км/ч: выбор, характеристики и тюнинг</span>
+                <span class="pb-related-desc">Полный гид по скоростным электроскутерам 100 км/ч. Обзор лучших моделей, аккумуляторов, законов и со</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🏍️ Мото Гид</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a> · <a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a> · <a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a> · <a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a> · <a href="/category/remont-dvigatelej/">🔧 Ремонт Двигателей</a> · <a href="/category/elektrika-i-provodka/">⚡ Электрика и Проводка</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мото Гид. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

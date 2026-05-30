@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🏍️</text></svg>">
+    <title>Как работает магнето на мотоблоке: устройство и регулировка — Мото Гид</title>
+    <meta name="description" content="Подробный разбор работы системы зажигания магнето мотоблока. Схема, настройка зазора, поиск неисправностей и советы по ремонту.">
+    <link rel="canonical" href="https://moto-gid.vercel.app/articles/k/ka/kak-rabotaet-magneto-na-motobloke.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как работает магнето на мотоблоке: устройство и регулировка">
+    <meta property="og:description" content="Подробный разбор работы системы зажигания магнето мотоблока. Схема, настройка зазора, поиск неисправностей и советы по ремонту.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780130877">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🏍️</span>
+                <span class="pb-logo-text">Мото Гид</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/" class="pb-nav-active">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/mopedy-i-skutery/" class="pb-dropdown-item">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/" class="pb-dropdown-item">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/" class="pb-dropdown-item">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/" class="pb-dropdown-item">📐 Самоделки и Чертежи</a>
+<a href="/category/remont-dvigatelej/" class="pb-dropdown-item">🔧 Ремонт Двигателей</a>
+<a href="/category/elektrika-i-provodka/" class="pb-dropdown-item">⚡ Электрика и Проводка</a>
+<a href="/category/zakony-i-prava/" class="pb-dropdown-item">⚖️ Законы и Права</a>
+<a href="/category/raskhodniki-i-masla/" class="pb-dropdown-item">🛢️ Расходники и Масла</a>
+<a href="/category/tyuning-i-modernizatsiya/" class="pb-dropdown-item">🚀 Тюнинг и Модернизация</a>
+<a href="/category/elektromototekhnika/" class="pb-dropdown-item">🔋 Электромототехника</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/motobloki-i-kultivatory/">Мотоблоки и Культиваторы</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как работает магнето на мотоблоке: устройство и регулировка</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#физический-принцип-генерации-искры">Физический принцип генерации искры</a></li><li><a href="#конструкция-узла-зажигания">Конструкция узла зажигания</a></li><li><a href="#схема-подключения-и-электрическая-цепь">Схема подключения и электрическая цепь</a></li><li><a href="#регулировка-зазора-между-катушкой-и-маховиком">Регулировка зазора между катушкой и маховиком</a></li><li><a href="#диагностика-неисправностей-модуля-зажигания">Диагностика неисправностей модуля зажигания</a></li><li><a href="#особенности-электронных-и-контактных-систем">Особенности электронных и контактных систем</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ku/kultivator-s-plugom-dlya-dachi.html">Культиватор с плугом для дачи: выбор и настройка</a></li><li><a href="/articles/k/ka/kak-pomenyat-datchik-urovnya-masla-na-motobloke.html">Замена датчика уровня масла на мотоблоке: пошаговая инструкция</a></li><li><a href="/articles/z/za/zadnyaya-skorost-na-motoblok-krot-svoimi-rukami.html">Задняя скорость на мотоблок Крот своими руками: схемы и чертежи</a></li><li><a href="/articles/r/ra/razmery-adaptera-na-motoblok.html">Размеры адаптеров на мотоблок: таблица совместимости и выбор</a></li><li><a href="/articles/p/po/posadka-kartofelya-pod-kultivator.html">Посадка картофеля под культиватор: технология и настройка</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Принцип работы и устройство магнето на мотоблоке</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#физический-принцип-генерации-искры">Физический принцип генерации искры</a></li><li><a href="#конструкция-узла-зажигания">Конструкция узла зажигания</a></li><li><a href="#схема-подключения-и-электрическая-цепь">Схема подключения и электрическая цепь</a></li><li><a href="#регулировка-зазора-между-катушкой-и-маховиком">Регулировка зазора между катушкой и маховиком</a></li><li><a href="#диагностика-неисправностей-модуля-зажигания">Диагностика неисправностей модуля зажигания</a></li><li><a href="#особенности-электронных-и-контактных-систем">Особенности электронных и контактных систем</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Двигатели внутреннего сгорания, устанавливаемые на современную сельскохозяйственную технику, требуют точной синхронизации для запуска. Сердцем этой системы является <strong>магнето</strong> — специальный генератор переменного тока, который вырабатывает высоковольтный импульс в нужный момент.</p>
+
+<p>Понимание того, как работает магнето на мотоблоке, позволяет владельцу самостоятельно диагностировать отсутствие искры и провести качественный ремонт без обращения в сервис. В отличие от батарейной системы зажигания, здесь энергия берется непосредственно от вращения маховика двигателя.</p>
+
+<p>В этой статье мы детально разберем физический принцип действия, конструкцию узла и алгоритм правильной регулировки зазора между катушкой и магнитом.</p>
+
+<h2 id="физический-принцип-генерации-искры">Физический принцип генерации искры</h2>
+
+<p>В основе работы лежит закон электромагнитной индукции. Когда вы дергаете стартер, маховик с встроенными постоянными магнитами начинает вращаться рядом со стационарной катушкой индуктивности. Изменение магнитного поля в сердечнике катушки индуцирует электрический ток.</p>
+
+<p>Однако для воспламенения топливной смеси напряжения в несколько вольт недостаточно. Требуется пробой воздушного зазора в свече зажигания, что подразумевает разряд в 10-15 тысяч вольт. Эту задачу решает <strong>трансформатор</strong>, встроенный в систему зажигания.</p>
+
+<p>Процесс происходит циклично: при прохождении магнита мимо катушки в первичной обмотке накапливается энергия. В строго определенный момент (перед верхней мертвой точкой поршня) электронный ключ или механический прерыватель резко разрывает цепь.</p>
+
+<p>Резкое исчезновение магнитного поля вызывает скачок напряжения во вторичной обмотке, которая имеет в сотни раз больше витков. Этот мощный импульс по высоковольтному проводу уходит на свечу, создавая искру.</p>
+
+<blockquote>⚠️ Внимание: Никогда не проверяйте наличие искры, держа высоковольтный провод руками или используя металлический предмет на весу. Пробой может произойти через одежду или на корпус двигателя, повредив электронную начинку модуля.</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Для визуальной проверки искры используйте старый корпус свечи или специальный тестер, прижав его к массе двигателя на расстоянии 5-7 мм от электрода.</p></aside>
+
+<h2 id="конструкция-узла-зажигания">Конструкция узла зажигания</h2>
+
+<p>Система зажигания мотоблока, будь то популярный <em>Нева</em>, <em>Зубр</em> или китайский аналог, обычно состоит из нескольких ключевых элементов. Они объединены в единый модуль или разнесены конструктивно в зависимости от модели двигателя.</p>
+
+<p>Главным элементом является сама катушка (индукционная катушка), часто называемая в народе "бобиной". Внутри нее находятся первичная и вторичные обмотки, намотанные на магнитопровод. Современные модели оснащены электронными коммутаторами, которые заменяют устаревшие механические контакты.</p>
+
+<p>Вторым важным компонентом является маховик. На его внутренней поверхности закреплены магниты. При вращении они создают переменное магнитное поле. Расстояние между магнитами маховика и сердечником катушки критически важно для мощности искры.</p>
+
+<p>Также в цепь входит свеча зажигания и высоковольтный провод с колпачком. Колпачок часто содержит подавительное сопротивление для снижения радиопомех, что особенно актуально для двигателей с электронным управлением.</p>
+
+<ul>
+<li>🔋 <strong>Маховик</strong> — создает вращающееся магнитное поле.</li>
+<li>⚡ <strong>Катушка зажигания</strong> — преобразует низкое напряжение в высокое.</li>
+<li>🕯️ <strong>Свеча зажигания</strong> — формирует искровой разряд в камере сгорания.</li>
+<li>🔌 <strong>Выключатель (стоп-кран)</strong> — замыкает цепь на массу для остановки двигателя.</li>
+</ul>
+
+<div class="pb-poll" id="poll-90431743"><div class="pb-poll-question">📊 С какой проблемой при запуске мотоблока вы сталкивались чаще?</div><div class="pb-poll-option" data-poll="90431743" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Нет искры вообще</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="90431743" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Искра слабая и нестабильная</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="90431743" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Свеча постоянно мокрая</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="90431743" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Двигатель не глохнет при выключении</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="схема-подключения-и-электрическая-цепь">Схема подключения и электрическая цепь</h2>
+
+<p>Чтобы разобраться, почему пропала искра, необходимо понимать, как ток течет по системе. В большинстве мотоблоков используется схема с замыканием на массу для остановки. Это означает, что пока кнопка "Стоп" не нажата, цепь разомкнута, и искра есть.</p>
+
+<p>Если провод, идущий от катушки к выключателю, поврежден или замкнут на корпус двигателя постоянно, искра пропадет полностью. Двигатель будет крутиться стартером, но не заведется. Это одна из самых частых причин неисправности.</p>
+
+<p>Проверка целостности цепи осуществляется мультиметром в режиме прозвонки. Один щуп ставится на массу катушки, другой — на контакт провода выключателя. При нажатой кнопке "Стоп" должно быть сопротивление близкое к нулю (замыкание), при отжатой — бесконечность (разрыв).</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Элемент цепи</th>
+<th>Функция</th>
+<th>Типичная неисправность</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Выключатель</td>
+<td>Остановка двигателя</td>
+<td>Залипание контактов, обрыв провода</td>
+</tr>
+<tr>
+<td>Высоковольтный провод</td>
+<td>Передача импульса</td>
+<td>Пробой изоляции, окисление контакта</td>
+</tr>
+<tr>
+<td>Катушка (магнето)</td>
+<td>Генерация напряжения</td>
+<td>Межвитковое замыкание, пробой корпуса</td>
+</tr>
+<tr>
+<td>Свеча</td>
+<td>Воспламенение смеси</td>
+<td>Нагар, разрушение электрода, трещина керамики</td>
+</tr>
+</tbody>
+</table></div>
+
+<details class="pb-accordion"><summary>Почему искра есть, но двигатель не заводится?</summary><div class="pb-accordion-body"><p>Наличие искры не гарантирует правильную работу двигателя. Причина может быть в несовпадении угла опережения зажигания, неправильной смеси топлива или компрессии. Искра может проскакивать слишком рано или слишком поздно.</p></div></details>
+
+<h2 id="регулировка-зазора-между-катушкой-и-маховиком">Регулировка зазора между катушкой и маховиком</h2>
+
+<p>Самая распространенная причина ухудшения работы зажигания — нарушение теплового зазора. Со временем подшипники коленвала изнашиваются, или крепеж катушки ослабевает от вибрации. Расстояние между магнитом и сердечником меняется.</p>
+
+<p>Если зазор слишком большой, магнитное поле будет слишком слабым, чтобы индуцировать достаточное напряжение. Искра станет слабой или исчезнет вовсе. Если зазор слишком маленький, магниты маховика могут ударить по катушке при вращении, физически разрушив её.</p>
+
+<p>Оптимальное расстояние обычно составляет от 0.1 до 0.3 мм. Точные значения зависят от модели двигателя и указаны в руководстве пользователя. Для регулировки используется лист бумаги или пластиковая карта в качестве щупа.</p>
+
+<p>Процесс настройки требует аккуратности. Ослабьте крепежные болты катушки, вставьте между магнитом и сердечником щуп, притяните катушку магнитом к щупу и затяните болты. После извлечения щупа зазор будет выставлен автоматически.</p>
+
+<pre><code>Порядок действий:
+<p>1. Снять кожух вентилятора.</p>
+<p>2. Ослабить два болта крепления катушки.</p>
+<p>3. Повернуть маховик так, чтобы магниты встали напротив катушки.</p>
+<p>4. Вставить щуп (лист бумаги А4).</p>
+<p>5. Прижать катушку к магниту и затянуть болты.</code></pre></p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Подготовка к регулировке зажигания</h4><label class="check-item"><input type="checkbox"><span>Снять защитный кожух</span></label><label class="check-item"><input type="checkbox"><span>Очистить поверхность от грязи и масла</span></label><label class="check-item"><input type="checkbox"><span>Подготовить щуп (бумага или пластик)</span></label><label class="check-item"><input type="checkbox"><span>Ослабить крепежные болты катушки</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<blockquote>⚠️ Внимание: Не используйте металлический щуп для регулировки! Магниты маховика обладают огромной силой притяжения и могут резко схлопнуться, повредив ваши пальцы или сколов керамический сердечник катушки.</blockquote>
+
+<h2 id="диагностика-неисправностей-модуля-зажигания">Диагностика неисправностей модуля зажигания</h2>
+
+<p>Если регулировка зазора не помогла, а свеча зажигания новая и исправна, проблема кроется внутри самого модуля. Внутреннее межвитковое замыкание — частая болезнь дешевых китайских катушек, которые перегреваются при длительной работе.</p>
+
+<p>Диагностировать пробой обмотки визуально сложно. Часто на корпусе видны лишь микротрещины или следы копоти в месте выхода высоковольтного провода. Более надежный метод — замена заведомо исправной катушкой.</p>
+
+<p>Также стоит проверить состояние высоковольтного провода. Со временем изоляция рассыхается, и импульс "уходит" на массу двигателя, не доходя до свечи. Особенно часто это происходит в местах изгиба провода near колпачка.</p>
+
+<p>Иногда проблема кроется в самом колпачке свечи. Внутри него находится пружинный контакт или резьбовое соединение. Если оно окислилось или отгнило от влаги, контакт с электродом свечи будет отсутствовать.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>В 80% случаев "пропажа" искры связана не с поломкой катушки, а с нарушением зазора или неисправностью свечи/колпачка.</p></aside>
+
+<h2 id="особенности-электронных-и-контактных-систем">Особенности электронных и контактных систем</h2>
+
+<p>На старых моделях мотоблоков, таких как ранние версии <em>МТЗ</em> или <em>Каскад</em>, могли встречаться контактные системы зажигания с прерывателем. В них момент искрообразования зависел от физического размыкания контактов кулачком.</p>
+
+<p>Такие системы требуют постоянного ухода: зачистки контактов от нагара, регулировки угла замкнутого состояния и смазки кулачка. Они менее надежны и чувствительны к вибрациям по сравнению с современными бесконтактными CDI-системами.</p>
+
+<p>Электронное магнето не имеет трущихся деталей. Момент разрыва цепи контролируется тиристором или транзистором. Это обеспечивает стабильную искру на любых оборотах и не требует частой регулировки, кроме выставления начального зазора.</p>
+
+<p>При модернизации старого мотоблока многие владельцы заменяют контактное зажигание на электронное от современных двигателей типа <em>Lifan</em> или <em>Honda</em>. Это значительно упрощает запуск и эксплуатацию техники.</p>
+
+<ul>
+<li>🛠️ <strong>Контактная система</strong> — требует чистки контактов каждые 50 моточасов.</li>
+<li>💡 <strong>Бесконтактная система</strong> — надежнее, не боится влаги и грязи.</li>
+<li>⚙️ <strong>Угол опережения</strong> — в электронных системах фиксирован конструктивно.</li>
+</ul>
+
+<blockquote>⚠️ Внимание: При установке универсальной катушки зажигания убедитесь, что направление вращения маховика совпадает с расчетным. Некоторые катушки работают только при вращении по часовой стрелке.</blockquote>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Почему искра есть, но появляется только после остывания двигателя?</summary>
+<p>Это классический признак пробоя изоляции катушки при нагреве. Внутри обмотки есть микротрещина. Когда двигатель горячий, сопротивление падает, и ток идет по пути наименьшего сопротивления (на массу), минуя свечу. После остывания трещина сжимается, и контакт восстанавливается. Требуется замена катушки.</p>
+</details>
+
+<details>
+<summary>Можно ли использовать автомобильную катушку зажигания на мотоблоке?</summary>
+<p>Теоретически можно, но это требует переделки всей системы. Автомобильные катушки рассчитаны на 12В и работу от аккумулятора/генератора, а магнето мотоблока генерирует ток самоиндукцией. Прямая замена без установки дополнительного коммутатора и источника питания невозможна.</p>
+</details>
+
+<details>
+<summary>Как часто нужно менять свечу зажигания на мотоблоке?</summary>
+<p>Ресурс обычной свечи составляет около 100 моточасов. Однако при использовании некачественного масла или неправильной смеси (для 2-тактных двигателей) нагар может убить свечу за 10 часов. Рекомендуется осматривать и чистить свечу каждые 25 часов работы.</p>
+</details>
+
+<details>
+<summary>Что делать, если магниты на маховике отклеились?</summary>
+<p>Это критическая поломка. Попытки приклеить их суперклеем или эпоксидкой обычно безуспешны из-за центробежной силы и вибрации. Маховик требует профессионального ремонта с переклейкой магнитов в заводских условиях или замены узла целиком.</p>
+</details>
+
+<details>
+<summary>Влияет ли зазор свечи на работу магнето?</summary>
+<p>Да, напрямую. Если зазор на свече слишком велик (более 0.8-1.0 мм), сопротивляемость разряду возрастает. Катушка может не пробить этот зазор, особенно на низких оборотах при запуске. Энергия будет уходить на пробой изоляции внутри самой катушки, выводя её из строя.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ku/kultivator-s-plugom-dlya-dachi.html" class="pb-related-card">
+                <span class="pb-related-title">Культиватор с плугом для дачи: выбор и настройка</span>
+                <span class="pb-related-desc">Полный гид по выбору культиватора с плугом. Настройка сцепки, глубина вспашки, сравнение моделей для</span>
+            </a><a href="/articles/k/ka/kak-pomenyat-datchik-urovnya-masla-na-motobloke.html" class="pb-related-card">
+                <span class="pb-related-title">Замена датчика уровня масла на мотоблоке: пошаговая инструкция</span>
+                <span class="pb-related-desc">Как самостоятельно поменять датчик уровня масла на мотоблоке: признаки неисправности, выбор запчасти</span>
+            </a><a href="/articles/z/za/zadnyaya-skorost-na-motoblok-krot-svoimi-rukami.html" class="pb-related-card">
+                <span class="pb-related-title">Задняя скорость на мотоблок Крот своими руками: схемы и чертежи</span>
+                <span class="pb-related-desc">Установка реверса на мотоблок Крот своими руками. Инструкция по переделке редуктора, схемы, выбор дв</span>
+            </a><a href="/articles/r/ra/razmery-adaptera-na-motoblok.html" class="pb-related-card">
+                <span class="pb-related-title">Размеры адаптеров на мотоблок: таблица совместимости и выбор</span>
+                <span class="pb-related-desc">Как подобрать адаптер для мотоблока по размерам и марке: универсальные и фирменные модели, крепление</span>
+            </a><a href="/articles/p/po/posadka-kartofelya-pod-kultivator.html" class="pb-related-card">
+                <span class="pb-related-title">Посадка картофеля под культиватор: технология и настройка</span>
+                <span class="pb-related-desc">Как сажать картошку мотоблоком: выбор культиватора, схема посадки, глубина заделки, уход и сбор урож</span>
+            </a><a href="/articles/p/pu/pulty-na-alfu-rkh.html" class="pb-related-card">
+                <span class="pb-related-title">Пульты для Альфа РХ: выбор, настройка и ремонт (2026)</span>
+                <span class="pb-related-desc">Подробный гайд по пультам управления для мотоблоков Альфа РХ: модели, совместимость, инструкции по п</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🏍️ Мото Гид</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a> · <a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a> · <a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a> · <a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a> · <a href="/category/remont-dvigatelej/">🔧 Ремонт Двигателей</a> · <a href="/category/elektrika-i-provodka/">⚡ Электрика и Проводка</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мото Гид. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

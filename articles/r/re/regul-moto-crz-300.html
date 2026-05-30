@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🏍️</text></svg>">
+    <title>Регулятор напряжения CRZ 300: диагностика, проверка и замена — Мото Гид</title>
+    <meta name="description" content="Подробная инструкция по проверке регулятора напряжения на питбайке CRZ 300. Симптомы неисправности, мультиметр, схема подключения и выбор аналогов.">
+    <link rel="canonical" href="https://moto-gid.vercel.app/articles/r/re/regul-moto-crz-300.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Регулятор напряжения CRZ 300: диагностика, проверка и замена">
+    <meta property="og:description" content="Подробная инструкция по проверке регулятора напряжения на питбайке CRZ 300. Симптомы неисправности, мультиметр, схема подключения и выбор аналогов.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780130877">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🏍️</span>
+                <span class="pb-logo-text">Мото Гид</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/" class="pb-nav-active">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/mopedy-i-skutery/" class="pb-dropdown-item">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/" class="pb-dropdown-item">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/" class="pb-dropdown-item">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/" class="pb-dropdown-item">📐 Самоделки и Чертежи</a>
+<a href="/category/remont-dvigatelej/" class="pb-dropdown-item">🔧 Ремонт Двигателей</a>
+<a href="/category/elektrika-i-provodka/" class="pb-dropdown-item">⚡ Электрика и Проводка</a>
+<a href="/category/zakony-i-prava/" class="pb-dropdown-item">⚖️ Законы и Права</a>
+<a href="/category/raskhodniki-i-masla/" class="pb-dropdown-item">🛢️ Расходники и Масла</a>
+<a href="/category/tyuning-i-modernizatsiya/" class="pb-dropdown-item">🚀 Тюнинг и Модернизация</a>
+<a href="/category/elektromototekhnika/" class="pb-dropdown-item">🔋 Электромототехника</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/pitbajki-i-enduro/">Питбайки и Эндуро</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Регулятор напряжения CRZ 300: диагностика, проверка и замена</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#принцип-работы-и-роль-регулятора-в-системе-crz-300">Принцип работы и роль регулятора в системе CRZ 300</a></li><li><a href="#основные-симптомы-неисправности-регулятора">Основные симптомы неисправности регулятора</a></li><li><a href="#инструментальная-диагностика-мультиметром">Инструментальная диагностика мультиметром</a></li><li><a href="#таблица-нормальных-показателей-напряжения">Таблица нормальных показателей напряжения</a></li><li><a href="#процесс-замены-и-выбор-аналогов">Процесс замены и выбор аналогов</a></li><li><a href="#типичные-ошибки-при-ремонте-и-обслуживании">Типичные ошибки при ремонте и обслуживании</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/e/en/enduro-i-motokross-raznitsa.html">Эндуро и мотокросс: в чем главная разница для новичка</a></li><li><a href="/articles/m/mo/mozhno-li-v-12-let-ezdit-na-pitbajke.html">Можно ли ездить на питбайке в 12 лет: закон, рост и выбор</a></li><li><a href="/articles/e/en/enduro-do-150-tysyach-rublej.html">Эндуро до 150 000 ₽ в 2026: ТОП-7 моделей + советы по выбору</a></li><li><a href="/articles/p/po/pokatushki-po-gryazi-na-pitbajkakh.html">Покатушки по грязи на питбайках: подготовка, техника и безопасность</a></li><li><a href="/articles/k/ka/kakie-zvezdy-stavit-na-pitbajk-dlya-skorosti.html">Какие звезды ставить на питбайк для скорости: выбор передаточного числа</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Регулятор напряжения для CRZ 300: полное руководство по диагностике</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#принцип-работы-и-роль-регулятора-в-системе-crz-300">Принцип работы и роль регулятора в системе CRZ 300</a></li><li><a href="#основные-симптомы-неисправности-регулятора">Основные симптомы неисправности регулятора</a></li><li><a href="#инструментальная-диагностика-мультиметром">Инструментальная диагностика мультиметром</a></li><li><a href="#таблица-нормальных-показателей-напряжения">Таблица нормальных показателей напряжения</a></li><li><a href="#процесс-замены-и-выбор-аналогов">Процесс замены и выбор аналогов</a></li><li><a href="#типичные-ошибки-при-ремонте-и-обслуживании">Типичные ошибки при ремонте и обслуживании</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Питбайки серии <em>CRZ 300</em> заслуженно пользуются популярностью благодаря удачному соотношению цены и технических характеристик. Однако, как и любая мототехника, они требуют регулярного обслуживания электрической части. Одним из самых уязвимых компонентов системы электроснабжения является регулятор напряжения, часто называемый в народе «реле зарядки». Именно этот узел отвечает за стабильность работы фар, поворотников и, что критично, за сохранность аккумулятора.</p>
+
+<p>Владельцы часто сталкиваются с ситуацией, когда мотоцикл перестает заводиться после ночной стоянки, или же свет фар начинает пульсировать при изменении оборотов двигателя. В 90% случаев виновником этих бед становится вышедший из строя <strong>регулятор выпрямитель</strong>. Игнорирование симптомов может привести к полному разряду АКБ или, что хуже, к перегоранию всей бортовой сети из-за скачков напряжения. В этой статье мы детально разберем, как выявить проблему, проверить деталь мультиметром и правильно произвести замену.</p>
+
+<h2 id="принцип-работы-и-роль-регулятора-в-системе-crz-300">Принцип работы и роль регулятора в системе CRZ 300</h2>
+
+<p>Система зажигания и освещения на питбайках <em>CRZ 300</em> построена по классической схеме с генератором переменного тока. Статор генератора вырабатывает электричество, параметры которого напрямую зависят от оборотов двигателя. Без стабилизирующего устройства напряжение могло бы достигать опасных значений при высоких оборотах, что неминуемо привело бы к выходу из строя ламп и электроники.</p>
+
+<p><strong>Регулятор напряжения</strong> выполняет двойную функцию: он выпрямляет переменный ток в постоянный для зарядки аккумулятора и ограничивает максимальное напряжение в сети. Обычно этот предел составляет около 14–14.5 Вольт. Если этот компонент перестает работать корректно, ток либо не поступает на батарею вовсе, либо идет бесконтрольно, вызывая перегрев и кипение электролита.</p>
+
+<p>Конструктивно устройство представляет собой компактный алюминиевый радиатор с тремя или четырьмя контактами. На моделях <em>CRZ 300</em> чаще всего используется схема с раздельными цепями зажигания и освещения, хотя встречаются и моноблочные варианты. Понимание того, как именно ток течет по цепи, поможет вам быстрее найти обрыв или короткое замыкание.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Не пытайтесь проверять работу регулятора «на искру» или замыкая контакты напрямую. Это может мгновенно вывести из строя статор генератора, ремонт которого обойдется значительно дороже замены самого регулятора.</p>
+</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед снятием регулятора обязательно отключите минусовую клемму аккумулятора. Это предотвратит случайное короткое замыкание инструментом о раму мотоцикла.</p></aside>
+
+<h2 id="основные-симптомы-неисправности-регулятора">Основные симптомы неисправности регулятора</h2>
+
+<p>Диагностика электрики всегда начинается с наблюдения за поведением мотоцикла в эксплуатации. Существует ряд характерных признаков, которые с высокой долей вероятности указывают на проблемы в цепи зарядки. Если вы заметили хотя бы два из перечисленных ниже симптомов, следует немедленно провести проверку мультиметром.</p>
+
+<p>Первым и самым очевидным признаком является быстрая разрядка аккумулятора. Мотоцикл может работать исправно во время поездки, так как зажигание питается от генератора, но после остановки и попытки повторного запуска стартер лишь вяло крутит или молчит. Также стоит обратить внимание на поведение оптики.</p>
+
+<p>Яркость фары напрямую зависит от оборотов двигателя? Если на холостых свет тусклый, а при прогазовке лампочка едва не сгорает от яркости — это верный признак того, что <strong>стабилизация напряжения</strong> не работает. В исправной системе яркость должна оставаться относительно постоянной независимо от оборотов.</p>
+
+<ul>
+<li>🔋 Аккумулятор постоянно разряжен, несмотря на недавнюю зарядку или замену.</li>
+<li>💡 Фары и габариты мигают или меняют яркость при изменении оборотов двигателя.</li>
+<li>🔥 Корпус регулятора чрезмерно горячий на ощупь даже после короткой поездки.</li>
+<li>⚡ Запах горелой изоляции или пластика в районе блока предохранителей.</li>
+</ul>
+
+<div class="pb-poll" id="poll-7d5b2534"><div class="pb-poll-question">📊 С какой проблемой вы столкнулись чаще всего?</div><div class="pb-poll-option" data-poll="7d5b2534" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Аккумулятор не держит заряд</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="7d5b2534" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Перегорели лампочки</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="7d5b2534" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Мотоцикл не заводится</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="7d5b2534" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Пока проблем нет</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="инструментальная-диагностика-мультиметром">Инструментальная диагностика мультиметром</h2>
+
+<p>Для точного определения неисправности визуального осмотра недостаточно. Вам понадобится цифровой мультиметр, способный измерять постоянное и переменное напряжение, а также сопротивление. Перед началом работ убедитесь, что аккумулятор заряжен хотя бы на 50%, иначе результаты замеров будут некорректными.</p>
+
+<p>Первый этап проверки — измерение напряжения на клеммах аккумулятора при работающем двигателе. Запустите мотор и дайте ему поработать на холостых оборотах. Подключите щупы мультиметра к клеммам АКБ, соблюдая полярность. Исправная система должна показывать значение в диапазоне от 13.5 до 14.5 Вольт.</p>
+
+<p>Если прибор показывает напряжение ниже 13 Вольт, значит, зарядка не идет. Если же значение превышает 15 Вольт и растет при повышении оборотов — регулятор не ограничивает ток, и аккумулятор находится под угрозой перезаряда. В обоих случаях требуется углубленная проверка контактов и самого устройства.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Алгоритм проверки мультиметром</h4><label class="check-item"><input type="checkbox"><span>Замер напряжения на АКБ на холостых</span></label><label class="check-item"><input type="checkbox"><span>Замер напряжения на АКБ при 3000-4000 об/мин</span></label><label class="check-item"><input type="checkbox"><span>Проверка целостности предохранителя</span></label><label class="check-item"><input type="checkbox"><span>Прозвонка контактов разъема регулятора</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<p>Далее необходимо проверить наличие переменного напряжения на входе регулятора (контакты от статора). При работающем двигателе между этими контактами должно присутствовать напряжение, которое растет с оборотами. Отсутствие напряжения указывает на проблему со статором или обрыв проводки, а не с самим регулятором.</p>
+
+<h2 id="таблица-нормальных-показателей-напряжения">Таблица нормальных показателей напряжения</h2>
+
+<p>Для удобства диагностики сведем основные контрольные значения в таблицу. Обратите внимание, что измерения проводятся на полностью прогретом двигателе при исправном аккумуляторе. Отклонения более чем на 0.5 Вольта от нормы считаются критическими.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Режим работы</th>
+<th>Точка замера</th>
+<th>Нормальное значение</th>
+<th>Критическое отклонение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Двигатель заглушен</td>
+<td>Клеммы аккумулятора</td>
+<td>12.5 – 13.0 В</td>
+<td>Менее 12.0 В</td>
+</tr>
+<tr>
+<td>Холостой ход</td>
+<td>Клеммы аккумулятора</td>
+<td>13.0 – 13.5 В</td>
+<td>Менее 12.8 В</td>
+</tr>
+<tr>
+<td>3000-4000 об/мин</td>
+<td>Клеммы аккумулятора</td>
+<td>13.8 – 14.5 В</td>
+<td>Более 15.0 В</td>
+</tr>
+<tr>
+<td>Холостой ход</td>
+<td>Выход статора (AC)</td>
+<td>20 – 40 В</td>
+<td>0 В (обрыв)</td>
+</tr>
+</tbody>
+</table></div>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Показатели могут незначительно отличаться в зависимости от емкости установленного аккумулятора и температуры окружающей среды. Зимой напряжение зарядки может быть чуть выше для компенсации плотности электролита.</p>
+</blockquote>
+
+<h2 id="процесс-замены-и-выбор-аналогов">Процесс замены и выбор аналогов</h2>
+
+<p>Если диагностика подтвердила неисправность <strong>регулятора выпрямителя</strong>, его необходимо заменить. На питбайках <em>CRZ 300</em> эта процедура не требует сложного инструмента. Обычно устройство расположено под боковым пластиком или рядом с воздушным фильтром, закреплено на двух болтах и имеет один электрический разъем.</p>
+
+<p>При выборе новой детали важно учитывать не только количество контактов, но и тип охлаждения. Большинство регуляторов для этой техники имеют пассивное воздушное охлаждение через алюминиевый радиатор. Крайне важно обеспечить плотный контакт корпуса устройства с рамой или специальной площадкой для отвода тепла.</p>
+
+<p>На рынке существует множество универсальных аналогов. Китайские регуляторы серии <em>SH650</em> или <em>JFZ</em> часто подходят по распиновке, но требуют проверки схемы подключения. Оригинальные запчасти стоят дороже, но гарантируют соответствие заводским параметрам. При установке универсальной детали внимательно сверьте цвета проводов.</p>
+
+<details class="pb-accordion"><summary>Секрет долговечности регулятора</summary><div class="pb-accordion-body"><p>Нанесите тонкий слой термопасты на обратную сторону регулятора перед установкой на металлическую площадку. Это улучшит теплоотвод и продлит жизнь детали в 1.5-2 раза.</p></div></details>
+
+<p>Не забудьте проверить состояние разъема. Часто окисляются контакты внутри фишки, что создает дополнительное сопротивление и нагрев. Если контакты почернели или оплавлены, разъем необходимо заменить вместе с регулятором, используя скрутку и термоусадку или пайку.</p>
+
+<h2 id="типичные-ошибки-при-ремонте-и-обслуживании">Типичные ошибки при ремонте и обслуживании</h2>
+
+<p>Многие владельцы совершают ошибки, которые приводят к повторному выходу из строя нового регулятора. Самая распространенная из них — игнорирование качества «массы». Плохой контакт минусового провода с рамой заставляет ток искать другие пути, что приводит к перегреву электроники.</p>
+
+<p>Также часто встречается установка регулятора «на весу», без плотного прилегания к металлу. Вибрации и отсутствие теплоотвода убивают полупроводниковые элементы внутри корпуса за считанные недели. Убедитесь, что болты крепления затянуты с усилием, но без фанатизма, чтобы не сорвать резьбу в алюминиевом картере.</p>
+
+<ul>
+<li>🔧 Использование проводов слишком малого сечения при удлинении цепи.</li>
+<li>🌧️ Отсутствие гидроизоляции разъема после мойки мотоцикла.</li>
+<li>🔥 Установка дополнительного мощного света без усиления генератора.</li>
+</ul>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Если вы установили ксенон или мощную LED-оптику, штатный генератор и регулятор могут не справляться с нагрузкой. В таком случае требуется модернизация системы электроснабжения.</p>
+</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Качество контакта «массы» и плотное прилегание радиатора регулятора к металлу рамы важнее, чем бренд самой детали.</p></aside>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Можно ли ездить на CRZ 300 без аккумулятора, если регулятор исправен?</summary>
+<p>Технически двигатель будет работать, так как искра вырабатывается генератором. Однако фары будут гореть очень ярко на высоких оборотах и тускло на низких, а стартер не будет функционировать. Езда без АКБ создает риск скачков напряжения, которые могут пробить катушку зажигания или CDI.</p>
+</details>
+
+<details>
+<summary>Какой аналог регулятора лучше всего подходит для CRZ 300?</summary>
+<p>Наиболее надежными считаются регуляторы с маркировкой <em>SH650-12</em> или оригинальные запчасти от <em>Zongshen</em>, так как двигатели CRZ часто являются их клонами. Важно выбирать модель с радиатором, аналогичным по площади штатному.</p>
+</details>
+
+<details>
+<summary>Почему новый регулятор сгорел через неделю после установки?</summary>
+<p>Скорее всего, причина не в самой детали. Проверьте соединение «массы» двигателя с рамой, состояние контактов статора и отсутствие короткого замыкания в проводке фар или поворотников. Часто виновником является окисленный разъем.</p>
+</details>
+
+<details>
+<summary>Как проверить статор, если регулятор новый, но зарядки нет?</summary>
+<p>Необходимо прозвонить обмотки статора на сопротивление (обычно 0.2–0.8 Ом между контактами) и проверить отсутствие замыкания на корпус (массу). Если сопротивление бесконечность или близко к нулю — статор неисправен.</p>
+</details>
+
+<details>
+<summary>Влияет ли тип масла в двигателе на работу регулятора?</summary>
+<p>Косвенно да. Регулятор часто крепится к картеру двигателя. Если масло старое и не отводит тепло, или если уровень масла низкий, температура картера растет, перегревая прилегающий регулятор. Используйте рекомендованные вязкости масел.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/e/en/enduro-i-motokross-raznitsa.html" class="pb-related-card">
+                <span class="pb-related-title">Эндуро и мотокросс: в чем главная разница для новичка</span>
+                <span class="pb-related-desc">Подробный разбор отличий между эндуро и мотокроссом. Сравнение техники, экипировки, трасс и правил. </span>
+            </a><a href="/articles/m/mo/mozhno-li-v-12-let-ezdit-na-pitbajke.html" class="pb-related-card">
+                <span class="pb-related-title">Можно ли ездить на питбайке в 12 лет: закон, рост и выбор</span>
+                <span class="pb-related-desc">Полный гид по управлению питбайком в 12 лет. Разбор законов РФ, требований к росту, выбору модели и </span>
+            </a><a href="/articles/e/en/enduro-do-150-tysyach-rublej.html" class="pb-related-card">
+                <span class="pb-related-title">Эндуро до 150 000 ₽ в 2026: ТОП-7 моделей + советы по выбору</span>
+                <span class="pb-related-desc">Рейтинг лучших эндуро-мотоциклов до 150 000 ₽: сравнение характеристик, плюсы и минусы, на что смотр</span>
+            </a><a href="/articles/p/po/pokatushki-po-gryazi-na-pitbajkakh.html" class="pb-related-card">
+                <span class="pb-related-title">Покатушки по грязи на питбайках: подготовка, техника и безопасность</span>
+                <span class="pb-related-desc">Как правильно готовить питбайк к бездорожью, выбирать трассу и ездить по грязи без поломок. Советы п</span>
+            </a><a href="/articles/k/ka/kakie-zvezdy-stavit-na-pitbajk-dlya-skorosti.html" class="pb-related-card">
+                <span class="pb-related-title">Какие звезды ставить на питбайк для скорости: выбор передаточного числа</span>
+                <span class="pb-related-desc">Подробный гайд по подбору звезд на питбайк для увеличения скорости. Расчет передаточного числа, влия</span>
+            </a><a href="/articles/s/sh/sharmax-tour-enduro-300.html" class="pb-related-card">
+                <span class="pb-related-title">Sharmax Tour Enduro 300: Полный обзор, характеристики и отзывы</span>
+                <span class="pb-related-desc">Подробный гид по мотоциклу Sharmax Tour Enduro 300. Разбор двигателя, ходовой части, реальные плюсы </span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🏍️ Мото Гид</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a> · <a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a> · <a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a> · <a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a> · <a href="/category/remont-dvigatelej/">🔧 Ремонт Двигателей</a> · <a href="/category/elektrika-i-provodka/">⚡ Электрика и Проводка</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мото Гид. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🏍️</text></svg>">
+    <title>Разборка двигателя скутера: пошаговое руководство и советы эксперта — Мото Гид</title>
+    <meta name="description" content="Как правильно разобрать двигатель на скутере 4Т и 2Т: инструменты, порядок действий, частые ошибки и советы по диагностике. Пошаговая инструкция с фото и видео.">
+    <link rel="canonical" href="https://moto-gid.vercel.app/articles/r/ra/razborka-dvigatelya-na-skutere.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Разборка двигателя скутера: пошаговое руководство и советы эксперта">
+    <meta property="og:description" content="Как правильно разобрать двигатель на скутере 4Т и 2Т: инструменты, порядок действий, частые ошибки и советы по диагностике. Пошаговая инструкция с фото и видео.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780130877">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🏍️</span>
+                <span class="pb-logo-text">Мото Гид</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/mopedy-i-skutery/" class="pb-dropdown-item">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/" class="pb-dropdown-item">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/" class="pb-dropdown-item">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/" class="pb-dropdown-item">📐 Самоделки и Чертежи</a>
+<a href="/category/remont-dvigatelej/" class="pb-dropdown-item">🔧 Ремонт Двигателей</a>
+<a href="/category/elektrika-i-provodka/" class="pb-dropdown-item">⚡ Электрика и Проводка</a>
+<a href="/category/zakony-i-prava/" class="pb-dropdown-item">⚖️ Законы и Права</a>
+<a href="/category/raskhodniki-i-masla/" class="pb-dropdown-item">🛢️ Расходники и Масла</a>
+<a href="/category/tyuning-i-modernizatsiya/" class="pb-dropdown-item">🚀 Тюнинг и Модернизация</a>
+<a href="/category/elektromototekhnika/" class="pb-dropdown-item">🔋 Электромототехника</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/remont-dvigatelej/">Ремонт Двигателей</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Разборка двигателя скутера: пошаговое руководство и советы эксперта</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#подготовка-к-разборке-инструменты-и-рабочее-место">Подготовка к разборке: инструменты и рабочее место</a></li><li><a href="#снятие-двигателя-со-скутера-пошаговая-инструкция">Снятие двигателя со скутера: пошаговая инструкция</a></li><li><a href="#разборка-4т-двигателя-порядок-действий">Разборка 4Т-двигателя: порядок действий</a></li><li><a href="#разборка-2т-двигателя-особенности-и-нюансы">Разборка 2Т-двигателя: особенности и нюансы</a></li><li><a href="#диагностика-неисправностей-что-искать-при-разборке">Диагностика неисправностей: что искать при разборке</a></li><li><a href="#типичные-ошибки-при-разборке-и-как-их-избежать">Типичные ошибки при разборке и как их избежать</a></li><li><a href="#сборка-и-первый-запуск-после-ремонта">Сборка и первый запуск после ремонта</a></li><li><a href="#faq-ответы-на-частые-вопросы">FAQ: ответы на частые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/z/za/zamena-obgonnoj-mufty-157qmj.html">Замена обгонной муфты 157QMJ: пошаговая инструкция и советы</a></li><li><a href="/articles/c/ch/chto-delat-esli-netu-kompressii-na-skutere.html">Нет компрессии на скутере: причины и методы устранения</a></li><li><a href="/articles/1/17/174-motor-skolko-loshadej.html">174 мотор: мощность в лошадиных силах и технические характеристики</a></li><li><a href="/articles/d/dv/dvigatel-na-motobloke-strelyaet-v-glushitel-prichina.html">Почему стреляет в глушитель мотоблока: причины и ремонт</a></li><li><a href="/articles/k/ka/kak-chistit-vozdushnyj-filtr-trimmera.html">Как почистить воздушный фильтр триммера: пошаговая инструкция</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Разборка двигателя скутера: подробное руководство для начинающих и профессионалов</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#подготовка-к-разборке-инструменты-и-рабочее-место">Подготовка к разборке: инструменты и рабочее место</a></li><li><a href="#снятие-двигателя-со-скутера-пошаговая-инструкция">Снятие двигателя со скутера: пошаговая инструкция</a></li><li><a href="#разборка-4т-двигателя-порядок-действий">Разборка 4Т-двигателя: порядок действий</a></li><li><a href="#разборка-2т-двигателя-особенности-и-нюансы">Разборка 2Т-двигателя: особенности и нюансы</a></li><li><a href="#диагностика-неисправностей-что-искать-при-разборке">Диагностика неисправностей: что искать при разборке</a></li><li><a href="#типичные-ошибки-при-разборке-и-как-их-избежать">Типичные ошибки при разборке и как их избежать</a></li><li><a href="#сборка-и-первый-запуск-после-ремонта">Сборка и первый запуск после ремонта</a></li><li><a href="#faq-ответы-на-частые-вопросы">FAQ: ответы на частые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Разборка двигателя скутера — задача, которая пугает многих владельцев, особенно новичков. Однако при правильном подходе и наличии необходимых инструментов этот процесс может стать не только полезным навыком, но и увлекательным опытом. Главное — понимать, что <strong>разборка двигателя</strong> требует аккуратности, терпения и соблюдения строгой последовательности действий. В этой статье мы подробно разберём, как разобрать двигатель на скутере <em>4Т</em> и <em>2Т</em>, какие инструменты понадобятся, а также укажем на типичные ошибки, которые могут привести к серьёзным поломкам.</p>
+
+<p>Независимо от того, планируете ли вы <strong>капитальный ремонт</strong>, диагностику неисправностей или простую чистку, знание устройства двигателя скутера поможет сэкономить время и деньги. Мы рассмотрим все этапы — от подготовки рабочего места до сборки и первого запуска после ремонта. А для тех, кто боится ошибиться, в конце статьи приведён FAQ с ответами на самые частые вопросы.</p>
+
+<div class="pb-poll" id="poll-98d3e455"><div class="pb-poll-question">📊 Какой тип двигателя установлен на вашем скутере?</div><div class="pb-poll-option" data-poll="98d3e455" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">2Т (двухтактный)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="98d3e455" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">4Т (четырёхтактный)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="98d3e455" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Не знаю</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="98d3e455" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Другой</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="подготовка-к-разборке-инструменты-и-рабочее-место">Подготовка к разборке: инструменты и рабочее место</h2>
+
+<p>Перед тем как приступить к разборке, необходимо подготовить <strong>инструменты</strong> и организовать рабочее пространство. Без этого процесс может затянуться или закончиться повреждением деталей. Вот что вам понадобится:</p>
+
+<ul>
+  <li>🔧 Набор рожковых и накидных ключей (размеры зависят от модели скутера, но обычно нужны <code>8, 10, 12, 14, 17 мм</code>).</li>
+  <li>🔨 Отвёртки: крестовая и плоская (желательно с магнитным наконечником для удобства).</li>
+  <li>🔩 Динамометрический ключ (для точной затяжки болтов, особенно важно для головки цилиндра).</li>
+  <li>🛠️ Съёмник для маховика и сцепления (если планируется полная разборка).</li>
+  <li>🧲 Магнит или пинцет для извлечения мелких деталей (например, стопорных колец).</li>
+  <li>📸 Фотоаппарат или смартфон (чтобы фиксировать расположение деталей перед снятием).</li>
+  <li>🧴 Растворитель или керосин для очистки деталей от грязи и масла.</li>
+  <li>📦 Организатор для мелких деталей (например, пластиковые контейнеры или поддон с ячейками).</li>
+</ul>
+
+<p>Рабочее место должно быть <strong>хорошо освещённым</strong> и просторным. Идеально подойдёт верстак или большой стол. Застелите поверхность чистой ветошью, чтобы не потерять мелкие детали и не поцарапать корпус двигателя. Если разборка проводится на улице или в гараже, убедитесь, что нет ветра или пыли — попадание грязи в разобранный двигатель может привести к серьёзным проблемам после сборки.</p>
+
+<blockquote>⚠️ <strong>Внимание:</strong> Если вы разбираете двигатель <em>Honda Dio</em>, <em>Yamaha Jog</em> или другие модели с <strong>автоматической коробкой передач</strong>, будьте осторожны с вариатором и сцеплением. Некоторые детали (например, ролики вариатора) могут "разлететься" при неаккуратном обращении.</blockquote>
+
+<h2 id="снятие-двигателя-со-скутера-пошаговая-инструкция">Снятие двигателя со скутера: пошаговая инструкция</h2>
+
+<p>Прежде чем разбирать двигатель, его необходимо снять с рамы скутера. Этот процесс может отличаться в зависимости от модели, но общая последовательность действий следующая:</p>
+
+<ol>
+  <li><strong>Слейте масло</strong> (для <em>4Т</em>-двигателей) или топливо (если планируется разборка карбюратора).</li>
+  <li>Снимите <strong>сиденье</strong> и <strong>пластиковые панели</strong>, чтобы получить доступ к двигателю.</li>
+  <li>Отсоедините <strong>аккумулятор</strong> (если он есть) и все электрические разъёмы, ведущие к двигателю (генератор, датчики, стартер).</li>
+  <li>Снимите <strong>выхлопную систему</strong> (на <em>2Т</em>-двигателях это облегчит доступ к цилиндру).</li>
+  <li>Открутите болты крепления двигателя к раме (обычно их 3-4).</li>
+  <li>Аккуратно извлеките двигатель, потянув его назад (на некоторых моделях может потребоваться снять заднее колесо или вариатор).</li>
+</ol>
+
+<p>На этом этапе важно <strong>не повредить провода</strong> и не потерять мелкие крепёжные элементы. Если вы разбираете скутер впервые, рекомендуем фотографировать каждый шаг или вести запись о расположении деталей.</p>
+
+
+<p>Слить масло/топливо|</p>
+<p>Отсоединить аккумулятор|</p>
+<p>Снять пластиковые панели|</p>
+<p>Отметить расположение проводов|</p>
+<p>Подготовить тару для мелких деталей--></p>
+
+<h2 id="разборка-4т-двигателя-порядок-действий">Разборка 4Т-двигателя: порядок действий</h2>
+
+<p>Четырёхтактные двигатели (<em>4Т</em>) устанавливаются на большинство современных скутеров, таких как <em>Honda PCX</em>, <em>Yamaha NMAX</em> или <em>Suzuki Burgman</em>. Их разборка сложнее, чем у <em>2Т</em>, но при соблюдении инструкции проблем не возникнет. Основные этапы:</p>
+
+<ol>
+  <li><strong>Снятие клапанной крышки</strong>:
+    <ul>
+      <li>Открутите болты крепления крышки (обычно 4 штуки).</li>
+      <li>Снимите крышку и проверьте состояние <strong>распределительного вала</strong> и <strong>рокеров</strong>.</li>
+      <li>Если планируется регулировка клапанов, замерьте зазоры <code>щупом</code>.</li>
+    </ul>
+  </li>
+  <li><strong>Снятие головки цилиндра</strong>:
+    <ul>
+      <li>Открутите болты головки (обычно 4 штуки) <strong>строго в порядке, обратном затяжке</strong> (обычно по схеме "крест-накрест").</li>
+      <li>Снимите головку и осмотрите <strong>прокладку</strong> — если она повреждена, её нужно заменить.</li>
+      <li>Проверьте состояние <strong>поршня</strong>, <strong>колец</strong> и <strong>цилиндра</strong> на наличие задиров или износа.</li>
+    </ul>
+  </li>
+  <li><strong>Снятие поддона и коленвала</strong>:
+    <ul>
+      <li>Открутите болты поддона и слейте остатки масла.</li>
+      <li>Снимите <strong>масляный насос</strong> (если есть).</li>
+      <li>Для снятия коленвала потребуется <strong>съёмник</strong> — без него можно повредить подшипники.</li>
+    </ol>
+  </li>
+</ol>
+
+<p><mark>Критически важно: при разборке 4Т-двигателя никогда не роняйте детали на пол — даже мелкая пыль, попавшая в масляные каналы, может привести к заклиниванию после сборки.</mark></p>
+
+<div class="pb-table-wrap"><table>
+  <thead>
+    <tr>
+      <th>Деталь</th>
+      <th>Типичные неисправности</th>
+      <th>Рекомендации по ремонту</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Поршневые кольца</td>
+      <td>Износ, залегание, поломка</td>
+      <td>Замена на новые, проверка зазоров</td>
+    </tr>
+    <tr>
+      <td>Клапаны</td>
+      <td>Прогар, износ сёдел</td>
+      <td>Притирка или замена, регулировка зазоров</td>
+    </tr>
+    <tr>
+      <td>Подшипники коленвала</td>
+      <td>Люфт, шум при работе</td>
+      <td>Замена с использованием съёмника</td>
+    </tr>
+    <tr>
+      <td>Цилиндр</td>
+      <td>Задиры, износ зеркала</td>
+      <td>Расточка или замена гильзы</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<h2 id="разборка-2т-двигателя-особенности-и-нюансы">Разборка 2Т-двигателя: особенности и нюансы</h2>
+
+<p>Двухтактные двигатели (<em>2Т</em>) проще в устройстве, но имеют свои особенности. Они устанавливаются на скутеры <em>Yamaha DT</em>, <em>Aprilia SR</em>, а также на многие китайские модели. Основные отличия от <em>4Т</em>:</p>
+
+<ul>
+  <li>🔄 Нет клапанов и распредвала — газораспределение осуществляется через <strong>окна в цилиндре</strong>.</li>
+  <li>⚙️ Нет масляного поддона — смазка поступает вместе с топливом.</li>
+  <li>🔥 Более высокая тепловая нагрузка на поршень и цилиндр.</li>
+</ul>
+
+<p>Порядок разборки <em>2Т</em>-двигателя:</p>
+
+<ol>
+  <li>Снимите <strong>головку цилиндра</strong> (обычно крепится 4 болтами).</li>
+  <li>Извлеките <strong>поршень</strong> вместе с шатуном. Для этого может потребоваться нагрев цилиндра (например, строительным феном).</li>
+  <li>Проверьте состояние <strong>подшипников коленвала</strong> — люфт или шум говорит о необходимости замены.</li>
+  <li>Осмотрите <strong>кривошипную камеру</strong> на наличие трещин или износа.</li>
+</ol>
+
+<p>Особое внимание уделите <strong>продувочным окнам</strong> — их форма и состояние напрямую влияют на мощность двигателя. Если окна имеют заусенцы или нагар, их нужно зачистить <code>надфилем</code> или специальной фрезой.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед сборкой 2Т-двигателя обязательно проверьте компрессию. Нормальное значение для большинства скутеров — 8-12 атм. Если компрессия ниже 6 атм, двигатель требует ремонта.</p></aside>
+
+<h2 id="диагностика-неисправностей-что-искать-при-разборке">Диагностика неисправностей: что искать при разборке</h2>
+
+<p>Разборка двигателя — идеальное время для диагностики скрытых проблем. Вот на что стоит обратить внимание:</p>
+
+<ul>
+  <li>🔍 <strong>Цилиндр и поршень</strong>:
+    <ul>
+      <li>Задиры или царапины на зеркале цилиндра.</li>
+      <li>Износ поршневых колец (если зазор превышает 0,5 мм, их нужно заменить).</li>
+      <li>Нагар на днище поршня (может указывать на проблемы с топливной смесью).</li>
+    </ul>
+  </li>
+  <li>🛢️ <strong>Подшипники</strong>:
+    <ul>
+      <li>Люфт в подшипниках коленвала или коренных подшипниках.</li>
+      <li>Шум или "шелест" при вращении.</li>
+    </ul>
+  </li>
+  <li>⚡ <strong>Электрика</strong>:
+    <ul>
+      <li>Состояние катушки зажигания (трещины, оплавления).</li>
+      <li>Искра на свече (должна быть ярко-синей).</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Если вы обнаружили <strong>задир на цилиндре</strong>, это может быть следствием:</p>
+<ul>
+  <li>Недостаточной смазки (для <em>2Т</em> — плохое масло в бензине, для <em>4Т</em> — низкий уровень масла).</li>
+  <li>Перегрева двигателя (забитый радиатор, неисправный термостат).</li>
+  <li>Попадания инородных частиц (песок, металлическая стружка).</li>
+</ul>
+
+<blockquote>⚠️ <strong>Внимание:</strong> Если на поршне или цилиндре есть глубокие задиры, не пытайтесь их "зашлифовать" наждачной бумагой — это только усугубит проблему. В таких случаях требуется расточка цилиндра или замена поршневой группы.</blockquote>
+
+<details class="pb-accordion"><summary>Как проверить состояние подшипников без специальных инструментов?</summary><div class="pb-accordion-body"><p>
+<p>Если у вас нет микрометра или индикатора, можно проверить люфт подшипников "на глаз":</p>
+<p>1. Возьмите коленвал за щёки и попробуйте покачать его вверх-вниз.</p>
+<p>2. Если ощущается заметный люфт (более 0,1-0,2 мм), подшипники изношены.</p>
+<p>3. Также обратите внимание на шум при вращении — он должен быть равномерным, без скрипов или стуков.</p>
+<p></p></div></details></p>
+
+<h2 id="типичные-ошибки-при-разборке-и-как-их-избежать">Типичные ошибки при разборке и как их избежать</h2>
+
+<p>Даже опытные механики иногда допускают ошибки, которые приводят к серьёзным поломкам. Вот самые распространённые из них:</p>
+
+<ul>
+  <li>🔧 <strong>Неправильная затяжка болтов</strong>:
+    <ul>
+      <li>Затягивание болтов головки цилиндра "на глаз" может привести к деформации прокладки или трещинам в головке.</li>
+      <li>Всегда используйте <strong>динамометрический ключ</strong> и соблюдайте момент затяжки (обычно 8-12 Н·м для алюминиевых головок).</li>
+    </ul>
+  </li>
+  <li>🧲 <strong>Потеря или перепутывание деталей</strong>:
+    <ul>
+      <li>Мелкие детали (стопорные кольца, шайбы, пружины) легко потерять. Используйте магнит или контейнеры для хранения.</li>
+      <li>Фотографируйте расположение деталей перед снятием.</li>
+    </ul>
+  </li>
+  <li>🔥 <strong>Игнорирование чистоты</strong>:
+    <ul>
+      <li>Попадание грязи или песка в двигатель — одна из главных причин преждевременного износа.</li>
+      <li>Промывайте детали в керосине и просушивайте сжатым воздухом.</li>
+    </ul>
+  </li>
+  <li>⚡ <strong>Неправильная сборка</strong>:
+    <ul>
+      <li>Установка поршневых колец "вверх ногами" или не по меткам приведёт к потере компрессии.</li>
+      <li>Проверяйте мануал или схемы перед сборкой.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Ещё одна распространённая ошибка — <strong>использование неподходящих инструментов</strong>. Например, попытка открутить маховик молотком и зубилом почти всегда заканчивается повреждением шпонки или вала. Для таких операций существуют специальные съёмники.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Самая частая причина поломок после разборки — несоблюдение момента затяжки болтов. Всегда проверяйте значения в руководстве по ремонту для вашей модели скутера.</p></aside>
+
+<h2 id="сборка-и-первый-запуск-после-ремонта">Сборка и первый запуск после ремонта</h2>
+
+<p>Сборка двигателя должна проходить в обратном порядке, но с учётом нескольких важных нюансов:</p>
+
+<ol>
+  <li><strong>Очистка и смазка</strong>:
+    <ul>
+      <li>Все детали перед сборкой должны быть чистыми и сухими.</li>
+      <li>Нанесите тонкий слой моторного масла на трущиеся поверхности (поршень, кольца, подшипники).</li>
+    </ul>
+  </li>
+  <li><strong>Установка прокладок</strong>:
+    <ul>
+      <li>Всегда используйте <strong>новые прокладки</strong> (головки цилиндра, поддона, клапанной крышки).</li>
+      <li>Наносите герметик только на прокладки, где это предусмотрено инструкцией (например, на прокладку поддона).</li>
+    </ul>
+  </li>
+  <li><strong>Регулировка клапанов (для 4Т)</strong>:
+    <ul>
+      <li>После сборки обязательно отрегулируйте зазоры клапанов (обычно 0,05-0,15 мм).</li>
+    </ul>
+  </li>
+  <li><strong>Первый запуск</strong>:
+    <ul>
+      <li>Перед запуском проверьте уровень масла (для <em>4Т</em>) и топлива.</li>
+      <li>Заведите двигатель и дайте ему поработать на холостых 5-10 минут, наблюдая за давлением масла и отсутствием посторонних шумов.</li>
+    </ol>
+  </li>
+</ol>
+
+<p>Если после сборки двигатель не заводится или работает неустойчиво, не паникуйте. Возможные причины:</p>
+<ul>
+  <li>Неправильно установлено зажигание (проверьте метки на маховике).</li>
+  <li>Забитый карбюратор (чистка жиклёров часто решает проблему).</li>
+  <li>Подсос воздуха через прокладки или патрубки.</li>
+</ul>
+
+<h2 id="faq-ответы-на-частые-вопросы">FAQ: ответы на частые вопросы</h2>
+
+<details>
+  <summary>Можно ли разобрать двигатель скутера без опыта?</summary>
+  <p>Да, но только если вы готовы тщательно следовать инструкции и не торопиться. Начните с простых операций (замена масла, чистка карбюратора), а затем переходите к более сложным (разборка цилиндропоршневой группы). Если сомневаетесь, лучше обратиться к специалисту.</p>
+</details>
+
+<details>
+  <summary>Сколько времени занимает разборка двигателя?</summary>
+  <p>Время зависит от опыта и сложности работ. Первая разборка может занять 4-6 часов, особенно если приходится искать информацию или бороться с "прикипевшими" болтами. Опытные механики справляются за 1,5-2 часа.</p>
+</details>
+
+<details>
+  <summary>Нужно ли покупать новые прокладки при разборке?</summary>
+  <p>Да, <strong>все прокладки</strong> (головки цилиндра, поддона, клапанной крышки) рекомендуется заменять на новые. Старые прокладки могут быть деформированы или потерять эластичность, что приведёт к утечкам масла или антифриза.</p>
+</details>
+
+<details>
+  <summary>Как понять, что двигатель требует капитального ремонта?</summary>
+  <p>Признаки, что двигателю нужен капремонт:
+  <ul>
+    <li>Снижение компрессии ниже 6 атм (для <em>4Т</em>).</li>
+    <li>Синий дым из выхлопной трубы (сгорает масло).</li>
+    <li>Стук или люфт в подшипниках коленвала.</li>
+    <li>Задиры на цилиндре или поршне.</li>
+  </ul>
+<p>Если наблюдается хотя бы один из этих симптомов, разборка и диагностика обязательны.</p></p>
+</details>
+
+<details>
+  <summary>Можно ли ездить на скутере с разобранным двигателем?</summary>
+  <p>Нет, категорически нельзя. Даже если двигатель "почти собран", малейшая ошибка (например, недотянутый болт или забытая шайба) может привести к <strong>заклиниванию</strong> или <strong>поломке</strong> во время движения. Всегда завершайте сборку и проводите тестовый запуск перед поездкой.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/z/za/zamena-obgonnoj-mufty-157qmj.html" class="pb-related-card">
+                <span class="pb-related-title">Замена обгонной муфты 157QMJ: пошаговая инструкция и советы</span>
+                <span class="pb-related-desc">Как самостоятельно заменить обгонную муфту на двигателе 157QMJ: признаки неисправности, выбор запчас</span>
+            </a><a href="/articles/c/ch/chto-delat-esli-netu-kompressii-na-skutere.html" class="pb-related-card">
+                <span class="pb-related-title">Нет компрессии на скутере: причины и методы устранения</span>
+                <span class="pb-related-desc">Почему пропала компрессия на скутере? Разбор причин: залегшие кольца, прогар клапана, износ ЦПГ. Мет</span>
+            </a><a href="/articles/1/17/174-motor-skolko-loshadej.html" class="pb-related-card">
+                <span class="pb-related-title">174 мотор: мощность в лошадиных силах и технические характеристики</span>
+                <span class="pb-related-desc">Сколько лошадиных сил у двигателя 174 модели? Разбираемся в мощности, модификациях и особенностях 17</span>
+            </a><a href="/articles/d/dv/dvigatel-na-motobloke-strelyaet-v-glushitel-prichina.html" class="pb-related-card">
+                <span class="pb-related-title">Почему стреляет в глушитель мотоблока: причины и ремонт</span>
+                <span class="pb-related-desc">Хлопки в глушителе мотоблока: полный разбор причин. Диагностика карбюратора, клапанов и свечей. Как </span>
+            </a><a href="/articles/k/ka/kak-chistit-vozdushnyj-filtr-trimmera.html" class="pb-related-card">
+                <span class="pb-related-title">Как почистить воздушный фильтр триммера: пошаговая инструкция</span>
+                <span class="pb-related-desc">Узнайте, как правильно чистить воздушный фильтр бензотриммера своими руками. Пошаговые инструкции, с</span>
+            </a><a href="/articles/r/ra/rannee-zazhiganie-na-benzokose.html" class="pb-related-card">
+                <span class="pb-related-title">Раннее зажигание на бензокосе: причины, признаки и устранение</span>
+                <span class="pb-related-desc">Как определить и исправить раннее зажигание на бензокосе? Признаки, причины, пошаговая инструкция по</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🏍️ Мото Гид</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a> · <a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a> · <a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a> · <a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a> · <a href="/category/remont-dvigatelej/">🔧 Ремонт Двигателей</a> · <a href="/category/elektrika-i-provodka/">⚡ Электрика и Проводка</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мото Гид. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

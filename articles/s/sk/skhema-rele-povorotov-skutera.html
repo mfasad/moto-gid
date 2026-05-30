@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🏍️</text></svg>">
+    <title>Схема реле поворотов скутера: устройство и диагностика — Мото Гид</title>
+    <meta name="description" content="Полный разбор схемы реле поворотов скутера. Диагностика неисправностей, проверка ламп и контактов, отличие 2-контактного от 3-контактного.">
+    <link rel="canonical" href="https://moto-gid.vercel.app/articles/s/sk/skhema-rele-povorotov-skutera.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Схема реле поворотов скутера: устройство и диагностика">
+    <meta property="og:description" content="Полный разбор схемы реле поворотов скутера. Диагностика неисправностей, проверка ламп и контактов, отличие 2-контактного от 3-контактного.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780130877">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🏍️</span>
+                <span class="pb-logo-text">Мото Гид</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/mopedy-i-skutery/" class="pb-dropdown-item">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/" class="pb-dropdown-item">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/" class="pb-dropdown-item">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/" class="pb-dropdown-item">📐 Самоделки и Чертежи</a>
+<a href="/category/remont-dvigatelej/" class="pb-dropdown-item">🔧 Ремонт Двигателей</a>
+<a href="/category/elektrika-i-provodka/" class="pb-dropdown-item">⚡ Электрика и Проводка</a>
+<a href="/category/zakony-i-prava/" class="pb-dropdown-item">⚖️ Законы и Права</a>
+<a href="/category/raskhodniki-i-masla/" class="pb-dropdown-item">🛢️ Расходники и Масла</a>
+<a href="/category/tyuning-i-modernizatsiya/" class="pb-dropdown-item">🚀 Тюнинг и Модернизация</a>
+<a href="/category/elektromototekhnika/" class="pb-dropdown-item">🔋 Электромототехника</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/elektrika-i-provodka/">Электрика и Проводка</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Схема реле поворотов скутера: устройство и диагностика</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#типы-реле-поворотов-и-их-конструктивные-особенности">Типы реле поворотов и их конструктивные особенности</a></li><li><a href="#расшифровка-электрической-схемы-и-контактов">Расшифровка электрической схемы и контактов</a></li><li><a href="#диагностика-неисправностей-и-проверка-цепи">Диагностика неисправностей и проверка цепи</a></li><li><a href="#пошаговая-инструкция-по-замене-реле">Пошаговая инструкция по замене реле</a></li><li><a href="#модернизация-переход-на-светодиодные-поворотники">Модернизация: переход на светодиодные поворотники</a></li><li><a href="#частые-проблемы-и-их-устранение">Частые проблемы и их устранение</a></li><li><a href="#вопросы-и-ответы-faq">Вопросы и ответы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/r/re/rele-regulyator-mopeda-alfa-skhema.html">Реле регулятор мопеда Альфа: схема подключения и диагностика</a></li><li><a href="/articles/n/ne/ne-shuntiruyushchij-regulyator-napryazheniya-skhema.html">Не шунтирующий регулятор напряжения: схема, принцип работы и ремонт</a></li><li><a href="/articles/s/sk/skhema-podklyucheniya-generatora-na-alfe.html">Схема подключения генератора на Альфе: инструкция и проверка</a></li><li><a href="/articles/r/re/regulyator-napryazheniya-na-moped-alfa.html">Регулятор напряжения на мопед Альфа: проверка и замена</a></li><li><a href="/articles/k/ka/kak-prozvonit-kommutator-alfa.html">Как прозвонить коммутатор Альфа: пошаговая инструкция с схемами</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Схема реле поворотов скутера: устройство и диагностика</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#типы-реле-поворотов-и-их-конструктивные-особенности">Типы реле поворотов и их конструктивные особенности</a></li><li><a href="#расшифровка-электрической-схемы-и-контактов">Расшифровка электрической схемы и контактов</a></li><li><a href="#диагностика-неисправностей-и-проверка-цепи">Диагностика неисправностей и проверка цепи</a></li><li><a href="#пошаговая-инструкция-по-замене-реле">Пошаговая инструкция по замене реле</a></li><li><a href="#модернизация-переход-на-светодиодные-поворотники">Модернизация: переход на светодиодные поворотники</a></li><li><a href="#частые-проблемы-и-их-устранение">Частые проблемы и их устранение</a></li><li><a href="#вопросы-и-ответы-faq">Вопросы и ответы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Система световой сигнализации является критически важным элементом безопасности для любого <strong>скутера</strong>, позволяя водителю маневрировать в потоке транспорта и обозначать свои намерения. Основной компонент, обеспечивающий прерывистый режим работы ламп, — это <em>реле поворотов</em>, которое часто становится причиной сбоев в работе всей системы. Понимание принципа его работы и умение читать электрическую схему позволяет быстро выявить неисправность без обращения в сервисный центр.</p>
+
+<p>В современных мопедах и скутерах встречаются два основных типа таких устройств: электронные и электромеханические, каждый из которых имеет свои особенности подключения. Неисправность этого узла может проявляться по-разному: от полного отсутствия сигнала до слишком быстрой или, наоборот, медленной частоты мигания. Прежде чем приступать к замене дорогостоящих деталей, необходимо разобраться в том, как именно ток распределяется внутри цепи.</p>
+
+<p>Данная статья подробно рассматривает внутреннее устройство реле, методы диагностики и пошаговые инструкции по проверке контактов. Мы также затронем вопросы совместимости разных типов устройств, так как установка неподходящего компонента может привести к перегрузке проводки или отказу системы. Глубокое погружение в тему поможет вам уверенно чувствовать себя при ремонте электрики своего транспортного средства.</p>
+
+<h2 id="типы-реле-поворотов-и-их-конструктивные-особенности">Типы реле поворотов и их конструктивные особенности</h2>
+
+<p>На рынке запчастей для мототехники доминируют два типа устройств, различающихся по принципу генерации импульсов. Самый распространенный вариант — это <strong>электронное реле</strong>, которое состоит из печатной платы, транзисторов, резисторов и конденсаторов. Такие модели отличаются стабильной частотой мигания независимо от напряжения в бортовой сети и мощности установленных ламп.</p>
+
+<p>Второй тип — это <em>электромеханическое (тепловое) реле</em>, работающее за счет биметаллической пластины. При прохождении тока пластина нагревается, изгибается и размыкает контакт, после чего остывает и замыкает его снова. Частота срабатывания здесь напрямую зависит от нагрузки: если перегорит одна лампа, оставшаяся начнет мигать гораздо быстрее, что иногда используют как индикатор неисправности.</p>
+
+<p>Визуально отличить их можно по количеству выводов и наличию характерного звука. Электромеханические приборы обычно издают громкий щелчок при работе, в то время как электронные могут работать почти бесшумно или издавать тихий высокочастотный писк. </p>
+
+<blockquote>
+<p>⚠️ Внимание: При установке электронного реле вместо электромеханического может потребоваться (добавление) отдельного резистора нагрузки, иначе система может воспринимать маломощные светодиоды как перегоревшие лампы и работать некорректно.</p>
+</blockquote>
+
+<div class="pb-poll" id="poll-1fc9959f"><div class="pb-poll-question">📊 Какое реле установлено на вашем скутере?</div><div class="pb-poll-option" data-poll="1fc9959f" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Электронное (тихое)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="1fc9959f" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Электромеханическое (щелкает)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="1fc9959f" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Не знаю / Не проверял</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="1fc9959f" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Стоят светодиоды без реле</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="расшифровка-электрической-схемы-и-контактов">Расшифровка электрической схемы и контактов</h2>
+
+<p>Для правильного подключения необходимо понимать маркировку выводов, которая может отличаться у разных производителей. Стандартная схема реле поворотов скутера обычно включает в себя три основных контакта, хотя встречаются и двухконтактные версии для простых цепей. Разберем наиболее распространенную трехконтактную конфигурацию, используемую в большинстве китайских скутеров.</p>
+
+<p>Первый контакт, часто обозначаемый как <code>B</code> или <code>L</code>, является входом питания от аккумулятора или замка зажигания. Второй контакт, маркируемый как <code>E</code> или значком заземления, идет на массу (раму). Третий контакт, обозначаемый как <code>L</code> или стрелкой, является выходом на сам переключатель поворотов. В двухконтактных схемах масса часто берется внутри корпуса переключателя или через нагрузку ламп.</p>
+
+<p>Неправильное понимание распиновки может привести к короткому замыканию. Например, если подать питание напрямую на выход к переключателю, минуя само реле, лампы будут гореть постоянно, не мигая. Поэтому перед сборкой всегда сверяйтесь с цветовой маркировкой проводов вашего конкретного <strong>скутера</strong>.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Обозначение на корпусе</th>
+<th>Функция контакта</th>
+<th>Цвет провода (типичный)</th>
+<th>Назначение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>B</code> / <code>+</code></td>
+<td>Питание (Battery)</td>
+<td>Красный / Зеленый</td>
+<td>Вход напряжения 12В</td>
+</tr>
+<tr>
+<td><code>E</code> / <code>-</code></td>
+<td>Масса (Earth)</td>
+<td>Зеленый</td>
+<td>Подключение к раме</td>
+</tr>
+<tr>
+<td><code>L</code> / <code>OUT</code></td>
+<td>Выход (Load)</td>
+<td>Серый / Оранжевый</td>
+<td>Сигнал на переключатель</td>
+</tr>
+<tr>
+<td><code>P</code></td>
+<td>Индикатор (Panel)</td>
+<td>Синий / Голубой</td>
+<td>Лампа на приборной панели</td>
+</tr>
+</tbody>
+</table></div>
+
+<details class="pb-accordion"><summary>Особенности 4-контактных реле</summary><div class="pb-accordion-body"><p>Четвертый контакт (P) предназначен для подключения контрольной лампочки на приборной панели. Если вы устанавливаете 3-контактное реле вместо 4-контактного, индикатор на панели работать не будет, но сами поворотники функционировать будут. Для восстановления функции индикатора можно вывести отдельный провод от средней точки ламп поворотов.</p></div></details>
+
+<h2 id="диагностика-неисправностей-и-проверка-цепи">Диагностика неисправностей и проверка цепи</h2>
+
+<p>Если поворотники перестали работать, не спешите сразу покупать новое реле. Часто проблема кроется в окислившихся контактах или перегоревших лампах. Начните диагностику с визуального осмотра предохранителя, отвечающего за цепь освещения. Если предохранитель цел, переходите к проверке самих источников света.</p>
+
+<p>Используйте мультиметр для прозвонки цепи. Переведите прибор в режим измерения постоянного напряжения (<code>DCV 20</code>). При включенном зажигании и активированном переключателе поворотов проверьте наличие напряжения на входном контакте реле. Если напряжения нет, проблема в проводке до реле или в замке зажигания.</p>
+
+<ul>
+<li>🔍 Проверьте целостность нитей накаливания в лампах — даже одна перегоревшая лампа может нарушить работу всей цепи в старых системах.</li>
+<li>⚡ Измерьте сопротивление между контактом массы и рамой скутера — оно должно стремиться к нулю, плохой контакт"массы" частая причина сбоев.</li>
+<li>💡 Попробуйте временно замкнуть вход и выход реле (аккуратно!) — если лампы загорятся постоянно, значит проводка и лампы исправны, а проблема в самом реле.</li>
+</ul>
+
+<p>В случаях, когда реле щелкает, но лампы не горят, вероятен обрыв в цепи от реле до переключателя или до самих ламп. Также стоит проверить патроны ламп: со временем контакты в них могут окислиться или разогнуться, что нарушит контакт с цоколем лампы.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>При диагностике используйте контрольную лампу вместо мультиметра, если нет опыта работы с тестером. Она наглядно покажет наличие тока и его достаточную силу для зажигания ламп.</p></aside>
+
+<h2 id="пошаговая-инструкция-по-замене-реле">Пошаговая инструкция по замене реле</h2>
+
+<p>Замена вышедшего из строя компонента — процедура несложная, но требующая внимательности. Сначала необходимо обеспечить доступ к узлу: на большинстве скутеров реле поворотов расположено под пластиком передней панели или в районе аккумуляторного отсека. Отсоедините минусовую клемму аккумулятора для безопасности.</p>
+
+<p>Аккуратно отсоедините разъем или отдельные провода от старого устройства. Рекомендуется пометить провода маркером или сделать фото перед отключением, чтобы не перепутать полярность при установке нового элемента. Очистите контакты разъема от грязи и окислов с помощью специального спрея или спирта.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Алгоритм замены реле</h4><label class="check-item"><input type="checkbox"><span>Отключить аккумулятор</span></label><label class="check-item"><input type="checkbox"><span>Демонтировать пластиковую обшивку</span></label><label class="check-item"><input type="checkbox"><span>Отсоединить провода от старого реле</span></label><label class="check-item"><input type="checkbox"><span>Установить новое реле по схеме</span></label><label class="check-item"><input type="checkbox"><span>Проверить работу до сборки</span></label><label class="check-item"><input type="checkbox"><span>Собрать обшивку</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 6</div></div>
+
+<p>Подключите новое устройство согласно схеме, убедившись в надежности соединений. Плохой контакт может вызвать нагрев и оплавление изоляции. После подключения включите зажигание и проверьте работу левого и правого указателя поворота, а также аварийной сигнализации, если она предусмотрена конструкцией.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Некоторые модели реле чувствительны к полярности подключения. Если после установки электронное реле не работает, попробуйте перевернуть разъем или поменять местами провода питания и массы, если конструкция позволяет.</p>
+</blockquote>
+
+<h2 id="модернизация-переход-на-светодиодные-поворотники">Модернизация: переход на светодиодные поворотники</h2>
+
+<p>Многие владельцы скутеров стремятся заменить штатные лампы накаливания на <strong>светодиоды (LED)</strong> для улучшения видимости и стиля. Однако стандартное электромеханическое реле не рассчитано на низкое потребление тока светодиодами. В результате поворотники либо не мигают вовсе, либо мигают с очень высокой частотой.</p>
+
+<p>Для решения этой проблемы существует два пути. Первый — установка специального электронного реле, предназначенного для работы со светодиодами. Такие устройства имеют регулировку частоты или автоматически подстраиваются под нагрузку. Второй путь — установка дополнительных сопротивлений (обманок) параллельно светодиодам, что имитирует нагрузку обычной лампы.</p>
+
+<p>Второй способ менее предпочтителен, так как резисторы сильно нагреваются и потребляют лишний ток, сводя на нет энергоэффективность светодиодов. Поэтому замена самого реле на универсальное электронное с маркировкой <em>LED Compatible</em> является более грамотным техническим решением.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Универсальное электронное реле с регулируемой частотой — лучшее решение для перехода на светодиоды, так как оно исключает необходимость установки дополнительных резисторов и перегрева проводки.</p></aside>
+
+<h2 id="частые-проблемы-и-их-устранение">Частые проблемы и их устранение</h2>
+
+<p>Даже после правильной установки могут возникать специфические неисправности. Например, поворотники могут работать только при заведенном двигателе. Это указывает на проблемы с зарядкой аккумулятора или недостаточное напряжение в сети при работе от батареи. Реле может просто не иметь энергии для срабатывания при низком вольтаже.</p>
+
+<p>Другая распространенная ситуация — мигание только одной стороны. В этом случае проблема почти наверняка находится в переключателе на руле или в проводке, идущей к конкретной стороне, а не в самом реле. Реле является общим узлом для левой и правой стороны, поэтому его поломка обычно отключает сигнал полностью.</p>
+
+<p>Если реле греется при работе, это тревожный признак. Нормальное устройство может быть теплым, но не горячим. Перегрев свидетельствует о плохом контакте в разъеме, коротком замыкании в цепи ламп или использовании реле с меньшим номинальным током, чем требуется для установленных ламп.</p>
+
+<ul>
+<li>🛠 Проверьте переключатель на руле: часто внутрь попадает влага или грязь, окисляя контакты внутри кнопки.</li>
+<li>🔋 Замерьте напряжение на аккумуляторе: при работе на холостых оборотах оно не должно падать ниже 12.5 Вольт для стабильной работы электроники.</li>
+<li>💧 Осмотрите проводку на предмет перетертостей: вибрации скутера могут повредить изоляцию, вызывая замыкание на раму.</li>
+</ul>
+
+<blockquote>
+<p>⚠️ Внимание: Если вы заметили запах плавленой пластмассы или дыма из-под панели, немедленно отключите аккумулятор. Это признак серьезного короткого замыкания, которое может привести к возгоранию.</p>
+</blockquote>
+
+<h2 id="вопросы-и-ответы-faq">Вопросы и ответы (FAQ)</h2>
+
+<details>
+<summary>Можно ли установить реле от автомобиля на скутер?</summary>
+<p>Технически это возможно, если напряжения совпадают (12В), но размеры автомобильных реле часто слишком велики для установки в пластик скутера. Кроме того, автомобильные реле могут не иметь нужного крепления. Лучше использовать специализированные мото-компоненты.</p>
+</details>
+
+<details>
+<summary>Почему поворотники мигают слишком быстро?</summary>
+<p>Слишком быстрое мигание обычно указывает на то, что мощность нагрузки в цепи уменьшилась. Чаще всего это значит, что одна из ламп перегорела. Если все лампы целы, возможно, установлено реле, не подходящее под мощность ваших ламп, или контакт в патроне плохой.</p>
+</details>
+
+<details>
+<summary>Как проверить реле без мультиметра?</summary>
+<p>Самый простой способ — заменить подозрительное реле на заведомо исправное. Если после замены система заработала, значит старое реле было неисправно. Также можно аккуратно потрясти реле: если внутри слышен стук отломанной детали, оно точно нерабочее.</p>
+</details>
+
+<details>
+<summary>Влияет ли установка мощных ламп на работу реле?</summary>
+<p>Да, если суммарная мощность ламп превысит номинальный ток реле, оно может перегреться и выйти из строя, либо контакты внутри приварятся друг к другу, и поворотники будут гореть постоянно, не мигая. Всегда соблюдайте рекомендации производителя по мощности.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/r/re/rele-regulyator-mopeda-alfa-skhema.html" class="pb-related-card">
+                <span class="pb-related-title">Реле регулятор мопеда Альфа: схема подключения и диагностика</span>
+                <span class="pb-related-desc">Полная инструкция по проверке, замене и подключению реле регулятора на мопеде Альфа. Схемы, неисправ</span>
+            </a><a href="/articles/n/ne/ne-shuntiruyushchij-regulyator-napryazheniya-skhema.html" class="pb-related-card">
+                <span class="pb-related-title">Не шунтирующий регулятор напряжения: схема, принцип работы и ремонт</span>
+                <span class="pb-related-desc">Подробный разбор не шунтирующего регулятора напряжения. Схемы, принцип действия, отличия от шунтирую</span>
+            </a><a href="/articles/s/sk/skhema-podklyucheniya-generatora-na-alfe.html" class="pb-related-card">
+                <span class="pb-related-title">Схема подключения генератора на Альфе: инструкция и проверка</span>
+                <span class="pb-related-desc">Подробная схема подключения генератора на мопеде Альфа. Проверка реле-регулятора, катушки и проводки</span>
+            </a><a href="/articles/r/re/regulyator-napryazheniya-na-moped-alfa.html" class="pb-related-card">
+                <span class="pb-related-title">Регулятор напряжения на мопед Альфа: проверка и замена</span>
+                <span class="pb-related-desc">Как проверить и заменить регулятор напряжения на мопеде Альфа. Схема подключения, диагностика зарядк</span>
+            </a><a href="/articles/k/ka/kak-prozvonit-kommutator-alfa.html" class="pb-related-card">
+                <span class="pb-related-title">Как прозвонить коммутатор Альфа: пошаговая инструкция с схемами</span>
+                <span class="pb-related-desc">Подробное руководство по проверке коммутатора Альфа мультиметром: распиновка, типичные неисправности</span>
+            </a><a href="/articles/k/ko/kommutator-dc-cdi-12v.html" class="pb-related-card">
+                <span class="pb-related-title">Коммутатор DC CDI 12V: выбор, подключение и ремонт для мототехники</span>
+                <span class="pb-related-desc">Как выбрать и подключить коммутатор DC CDI 12V для скутера, мопеда или питбайка? Схемы, неисправност</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🏍️ Мото Гид</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a> · <a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a> · <a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a> · <a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a> · <a href="/category/remont-dvigatelej/">🔧 Ремонт Двигателей</a> · <a href="/category/elektrika-i-provodka/">⚡ Электрика и Проводка</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мото Гид. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

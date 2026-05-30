@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🏍️</text></svg>">
+    <title>Нет искры на питбайке: причины и поиск неисправности — Мото Гид</title>
+    <meta name="description" content="Почему на питбайке нет искры? Полный гайд по диагностике свечи, катушки, коммутатора и кнопки стоп. Чек-лист и таблица проверки.">
+    <link rel="canonical" href="https://moto-gid.vercel.app/articles/n/na/na-pitbajke-net-iskry.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Нет искры на питбайке: причины и поиск неисправности">
+    <meta property="og:description" content="Почему на питбайке нет искры? Полный гайд по диагностике свечи, катушки, коммутатора и кнопки стоп. Чек-лист и таблица проверки.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780130877">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🏍️</span>
+                <span class="pb-logo-text">Мото Гид</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/" class="pb-nav-active">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/mopedy-i-skutery/" class="pb-dropdown-item">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/" class="pb-dropdown-item">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/" class="pb-dropdown-item">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/" class="pb-dropdown-item">📐 Самоделки и Чертежи</a>
+<a href="/category/remont-dvigatelej/" class="pb-dropdown-item">🔧 Ремонт Двигателей</a>
+<a href="/category/elektrika-i-provodka/" class="pb-dropdown-item">⚡ Электрика и Проводка</a>
+<a href="/category/zakony-i-prava/" class="pb-dropdown-item">⚖️ Законы и Права</a>
+<a href="/category/raskhodniki-i-masla/" class="pb-dropdown-item">🛢️ Расходники и Масла</a>
+<a href="/category/tyuning-i-modernizatsiya/" class="pb-dropdown-item">🚀 Тюнинг и Модернизация</a>
+<a href="/category/elektromototekhnika/" class="pb-dropdown-item">🔋 Электромототехника</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/pitbajki-i-enduro/">Питбайки и Эндуро</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Нет искры на питбайке: причины и поиск неисправности</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#первичная-проверка-свеча-и-высоковольтный-провод">Первичная проверка: свеча и высоковольтный провод</a></li><li><a href="#диагностика-кнопки-стоп-и-проводки-управления">Диагностика кнопки "Стоп" и проводки управления</a></li><li><a href="#проверка-катушки-зажигания-мультиметром">Проверка катушки зажигания мультиметром</a></li><li><a href="#тестирование-статора-и-импульсной-катушки">Тестирование статора и импульсной катушки</a></li><li><a href="#роль-коммутатора-cdi-в-системе-зажигания">Роль коммутатора (CDI) в системе зажигания</a></li><li><a href="#влияние-зазора-маховика-и-шпонки-на-искру">Влияние зазора маховика и шпонки на искру</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-ustanovit-support-na-pitbajk.html">Как установить суппорт на питбайк: пошаговая инструкция</a></li><li><a href="/articles/p/po/pochemu-u-enduro-raznye-kolesa.html">Почему у эндуро разные колеса: 21 и 18 дюймов</a></li><li><a href="/articles/s/sv/svetodiodnaya-fara-na-pitbajk.html">Светодиодная фара на питбайк: выбор, установка и настройка света</a></li><li><a href="/articles/n/ne/ne-zavoditsya-pitbajk-125-iskra-est.html">Питбайк 125 не заводится, но искра есть — 7 причин и ремонт</a></li><li><a href="/articles/p/pl/plastik-dlya-pitbajka-125.html">Пластик для питбайка 125 кубов: выбор, установка и ремонт</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>На питбайке нет искры: пошаговый поиск неисправности</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#первичная-проверка-свеча-и-высоковольтный-провод">Первичная проверка: свеча и высоковольтный провод</a></li><li><a href="#диагностика-кнопки-стоп-и-проводки-управления">Диагностика кнопки "Стоп" и проводки управления</a></li><li><a href="#проверка-катушки-зажигания-мультиметром">Проверка катушки зажигания мультиметром</a></li><li><a href="#тестирование-статора-и-импульсной-катушки">Тестирование статора и импульсной катушки</a></li><li><a href="#роль-коммутатора-cdi-в-системе-зажигания">Роль коммутатора (CDI) в системе зажигания</a></li><li><a href="#влияние-зазора-маховика-и-шпонки-на-искру">Влияние зазора маховика и шпонки на искру</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Ситуация, когда двигатель питбайка не запускается из-за отсутствия искры, является одной из самых распространенных проблем в мотокроссе. Мотоцикл может отлично крутить стартером или заводиться с толкача, но без мощного разряда на электроде свечи топливо не воспламенится, и такт сжатия пройдет впустую. Это не всегда означает поломку дорогостоящего узла, часто причина кроется в банальном окислении контактов или перетертом проводе.</p>
+
+<p>Диагностика системы зажигания требует последовательного подхода, так как цепь состоит из нескольких взаимосвязанных элементов. Генератор (статор) вырабатывает ток, который проходит через коммутатор (CDI) и катушку зажигания, прежде чем попасть на свечу. Разрыв или короткое замыкание на любом из этих участков приведет к тому, что <strong>искра на питбайке</strong> пропадет полностью или станет слишком слабой для поджига смеси.</p>
+
+<p>В этой статье мы разберем алгоритм поиска неисправности от простого к сложному. Вы узнаете, как проверить основные узлы мультиметром, на что обратить внимание в проводке и почему кнопка "Стоп" часто становится виновником проблем. Правильная диагностика сэкономит вам деньги на покупке ненужных запчастей и вернет мотоцикл в строй за минимальное время.</p>
+
+<h2 id="первичная-проверка-свеча-и-высоковольтный-провод">Первичная проверка: свеча и высоковольтный провод</h2>
+
+<p>Начинать поиск проблемы всегда следует с самого доступного элемента — свечи зажигания. Даже если внешне она выглядит исправной, внутри может быть пробой изолятора или критический износ электрода. Первым делом выкрутите свечу и осмотрите её на предмет нагара, трещин керамического изолятора и состояния центрального электрода.</p>
+
+<p>Проверку работоспособности проводят методом "на массу". Наденьте колпачок высоковольтного провода на свечу, прижмите её резьбовую часть к металлической части двигателя (цилиндр или голова) и прокрутите кик-стартером. В темное время суток хорошо видно, есть ли разряд. Если искры нет, попробуйте заменить свечу на заведомо исправную, так как визуальный осмотр не всегда выявляет внутренний пробой.</p>
+
+<p>Особое внимание уделите состоянию <strong>высоковольтного провода</strong> и колпачка. Внутри колпачка часто находится резистор, который со временем теряет контакт или окисляется. Попробуйте выкрутить его из колпачка и проверить искру напрямую, подключив провод к свече. Иногда проблема решается простой зачисткой контактов или заменой колпачка, который стоит копейки по сравнению с катушкой.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Для надежного контакта при проверке "на массу" используйте зажим типа "крокодил" от мультиметра или дополнительный провод, так как рука может плохо проводить ток, создавая ложное впечатление об отсутствии искры.</p></aside>
+
+<blockquote>⚠️ Внимание: Никогда не держите свечу или высоковольтный провод руками во время прокрутки двигателя. Напряжение в системе зажигания достигает нескольких тысяч вольт, и хотя ток мал, удар может быть болезненным и неожиданным, что приведет к травме или падению мотоцикла.</blockquote>
+
+<h2 id="диагностика-кнопки-стоп-и-проводки-управления">Диагностика кнопки "Стоп" и проводки управления</h2>
+
+<p>Одной из самых коварных причин отсутствия искры является система аварийного глушения двигателя. На большинстве питбайков реализована схема, где кнопка "Стоп" на руле замыкает провод зажигания на массу, прекращая подачу искры. Если этот провод перетерся о раму или контакт внутри кнопки залип, система будет думать, что вы постоянно держите кнопку нажатой.</p>
+
+<p>Чтобы исключить этот фактор, необходимо найти разъем, идущий от катушки зажигания или CDI к рулю (обычно это два провода, часто черный и зеленый/черный). Разъедините этот коннектор. Если после размыкания цепи искра появилась, значит проблема в кнопке, проводке до руля или самом переключателе. Это частая ситуация после падений или мойки мотоцикла под давлением.</p>
+
+<p>Проводка питбайка подвергается сильным вибрациям, что приводит к ослаблению контактов в фишках. Осмотрите все доступные разъемы в цепи зажигания. Окисление контактов — тихий убийца электрики. Используйте спрей для очистки контактов (Contact Cleaner) и продуйте разъемы сжатым воздухом перед повторной сборкой.</p>
+
+<ul>
+<li>🔌 Проверьте целостность изоляции проводов, идущих к рулю — они часто перетираются в месте поворота руля.</li>
+<li>🛑 Убедитесь, что кнопка "Стоп" не залипла в нажатом положении из-за грязи или влаги.</li>
+<li>⚡ Осмотрите место соединения провода массы с рамой — плохой контакт массы нарушает работу всей электросистемы.</li>
+</ul>
+
+<div class="pb-poll" id="poll-076bf21f"><div class="pb-poll-question">📊 Как часто у вас пропадает искра?</div><div class="pb-poll-option" data-poll="076bf21f" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Из-за свечи</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="076bf21f" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Из-за кнопки Стоп</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="076bf21f" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Из-за катушки</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="076bf21f" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Из-за CDI</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="076bf21f" data-idx="4" onclick="pbPollVote(this)"><span class="pb-poll-label">Не было проблем</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="проверка-катушки-зажигания-мультиметром">Проверка катушки зажигания мультиметром</h2>
+
+<p>Если со свечой и кнопкой стоп все в порядке, следующим кандидатом на проверку становится катушка зажигания. Этот трансформатор преобразует низкое напряжение в высокое. Проверка осуществляется путем замера сопротивления первичной и вторичной обмоток с помощью мультиметра в режиме омметра.</p>
+
+<p>Для замера первичной обмотки подключите щупы к двум выводам низкого напряжения (обычно это разъем, идущий от CDI). Нормальное сопротивление должно находиться в диапазоне от 0,1 до 0,5 Ом (точное значение зависит от модели катушки, смотрите спецификацию). Если прибор показывает бесконечность (обрыв) или ноль (короткое замыкание), катушка неисправна и требует замены.</p>
+
+<p>Вторичная обмотка проверяется подключением одного щупа к выводу высоковольтного провода (внутрь колпачка или на вывод катушки), а второго — к одному из выводов первичной обмотки. Здесь сопротивление значительно выше, обычно от 2 до 5 кОм. Значительное отклонение от нормы свидетельствует о межвитковом замыкании или обрыве внутри корпуса.</p>
+
+<details class="pb-accordion"><summary>Почему катушка может греться?</summary><div class="pb-accordion-body"><p>Если катушка зажигания сильно нагревается в работе, это может указывать на неисправность CDI, который подает неправильные импульсы, или на слишком большой зазор свечи, из-за чего катушка работает с перегрузкой.</p></div></details>
+
+<p> Внутри может быть пробой изоляции, который проявляется только под нагрузкой или при нагреве. Если замеры borderline (на грани нормы), лучше заменить узел, так как он может отказать в самый неподходящий момент на трассе.</p>
+
+<h2 id="тестирование-статора-и-импульсной-катушки">Тестирование статора и импульсной катушки</h2>
+
+<p>Сердцем системы зажигания является статор (генератор), расположенный под маховиком. Он состоит из двух основных частей, важных для запуска: зарядной катушки (питает CDI) и импульсной катушки (датчик Холла или Pick-up Coil), которая дает сигнал о положении поршня для создания искры в нужный момент.</p>
+
+<p>Для проверки необходимо снять левую крышку двигателя и получить доступ к разъему статора. Обычно там 4 или 5 проводов. Нас интересуют пары проводов, отвечающие за зажигание. Цвета могут отличаться у разных производителей (BSE, Motoland, Apollo), поэтому лучше сверяться с электросхемой конкретной модели питбайка.</p>
+
+<p>Замерьте сопротивление между проводами импульсной катушки (часто белый и зеленый, или синий и желтый). Значение обычно составляет от 50 до 150 Ом. Сопротивление зарядной катушки (часто черный/красный и зеленый/черный) должно быть в пределах 50-500 Ом. Если сопротивление отсутствует или критически мало, обмотка сгорела.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип обмотки</th>
+<th>Цвет проводов (типичный)</th>
+<th>Нормальное сопротивление (Ом)</th>
+<th>Признак неисправности</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Зарядная катушка</td>
+<td>Черный/Красный — Зеленый</td>
+<td>50 — 500</td>
+<td>Обрыв или КЗ</td>
+</tr>
+<tr>
+<td>Импульсная катушка</td>
+<td>Белый — Зеленый</td>
+<td>50 — 150</td>
+<td>Нет сигнала тайминга</td>
+</tr>
+<tr>
+<td>Катушка освещения</td>
+<td>Желтый — Зеленый</td>
+<td>0.1 — 0.5</td>
+<td>Не горит свет (не влияет на искру)</td>
+</tr>
+<tr>
+<td>Катушка стартера</td>
+<td>Красный — Зеленый</td>
+<td>0.05 — 0.2</td>
+<td>Не крутит стартер</td>
+</tr>
+</tbody>
+</table></div>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Даже если сопротивление обмоток в норме, визуально осмотрите провода на выходе из статора. Вибрация двигателя часто переламывает медные жилы внутри изоляции, создавая нестабильный контакт.</p></aside>
+
+<h2 id="роль-коммутатора-cdi-в-системе-зажигания">Роль коммутатора (CDI) в системе зажигания</h2>
+
+<p>Коммутатор, или CDI блок, является управляющим центром системы. Он накапливает энергию от зарядной катушки в конденсаторе и разряжает её на катушку зажигания в момент получения сигнала от импульсной катушки. Это "черный ящик", который сложнее всего проверить подручными средствами без стенда.</p>
+
+<p>Чаще всего диагностика CDI сводится к методу исключения. Если свеча, проводка, кнопка стоп, катушка и статор исправны, а искры нет — с вероятностью 90% виноват коммутатор. На питбайках часто устанавливают универсальные CDI, которые можно недорого заменить для эксперимента.</p>
+
+<p>Обратите внимание на тип вашего CDI: с ограничителем оборотов (для дорог общего пользования) и без него (спортивный). Установка спортивного CDI на мотоцикл с ограничением может привести к тому, что двигатель будет работать некорректно на низких оборотах или искра будет пропадать на высоких. Убедитесь, что вы используете правильную модификацию для своего <em>питбайка</em>.</p>
+
+<blockquote>⚠️ Внимание: При установке нового CDI убедитесь, что распиновка разъема совпадает. Универсальные разъемы могут отличаться расположением пинов, и подключение "наугад" может сжечь новый блок или катушку зажигания мгновенно.</blockquote>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Диагностика отсутствия искры</h4><label class="check-item"><input type="checkbox"><span>Осмотр свечи и колпачка</span></label><label class="check-item"><input type="checkbox"><span>Размыкание цепи кнопки Стоп</span></label><label class="check-item"><input type="checkbox"><span>Замер сопротивления катушки</span></label><label class="check-item"><input type="checkbox"><span>Проверка обмоток статора</span></label><label class="check-item"><input type="checkbox"><span>Замена CDI на заведомо исправный</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<h2 id="влияние-зазора-маховика-и-шпонки-на-искру">Влияние зазора маховика и шпонки на искру</h2>
+
+<p>Иногда электрическая часть полностью исправна, но искры нет из-за механических причин. Ключевым элементом здесь является шпонка коленвала, которая фиксирует маховик в правильном положении. Если мотоцикл подвергался сильным ударам (например, при падении или неудачном запуске кик-стартером), шпонку может срезать.</p>
+
+<p>Срезанная шпонка приводит к смещению фаз газораспределения и, что более важно для нас, к изменению угла опережения зажигания. Импульсная катушка посылает сигнал слишком рано или слишком поздно, и искра либо не проскакивает вообще, либо попадает в открытые клапаны. Двигатель при этом может стрелять в глушитель или карбюратор.</p>
+
+<p>Для проверки необходимо снять вентилятор и маховик. Осмотрите шпонку и пазы на коленвале и маховике. Люфт маховика на валу недопустим. Также проверьте зазор между катушками статора и магнитами маховика. Он должен быть минимальным (0,3-0,5 мм), но без касания. Слишком большой зазор ослабит сигнал импульсной катушки.</p>
+
+<details>
+<summary>Как проверить угол зажигания без стробоскопа?</summary>
+<p>Точный угол зажигания на питбайках с CDI выставить сложно без спецоборудования, но можно использовать метод отметок. Найдите ВМТ (верхнюю мертвую точку) поршня, прокручивая двигатель. На маховике часто есть метка, которая должна совпадать с меткой на картере в момент искры. Если метки сильно расходятся, проблема в шпонке или растянутой цепи ГРМ.</p>
+</details>
+
+<details>
+<summary>Может ли разряженный аккумулятор влиять на искру?</summary>
+<p>На питбайках с системой зажигания от магдино (AC CDI) аккумулятор не участвует в создании искры вообще. На системах с DC CDI (питание от батареи) слабый аккумулятор может давать недостаточное напряжение для корректной работы коммутатора, особенно при запуске стартером, когда напряжение просаживается. В таком случае искра может быть слабой или пропадать.</p>
+</details>
+
+<details>
+<summary>Почему искра есть на выкрученной свече, но мотор не заводится?</summary>
+<p>Это классическая ловушка. На воздухе пробой происходит легко, а в цилиндре под давлением смеси требуется гораздо большее напряжение. Если катушка или CDI "устали", они могут давать искру на воздухе, но не могут пробить зазор в камере сгорания. Также причина может быть в переливе топлива или отсутствии компрессии.</p>
+</details>
+
+<details>
+<summary>Влияет ли тип топлива на силу искры?</summary>
+<p>Сам по себе бензин не влияет на генерацию искры системой зажигания. Однако использование некачественного топлива с примесями может привести к быстрому образованию токопроводящего нагара на изоляторе свечи, что вызывает утечку тока и исчезновение искры. Регулярная чистка или замена свечи обязательна.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-ustanovit-support-na-pitbajk.html" class="pb-related-card">
+                <span class="pb-related-title">Как установить суппорт на питбайк: пошаговая инструкция</span>
+                <span class="pb-related-desc">Детальное руководство по монтажу суппорта на питбайк: инструменты, разборка, установка и настройка т</span>
+            </a><a href="/articles/p/po/pochemu-u-enduro-raznye-kolesa.html" class="pb-related-card">
+                <span class="pb-related-title">Почему у эндуро разные колеса: 21 и 18 дюймов</span>
+                <span class="pb-related-desc">Разбираем, почему на эндуро ставят разные колеса. Влияние диаметра 21 и 18 дюймов на проходимость, у</span>
+            </a><a href="/articles/s/sv/svetodiodnaya-fara-na-pitbajk.html" class="pb-related-card">
+                <span class="pb-related-title">Светодиодная фара на питбайк: выбор, установка и настройка света</span>
+                <span class="pb-related-desc">Полный гайд по установке LED фары на питбайк. Сравнение оптики, схемы подключения, выбор драйвера и </span>
+            </a><a href="/articles/n/ne/ne-zavoditsya-pitbajk-125-iskra-est.html" class="pb-related-card">
+                <span class="pb-related-title">Питбайк 125 не заводится, но искра есть — 7 причин и ремонт</span>
+                <span class="pb-related-desc">Разбираемся, почему не заводится питбайк 125 кубов при наличии искры: от карбюратора до компрессии. </span>
+            </a><a href="/articles/p/pl/plastik-dlya-pitbajka-125.html" class="pb-related-card">
+                <span class="pb-related-title">Пластик для питбайка 125 кубов: выбор, установка и ремонт</span>
+                <span class="pb-related-desc">Как выбрать качественный пластик для питбайка 125 кубов? Сравнение материалов, популярные бренды и и</span>
+            </a><a href="/articles/m/mo/mozhno-li-perevozit-pitbajk-lezha.html" class="pb-related-card">
+                <span class="pb-related-title">Можно ли перевозить питбайк лежа: риски, советы и крепление</span>
+                <span class="pb-related-desc">Можно ли перевозить питбайк лежа в машине? Узнайте о рисках протечки масла, способах безопасной укла</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🏍️ Мото Гид</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a> · <a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a> · <a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a> · <a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a> · <a href="/category/remont-dvigatelej/">🔧 Ремонт Двигателей</a> · <a href="/category/elektrika-i-provodka/">⚡ Электрика и Проводка</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мото Гид. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

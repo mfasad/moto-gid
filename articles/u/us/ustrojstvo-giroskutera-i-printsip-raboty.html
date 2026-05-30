@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🏍️</text></svg>">
+    <title>Устройство гироскутера и принцип работы: полный разбор — Мото Гид</title>
+    <meta name="description" content="Подробный гид по внутреннему устройству гироскутера. Разбор датчиков, материнской платы, моторов и алгоритмов балансировки колес.">
+    <link rel="canonical" href="https://moto-gid.vercel.app/articles/u/us/ustrojstvo-giroskutera-i-printsip-raboty.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Устройство гироскутера и принцип работы: полный разбор">
+    <meta property="og:description" content="Подробный гид по внутреннему устройству гироскутера. Разбор датчиков, материнской платы, моторов и алгоритмов балансировки колес.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780130877">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🏍️</span>
+                <span class="pb-logo-text">Мото Гид</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/mopedy-i-skutery/" class="pb-dropdown-item">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/" class="pb-dropdown-item">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/" class="pb-dropdown-item">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/" class="pb-dropdown-item">📐 Самоделки и Чертежи</a>
+<a href="/category/remont-dvigatelej/" class="pb-dropdown-item">🔧 Ремонт Двигателей</a>
+<a href="/category/elektrika-i-provodka/" class="pb-dropdown-item">⚡ Электрика и Проводка</a>
+<a href="/category/zakony-i-prava/" class="pb-dropdown-item">⚖️ Законы и Права</a>
+<a href="/category/raskhodniki-i-masla/" class="pb-dropdown-item">🛢️ Расходники и Масла</a>
+<a href="/category/tyuning-i-modernizatsiya/" class="pb-dropdown-item">🚀 Тюнинг и Модернизация</a>
+<a href="/category/elektromototekhnika/" class="pb-dropdown-item">🔋 Электромототехника</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/elektromototekhnika/">Электромототехника</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Устройство гироскутера и принцип работы: полный разбор</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#сердце-системы-гироскопы-и-акселерометры">Сердце системы: гироскопы и акселерометры</a></li><li><a href="#мозговой-центр-материнская-плата-и-контроллер">Мозговой центр: материнская плата и контроллер</a></li><li><a href="#движущая-сила-мотор-колеса-и-редукторы">Движущая сила: мотор-колеса и редукторы</a></li><li><a href="#источник-энергии-аккумуляторная-батарея">Источник энергии: аккумуляторная батарея</a></li><li><a href="#корпус-и-элементы-управления">Корпус и элементы управления</a></li><li><a href="#диагностика-и-типичные-неисправности">Диагностика и типичные неисправности</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/n/na/na-skolko-khvataet-zaryada-giroskutera.html">На сколько хватает заряда гироскутера: факторы, тесты, советы 2026</a></li><li><a href="/articles/k/ka/kakaya-kategoriya-na-elektrovelosiped.html">Категория прав на электровелосипед: нужна ли категория М?</a></li><li><a href="/articles/b/ba/baggi-segway-villain-sx10wx.html">Багги Segway Villain SX10WX: характеристики, обзор и обслуживание</a></li><li><a href="/articles/k/ka/kakoj-elektro-pitbajk-vybrat.html">Как выбрать электропитбайк: гид по мощности и цене</a></li><li><a href="/articles/g/gi/giroskuter-pishchit-i-gorit-krasnaya-lampochka-s-odnoj-storony-chto-delat.html">Гироскутер пищит и горит красная лампочка — причины и ремонт</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Устройство гироскутера и принцип работы: полный разбор</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#сердце-системы-гироскопы-и-акселерометры">Сердце системы: гироскопы и акселерометры</a></li><li><a href="#мозговой-центр-материнская-плата-и-контроллер">Мозговой центр: материнская плата и контроллер</a></li><li><a href="#движущая-сила-мотор-колеса-и-редукторы">Движущая сила: мотор-колеса и редукторы</a></li><li><a href="#источник-энергии-аккумуляторная-батарея">Источник энергии: аккумуляторная батарея</a></li><li><a href="#корпус-и-элементы-управления">Корпус и элементы управления</a></li><li><a href="#диагностика-и-типичные-неисправности">Диагностика и типичные неисправности</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Гироскутер давно перестал быть экзотической новинкой и прочно вошел в жизнь современных городов как популярное средство индивидуальной мобильности. Для многих пользователей это просто устройство, на которое нужно встать и поехать, однако под лаконичным пластиковым корпусом скрывается сложная инженерная система. Понимание того, как именно устроен этот транспорт, необходимо не только энтузиастам, но и тем, кто хочет грамотно обслуживать свою технику или устранить неисправности.</p>
+
+<p>В основе работы лежит постоянный мониторинг положения устройства в пространстве с высокой частотой. Если бы не мгновенная реакция электроники, вы бы просто упали с платформы в первую же секунду. <strong>Принцип динамической стабилизации</strong> требует от системы обработки тысяч данных в секунду, чтобы корректировать скорость вращения колес. В этой статье мы детально разберем каждый узел, от аккумулятора до гироскопа, чтобы вы могли заглянуть «под капот» своего транспорта.</p>
+
+<p>Давайте начнем с фундамента, на котором строится вся работа устройства — системы датчиков и управления. Именно этот блок превращает инертную платформу в умный транспорт, способный удерживать равновесие без участия человека.</p>
+
+<h2 id="сердце-системы-гироскопы-и-акселерометры">Сердце системы: гироскопы и акселерометры</h2>
+
+<p>Главным элементом, обеспечивающим балансировку, является <strong>гироскопический датчик</strong>. Именно он с невероятной точностью определяет угол наклона платформы относительно земли. Современные модели используют микроэлектромеханические системы (MEMS), которые компактны и потребляют минимум энергии, но при этом обладают высокой чувствительностью.</p>
+
+<p>Однако одного гироскопа недостаточно для стабильной езды. В паре с ним всегда работает <em>акселерометр</em>, который измеряет линейное ускорение устройства. Совместная работа этих двух сенсоров позволяет контроллеру понимать не только то, под каким углом вы наклонились, но и с какой скоростью меняется этот наклон. Это критически важно для предотвращения падения при резких движениях.</p>
+
+<blockquote>⚠️ Внимание: В дешевых китайских моделях часто устанавливаются датчики низкого качества с высоким уровнем шума. Это может приводить к «дрожанию» гироскутера на месте или внезапным рывкам при езде.</blockquote>
+
+<p>Данные с датчиков поступают в процессор непрерывным потоком. <strong>Частота опроса</strong> сенсоров обычно составляет от 100 до 500 Гц, что означает сотни измерений каждую секунду. Если этот поток прерывается или данные искажаются, система переходит в аварийный режим или отключает моторы.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>При покупке б/у гироскутера обязательно проверьте наличие вибрации платформы на холостом ходу — это первый признак неисправности датчиков баланса.</p></aside>
+
+<h2 id="мозговой-центр-материнская-плата-и-контроллер">Мозговой центр: материнская плата и контроллер</h2>
+
+<p>Вся информация от сенсоров обрабатывается на <strong>материнской плате</strong>, которая является центральным вычислительным узлом. На ней расположен микроконтроллер, выполняющий сложные математические алгоритмы для расчета необходимой мощности, подаваемой на моторы. Именно здесь работает знаменитый <em>PID-регулятор</em> (пропорционально-интегрально-дифференцирующий).</p>
+
+<p>Алгоритм работы контроллера можно описать следующим образом: он постоянно сравнивает текущий угол наклона с заданным нулевым значением. При малейшем отклонении система вычисляет ошибку и подает команду на двигатели, чтобы компенсировать падение. Скорость этой реакции определяет плавность хода и безопасность устройства.</p>
+
+<ul>
+<li>🧠 <strong>Микропроцессор</strong> — выполняет вычисления алгоритмов балансировки в реальном времени.</li>
+<li>🔌 <strong>Силовые ключи (MOSFET)</strong> — управляют подачей тока от батареи к мотор-колесам.</li>
+<li>📶 <strong>Bluetooth-модуль</strong> — обеспечивает связь со смартфоном для настройки и обновления прошивки.</li>
+<li>🔋 <strong>Контроллер заряда (BMS)</strong> — следит за напряжением ячеек аккумулятора и балансирует их.</li>
+</ul>
+
+<p>На плате также расположены разъемы для подключения всех периферийных устройств: динамиков, фар, кнопок включения и зарядного порта. Качество пайки и компонентов на плате напрямую влияет на долговечность всего устройства. Перегрев силовых ключей — частая проблема при длительной езде в горку.</p>
+
+<div class="pb-poll" id="poll-b03caac5"><div class="pb-poll-question">📊 Какая поломка гироскутера встречается чаще всего?</div><div class="pb-poll-option" data-poll="b03caac5" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Проблемы с аккумулятором</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="b03caac5" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Неисправность датчиков</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="b03caac5" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Сломанное колесо</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="b03caac5" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Проблемы с зарядкой</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="движущая-сила-мотор-колеса-и-редукторы">Движущая сила: мотор-колеса и редукторы</h2>
+
+<p>В отличие от электросамокатов, где мотор часто расположен в ступице переднего колеса или на раме, гироскутер использует схему <strong>прямой передачи</strong> через редуктор. Внутри каждого колеса установлен бесщеточный электродвигатель (BLDC), который отличается высоким КПД и долговечностью благодаря отсутствию трущихся щеток.</p>
+
+<p>Вращающий момент от ротора двигателя передается на колесо через <em>планетарный редуктор</em>. Эта система позволяет увеличить крутящий момент, необходимый для старта и подъема в гору, жертвуя при этом максимальной скоростью. Внутри редуктора находятся шестерни, которые могут быть выполнены из пластика или металла.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип редуктора</th>
+<th>Материал шестерен</th>
+<th>Уровень шума</th>
+<th>Ресурс работы</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Бюджетный</td>
+<td>Пластик</td>
+<td>Низкий</td>
+<td>Средний (склонен к износу)</td>
+</tr>
+<tr>
+<td>Стандарт</td>
+<td>Усиленный пластик</td>
+<td>Средний</td>
+<td>Высокий</td>
+</tr>
+<tr>
+<td>Топ-уровень</td>
+<td>Металл (сталь)</td>
+<td>Высокий</td>
+<td>Максимальный</td>
+</tr>
+<tr>
+<td>Гибридный</td>
+<td>Композит</td>
+<td>Низкий</td>
+<td>Очень высокий</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Металлические шестерни надежнее, но они создают больше шума при работе и требуют качественной смазки. Пластиковые аналоги работают тише, но при резком старте или ударе о бордюр зубья могут просто срезать. <strong>Люфт в редукторе</strong> — одна из распространенных проблем, вызывающая стук при езде.</p>
+
+<details class="pb-accordion"><summary>Почему гудят моторы?</summary><div class="pb-accordion-body"><p>Высокочастотный гул моторов при движении на низкой скорости является нормальным явлением для бесщеточных двигателей. Это звук работы ШИМ-контроллера, регулирующего подачу тока. Однако если гул сменяется скрежетом, значит, поврежден подшипник или редуктор.</p></div></details>
+
+<h2 id="источник-энергии-аккумуляторная-батарея">Источник энергии: аккумуляторная батарея</h2>
+
+<p>Энергоснабжение устройства обеспечивает литий-ионный аккумулятор, собранный из множества отдельных ячеек формата 18650. <strong>Емкость батареи</strong> напрямую влияет на запас хода: чем больше миллиампер-часов (mAh), тем дольше можно кататься без подзарядки. Обычно напряжение сборки составляет 36 вольт.</p>
+
+<p>Критически важным элементом является плата <em>BMS (Battery Management System)</em>. Она защищает батарею от глубокого разряда, перезаряда, короткого замыкания и перегрева. Без исправной BMS использование литиевых аккумуляторов становится пожароопасным.</p>
+
+<blockquote>⚠️ Внимание: Никогда не заряжайте гироскутер сразу после интенсивной катания в мороз. Дайте батарее согреться до комнатной температуры в течение 1-2 часов, иначе возможно необратимое повреждение ячеек.</blockquote>
+
+<p>Со временем емкость аккумулятора снижается. Это естественный процесс деградации химии лития. Если вы заметили, что устройство проезжает значительно меньше или отключается под нагрузкой при полном заряде, скорее всего, одна или несколько ячеек вышли из строя. В таком случае требуется диагностика и замена элементов.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Средний срок службы качественного аккумулятора составляет 300-500 полных циклов заряда-разряда, что примерно равно 1.5–2 годам активной эксплуатации.</p></aside>
+
+<h2 id="корпус-и-элементы-управления">Корпус и элементы управления</h2>
+
+<p>Внешняя оболочка гироскутера выполняет не только эстетическую функцию, но и защищает внутренние компоненты от влаги и пыли. Большинство моделей имеют стандартную компоновку: две половинки корпуса, соединенные в центре, где расположена поворотная платформа с <strong>датчиками давления</strong>.</p>
+
+<p>Эти датчики (часто это простые мембранные кнопки или тензодатчики) определяют, стоит ли человек на устройстве. Как только вес распределяется по платформе, система активирует моторы и переходит в режим балансировки. Без сигнала от датчиков ног гироскутер не поедет, даже если его наклонять руками.</p>
+
+<ul>
+<li>💡 <strong>Светодиодные индикаторы</strong> — показывают уровень заряда батареи и статус подключения.</li>
+<li>🔊 <strong>Встроенные динамики</strong> — воспроизводят музыку со смартфона через Bluetooth.</li>
+<li>🚦 <strong>Габаритные огни</strong> — обеспечивают безопасность в темное время суток.</li>
+<li>🔘 <strong>Кнопка включения</strong> — активирует питание всей электроники.</li>
+</ul>
+
+<p>Герметичность корпуса varies от модели к модели. Наличие маркировки IP54 или IP65 говорит о защите от брызг, но это не означает, что устройством можно мыть под струей воды или ездить по глубоким лужам. Вода, попавшая внутрь, быстро выводит из строя материнскую плату.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Ежедневный осмотр перед поездкой</h4><label class="check-item"><input type="checkbox"><span>Проверить давление в шинах</span></label><label class="check-item"><input type="checkbox"><span>Очистить платформу от грязи</span></label><label class="check-item"><input type="checkbox"><span>Проверить работу индикаторов заряда</span></label><label class="check-item"><input type="checkbox"><span>Убедиться в отсутствии люфта колес</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="диагностика-и-типичные-неисправности">Диагностика и типичные неисправности</h2>
+
+<p>Понимание устройства помогает быстрее находить причины поломок. Если гироскутер пищит и не едет, проблема чаще всего кроется в датчиках баланса или нарушении калибровки. В некоторых случаях требуется перепрошивка контроллера через специальное приложение на смартфоне.</p>
+
+<p>Неравномерный износ шин или повреждение подшипников могут вызывать вибрацию, которую электроника воспринимает как потерю равновесия. В результате устройство начинает дергаться и пытаться выровняться, хотя на самом деле оно стоит ровно. Регулярное техническое обслуживание продлевает жизнь механизмам.</p>
+
+<pre><code>Типичная последовательность калибровки:
+<p>1. Выключить устройство.</p>
+<p>2. Зажать кнопку включения на 5-10 секунд до звукового сигнала.</p>
+<p>3. Поставить гироскутер на ровную поверхность.</p>
+<p>4. Дождаться мигания индикаторов и отключения устройства.</code></pre></p>
+
+<p>Если вы планируете самостоятельный ремонт, помните о рисках работы с высоким током. Короткое замыкание на клеммах аккумулятора может привести к возгоранию. Всегда используйте изолированный инструмент и соблюдайте технику безопасности при разборке.</p>
+
+<blockquote>⚠️ Внимание: Конструкция и расположение элементов могут отличаться в зависимости от производителя и конкретной модели. Всегда сверяйтесь с официальной документацией перед разборкой устройства.</blockquote>
+
+<h2 id="faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</h2>
+
+<details>
+<summary>Почему гироскутер вибрирует на месте?</summary>
+<p>Вибрация чаще всего указывает на неисправность гироскопа или акселерометра. Также причиной может быть разбалансировка колеса или попадание грязи на датчики давления платформы. Попробуйте выполнить калибровку устройства.</p>
+</details>
+
+<details>
+<summary>Можно ли ездить на гироскутере зимой?</summary>
+<p>Ездить можно, но с осторожностью. Литиевые аккумуляторы теряют емкость на морозе, а пластиковые шестерни редуктора становятся хрупкими. Рекомендуется утеплять батарею и избегать резких стартов на скользкой поверхности.</p>
+</details>
+
+<details>
+<summary>Что делать, если одно колесо крутится быстрее другого?</summary>
+<p>Это признак рассинхронизации моторов или проблем с одним из датчиков Холла внутри мотор-колеса. Также возможно механическое сопротивление в редукторе (нехватка смазки или поломка шестерни).</p>
+</details>
+
+<details>
+<summary>Как увеличить скорость гироскутера?</summary>
+<p>Скорость ограничена программно контроллером. Изменение прошивки может снять ограничения, но это приведет к перегреву моторов и быстрому разряду батареи, а также аннулирует гарантию.</p>
+</details>
+
+<details>
+<summary>Почему устройство не включается после зарядки?</summary>
+<p>Возможно, сработала защита BMS из-за глубокого разряда или скачка напряжения. Попробуйте оставить зарядное устройство подключенным на несколько часов. Если не помогло — требуется диагностика аккумулятора.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/n/na/na-skolko-khvataet-zaryada-giroskutera.html" class="pb-related-card">
+                <span class="pb-related-title">На сколько хватает заряда гироскутера: факторы, тесты, советы 2026</span>
+                <span class="pb-related-desc">Реальный запас хода гироскутера: как влияют вес, скорость, батарея и погода. Тесты популярных моделе</span>
+            </a><a href="/articles/k/ka/kakaya-kategoriya-na-elektrovelosiped.html" class="pb-related-card">
+                <span class="pb-related-title">Категория прав на электровелосипед: нужна ли категория М?</span>
+                <span class="pb-related-desc">Узнайте, какая категория прав нужна на электровелосипед в 2026 году. Разбор отличий от мопеда, штраф</span>
+            </a><a href="/articles/b/ba/baggi-segway-villain-sx10wx.html" class="pb-related-card">
+                <span class="pb-related-title">Багги Segway Villain SX10WX: характеристики, обзор и обслуживание</span>
+                <span class="pb-related-desc">Полный обзор двухместного багги Segway Villain SX10WX. Технические данные, рекомендации по эксплуата</span>
+            </a><a href="/articles/k/ka/kakoj-elektro-pitbajk-vybrat.html" class="pb-related-card">
+                <span class="pb-related-title">Как выбрать электропитбайк: гид по мощности и цене</span>
+                <span class="pb-related-desc">Полный обзор электропитбайков 2026: выбор мощности, батареи, подвески. Сравнение брендов KKE, Surron</span>
+            </a><a href="/articles/g/gi/giroskuter-pishchit-i-gorit-krasnaya-lampochka-s-odnoj-storony-chto-delat.html" class="pb-related-card">
+                <span class="pb-related-title">Гироскутер пищит и горит красная лампочка — причины и ремонт</span>
+                <span class="pb-related-desc">Почему гироскутер издаёт звуковой сигнал и мигает красным? Разбираем неисправности, способы диагност</span>
+            </a><a href="/articles/e/el/elektricheskaya-skhema-provodki-elektrovelosipede-sk8.html" class="pb-related-card">
+                <span class="pb-related-title">Электрическая схема проводки электровелосипеда SK8: разбор узлов</span>
+                <span class="pb-related-desc">Подробная инструкция по подключению проводки e-bike SK8. Схема контроллера, мотора, батареи и дисков</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🏍️ Мото Гид</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a> · <a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a> · <a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a> · <a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a> · <a href="/category/remont-dvigatelej/">🔧 Ремонт Двигателей</a> · <a href="/category/elektrika-i-provodka/">⚡ Электрика и Проводка</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мото Гид. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

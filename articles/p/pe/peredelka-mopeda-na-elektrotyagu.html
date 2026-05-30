@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🏍️</text></svg>">
+    <title>Переделка мопеда на электротягу: пошаговая инструкция и расчеты — Мото Гид</title>
+    <meta name="description" content="Полное руководство по переделке мопеда на электротягу. Выбор мотор-колеса, батареи, контроллера. Расчет запаса хода, схемы подключения и юридические аспекты.">
+    <link rel="canonical" href="https://moto-gid.vercel.app/articles/p/pe/peredelka-mopeda-na-elektrotyagu.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Переделка мопеда на электротягу: пошаговая инструкция и расчеты">
+    <meta property="og:description" content="Полное руководство по переделке мопеда на электротягу. Выбор мотор-колеса, батареи, контроллера. Расчет запаса хода, схемы подключения и юридические аспекты.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780130877">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🏍️</span>
+                <span class="pb-logo-text">Мото Гид</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/mopedy-i-skutery/" class="pb-dropdown-item">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/" class="pb-dropdown-item">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/" class="pb-dropdown-item">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/" class="pb-dropdown-item">📐 Самоделки и Чертежи</a>
+<a href="/category/remont-dvigatelej/" class="pb-dropdown-item">🔧 Ремонт Двигателей</a>
+<a href="/category/elektrika-i-provodka/" class="pb-dropdown-item">⚡ Электрика и Проводка</a>
+<a href="/category/zakony-i-prava/" class="pb-dropdown-item">⚖️ Законы и Права</a>
+<a href="/category/raskhodniki-i-masla/" class="pb-dropdown-item">🛢️ Расходники и Масла</a>
+<a href="/category/tyuning-i-modernizatsiya/" class="pb-dropdown-item">🚀 Тюнинг и Модернизация</a>
+<a href="/category/elektromototekhnika/" class="pb-dropdown-item">🔋 Электромототехника</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/elektromototekhnika/">Электромототехника</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Переделка мопеда на электротягу: пошаговая инструкция и расчеты</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#выбор-силового-агрегата-мотор-колесо-или-внешний-мотор">Выбор силового агрегата: Мотор-колесо или внешний мотор?</a></li><li><a href="#расчет-параметров-батареи-и-выбор-ячеек">Расчет параметров батареи и выбор ячеек</a></li><li><a href="#подбор-контроллера-и-системы-управления">Подбор контроллера и системы управления</a></li><li><a href="#монтаж-оборудования-и-компоновка">Монтаж оборудования и компоновка</a></li><li><a href="#органы-управления-и-приборная-панель">Органы управления и приборная панель</a></li><li><a href="#юридические-аспекты-и-безопасность-эксплуатации">Юридические аспекты и безопасность эксплуатации</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/g/gr/gravirovka-na-motor-kolese.html">Гравировка на мотор-колесе: виды, цена и последствия для гарантии</a></li><li><a href="/articles/i/in/instruktsiya-po-sborke-elektroskutera.html">Сборка электроскутера своими руками: пошаговая инструкция</a></li><li><a href="/articles/p/pr/proshivka-giroskutera-v-elektrotransport.html">Прошивка гироскутера в электротранспорт: пошаговый гайд 2026</a></li><li><a href="/articles/g/gt/gt-x7-pro-elektroskuter.html">Электроскутер GT X7 Pro: характеристики, обзор и эксплуатация</a></li><li><a href="/articles/e/el/elektroskuter-zimoj-mozhno-li-ispolzovat.html">Электроскутер зимой: можно ли использовать и как хранить</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Переделка мопеда на электротягу: полное руководство по электрофикации</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#выбор-силового-агрегата-мотор-колесо-или-внешний-мотор">Выбор силового агрегата: Мотор-колесо или внешний мотор?</a></li><li><a href="#расчет-параметров-батареи-и-выбор-ячеек">Расчет параметров батареи и выбор ячеек</a></li><li><a href="#подбор-контроллера-и-системы-управления">Подбор контроллера и системы управления</a></li><li><a href="#монтаж-оборудования-и-компоновка">Монтаж оборудования и компоновка</a></li><li><a href="#органы-управления-и-приборная-панель">Органы управления и приборная панель</a></li><li><a href="#юридические-аспекты-и-безопасность-эксплуатации">Юридические аспекты и безопасность эксплуатации</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Трансформация старого бензинового мопеда в современный электроскутер становится все более популярным решением для энтузиастов. Это позволяет не только сэкономить на топливе и техническом обслуживании, но и получить уникальный транспорт с высокой тягой и отсутствием шума. Однако <strong>переделка мопеда на электротягу</strong> требует тщательного инженерного подхода, понимания физики процессов и навыков электромонтажа. Не стоит думать, что это просто замена одного двигателя на другой.</p>
+
+<p>Вам предстоит выбрать между прямым приводом и редукторной передачей, рассчитать необходимую емкость батареи и подобрать совместимый контроллер. Ошибки на этапе планирования могут привести к тому, что конструкция окажется слишком тяжелой или не обеспечит желаемой динамики разгона. В этой статье мы детально разберем все этапы конверсии, от выбора компонентов до финальной настройки системы.</p>
+
+<h2 id="выбор-силового-агрегата-мотор-колесо-или-внешний-мотор">Выбор силового агрегата: Мотор-колесо или внешний мотор?</h2>
+
+<p>Первым и самым критичным этапом является выбор типа электродвигателя. Рынок предлагает два основных варианта: встроенное <strong>мотор-колесо</strong> и выносной мотор с цепной или ременной передачей. Мотор-колесо, как правило, устанавливается в заднюю ступицу, что упрощает монтаж и снижает потери КПД за счет отсутствия трансмиссии. Это решение идеально подходит для городской езды, где важна надежность и простота.</p>
+
+<p>С другой стороны, внешний мотор типа <em>MXUS</em> или <em>Bafang</em> позволяет сохранить возможность использования штатной коробки передач мопеда, если она исправна. Это дает преимущество в виде механического умножения крутящего момента, что полезно для крутых подъемов. Однако такая схема требует изготовления крепления, настройки натяжения цепи и регулярной смазки, что нивелирует часть преимуществ электропривода.</p>
+
+<ul>
+<li>🔌 <strong>Мотор-колесо:</strong> Минимум обслуживания, высокий КПД, скрытый монтаж, но ограниченный крутящий момент на низких оборотах.</li>
+<li>⚙️ <strong>Внешний мотор:</strong> Возможность использования КПП, лучшая тяга в гору, но сложный монтаж и шум цепи.</li>
+<li>🔋 <strong>Гибридные системы:</strong> Комбинация электромотора с бензиновым ДВС для увеличения запаса хода (сложная настройка).</li>
+</ul>
+
+<blockquote>⚠️ <strong>Внимание:</strong> При выборе мотор-колеса обязательно проверьте ширину дропаутов (посадочного места) вашей вилки или маятника. Стандартные мопеды часто имеют узкую заднюю вилку (до 100-120 мм), в то время как мощные мотор-колеса требуют 135 мм и более. Возможно, потребуется разгибать раму или заказывать новый маятник.</blockquote>
+
+<div class="pb-poll" id="poll-eadbba38"><div class="pb-poll-question">📊 Какой тип привода вы планируете установить?</div><div class="pb-poll-option" data-poll="eadbba38" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Мотор-колесо в заднее колесо</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="eadbba38" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Внешний мотор с цепью</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="eadbba38" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Мотор-колесо в переднее колесо</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="eadbba38" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Пока не решил</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="расчет-параметров-батареи-и-выбор-ячеек">Расчет параметров батареи и выбор ячеек</h2>
+
+<p>Сердцем вашего электрического мопеда станет аккумуляторная батарея. Именно от её характеристик зависит запас хода, максимальная скорость и динамика разгона. Для расчета необходимой емкости нужно определить среднее потребление энергии. Обычно мопед массой 100-120 кг с водителем потребляет около 20-30 Вт*ч на километр пути при скорости 40-50 км/ч.</p>
+
+<p>Напряжение батареи должно соответствовать номинальному напряжению выбранного контроллера и мотора. Наиболее распространенными стандартами являются системы на 48В, 60В и 72В. Повышение напряжения позволяет снизить силу тока при той же мощности, что уменьшает нагрев проводов и повышает эффективность системы. Однако высокое напряжение требует более строгого соблюдения правил безопасности.</p>
+
+<p>При сборке батареи часто используются литий-ионные элементы формата <em>18650</em> или <em>21700</em>. Важно выбирать ячейки с высоким токоотдачей (например, серии Samsung 25R, LG HG2 или Sony VTC6), если вы планируете агрессивную езду. Для спокойной городской эксплуатации подойдут элементы с большей емкостью, но меньшим током разряда.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Используйте онлайн-калькуляторы для сборки батарей (например, repackr.com), чтобы точно рассчитать конфигурацию последовательного (S) и параллельного (P) соединения ячеек под ваше напряжение и емкость.</p></aside>
+
+<p>Не забудьте про систему управления батареей — <strong>BMS</strong> (Battery Management System). Этот модуль защищает ячейки от перезаряда, глубокого разряда и короткого замыкания. Без BMS эксплуатация литиевой батареи смертельно опасна из-за риска возгорания.</p>
+
+<h2 id="подбор-контроллера-и-системы-управления">Подбор контроллера и системы управления</h2>
+
+<p>Контроллер выступает в роли «мозга» вашей электросистемы. Он преобразует постоянный ток от батареи в трехфазный переменный ток для двигателя, регулируя скорость и крутящий момент. При выборе устройства необходимо обращать внимание на максимальный фазный ток и ток батареи. Эти параметры напрямую влияют на динамику разгона и нагрев компонентов.</p>
+
+<p>Современные программируемые контроллеры, такие как модели от <em>Grin Technologies</em> или продвинутые версии <em>Kelly</em>, позволяют настраивать кривую отклика ручки газа, рекуперативное торможение и ограничение скорости через подключение к ПК. Это дает возможность тонко настроить поведение мопеда под конкретные условия эксплуатации.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Параметр</th>
+<th>Влияние на езду</th>
+<th>Рекомендация</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Номинальное напряжение</td>
+<td>Совместимость с мотором и батареей</td>
+<td>Строго sesuai с вольтажом системы (48/60/72В)</td>
+</tr>
+<tr>
+<td>Пиковый ток (A)</td>
+<td>Динамика разгона и проходимость</td>
+<td>25-40А для города, 50А+ для холмов</td>
+</tr>
+<tr>
+<td>Функция рекуперации</td>
+<td>Подзарядка при торможении</td>
+<td>Желательно для увеличения запаса хода</td>
+</tr>
+<tr>
+<td>Тип сигнала PAS</td>
+<td>Работа педалей (если есть)</td>
+<td>Проверить совместимость с датчиком</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Установка контроллера требует организации качественного охлаждения. В закрытом корпусе мопеда он может быстро перегреваться. Рекомендуется устанавливать радиаторы с активной обдувкой или выводить корпус контроллера в зону набегающего воздушного потока.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка перед покупкой контроллера</h4><label class="check-item"><input type="checkbox"><span>Совпадение напряжения с батареей</span></label><label class="check-item"><input type="checkbox"><span>Достаточный пиковый ток</span></label><label class="check-item"><input type="checkbox"><span>Наличие нужных разъемов</span></label><label class="check-item"><input type="checkbox"><span>Поддержка рекуперации</span></label><label class="check-item"><input type="checkbox"><span>Габариты для установки</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<h2 id="монтаж-оборудования-и-компоновка">Монтаж оборудования и компоновка</h2>
+
+<p>Размещение тяжелых компонентов — это задача на распределение веса. Идеальный центр тяжести находится низко и по центру рамы. Аккумуляторный блок, являющийся самым тяжелым элементом, лучше всего размещать в пространстве под ногами водителя или внутри центральной трубы рамы, если её диаметр позволяет.</p>
+
+<p>Контроллер и коммутацию следует располагать в защищенных от воды и грязи местах. Используйте влагозащищенные разъемы стандарта <code>XT60</code> или <code>XT90</code> для силовых цепей. Все соединения должны быть надежно пропаяны и заизолированы термоусадкой. Вибрации мопеда могут быстро раскрутить винтовые клеммы, поэтому пайка предпочтительнее.</p>
+
+<p>Прокладка высоковольтных проводов должна осуществляться вдали от подвижных частей рулевого управления и подвески. Используйте спиральную оплетку или гофру для защиты изоляции от перетирания. Не забудьте установить главный аварийный выключатель (размыкатель цепи) в легкодоступном месте, чтобы обесточить систему в случае нештатной ситуации.</p>
+
+<blockquote>⚠️ <strong>Внимание:</strong> Никогда не прокладывайте силовые кабели параллельно сигнальным проводам (датчики Холла, ручка газа) на большом расстоянии без экранирования. Это может создать электромагнитные наводки, вызывающие сбои в работе контроллера.</blockquote>
+
+<details class="pb-accordion"><summary>Как защитить батарею от вибрации?</summary><div class="pb-accordion-body"><p>Внутри корпуса батареи ячейки должны быть плотно упакованы и залиты термоклеем или эпоксидной смолой. Простое соединение никелевой лентой без жесткой фиксации приведет к быстрому разрушению контактов от вибрации дороги.</p></div></details>
+
+<h2 id="органы-управления-и-приборная-панель">Органы управления и приборная панель</h2>
+
+<p>После установки силовой части необходимо организовать управление. Штатная ручка газа мопеда обычно механическая (тросовая), поэтому её придется заменить на электронную модель с датчиком Холла. Убедитесь, что новый грипсовый узел подходит по диаметру к вашему рулю.</p>
+
+<p>Для контроля состояния системы потребуется новая приборная панель. Простейшие вольтметры покажут лишь заряд батареи, но не дадут информации о скорости или ошибках контроллера. Продвинутые дисплеи (например, серии <em>SP812</em> или <em>QS-S806</em>) способны отображать скорость, пробег, мощность и коды неисправностей.</p>
+
+<p>Подключение сигнальных линий требует внимательности. Цветовая маркировка проводов у разных производителей контроллеров может отличаться. Всегда сверяйтесь с <strong>пин-аутом</strong> (распиновкой) конкретного устройства. Ошибка при подключении датчиков Холла может привести к рывкам мотора или его полной блокировке.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Правильная калибровка ручки газа и настройка минимального напряжения отсечки на контроллере продлят жизнь вашей батарее и обеспечат плавность хода.</p></aside>
+
+<h2 id="юридические-аспекты-и-безопасность-эксплуатации">Юридические аспекты и безопасность эксплуатации</h2>
+
+<p>Переделка мопеда меняет его технические характеристики, что может повлиять на правовой статус транспортного средства. Во многих юрисдикциях мопеды с электродвигателем мощностью до 250 Вт и скоростью до 25 км/ч приравниваются к велосипедам и не требуют прав. Однако мощные самодельные электромопеды могут потребовать регистрации и наличия водительского удостоверения категории М или А.</p>
+
+<p>Безопасность литиевых батарей требует особого отношения. Избегайте глубокого разряда ниже 2.5В на ячейку и не заряжайте батарею сразу после активной езды, пока она не остынет. Используйте только зарядные устройства, предназначенные для вашего типа аккумуляторов (CC/CV профиль).</p>
+
+<p>Регулярно проверяйте затяжку болтов крепления мотор-колеса. Электропривод создает высокий крутящий момент, который может раскрутить стандартные гайки оси. Рекомендуется использовать моментные гайки с шайбами-звездочками, которые врезаются в дропауты вилки, предотвращая проворачивание.</p>
+
+<blockquote>⚠️ <strong>Внимание:</strong> Законодательство в сфере электротранспорта меняется. Уточните актуальные требования к регистрации и эксплуатации самодельных ТС в вашем регионе перед первым выездом на дороги общего пользования.</blockquote>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Сколько стоит полная переделка мопеда на электротягу?</summary>
+<p>Бюджет сильно зависит от выбранных компонентов. Бюджетный вариант на базе б/у мотор-колеса и собранной самостоятельно батареи может обойтись в 300-500 долларов. Комплектация премиум-класса с новыми ячейками, программируемым контроллером и качественным дисплеем может стоить от 800 до 1500 долларов и выше.</p>
+</details>
+
+<details>
+<summary>Какой запас хода можно получить после переделки?</summary>
+<p>При установке батареи емкостью 20 А*ч и напряжении 48В реальный запас хода составит около 40-50 км в смешанном цикле. Увеличение напряжения до 60В или 72В при той же емкости в А*ч даст прирост мощности, но не емкости (Вт*ч), поэтому для увеличения дистанции нужно наращивать именно ампер-часы или вольтаж.</p>
+</details>
+
+<details>
+<summary>Можно ли сохранить возможность езды на педалях?</summary>
+<p>Да, если вы устанавливаете внешний мотор или мотор-колесо с системой PAS (Pedal Assist System). Для этого потребуется установить датчик педалирования на кареточный узел. Это позволит использовать мускульную силу для помощи мотору или движения при разряженной батарее.</p>
+</details>
+
+<details>
+<summary>Нужно ли менять тормоза при переделке?</summary>
+<p>Да, это настоятельно рекомендуется. Электромобили и электромотоциклы тяжелее бензиновых аналогов из-за веса батареи. Штатные барабанные тормоза мопеда могут не справиться с возросшей массой и динамикой. Установка дисковых тормозов значительно повысит безопасность.</p>
+</details>
+
+<details>
+<summary>Как обслуживать батарею зимой?</summary>
+<p>Литий-ионные аккумуляторы плохо переносят низкие температуры. Заряжать батарею на морозе категорически запрещено — это приводит к необратимому повреждению ячеек. Хранить и заряжать АКБ следует только при положительной температуре. Зимой запас хода снижается на 20-40%.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/g/gr/gravirovka-na-motor-kolese.html" class="pb-related-card">
+                <span class="pb-related-title">Гравировка на мотор-колесе: виды, цена и последствия для гарантии</span>
+                <span class="pb-related-desc">Полный гид по маркировке мотор-колес. Лазерная и ударная гравировка VIN, защита от кражи, влияние на</span>
+            </a><a href="/articles/i/in/instruktsiya-po-sborke-elektroskutera.html" class="pb-related-card">
+                <span class="pb-related-title">Сборка электроскутера своими руками: пошаговая инструкция</span>
+                <span class="pb-related-desc">Подробное руководство по сборке электроскутера. Выбор рамы, установка мотор-колеса, контроллера и ба</span>
+            </a><a href="/articles/p/pr/proshivka-giroskutera-v-elektrotransport.html" class="pb-related-card">
+                <span class="pb-related-title">Прошивка гироскутера в электротранспорт: пошаговый гайд 2026</span>
+                <span class="pb-related-desc">Как перепрошить гироскутер в полноценный электротранспорт: выбор ПО, инструкции, риски и юридические</span>
+            </a><a href="/articles/g/gt/gt-x7-pro-elektroskuter.html" class="pb-related-card">
+                <span class="pb-related-title">Электроскутер GT X7 Pro: характеристики, обзор и эксплуатация</span>
+                <span class="pb-related-desc">Полный обзор электроскутера GT X7 Pro: мощность 3000W, запас хода 80 км, особенности конструкции и с</span>
+            </a><a href="/articles/e/el/elektroskuter-zimoj-mozhno-li-ispolzovat.html" class="pb-related-card">
+                <span class="pb-related-title">Электроскутер зимой: можно ли использовать и как хранить</span>
+                <span class="pb-related-desc">Полный гайд по эксплуатации электроскутера в мороз. Влияние холода на АКБ, советы по зимовке и прави</span>
+            </a><a href="/articles/k/ka/kak-zaryazhat-giroskuter-vklyuchennym-ili-vyklyuchennym.html" class="pb-related-card">
+                <span class="pb-related-title">Как заряжать гироскутер: включенным или выключенным</span>
+                <span class="pb-related-desc">Правильная зарядка гироскутера: включен или выключен? Разбор влияния на BMS, батарею и контроллер. С</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🏍️ Мото Гид</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a> · <a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a> · <a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a> · <a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a> · <a href="/category/remont-dvigatelej/">🔧 Ремонт Двигателей</a> · <a href="/category/elektrika-i-provodka/">⚡ Электрика и Проводка</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мото Гид. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

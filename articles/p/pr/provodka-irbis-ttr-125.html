@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🏍️</text></svg>">
+    <title>Схема проводки ИРБИС ТТР 125: ремонт, подключение, цвета — Мото Гид</title>
+    <meta name="description" content="Полное руководство по электропроводке ИРБИС ТТР 125. Схема подключения фар, генератора, замка зажигания. Диагностика обрывов и выбор проводов.">
+    <link rel="canonical" href="https://moto-gid.vercel.app/articles/p/pr/provodka-irbis-ttr-125.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Схема проводки ИРБИС ТТР 125: ремонт, подключение, цвета">
+    <meta property="og:description" content="Полное руководство по электропроводке ИРБИС ТТР 125. Схема подключения фар, генератора, замка зажигания. Диагностика обрывов и выбор проводов.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780130877">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🏍️</span>
+                <span class="pb-logo-text">Мото Гид</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/mopedy-i-skutery/" class="pb-nav-active">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/mopedy-i-skutery/" class="pb-dropdown-item">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/" class="pb-dropdown-item">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/" class="pb-dropdown-item">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/" class="pb-dropdown-item">📐 Самоделки и Чертежи</a>
+<a href="/category/remont-dvigatelej/" class="pb-dropdown-item">🔧 Ремонт Двигателей</a>
+<a href="/category/elektrika-i-provodka/" class="pb-dropdown-item">⚡ Электрика и Проводка</a>
+<a href="/category/zakony-i-prava/" class="pb-dropdown-item">⚖️ Законы и Права</a>
+<a href="/category/raskhodniki-i-masla/" class="pb-dropdown-item">🛢️ Расходники и Масла</a>
+<a href="/category/tyuning-i-modernizatsiya/" class="pb-dropdown-item">🚀 Тюнинг и Модернизация</a>
+<a href="/category/elektromototekhnika/" class="pb-dropdown-item">🔋 Электромототехника</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/mopedy-i-skutery/">Мопеды и Скутеры</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Схема проводки ИРБИС ТТР 125: ремонт, подключение, цвета</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#общая-архитектура-бортовой-сети">Общая архитектура бортовой сети</a></li><li><a href="#цветовая-маркировка-и-назначение-проводов">Цветовая маркировка и назначение проводов</a></li><li><a href="#диагностика-системы-зажигания-и-генератора">Диагностика системы зажигания и генератора</a></li><li><a href="#подключение-и-ремонт-головной-оптики">Подключение и ремонт головной оптики</a></li><li><a href="#устранение-обрывов-и-восстановление-изоляции">Устранение обрывов и восстановление изоляции</a></li><li><a href="#модернизация-установка-аккумулятора-и-реле-напряжения">Модернизация: установка аккумулятора и реле напряжения</a></li><li><a href="#частые-ошибки-при-самостоятельном-ремонте">Частые ошибки при самостоятельном ремонте</a></li><li><a href="#faq-вопросы-и-ответы">FAQ: Вопросы и ответы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/p/pl/plyusy-i-minusy-skutera.html">Скутер: плюсы и минусы в 2026 году — полный разбор для покупателя</a></li><li><a href="/articles/k/ko/korobka-peredach-kayo-k1.html">Коробка передач Kayo K1: устройство, ремонт и выбор масла</a></li><li><a href="/articles/y/ya/yamasaki-skorpion-50-kubov-kupit.html">Ямасаки Скорпион 50 кубов: где купить, цены и советы по выбору</a></li><li><a href="/articles/z/za/zazory-klapanov-na-skutere-139-qmb.html">Зазоры клапанов 139QMB: регулировка на скутере своими руками</a></li><li><a href="/articles/p/pu/puteshestviya-na-mopede-na-dalnie-rasstoyaniya.html">Путешествия на мопеде: подготовка, маршруты и безопасность</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Проводка ИРБИС ТТР 125: Диагностика и Ремонт</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#общая-архитектура-бортовой-сети">Общая архитектура бортовой сети</a></li><li><a href="#цветовая-маркировка-и-назначение-проводов">Цветовая маркировка и назначение проводов</a></li><li><a href="#диагностика-системы-зажигания-и-генератора">Диагностика системы зажигания и генератора</a></li><li><a href="#подключение-и-ремонт-головной-оптики">Подключение и ремонт головной оптики</a></li><li><a href="#устранение-обрывов-и-восстановление-изоляции">Устранение обрывов и восстановление изоляции</a></li><li><a href="#модернизация-установка-аккумулятора-и-реле-напряжения">Модернизация: установка аккумулятора и реле напряжения</a></li><li><a href="#частые-ошибки-при-самостоятельном-ремонте">Частые ошибки при самостоятельном ремонте</a></li><li><a href="#faq-вопросы-и-ответы">FAQ: Вопросы и ответы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Электрооборудование кроссового мотоцикла <em>Ирбис ТТР 125</em> — это не просто набор проводов, а сложная нервная система, требующая внимательного отношения. В отличие от дорожных версий, здесь нет тяжелого аккумулятора и сложной электроники, что делает схему проще, но требовательнее к качеству контактов. Любая вибрация на бездорожье может привести к нарушению изоляции или ослаблению соединения в разъемах.</p>
+
+<p>Понимание того, как работает <strong>проводка Ирбис ТТР 125</strong>, необходимо каждому владельцу для оперативного устранения неисправностей в полевых условиях. Чаще всего проблемы возникают не из-за выхода из строя компонентов, а из-за банального окисления контактов или перетирания изоляции о раму. Знание цветовой маркировки и логики работы цепи позволит вам сэкономить время и деньги на сервисе.</p>
+
+<p>В этой статье мы детально разберем электрическую схему, рассмотрим особенности подключения генератора и фары, а также дадим практические советы по модернизации штатной системы. Вы узнаете, как правильно диагностировать обрыв цепи и какие инструменты понадобятся для качественного ремонта.</p>
+
+<h2 id="общая-архитектура-бортовой-сети">Общая архитектура бортовой сети</h2>
+
+<p>Электрическая схема мотоцикла <em>Ирбис ТТР 125</em> построена по принципу переменного тока без использования аккумуляторной батареи для запуска двигателя. Стартер здесь отсутствует, запуск осуществляется кик-стартером, что значительно снижает нагрузку на проводку. Вся энергия генерируется статором (генератором переменного тока) под маховиком и распределяется напрямую на потребителей.</p>
+
+<p>Ключевым элементом системы является <strong>выпрямитель-стабилизатор (Реле-регулятор)</strong>. Этот небольшой блок отвечает за преобразование переменного тока в постоянный и ограничение напряжения, чтобы не сжечь лампочки при высоких оборотах двигателя. Если напряжение в сети скачет или лампы постоянно перегорают, первым делом проверяйте именно этот узел.</p>
+
+<p>Вся проводка делится на две основные группы: силовые цепи (генератор, выпрямитель, зажигание) и цепи освещения (фара, стоп-сигнал). Разделение помогает локализовать проблему: если двигатель работает, но света нет — ищите неисправность в цепи освещения после выпрямителя.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Используйте мультиметр в режиме прозвонки для быстрой проверки целостности проводов, не снимая их с разъема.</p></aside>
+
+<h2 id="цветовая-маркировка-и-назначение-проводов">Цветовая маркировка и назначение проводов</h2>
+
+<p>Китайские производители мототехники, включая <em>Ирбис</em>, часто используют стандартную цветовую кодировку, однако возможны небольшие отклонения в разных партиях. Понимание базовых цветов поможет вам быстро сориентироваться при монтаже дополнительного оборудования или ремонте.</p>
+
+<p>Основной жгут проводов обычно проходит под пластиковым обвесом и баком. Для удобства диагностики мы составили таблицу основных цветов и их функций в стандартной комплектации.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Цвет провода</th>
+<th>Назначение</th>
+<th>Тип тока</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Зеленый</td>
+<td>Масса (корпус)</td>
+<td>Общий</td>
+</tr>
+<tr>
+<td>Желтый</td>
+<td>Питание фары (переменный ток)</td>
+<td>AC</td>
+</tr>
+<tr>
+<td>Белый</td>
+<td>Вход на выпрямитель от генератора</td>
+<td>AC</td>
+</tr>
+<tr>
+<td>Красный</td>
+<td>Плюс после замка зажигания</td>
+<td>DC</td>
+</tr>
+<tr>
+<td>Черный</td>
+<td>Питание катушки зажигания</td>
+<td>DC</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Обратите внимание, что <strong>зеленый провод</strong> практически всегда является "минусом" или массой, которая соединяется с рамой мотоцикла. Если у вас пропадает контакт, часто достаточно просто зачистить место крепления зеленого провода к раме от краски и ржавчины.</p>
+
+<details class="pb-accordion"><summary>Нестандартные цвета в тюнинге</summary><div class="pb-accordion-body"><p>Если вы покупаете неоригинальную проводку или жгут от другого мотоцикла, цвета могут отличаться. Всегда проверяйте назначение щупом тестера, а не только по цвету изоляции.</p></div></details>
+
+<h2 id="диагностика-системы-зажигания-и-генератора">Диагностика системы зажигания и генератора</h2>
+
+<p>Самая частая проблема, с которой сталкиваются владельцы — внезапное исчезновение искры. Прежде чем менять катушку или CDI блок, необходимо проверить целостность цепи. Система зажигания на <em>ТТР 125</em> работает от отдельной обмотки генератора.</p>
+
+<p>Для проверки вам понадобится мультиметр. Необходимо измерить сопротивление между выводами катушки зажигания. Нормальные значения обычно находятся в диапазоне от 0.1 до 0.5 Ом для первичной обмотки. Если прибор показывает бесконечность — катушка сгорела.</p>
+
+<p>Также стоит проверить наличие импульса на входе в коммутатор (CDI). При прокрутке двигателя кик-стартером на соответствующем проводе должен появляться переменный ток. Отсутствие сигнала указывает на проблему в статоре или обрыв провода внутри картера.</p>
+
+<ul>
+<li>🔌 <strong>Проверка свечей:</strong> Выкрутите свечу, прижмите резьбой к массе двигателя и крутаните стартер. Искра должна быть ярко-синей.</li>
+<li>⚡ <strong>Замер напряжения:</strong> На холостых оборотах напряжение на выходе генератора должно быть не менее 12-14 Вольт (переменного тока).</li>
+<li>🛠️ <strong>Осмотр контактов:</strong> Окисленные фишки часто создают высокое сопротивление, из-за чего искра становится слабой.</li>
+</ul>
+
+<div class="pb-poll" id="poll-8d688f36"><div class="pb-poll-question">📊 С какой проблемой проводки вы сталкивались чаще?</div><div class="pb-poll-option" data-poll="8d688f36" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Пропала искра</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="8d688f36" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Не горит фара</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="8d688f36" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Плавятся контакты</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="8d688f36" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Перетирается проводка</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="8d688f36" data-idx="4" onclick="pbPollVote(this)"><span class="pb-poll-label">Проблем не было</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="подключение-и-ремонт-головной-оптики">Подключение и ремонт головной оптики</h2>
+
+<p>Штатная фара на <em>Ирбис ТТР 125</em> часто вызывает нарекания из-за слабого светового потока. Многие владельцы решают заменить её на более мощную светодиодную оптику. Однако здесь кроется важный нюанс: штатная проводка рассчитана на галогеновые лампы и переменный ток.</p>
+
+<p>При установке LED-фары необходимо убедиться, что выпрямитель выдает стабильное напряжение. Если вы подключите светодиод напрямую к переменному току без качественного диодного моста в самой фаре, она может мерцать или быстро выйти из строя.</p>
+
+<blockquote>
+<p>⚠️ Внимание! При установке ксенона или мощных LED-ламп убедитесь, что ваш генератор способен выдать необходимую мощность. Перегрузка обмоток статора приведет к их перегреву и оплавлению изоляции внутри картера двигателя.</p>
+</blockquote>
+
+<p>Для качественного света рекомендуется проложить отдельный силовой провод от аккумулятора (если он установлен) или от выхода выпрямителя напрямую к фаре, используя реле. Это снизит потери напряжения в штатных тонких проводах.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Прямое подключение мощной оптики через реле — единственный способ получить стабильный свет без риска перегрузки штатной проводки.</p></aside>
+
+<h2 id="устранение-обрывов-и-восстановление-изоляции">Устранение обрывов и восстановление изоляции</h2>
+
+<p>Вибрация и грязь — главные враги электрики эндуро-мотоцикла. Провода, проложенные открыто, со временем начинают перетираться о раму или пластиковые элементы обвеса. Особенно уязвимы места выхода жгута из-под бака и в районе рулевой колонки.</p>
+
+<p>Если вы обнаружили повреждение изоляции, не ограничивайтесь обычной изолентой. Она быстро раскисает от влаги и масла. Используйте термоусадочные трубки с клеевым слоем. Они обеспечивают герметичное соединение, которое не боится мойки под высоким давлением.</p>
+
+<p>При поиске обрыва внутри жгута иногда приходится аккуратно разрезать изоляцию в подозрительном месте, прозвонить жилы, а затем восстановить защиту. Не делайте скруток "на воздухе" — всегда паяйте соединения для надежности.</p>
+
+<ul>
+<li>🔍 <strong>Визуальный осмотр:</strong> Проведите рукой по всем видимым проводам, ища места с нарушенной геометрией или жесткостью.</li>
+<li>💧 <strong>Защита от воды:</strong> После мойки обязательно продувайте разъемы сжатым воздухом и обрабатывайте их контактным спреем (например, WD-40 Specialist).</li>
+<li>🧵 <strong>Фиксация:</strong> Используйте пластиковые стяжки, чтобы жгут не болтался и не бился о металл рамы на кочках.</li>
+</ul>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Ревизия проводки после сезона</h4><label class="check-item"><input type="checkbox"><span>Осмотреть жгут под баком</span></label><label class="check-item"><input type="checkbox"><span>Проверить крепление массы к раме</span></label><label class="check-item"><input type="checkbox"><span>Протереть контакты спреем</span></label><label class="check-item"><input type="checkbox"><span>Заменить треснувшую изоляцию</span></label><label class="check-item"><input type="checkbox"><span>Проверить работу стоп-сигнала</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<h2 id="модернизация-установка-аккумулятора-и-реле-напряжения">Модернизация: установка аккумулятора и реле напряжения</h2>
+
+<p>Штатная схема <em>Ирбис ТТР 125</em> не предусматривает аккумулятор, что создает проблему: свет работает только на заведенном двигателе, а при низких оборотах фару почти не видно. Установка аккумулятора кардинально меняет ситуацию, но требует переделки проводки.</p>
+
+<p>Для реализации этой схемы вам понадобится полуволновой или полноценный выпрямитель с выходом на зарядку АКБ. Аккумулятор (обычно 12V 4Ah или 5Ah) размещают в специальном отсеке или крепят хомутами к раме.</p>
+
+<blockquote>
+<p>⚠️ Внимание! Установка аккумулятора требует замены штатного реле-регулятора на модель с цепью зарядки. Подключение обычного аккумулятора напрямую к штатному генератору без правильного выпрямителя приведет к закипанию электролита и взрыву батареи.</p>
+</blockquote>
+
+<p>После установки батареи вся бортовая сеть переводится на постоянный ток (DC). Это позволяет установить более мощное головное освещение, добавить габариты, поворотники и даже USB-зарядку для телефона, которая будет работать стабильно.</p>
+
+<details class="pb-accordion"><summary>Где взять массу для АКБ?</summary><div class="pb-accordion-body"><p>При установке аккумулятора минусовую клемму обязательно соедините толстым проводом с рамой мотоцикла в чистом металлическом месте, так как штатная тонкая проводка может не выдержать ток стартера (если планируется электростартер).</p></div></details>
+
+<h2 id="частые-ошибки-при-самостоятельном-ремонте">Частые ошибки при самостоятельном ремонте</h2>
+
+<p>Многие новички, пытаясь сэкономить, совершают ошибки, которые в итоге обходятся дороже. Самая распространенная из них — использование проводов неподходящего сечения. Тонкий провод на мощной нагрузке нагревается и плавится, создавая риск пожара.</p>
+
+<p>Другая ошибка — игнорирование предохранителей. В цепи питания фары или дополнительного оборудования обязательно должен стоять предохранитель. Он спасет проводку при коротком замыкании, которое легко получить при неаккуратной работе инструментом.</p>
+
+<p>Также не стоит пренебрегать качеством самих проводов. Дешевый китайский кабель с алюминиевой жилой внутри медной оплетки быстро окисляется и ломается на изгибах. Используйте только медные многожильные провода в силиконовой или ПВХ изоляции.</p>
+
+<blockquote>
+<p>⚠️ Внимание! Схемы электрооборудования могут незначительно отличаться в зависимости от года выпуска и конкретной партии мотоцикла. Всегда сверяйтесь с цветовой маркировкой на вашем экземпляре перед подключением новых узлов.</p>
+</blockquote>
+
+<h2 id="faq-вопросы-и-ответы">FAQ: Вопросы и ответы</h2>
+
+<details>
+<summary>Почему на холостых оборотах гаснет фара?</summary>
+<p>Это нормальное поведение для схемы без аккумулятора. Генератор выдает напряжение, пропорциональное оборотам двигателя. На холостых мощность генерации недостаточна для свечения лампы. Решение: установка аккумулятора и реле-регулятора с цепью зарядки.</p>
+</details>
+
+<details>
+<summary>Какой провод идет на стоп-сигнал?</summary>
+<p>Обычно это провод, идущий от заднего фонаря к выключателю на тормозной лапке или гидравлическом датчике. Чаще всего он имеет красный или желто-черный цвет, но нужно проверять тестером при нажатии тормоза.</p>
+</details>
+
+<details>
+<summary>Можно ли подключить сигнализацию на ИРБИС ТТР 125?</summary>
+<p>Да, можно. Для этого потребуется постоянное питание, поэтому необходима установка аккумулятора. Сигнализация подключается параллельно цепи зажигания и габаритов через реле.</p>
+</details>
+
+<details>
+<summary>Где находится главный предохранитель?</summary>
+<p>В штатной комплектации без аккумулятора предохранители могут отсутствовать как класс. При установке АКБ предохранитель (обычно 10А или 15А) ставится в разрыв плюсового провода сразу после клеммы аккумулятора.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/p/pl/plyusy-i-minusy-skutera.html" class="pb-related-card">
+                <span class="pb-related-title">Скутер: плюсы и минусы в 2026 году — полный разбор для покупателя</span>
+                <span class="pb-related-desc">Все за и против скутера: экономия, маневренность, расходы на обслуживание, ограничения по ПДД и скры</span>
+            </a><a href="/articles/k/ko/korobka-peredach-kayo-k1.html" class="pb-related-card">
+                <span class="pb-related-title">Коробка передач Kayo K1: устройство, ремонт и выбор масла</span>
+                <span class="pb-related-desc">Полный гид по КПП мопеда Kayo K1. Устройство, типичные поломки, выбор трансмиссионного масла и пошаг</span>
+            </a><a href="/articles/y/ya/yamasaki-skorpion-50-kubov-kupit.html" class="pb-related-card">
+                <span class="pb-related-title">Ямасаки Скорпион 50 кубов: где купить, цены и советы по выбору</span>
+                <span class="pb-related-desc">Хотите купить скутер Ямасаки Скорпион 50 кубов? Узнайте, где искать выгодные предложения, как провер</span>
+            </a><a href="/articles/z/za/zazory-klapanov-na-skutere-139-qmb.html" class="pb-related-card">
+                <span class="pb-related-title">Зазоры клапанов 139QMB: регулировка на скутере своими руками</span>
+                <span class="pb-related-desc">Пошаговая инструкция по регулировке клапанов на двигателе 139QMB: нормы зазоров, инструменты, ошибки</span>
+            </a><a href="/articles/p/pu/puteshestviya-na-mopede-na-dalnie-rasstoyaniya.html" class="pb-related-card">
+                <span class="pb-related-title">Путешествия на мопеде: подготовка, маршруты и безопасность</span>
+                <span class="pb-related-desc">Полное руководство по дальним поездкам на мопеде. Выбор техники, экипировка, планирование маршрута, </span>
+            </a><a href="/articles/m/mo/moped-delta-vysota-po-sedlu.html" class="pb-related-card">
+                <span class="pb-related-title">Высота по седлу мопеда Дельта: как выбрать и отрегулировать</span>
+                <span class="pb-related-desc">Подробный гайд по высоте седла мопеда Дельта: стандарты, регулировка, выбор по росту. Таблицы размер</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🏍️ Мото Гид</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a> · <a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a> · <a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a> · <a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a> · <a href="/category/remont-dvigatelej/">🔧 Ремонт Двигателей</a> · <a href="/category/elektrika-i-provodka/">⚡ Электрика и Проводка</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мото Гид. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

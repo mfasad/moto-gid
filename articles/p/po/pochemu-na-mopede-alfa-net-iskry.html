@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🏍️</text></svg>">
+    <title>Почему на мопеде Альфа нет искры: поиск и устранение причин — Мото Гид</title>
+    <meta name="description" content="Подробный гид по диагностике системы зажигания мопеда Альфа. Разбор причин отсутствия искры, проверка катушки, CDI и коммутатора.">
+    <link rel="canonical" href="https://moto-gid.vercel.app/articles/p/po/pochemu-na-mopede-alfa-net-iskry.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Почему на мопеде Альфа нет искры: поиск и устранение причин">
+    <meta property="og:description" content="Подробный гид по диагностике системы зажигания мопеда Альфа. Разбор причин отсутствия искры, проверка катушки, CDI и коммутатора.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780130877">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🏍️</span>
+                <span class="pb-logo-text">Мото Гид</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/mopedy-i-skutery/" class="pb-nav-active">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/mopedy-i-skutery/" class="pb-dropdown-item">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/" class="pb-dropdown-item">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/" class="pb-dropdown-item">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/" class="pb-dropdown-item">📐 Самоделки и Чертежи</a>
+<a href="/category/remont-dvigatelej/" class="pb-dropdown-item">🔧 Ремонт Двигателей</a>
+<a href="/category/elektrika-i-provodka/" class="pb-dropdown-item">⚡ Электрика и Проводка</a>
+<a href="/category/zakony-i-prava/" class="pb-dropdown-item">⚖️ Законы и Права</a>
+<a href="/category/raskhodniki-i-masla/" class="pb-dropdown-item">🛢️ Расходники и Масла</a>
+<a href="/category/tyuning-i-modernizatsiya/" class="pb-dropdown-item">🚀 Тюнинг и Модернизация</a>
+<a href="/category/elektromototekhnika/" class="pb-dropdown-item">🔋 Электромототехника</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/mopedy-i-skutery/">Мопеды и Скутеры</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Почему на мопеде Альфа нет искры: поиск и устранение причин</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#первичная-диагностика-и-проверка-свечи-зажигания">Первичная диагностика и проверка свечи зажигания</a></li><li><a href="#проверка-катушки-зажигания-и-высоковольтного-провода">Проверка катушки зажигания и высоковольтного провода</a></li><li><a href="#диагностика-коммутатора-cdi-и-его-цепей">Диагностика коммутатора (CDI) и его цепей</a></li><li><a href="#роль-датчика-холла-и-генератора-в-системе">Роль датчика Холла и генератора в системе</a></li><li><a href="#влияние-блокировки-зажигания-и-стоп-сигнала">Влияние блокировки зажигания и стоп-сигнала</a></li><li><a href="#типичные-ошибки-и-сложные-случаи">Типичные ошибки и сложные случаи</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-zamenit-gripsy-na-skutere.html">Как заменить грипсы на скутере: пошаговая инструкция</a></li><li><a href="/articles/k/ka/kak-ustanovit-kofr-na-moped.html">Как надежно установить кофр на мопед: пошаговая инструкция</a></li><li><a href="/articles/v/v-/v-kakom-vozraste-razreshaetsya-ezda-na-mopede-po-dorogam-obshchego-polzovaniya.html">Со скольки лет разрешено ездить на мопеде по дорогам: права и правила</a></li><li><a href="/articles/k/ka/kak-pochistit-filtr-na-alfe.html">Как почистить фильтр на мопеде Альфа: инструкция, фото</a></li><li><a href="/articles/r/re/rele-povorotov-na-moped.html">Реле поворотов на мопед: выбор, замена и ремонт</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Почему на мопеде Альфа нет искры: полная диагностика</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#первичная-диагностика-и-проверка-свечи-зажигания">Первичная диагностика и проверка свечи зажигания</a></li><li><a href="#проверка-катушки-зажигания-и-высоковольтного-провода">Проверка катушки зажигания и высоковольтного провода</a></li><li><a href="#диагностика-коммутатора-cdi-и-его-цепей">Диагностика коммутатора (CDI) и его цепей</a></li><li><a href="#роль-датчика-холла-и-генератора-в-системе">Роль датчика Холла и генератора в системе</a></li><li><a href="#влияние-блокировки-зажигания-и-стоп-сигнала">Влияние блокировки зажигания и стоп-сигнала</a></li><li><a href="#типичные-ошибки-и-сложные-случаи">Типичные ошибки и сложные случаи</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Ситуация, когда двигатель мопеда <em>Alpha</em> не запускается из-за полного отсутствия искры, является одной из самых распространенных проблем владельцев китайской мототехники. Владельцы часто сталкиваются с тем, что стартер крутит исправно, топливо подается, но вспышки в цилиндре не происходит. Это состояние может быть вызвано как банальным загрязнением свечи, так и серьезным выходом из строя электронных компонентов системы зажигания.</p>
+
+<p>Для успешного ремонта необходимо понимать принцип работы системы CDI, установленной на большинстве моделей Альфа. Электрический импульс генерируется на статоре, проходит через коммутатор и усиливается катушкой зажигания перед подачей на свечу. Нарушение на любом из этих этапов приводит к тому, что мопед глохнет или вообще не заводится. В этой статье мы детально разберем алгоритм поиска неисправности.</p>
+
+<h2 id="первичная-диагностика-и-проверка-свечи-зажигания">Первичная диагностика и проверка свечи зажигания</h2>
+
+<p>Любая диагностика системы зажигания начинается с визуального осмотра свечи. Это самый доступный и часто самый эффективный метод выявления проблемы. Вам потребуется выкрутить свечу специальным ключом и осмотреть ее электроды. Если на них присутствует черный нагар, масло или влага, искра может пробивать не между электродами, а на корпус свечи или вообще отсутствовать.</p>
+
+<p>После очистки свечи необходимо провести тест на искру. Для этого <strong>свечу зажигания</strong> прикладывают резьбовой частью к неокрашенной металлической части двигателя (массе). При прокрутке стартера или кик-стартера между электродами должна проскакивать ярко-синяя искра. Красная или оранжевая искра свидетельствует о слабом заряде, а ее полное отсутствие указывает на обрыв цепи или неисправность генератора.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Никогда не держите свечу в руках во время проверки искры! Высокое напряжение может нанести серьезный удар током. Всегда обеспечивайте надежный контакт свечи с массой двигателя.</p>
+</blockquote>
+
+<p>Иногда проблема кроется не в самой свече, а в ее колпачке. Резиновый наконечник со временем рассыхается и теряет контакт с высоковольтным проводом. Внутри колпачка может окислиться контактный стержень или сломаться пружина. Проверьте надежность соединения провода с колпачком и самого колпачка со свечой. Плохой контакт в этом узле создает высокое сопротивление, гасящее импульс.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если искра есть на выкрученной свече, но пропадает при установке ее в двигатель, проверьте компрессию. При сильном износе ЦПГ искра может "задуваться" высоким давлением в цилиндре.</p></aside>
+
+<h2 id="проверка-катушки-зажигания-и-высоковольтного-провода">Проверка катушки зажигания и высоковольтного провода</h2>
+
+<p>Если свеча и колпачок исправны, следующим кандидатом на проверку становится <strong>катушка зажигания</strong>. Этот трансформатор преобразует низковольтный импульс от коммутатора в высоковольтный разряд. На мопедах Альфа катушки часто выходят из строя из-за вибраций, влаги или внутреннего пробоя изоляции обмоток.</p>
+
+<p>Для диагностики катушки можно использовать мультиметр в режиме измерения сопротивления (Ом). Необходимо замерить сопротивление первичной и вторичной обмоток. Значения могут отличаться в зависимости от модели катушки, но обычно первичная обмотка показывает от 0.1 до 0.5 Ом, а вторичная — от 2 до 5 кОм. Если прибор показывает бесконечность (обрыв) или ноль (короткое замыкание), катушку необходимо заменить.</p>
+
+<p>Также внимательно осмотрите сам высоковольтный провод. Он не должен иметь трещин, потертостей или следов оплавления. Пробой провода на массу часто происходит незаметно для глаза, особенно в сырую погоду. В темное время суток можно запустить двигатель (если есть слабая искра) или крутить стартер, наблюдая за проводом: если вы увидите проскакивание искры вдоль провода, значит, изоляция нарушена.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Диагностика катушки зажигания</h4><label class="check-item"><input type="checkbox"><span>Визуальный осмотр корпуса на трещины</span></label><label class="check-item"><input type="checkbox"><span>Замер сопротивления первичной обмотки</span></label><label class="check-item"><input type="checkbox"><span>Замер сопротивления вторичной обмотки</span></label><label class="check-item"><input type="checkbox"><span>Проверка надежности крепления массы катушки</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="диагностика-коммутатора-cdi-и-его-цепей">Диагностика коммутатора (CDI) и его цепей</h2>
+
+<p>Коммутатор, или CDI блок, является "мозгом" системы зажигания. Он аккумулирует энергию и в нужный момент времени (угол опережения зажигания) подает ее на катушку. На мопедах <em>Alpha 110</em> и <em>Alpha 125</em> используются преимущественно AC-CDI блоки, питающиеся переменным током от генератора, хотя встречаются и DC-модели.</p>
+
+<p>Проверить коммутатор мультиметром в домашних условиях практически невозможно без специального стенда. Поэтому основной метод диагностики — метод исключения. Если свеча, катушка, датчик Холла и генератор исправны, а искры нет, то с вероятностью 90% виноват именно <strong>коммутатор</strong>. Попробуйте установить заведомо исправный блок от другого мопеда.</p>
+
+<p>Важно проверить разъем подключения коммутатора. Контакты в фишке часто окисляются или разгибаются, теряя контакт. Также проверьте массу коммутатора. Плохое заземление блока управления приводит к нестабильной работе зажигания или полному отказу системы. Прозвоните черный провод разъема на массу двигателя.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Цвет провода</th>
+<th>Назначение</th>
+<th>Нормальное состояние</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Черный с красным</td>
+<td>Питание (AC/DC)</td>
+<td>Напряжение присутствует при вращении</td>
+</tr>
+<tr>
+<td>Зеленый</td>
+<td>Масса (Земля)</td>
+<td>Прозванивается на корпус двигателя</td>
+</tr>
+<tr>
+<td>Синий с белым</td>
+<td>Сигнал с датчика Холла</td>
+<td>Импульс при прокрутке</td>
+</tr>
+<tr>
+<td>Черно-белый</td>
+<td>Стоп-сигнал (заглушка)</td>
+<td>Замкнут на массу при выкл. зажигании</td>
+</tr>
+</tbody>
+</table></div>
+
+<details class="pb-accordion"><summary>Отличие AC и DC коммутаторов</summary><div class="pb-accordion-body"><p>AC-коммутаторы питаются переменным током напрямую от генератора и не имеют плюсового провода от аккумулятора. DC-модели питаются постоянным током 12В от замка зажигания и требуют исправного аккумулятора или генератора с выпрямителем.</p></div></details>
+
+<h2 id="роль-датчика-холла-и-генератора-в-системе">Роль датчика Холла и генератора в системе</h2>
+
+<p>Датчик Холла (или индуктивный датчик на статоре) сообщает коммутатору о положении поршня в верхней мертвой точке. Без этого сигнала блок зажигания не knows, когда подавать искру. На мопедах Альфа датчик расположен под крышкой генератора (магнето). Его выход из строя — частая причина отсутствия искры.</p>
+
+<p>Для проверки датчика необходимо снять крышку вариатора и генератора. Осмотрите сам датчик на предмет физических повреждений. Замерьте сопротивление между контактами разъема датчика (обычно синий и зеленый/белый провода). Сопротивление должно находиться в пределах 100–500 Ом, в зависимости от модели статора. Если сопротивление бесконечно велико, датчик сгорел.</p>
+
+<p>Также критически важен зазор между датчиком и ротором магнето. Если зазор слишком велик, магнитное поле будет слишком слабым для генерации сигнала. Если ротор трется о датчик, он неминуемо будет поврежден. Оптимальный зазор обычно составляет 0.3–0.5 мм. Регулировка осуществляется путем подкладки тонких шайб под крепление датчика.</p>
+
+<blockquote>
+<p>⚠️ Внимание: При снятии ротора магнето используйте специальный съемник. Удары молотком по валу коленвала могут привести к провороту подшипников и серьезной поломке двигателя.</p>
+</blockquote>
+
+<div class="pb-poll" id="poll-3ae98c24"><div class="pb-poll-question">📊 С какой проблемой вы сталкивались чаще всего?</div><div class="pb-poll-option" data-poll="3ae98c24" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Отказ датчика Холла</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="3ae98c24" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Пробой катушки зажигания</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="3ae98c24" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Неисправность коммутатора</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="3ae98c24" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Обрыв проводки</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="влияние-блокировки-зажигания-и-стоп-сигнала">Влияние блокировки зажигания и стоп-сигнала</h2>
+
+<p>Многие владельцы забывают, что в цепи зажигания мопеда Альфа есть элемент принудительной блокировки. Это провод, идущий от замка зажигания (обычно черно-белого цвета). Когда ключ повернут в положение "OFF", этот провод замыкается на массу, коротя импульс зажигания на землю.</p>
+
+<p>Если замок зажигания неисправен или проводка перебита, система может думать, что двигатель заглушен, даже если ключ в положении "ON". Для проверки можно временно отсоединить черно-белый провод от разъема коммутатора. Если после этого появится искра, значит, проблема в замке зажигания или в коротком замыкании этого провода на раму.</p>
+
+<p>Аналогичная ситуация наблюдается с датчиком стоп-сигнала переднего тормоза. В некоторых схемах неисправный концевик тормоза может блокировать зажигание. Попробуйте отключить разъем, идущий к датчику переднего тормоза, и проверьте наличие искры. Это поможет исключить ложное срабатывание системы блокировки.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если искра появляется только после отключения черно-белого провода, ищите короткое замыкание в проводке руля или замените замок зажигания.</p></aside>
+
+<h2 id="типичные-ошибки-и-сложные-случаи">Типичные ошибки и сложные случаи</h2>
+
+<p>Иногда причина отсутствия искры лежит на поверхности, но остается незамеченной из-за невнимательности. Например, предохранитель в цепи зажигания (для DC-систем) мог просто перегореть. Или же окислились контакты в главном разъеме проводки под баком. Вибрации мопеда Альфа способствуют расшатыванию фишек и появлению микротрещин в пайке.</p>
+
+<p>Сложным случаем является неисправность самого генератора. Если сгорела зарядная катушка, питающая CDI (в AC-системах), искры не будет, даже если все остальные элементы исправны. Проверьте сопротивление белой катушки на статоре. Также возможен обрыв провода внутри жгута, который визуально не виден из-за целостности изоляции.</p>
+
+<p>Не стоит игнорировать качество топлива и состояние воздушного фильтра при диагностике. Хотя они не влияют на наличие искры напрямую, переобогащенная смесь может залить свечу так сильно, что искра перестанет пробивать даже при исправной системе. Всегда начинайте с замены свечи на новую, прежде чем лезть в глубь электрики.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Характеристики сопротивлений катушек и датчиков могут отличаться в зависимости от производителя мопеда и года выпуска. Сверяйте данные с сервисной мануалом конкретной модели или измеряйте параметры на заведомо исправном доноре.</p>
+</blockquote>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Почему искра есть на выкрученной свече, но мопед не заводится?</summary>
+<p>Это может указывать на недостаточную мощность искры для пробоя в условиях сжатия в цилиндре. Проверьте компрессию двигателя, состояние поршневой группы и правильность установки фаз газораспределения. Также возможна неисправность самой свечи, которая дает искру на воздухе, но не работает под нагрузкой.</p>
+</details>
+
+<details>
+<summary>Можно ли проверить коммутатор мультиметром?</summary>
+<p>Стандартным мультиметром проверить внутреннюю логику коммутатора невозможно. Можно лишь прозвонить контакты на предмет короткого замыкания или обрыва. Полноценная проверка возможна только заменой на заведомо исправный блок или использованием осциллографа.</p>
+</details>
+
+<details>
+<summary>Какой зазор должен быть на свече зажигания для мопеда Альфа?</summary>
+<p>Оптимальный зазор электродов свечи зажигания для двигателей объемом 50–125 куб. см составляет 0.6–0.7 мм. Слишком большой зазор увеличит нагрузку на катушку и может привести к ее пробою, а слишком маленький — к слабой искре.</p>
+</details>
+
+<details>
+<summary>Что делать, если после замены всех деталей искры все равно нет?</summary>
+<p>Внимательно проверьте всю проводку на предмет перетирания о раму, особенно в местах изгибов и прохода через отверстия. Убедитесь, что масса двигателя хорошая (нет краски или ржавчины в точках крепления проводов). Иногда проблема кроется в плохом контакте в главном разъеме под пластиком.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-zamenit-gripsy-na-skutere.html" class="pb-related-card">
+                <span class="pb-related-title">Как заменить грипсы на скутере: пошаговая инструкция</span>
+                <span class="pb-related-desc">Подробный гайд по замене ручек газа на скутере. Выбор резины, снятие старых грипс, установка новых и</span>
+            </a><a href="/articles/k/ka/kak-ustanovit-kofr-na-moped.html" class="pb-related-card">
+                <span class="pb-related-title">Как надежно установить кофр на мопед: пошаговая инструкция</span>
+                <span class="pb-related-desc">Полное руководство по монтажу багажного кофра на скутер. Выбор креплений, инструменты, установка тра</span>
+            </a><a href="/articles/v/v-/v-kakom-vozraste-razreshaetsya-ezda-na-mopede-po-dorogam-obshchego-polzovaniya.html" class="pb-related-card">
+                <span class="pb-related-title">Со скольки лет разрешено ездить на мопеде по дорогам: права и правила</span>
+                <span class="pb-related-desc">Подробный разбор: возраст вождения мопеда, категория прав М, штрафы и технические требования. Узнайт</span>
+            </a><a href="/articles/k/ka/kak-pochistit-filtr-na-alfe.html" class="pb-related-card">
+                <span class="pb-related-title">Как почистить фильтр на мопеде Альфа: инструкция, фото</span>
+                <span class="pb-related-desc">Самостоятельная чистка воздушного и масляного фильтра на мопеде Альфа. Пошаговая инструкция, выбор м</span>
+            </a><a href="/articles/r/re/rele-povorotov-na-moped.html" class="pb-related-card">
+                <span class="pb-related-title">Реле поворотов на мопед: выбор, замена и ремонт</span>
+                <span class="pb-related-desc">Как выбрать реле поворотов для мопеда? Инструкция по диагностике, установке и подключению. Обзор 2- </span>
+            </a><a href="/articles/s/sk/skuter-glokhnet-na-kholostykh.html" class="pb-related-card">
+                <span class="pb-related-title">Скутер глохнет на холостых: диагностика и ремонт своими руками</span>
+                <span class="pb-related-desc">Подробный разбор причин, почему скутер глохнет на холостом ходу. Настройка карбюратора, проверка кла</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🏍️ Мото Гид</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a> · <a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a> · <a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a> · <a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a> · <a href="/category/remont-dvigatelej/">🔧 Ремонт Двигателей</a> · <a href="/category/elektrika-i-provodka/">⚡ Электрика и Проводка</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мото Гид. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🏍️</text></svg>">
+    <title>Пропала искра на скутере 4т: поиск и устранение неисправности — Мото Гид</title>
+    <meta name="description" content="Подробный гайд по диагностике системы зажигания 4-тактного скутера. Проверка свечи, катушки, CDI, датчиков Холла и проводки.">
+    <link rel="canonical" href="https://moto-gid.vercel.app/articles/p/pr/propala-iskra-na-skutere-4t.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Пропала искра на скутере 4т: поиск и устранение неисправности">
+    <meta property="og:description" content="Подробный гайд по диагностике системы зажигания 4-тактного скутера. Проверка свечи, катушки, CDI, датчиков Холла и проводки.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780130877">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🏍️</span>
+                <span class="pb-logo-text">Мото Гид</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/mopedy-i-skutery/" class="pb-nav-active">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/mopedy-i-skutery/" class="pb-dropdown-item">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/" class="pb-dropdown-item">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/" class="pb-dropdown-item">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/" class="pb-dropdown-item">📐 Самоделки и Чертежи</a>
+<a href="/category/remont-dvigatelej/" class="pb-dropdown-item">🔧 Ремонт Двигателей</a>
+<a href="/category/elektrika-i-provodka/" class="pb-dropdown-item">⚡ Электрика и Проводка</a>
+<a href="/category/zakony-i-prava/" class="pb-dropdown-item">⚖️ Законы и Права</a>
+<a href="/category/raskhodniki-i-masla/" class="pb-dropdown-item">🛢️ Расходники и Масла</a>
+<a href="/category/tyuning-i-modernizatsiya/" class="pb-dropdown-item">🚀 Тюнинг и Модернизация</a>
+<a href="/category/elektromototekhnika/" class="pb-dropdown-item">🔋 Электромототехника</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/mopedy-i-skutery/">Мопеды и Скутеры</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Пропала искра на скутере 4т: поиск и устранение неисправности</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#первичная-визуальная-проверка-и-состояние-свечи">Первичная визуальная проверка и состояние свечи</a></li><li><a href="#диагностика-высоковольтного-провода-и-колпачка">Диагностика высоковольтного провода и колпачка</a></li><li><a href="#проверка-катушки-зажигания-и-коммутатора-cdi">Проверка катушки зажигания и коммутатора CDI</a></li><li><a href="#датчики-системы-зажигания-холла-и-индуктивный">Датчики системы зажигания: Холла и индуктивный</a></li><li><a href="#анализ-проводки-и-цепей-блокировки">Анализ проводки и цепей блокировки</a></li><li><a href="#генератор-и-статор-проверка-обмоток">Генератор и статор: проверка обмоток</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/m/mo/moped-alfa-yaguar-lesnik.html">Мопед «Альфа Ягуар Лесник»: характеристики, ремонт и тюнинг</a></li><li><a href="/articles/d/dv/dvigatel-brajt-17-l-s-kupit.html">Двигатель Bright 17 л.с. — где купить, цены, отзывы и выбор</a></li><li><a href="/articles/g/gd/gde-na-skutere-nakhoditsya-nomer-dvigatelya-i-ramy.html">Где найти номер двигателя и рамы на скутере</a></li><li><a href="/articles/m/mo/moped-trekhkolesnyj-vzroslyj-benzinovyj.html">Трехколесный взрослый мопед на бензине: выбор, цены, нюансы</a></li><li><a href="/articles/k/ka/kak-snyat-generator-na-skutere-4t-bez-semnika.html">Как снять генератор на скутере 4т без съемника: методы</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Пропала искра на скутере 4т: полный алгоритм диагностики</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#первичная-визуальная-проверка-и-состояние-свечи">Первичная визуальная проверка и состояние свечи</a></li><li><a href="#диагностика-высоковольтного-провода-и-колпачка">Диагностика высоковольтного провода и колпачка</a></li><li><a href="#проверка-катушки-зажигания-и-коммутатора-cdi">Проверка катушки зажигания и коммутатора CDI</a></li><li><a href="#датчики-системы-зажигания-холла-и-индуктивный">Датчики системы зажигания: Холла и индуктивный</a></li><li><a href="#анализ-проводки-и-цепей-блокировки">Анализ проводки и цепей блокировки</a></li><li><a href="#генератор-и-статор-проверка-обмоток">Генератор и статор: проверка обмоток</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Ситуация, когда двигатель скутера внезапно перестал запускаться, часто вызывает панику у владельца, особенно если до этого техника работала без нареканий. Наиболее вероятной причиной отказа, при условии наличия топлива в баке и исправности стартера, является отсутствие искры на свече зажигания. В четырехтактных двигателях система зажигания устроена несколько сложнее, чем в двухтактных аналогах, и требует последовательного подхода к поиску поломки.</p>
+
+<p>Диагностика электрической части не терпит хаотичных действий. <strong>Беспорядочная замена деталей</strong> наугад может привести к лишним тратам и не гарантирует решение проблемы. Чтобы эффективно восстановить работоспособность <em>скутера 4т</em>, необходимо методично проверить каждый узел цепи, начиная от простейших элементов и заканчивая сложной электроникой. В этом материале мы разберем пошаговый алгоритм действий, который поможет выявить истинного виновника отсутствия воспламенения смеси.</p>
+
+<p>Перед началом работ убедитесь, что аккумулятор заряжен, так как на многих современных моделях с электростартером именно он питает систему зажигания. Также проверьте, не активирована ли случайно кнопка «стоп-двигатель» на руле — это банальная, но частая причина, которую часто упускают из виду в стрессовой ситуации.</p>
+
+<h2 id="первичная-визуальная-проверка-и-состояние-свечи">Первичная визуальная проверка и состояние свечи</h2>
+
+<p>Первым шагом всегда должна быть инспекция самой <strong>свечи зажигания</strong>. Выкрутите её из головки цилиндра и внимательно осмотрите электроды. Цвет нагара может многое рассказать о состоянии двигателя: черный бархатистый налет указывает на переобогащенную смесь, а белый или светло-серый цвет — на перегрев или бедную смесь. Однако, если искры нет вообще, нас интересует прежде всего физическое состояние керамики и зазор.</p>
+
+<p>Проверьте зазор между центральным и боковым электродом. Для большинства 4-тактных скутеров объемом 50-150 кубов оптимальным значением является диапазон 0.6–0.7 мм. Слишком большой зазор может привести к пробою, а слишком маленький — к слабой искре, которой недостаточно для воспламенения. Используйте щуп для точной регулировки, аккуратно подгибая боковой электрод.</p>
+
+<blockquote>
+<p>⚠️ Внимание! Если на керамическом изоляторе свечи видны трещины или сколы, деталь подлежит немедленной замене. Эксплуатация поврежденной свечи может привести к пробою высокого напряжения на корпус и выходу из строя коммутатора CDI.</p>
+</blockquote>
+
+<p>Проведите тест «на массу». Наденьте колпачок высоковольтного провода на свечу, приложите резьбовую часть свечи к неокрашенной металлической части двигателя (массе) и прокрутите стартер. Искра должна быть яркой, синего цвета и стабильной. Если искра слабая, красноватая или отсутствует, проблема может быть как в самой свече, так и в подаче напряжения.</p>
+
+<div class="pb-poll" id="poll-68b817aa"><div class="pb-poll-question">📊 Какого цвета была искра при проверке?</div><div class="pb-poll-option" data-poll="68b817aa" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Ярко-синяя и мощная</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="68b817aa" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Слабая красная или оранжевая</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="68b817aa" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Искры нет совсем</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="68b817aa" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Не проверял, боюсь удара током</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="диагностика-высоковольтного-провода-и-колпачка">Диагностика высоковольтного провода и колпачка</h2>
+
+<p>Часто владельцы забывают о состоянии <strong>высоковольтного провода</strong>, который соединяет катушку зажигания со свечой. Со временем изоляция провода может пересохнуть и потрескаться, особенно в местах изгибов near рулевой колонки. Через эти микротрещины высокое напряжение может уходить на массу, не доходя до свечи зажигания.</p>
+
+<p>Осмотрите колпачок свечи. Внутри него находится контактный элемент, который со временем окисляется или покрывается нагаром. Плохой контакт в этом узле является распространенной причиной нестабильной работы двигателя. Попробуйте зачистить внутренний контакт колпачка мелкой наждачной бумагой или надфилем.</p>
+
+<p>Проверьте сопротивление провода с помощью мультиметра. В зависимости от типа провода (с распределенным сопротивлением или без), показания могут варьироваться, но обычно они находятся в пределах нескольких килоом. Если прибор показывает бесконечное сопротивление, значит, внутри провода произошел обрыв жилы, и его необходимо заменить.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>При покупке нового высоковольтного провода выбирайте силиконовую изоляцию — она лучше переносит перепады температур и вибрации, чем стандартная резина, и служит значительно дольше.</p></aside>
+
+<h2 id="проверка-катушки-зажигания-и-коммутатора-cdi">Проверка катушки зажигания и коммутатора CDI</h2>
+
+<p>Если свеча и провод исправны, следующим кандидатом на проверку становится <strong>катушка зажигания</strong>. Это трансформатор, преобразующий низкое напряжение бортовой сети в высокое для создания искры. Для диагностики катушки необходимо замерить сопротивление её первичной и вторичной обмоток.</p>
+
+<p>Подключите щупы мультиметра к выводам первичной обмотки (обычно это разъем подключения к проводке скутера). Нормальное сопротивление должно составлять от 0.1 до 0.5 Ом. Затем замерьте сопротивление вторичной обмотки, подключив один щуп к входному контакту, а другой — к высоковольтному выходу. Здесь значения должны быть в диапазоне 2–5 кОм. Отклонения от этих норм свидетельствуют о межвитковом замыкании или обрыве.</p>
+
+<p>Коммутатор <em>CDI</em> (Capacitor Discharge Ignition) является «мозгом» системы зажигания. Он управляет моментом подачи искры, основываясь на сигналах от датчиков. К сожалению, проверить CDI обычным мультиметром в домашних условиях практически невозможно, так как это сложное электронное устройство. Единственный надежный способ диагностики — замена на заведомо исправный блок.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Компонент</th>
+<th>Тип проверки</th>
+<th>Нормальные показания</th>
+<th>Признак неисправности</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Свеча зажигания</td>
+<td>Визуальный + тест на массу</td>
+<td>Зазор 0.6-0.7 мм, искра синяя</td>
+<td>Нагар, трещины, красная искра</td>
+</tr>
+<tr>
+<td>Катушка (первичная)</td>
+<td>Замер сопротивления (Ом)</td>
+<td>0.1 – 0.5 Ом</td>
+<td>Бесконечность или 0 Ом</td>
+</tr>
+<tr>
+<td>Катушка (вторичная)</td>
+<td>Замер сопротивления (кОм)</td>
+<td>2.0 – 5.0 кОм</td>
+<td>Выход за пределы диапазона</td>
+</tr>
+<tr>
+<td>Высоковольтный провод</td>
+<td>Замер сопротивления</td>
+<td>Зависит от типа (обычно до 10 кОм)</td>
+<td>Обрыв цепи</td>
+</tr>
+</tbody>
+</table></div>
+
+<details class="pb-accordion"><summary>Почему сгорает коммутатор CDI?</summary><div class="pb-accordion-body"><p>Частой причиной выхода из строя CDI является плохой контакт массы или скачки напряжения в бортовой сети из-за неисправного регулятора-выпрямителя. Перед установкой нового блока всегда проверяйте надежность крепления «минусового» провода к раме.</p></div></details>
+
+<h2 id="датчики-системы-зажигания-холла-и-индуктивный">Датчики системы зажигания: Холла и индуктивный</h2>
+
+<p>В четырехтактных двигателях момент искрообразования критически зависит от положения поршня. За это отвечают датчики. На большинстве китайских скутеров используется <strong>датчик Холла</strong>, расположенный под крышкой вариатора, или индуктивный датчик, встроенный в статор генератора. Если эти элементы не посылают сигнал в CDI, искры не будет.</p>
+
+<p>Датчик Холла проверяется путем измерения напряжения на сигнальном проводе при прокрутке двигателя. При наличии магнитного поля (когда магнит маховика проходит мимо датчика) напряжение должно меняться. Для точной диагностики потребуется осциллограф, но косвенно проверить его можно, измерив сопротивление или напряжение питания (обычно 5В или 12В в зависимости от схемы).</p>
+
+<p>Индуктивный датчик (pickup coil) находится в генераторе. Его задача — генерировать импульс при прохождении специального выступа на маховике. Проверьте сопротивление обмотки датчика, оно обычно составляет от 50 до 200 Ом. Также осмотрите провода, идущие от статора: они часто перетираются о картер или оплавляются от высокой температуры двигателя.</p>
+
+<blockquote>
+<p>⚠️ Внимание! При проверке датчиков обязательно убедитесь, что зазор между магнитом маховика и сердечником датчика соответствует спецификации. Слишком большой зазор приведет к слабому сигналу и пропаже искры на высоких оборотах.</p>
+</blockquote>
+
+<h2 id="анализ-проводки-и-цепей-блокировки">Анализ проводки и цепей блокировки</h2>
+
+<p>Электрическая схема скутера включает в себя несколько цепей блокировки зажигания, которые могут стать причиной неисправности. К ним относятся провода от замка зажигания, датчика боковой подножки и рычага заднего тормоза (на некоторых моделях). Если в этой цепи происходит короткое замыкание на массу, система принудительно гасит искру.</p>
+
+<p>Чтобы исключить влияние блокировок, можно временно отключить соответствующие разъемы. Например, отсоедините провод, идущий от замка зажигания к коммутатору (обычно черно-белый). Если после этого искра появилась, значит, проблема в замке или проводке, идущей к нему. Аналогично поступают с датчиком подножки.</p>
+
+<p>Внимательно осмотрите жгуты проводов по всей длине. Вибрация и трение о пластиковые обтекатели со временем перетирают изоляцию. Особое внимание уделите местам входа проводов в раму и участки near рулевой колонки, где провода постоянно двигаются при повороте руля.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Чек-лист проверки цепей блокировки</h4><label class="check-item"><input type="checkbox"><span>Отключить разъем замка зажигания</span></label><label class="check-item"><input type="checkbox"><span>Отсоединить датчик боковой подножки</span></label><label class="check-item"><input type="checkbox"><span>Проверить целостность черно-белого провода</span></label><label class="check-item"><input type="checkbox"><span>Осмотреть разъемы на предмет окисления</span></label><label class="check-item"><input type="checkbox"><span>Проверить предохранители системы зажигания</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<h2 id="генератор-и-статор-проверка-обмоток">Генератор и статор: проверка обмоток</h2>
+
+<p>На многих моделях скутеров энергия для искры берется непосредственно с отдельной обмотки генератора (осветительной катушки), а не от аккумулятора. Если эта обмотка сгорела или замкнула на массу, искра пропадет, даже если все остальные элементы исправны. Это характерно для систем зажигания с питанием от переменного тока (AC CDI).</p>
+
+<p>Снимите крышку генератора и найдите выводы обмоток. Обычно они идут в общем разъеме. Найдите провод, отвечающий за зажигание (часто белый или желто-зеленый, но лучше свериться со схемой для вашей модели <em>скутера</em>). Замерьте сопротивление этой обмотки относительно массы. Оно должно быть низким, но не нулевым.</p>
+
+<p>Также проверьте, нет ли замыкания обмотки на корпус статора. Один щуп мультиметра поставьте на вывод обмотки, другой — на металлическую основу статора. Прибор должен показывать бесконечность. Если есть хоть какое-то сопротивление, значит, изоляция обмотки нарушена, и статор подлежит замене или перемотке.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если искра пропадает только на прогретом двигателе, вероятнее всего, проблема в тепловом пробое катушки зажигания или датчика Холла. Остывание восстанавливает работоспособность на короткое время.</p></aside>
+
+<details>
+<summary>Почему искра есть при прокрутке стартером, но пропадает при запуске?</summary>
+<p>Это может указывать на просадку напряжения аккумулятора, если система зажигания питается от постоянного тока (DC CDI). Также возможно, что при запуске стартер создает сильные помехи, или есть плохой контакт массы, который нарушается от вибрации при работе двигателя.</p>
+</details>
+
+<details>
+<summary>Можно ли проверить CDI без замены на новый?</summary>
+<p>Прямая проверка CDI мультиметром невозможна, так как внутри находятся конденсаторы и тиристоры, работающие в динамическом режиме. Косвенно можно проверить наличие питающего напряжения на входе CDI и импульсов на выходе в сторону катушки, но для этого нужен осциллограф. Самый быстрый метод — метод исключения остальных узлов.</p>
+</details>
+
+<details>
+<summary>Влияет ли состояние аккумулятора на наличие искры?</summary>
+<p>Да, но только на скутерах с системой зажигания DC CDI (питание от постоянного тока). На моделях с AC CDI (питание от генератора) искра будет даже при полностью снятом аккумуляторе, если исправен генератор и стартер крутит двигатель (например, кик-стартером).</p>
+</details>
+
+<details>
+<summary>Что делать, если после замены всех деталей искры так и нет?</summary>
+<p>В таком случае необходимо тщательно перепроверить схему подключения, особенно массу двигателя. Убедитесь, что двигатель надежно соединен с рамой и минусовой клеммой аккумулятора. Также проверьте шпонку коленвала: если она срезана, фазы газораспределения сбиты, и искра может подаваться в неправильный момент, хотя технически она есть.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/m/mo/moped-alfa-yaguar-lesnik.html" class="pb-related-card">
+                <span class="pb-related-title">Мопед «Альфа Ягуар Лесник»: характеристики, ремонт и тюнинг</span>
+                <span class="pb-related-desc">Полный обзор мопеда Alpha Jaguar Lesnik: технические параметры, особенности эксплуатации, частые пол</span>
+            </a><a href="/articles/d/dv/dvigatel-brajt-17-l-s-kupit.html" class="pb-related-card">
+                <span class="pb-related-title">Двигатель Bright 17 л.с. — где купить, цены, отзывы и выбор</span>
+                <span class="pb-related-desc">Хотите купить двигатель Bright 17 л.с.? Сравниваем модели, цены, проверенных продавцов и даём советы</span>
+            </a><a href="/articles/g/gd/gde-na-skutere-nakhoditsya-nomer-dvigatelya-i-ramy.html" class="pb-related-card">
+                <span class="pb-related-title">Где найти номер двигателя и рамы на скутере</span>
+                <span class="pb-related-desc">Полная инструкция по поиску VIN-кода и номера мотора на скутере. Таблицы, фото-подсказки и советы дл</span>
+            </a><a href="/articles/m/mo/moped-trekhkolesnyj-vzroslyj-benzinovyj.html" class="pb-related-card">
+                <span class="pb-related-title">Трехколесный взрослый мопед на бензине: выбор, цены, нюансы</span>
+                <span class="pb-related-desc">Как выбрать трехколесный бензиновый мопед для взрослых: обзор моделей, технические характеристики, п</span>
+            </a><a href="/articles/k/ka/kak-snyat-generator-na-skutere-4t-bez-semnika.html" class="pb-related-card">
+                <span class="pb-related-title">Как снять генератор на скутере 4т без съемника: методы</span>
+                <span class="pb-related-desc">Подробная инструкция по демонтажу генератора на 4-тактном скутере без использования специального съе</span>
+            </a><a href="/articles/a/ap/aprilia-rs-50-kupit-spb.html" class="pb-related-card">
+                <span class="pb-related-title">Aprilia RS 50 купить в СПб: цены, где искать, советы по выбору</span>
+                <span class="pb-related-desc">Где купить Aprilia RS 50 в Санкт-Петербурге: проверенные площадки, цены 2026, как проверить историю </span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🏍️ Мото Гид</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a> · <a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a> · <a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a> · <a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a> · <a href="/category/remont-dvigatelej/">🔧 Ремонт Двигателей</a> · <a href="/category/elektrika-i-provodka/">⚡ Электрика и Проводка</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мото Гид. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

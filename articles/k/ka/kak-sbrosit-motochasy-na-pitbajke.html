@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🏍️</text></svg>">
+    <title>Как сбросить моточасы на питбайке: инструкция и методы — Мото Гид</title>
+    <meta name="description" content="Полное руководство по сбросу моточасов на питбайке. Программные методы, отключение клемм, особенности для 125, 140, 150 кубов и перепрошивка.">
+    <link rel="canonical" href="https://moto-gid.vercel.app/articles/k/ka/kak-sbrosit-motochasy-na-pitbajke.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как сбросить моточасы на питбайке: инструкция и методы">
+    <meta property="og:description" content="Полное руководство по сбросу моточасов на питбайке. Программные методы, отключение клемм, особенности для 125, 140, 150 кубов и перепрошивка.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780130877">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🏍️</span>
+                <span class="pb-logo-text">Мото Гид</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/" class="pb-nav-active">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/mopedy-i-skutery/" class="pb-dropdown-item">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/" class="pb-dropdown-item">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/" class="pb-dropdown-item">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/" class="pb-dropdown-item">📐 Самоделки и Чертежи</a>
+<a href="/category/remont-dvigatelej/" class="pb-dropdown-item">🔧 Ремонт Двигателей</a>
+<a href="/category/elektrika-i-provodka/" class="pb-dropdown-item">⚡ Электрика и Проводка</a>
+<a href="/category/zakony-i-prava/" class="pb-dropdown-item">⚖️ Законы и Права</a>
+<a href="/category/raskhodniki-i-masla/" class="pb-dropdown-item">🛢️ Расходники и Масла</a>
+<a href="/category/tyuning-i-modernizatsiya/" class="pb-dropdown-item">🚀 Тюнинг и Модернизация</a>
+<a href="/category/elektromototekhnika/" class="pb-dropdown-item">🔋 Электромототехника</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/pitbajki-i-enduro/">Питбайки и Эндуро</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как сбросить моточасы на питбайке: инструкция и методы</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#зачем-вообще-нужно-обнулять-счетчик-моточасов">Зачем вообще нужно обнулять счетчик моточасов</a></li><li><a href="#программный-сброс-через-меню-приборной-панели">Программный сброс через меню приборной панели</a></li><li><a href="#метод-отключения-питания-и-разряда-конденсаторов">Метод отключения питания и разряда конденсаторов</a></li><li><a href="#использование-диагностических-сканеров-и-адаптеров">Использование диагностических сканеров и адаптеров</a></li><li><a href="#перепрошивка-блока-управления-чип-тюнинг">Перепрошивка блока управления (Чип-тюнинг)</a></li><li><a href="#замена-приборной-панели-или-блока-управления">Замена приборной панели или блока управления</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/p/pl/plastik-na-kayo-evolution.html">Пластик на Kayo Evolution: выбор, ремонт и тюнинг (2026)</a></li><li><a href="/articles/c/ch/chto-luchshe-mekhanika-ili-avtomat-na-pitbajke.html">Механика или автомат на питбайке: что выбрать новичку и профи</a></li><li><a href="/articles/k/ka/katanie-na-gornykh-velosipedakh.html">Горный велосипед: выбор, техника катания и подготовка к экстриму</a></li><li><a href="/articles/s/sk/skhema-provodki-na-pitbajke.html">Схема проводки питбайка: разбор, ремонт и подключение своими руками</a></li><li><a href="/articles/k/ka/kakie-motoboty-vzyat-dlya-enduro.html">Мотоботы для эндуро: как выбрать лучшие в 2026 году</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Сброс моточасов на питбайке: методы обнуления счетчика</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#зачем-вообще-нужно-обнулять-счетчик-моточасов">Зачем вообще нужно обнулять счетчик моточасов</a></li><li><a href="#программный-сброс-через-меню-приборной-панели">Программный сброс через меню приборной панели</a></li><li><a href="#метод-отключения-питания-и-разряда-конденсаторов">Метод отключения питания и разряда конденсаторов</a></li><li><a href="#использование-диагностических-сканеров-и-адаптеров">Использование диагностических сканеров и адаптеров</a></li><li><a href="#перепрошивка-блока-управления-чип-тюнинг">Перепрошивка блока управления (Чип-тюнинг)</a></li><li><a href="#замена-приборной-панели-или-блока-управления">Замена приборной панели или блока управления</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Владельцы питбайков часто сталкиваются с необходимостью обнуления счетчика моточасов перед продажей техники или после проведения капитального ремонта двигателя. Эта процедура вызывает множество вопросов, так как на разных моделях реализованы различные системы учета времени работы. В отличие от автомобильных одометров, запись о моточасах на мототехнике может храниться как в отдельном приборе, так и в центральном блоке управления <strong>ECU</strong>.</p>
+
+<p>Процесс обнуления варьируется от простого нажатия кнопок на панели до сложной перепрошивки контроллера. Важно понимать, что манипуляции с электроникой требуют осторожности. Неправильные действия могут привести к тому, что спидометр перестанет показывать скорость, а тахометр — обороты. В этой статье мы подробно разберем все известные способы, от «народных» методов до использования профессионального оборудования.</p>
+
+<h2 id="зачем-вообще-нужно-обнулять-счетчик-моточасов">Зачем вообще нужно обнулять счетчик моточасов</h2>
+
+<p>Основная причина, по которой райдеры ищут способ сброса данных — это повышение ликвидности мотоцикла на вторичном рынке. Покупатели часто оценивают остаточный ресурс двигателя именно по цифрам на дисплее. Однако существуют и технические причины для этой процедуры. Например, после замены поршневой группы или расточки цилиндра логично начать отсчет нового ресурса с нуля, чтобы корректно планировать следующие интервалы обслуживания.</p>
+
+<p>Некоторые модели современных питбайков, особенно китайского производства с электронными блоками управления, имеют встроенные напоминания о ТО. Эти уведомления могут блокировать работу двигателя или ограничивать обороты при достижении определенного порога наработки. В таких случаях сброс счетчика является не просто желанием «украсить» приборную панель, а необходимостью для полноценной эксплуатации техники.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Помните, что искусственное занижение реального пробега при продаже является неэтичным действием. Честный продавец всегда предупредит покупателя о проведенном капитальном ремонте, даже если цифры на табло обнулены.</p>
+</blockquote>
+
+<p>Также стоит учитывать, что на старых механических спидометрах счетчик моточасов часто работает как обычный таймер, который можно просто перевести кнопкой. Но на современных цифровых дисплеях, таких как <em>Koso</em> или штатных панелях <em>BSE</em>, данные записываются в энергонезависимую память. Просто отключить аккумулятор здесь не поможет, так как информация сохраняется даже при полном отсутствии питания.</p>
+
+<div class="pb-poll" id="poll-e7f1897f"><div class="pb-poll-question">📊 Зачем вы хотите сбросить моточасы?</div><div class="pb-poll-option" data-poll="e7f1897f" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Для продажи мотоцикла</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="e7f1897f" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">После ремонта двигателя</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="e7f1897f" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Чтобы убрать ошибку сервиса</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="e7f1897f" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Просто из любопытства</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="программный-сброс-через-меню-приборной-панели">Программный сброс через меню приборной панели</h2>
+
+<p>Самый простой и безопасный метод доступен владельцам питбайков с продвинутыми цифровыми спидометрами. Многие производители предусматривают функцию сервисного сброса прямо в интерфейсе устройства. Для этого обычно требуется войти в специальный режим настройки, удерживая определенные кнопки при включении зажигания.</p>
+
+<p>Алгоритм действий может отличаться в зависимости от модели дисплея. На распространенных панелях с кнопками <code>Set</code> и <code>Reset</code> часто требуется одновременно зажать обе клавиши на 5–10 секунд. В некоторых случаях система запросит ввод кода доступа, который по умолчанию может быть <code>0000</code> или <code>1234</code>. Если код был изменен предыдущим владельцем, придется искать способы его восстановления или перепрошивки.</p>
+
+<ul>
+<li>🔹 Зажмите кнопку <code>Mode</code> и включите зажигание, удерживая клавишу до появления надписи <em>Reset</em>.</li>
+<li>🔹 Используйте кнопки переключения для выбора пункта <strong>Total Hours</strong> (общие моточасы).</li>
+<li>🔹 Подтвердите действие длительным нажатием кнопки <code>Set</code> до появления мигающего нуля.</li>
+</ul>
+
+<p>Если меню не реагирует на нажатия, возможно, функция заблокирована производителем. В таких случаях на экране может отображаться значок замка или надпись <em>Locked</em>. Попытки подобрать комбинации наугад могут привести к блокировке интерфейса на определенное время. Всегда сверяйтесь с инструкцией к конкретной модели спидометра, так как логика работы у брендов <em>Yamaha</em>, <em>Kayo</em> и <em>Motoland</em> может кардинально различаться.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед входом в сервисное меню сфотографируйте текущие настройки на телефон. Если вы случайно измените калибровку размера колеса, спидометр будет врать, и восстановить исходные значения без записи будет сложно.</p></aside>
+
+<h2 id="метод-отключения-питания-и-разряда-конденсаторов">Метод отключения питания и разряда конденсаторов</h2>
+
+<p>Этот способ считается «народным» и работает далеко не на всех моделях, но он наименее затратен. Суть метода заключается в полном обесточивании электронного блока на длительное время, что теоретически должно привести к потере данных в оперативной памяти некоторых контроллеров. Однако современные микросхемы используют EEPROM, которая сохраняет данные годами без питания.</p>
+
+<p>Для реализации этого метода необходимо отсоединить минусовую клемму аккумулятора. После этого рекомендуется замкнуть плюсовой и минусовой провода массы между собой (не касаясь клемм аккумулятора!) на 10–15 минут. Это действие поможет разрядить остаточное напряжение в конденсаторах бортовой сети. Некоторые пользователи утверждают, что оставляли мотоцикл без батареи на несколько дней, после чего счетчик сбрасывался.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Модель питбайка</th>
+<th>Тип памяти</th>
+<th>Эффективность метода</th>
+<th>Риск потери настроек</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Kayo T2</em></td>
+<td>EEPROM</td>
+<td>Низкая</td>
+<td>Сброс часов</td>
+</tr>
+<tr>
+<td><em>BSE J2</em></td>
+<td>Flash</td>
+<td>Нулевая</td>
+<td>Нет</td>
+</tr>
+<tr>
+<td><em>Motoland XR</em></td>
+<td>RAM (редко)</td>
+<td>Высокая</td>
+<td>Полный сброс ЭБУ</td>
+</tr>
+<tr>
+<td><em>YX 140cc</em></td>
+<td>EEPROM</td>
+<td>Низкая</td>
+<td>Сброс ошибок</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Стоит отметить, что даже если счетчик обнулится, вы рискуете потерять другие важные калибровки. В блоке управления могут храниться данные о коррекции впрыска топлива (для инжекторных моделей) или углах опережения зажигания. Сброс этих параметров приведет к нестабильной работе двигателя на холостых оборотах и повышенному расходу топлива до момента самообучения системы.</p>
+
+<details class="pb-accordion"><summary>Почему метод с батарейкой не всегда работает?</summary><div class="pb-accordion-body"><p>Современные микросхемы памяти потребляют микротоки, которых хватает для сохранения данных месяцами. Даже если вы отключите аккумулятор, остаточного заряда в цепях или встроенного микро-конденсатора на плате может быть достаточно для сохранения записей.</p></div></details>
+
+<h2 id="использование-диагностических-сканеров-и-адаптеров">Использование диагностических сканеров и адаптеров</h2>
+
+<p>Наиболее профессиональный подход к решению задачи — использование специализированного диагностического оборудования. Для питбайков с инжекторными системами впрыска или продвинутыми карбюраторами с электронным управлением часто подходят адаптеры <em>OBD2</em> с соответствующим программным обеспечением. Это позволяет подключиться к <strong>ECU</strong> напрямую через сервисный разъем.</p>
+
+<p>Процесс выглядит следующим образом: вы подключаете сканер к диагностическому порту, который обычно находится под сиденьем или возле рулевой колонки. В меню программы выбирается раздел «Сервисные функции» или «Сброс адаптаций». Здесь можно найти опцию <code>Reset Service</code> или <code>Clear Hours</code>. Этот метод гарантирует, что сбросится именно та запись, которая нужна, без затрагивания других параметров работы двигателя.</p>
+
+<ul>
+<li>🛠 Подключите адаптер <em>ELM327</em> или специализированный дилерский сканер к разъему.</li>
+<li>🛠 Запустите приложение на смартфоне или ноутбуке и установите связь с блоком управления.</li>
+<li>🛠 Найдите в списке параметров строку <strong>Engine Hours</strong> и выполните команду записи значения <code>0</code>.</li>
+</ul>
+
+<p>Проблема этого метода заключается в совместимости софта. Дешевые китайские блоки управления часто используют закрытые протоколы обмена данными, которые не читаются универсальными сканерами. В таком случае требуется поиск специфического ПО, разработанного именно под ваш контроллер, что может потребовать помощи на профильных форумах или обращения в сервисные центры.</p>
+
+<blockquote>
+<p>⚠️ Внимание: При подключении сторонних сканеров убедитесь, что напряжение в бортовой сети стабильно. Скачки напряжения в момент записи данных в память контроллера могут привести к «окирпичиванию» блока управления, после чего мотоцикл не заведется.</p>
+</blockquote>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Подготовка к диагностике</h4><label class="check-item"><input type="checkbox"><span>Проверить заряд аккумулятора</span></label><label class="check-item"><input type="checkbox"><span>Найти сервисный разъем</span></label><label class="check-item"><input type="checkbox"><span>Установить драйверы адаптера</span></label><label class="check-item"><input type="checkbox"><span>Считать текущие ошибки перед сбросом</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="перепрошивка-блока-управления-чип-тюнинг">Перепрошивка блока управления (Чип-тюнинг)</h2>
+
+<p>Радикальным методом, который дает 100% результат, является полная перепрошивка блока управления. Этот способ подразумевает замену программного обеспечения контроллера на модифицированную версию или заводскую прошивку с нулевыми показаниями. Для этого потребуется программатор, совместимый с типом процессора вашего <em>ECU</em>, и файл дампа памяти.</p>
+
+<p>Чаще всего в питбайках используются контроллеры на базе процессоров <em>STM32</em> или аналогичных. Процедура involves снятие блока управления с мотоцикла, вскрытие корпуса и подключение к контактным площадкам на плате. Это требует навыков пайки и работы с электроникой. Ошибка на этом этапе может физически вывести микросхему из строя.</p>
+
+<p>Преимущество метода в том, что вы можете не только обнулить часы, но и улучшить характеристики двигателя. Модифицированные прошивки часто снимают ограничение максимальной скорости (топ-спид), корректируют топливную карту для лучшей тяги и отключают экологические ограничения. Однако гарантия на электронику при таком вмешательстве аннулируется мгновенно.</p>
+
+<pre><code>Пример команды для чтения дампа (условно):
+<p>flashrom -p usbblaster -r backup.bin</code></pre></p>
+
+<p>Если вы не уверены в своих силах, лучше доверить эту процедуру специалистам по чип-тюнингу мототехники. Они имеют готовые библиотеки прошивок для популярных моделей питбайков и могут выполнить процедуру за 30–60 минут. Стоимость такой услуги обычно окупается возможностью точно настроить работу мотора под ваши задачи.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перепрошивка — это единственный способ гарантированно изменить данные в защищенных ячейках памяти, но она несет высокие риски при отсутствии опыта работы с паяльником и программаторами.</p></aside>
+
+<h2 id="замена-приборной-панели-или-блока-управления">Замена приборной панели или блока управления</h2>
+
+<p>Иногда проще и дешевле заменить узел, в котором хранится информация, чем пытаться взломать его программно. Приборные панели для питбайков стоят относительно недорого, а их установка не требует глубоких технических знаний. Покупка нового спидометра гарантирует, что счетчик моточасов будет начинаться с нуля.</p>
+
+<p>При выборе замены обращайте внимание на совместимость разъемов и протоколов передачи данных. Универсальные панели часто работают только с датчиками скорости определенного типа (геркон, холл). Если на вашем мотоцикле стоит сложный электронный блок, замена только «приборки» может не дать результата, так как основной счетчик дублируется в главном <strong>ECU</strong>.</p>
+
+<ul>
+<li>📦 Закажите оригинальную панель или качественный аналог с Алиэкспресс.</li>
+<li>📦 Проверьте соответствие количества контактов в разъеме.</li>
+<li>📦 Убедитесь, что новый прибор поддерживает диапазон оборотов вашего двигателя.</li>
+</ul>
+
+<p>Этот метод также позволяет модернизировать внешний вид мотоцикла. Вы можете установить панель с подсветкой другого цвета, более крупными цифрами или дополнительными функциями, например, вольтметром или термометром. Это превращает вынужденную процедуру сброса в возможность тюнинга.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Технические характеристики разъемов и распиновка проводов могут отличаться даже в рамках одной модели мотоцикла разных лет выпуска. Всегда сверяйте схему подключения перед покупкой новой детали.</p>
+</blockquote>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Сбросится ли моточасов, если просто снять аккумулятор на ночь?</summary>
+<p>В 90% случаев нет. Современные счетчики используют энергонезависимую память (EEPROM), которая сохраняет данные без питания. Этот метод работает только на очень старых или простейших механических таймерах.</p>
+</details>
+
+<details>
+<summary>Влияет ли сброс моточасов на гарантию двигателя?</summary>
+<p>Да, если дилер обнаружит вмешательство в электронику при диагностике, это может стать основанием для отказа в гарантийном обслуживании. Следы перепрошивки или замены пломб на блоке управления легко выявляются.</p>
+</details>
+
+<details>
+<summary>Можно ли сбросить часы на карбюраторном питбайке?</summary>
+<p>Если счетчик встроен в отдельный электронный спидометр, то да, методами описанными выше. Если же это механический привод от двигателя, то обнулить его невозможно, можно только заменить весь узел прибора.</p>
+</details>
+
+<details>
+<summary>Безопасно ли использовать универсальные сканеры OBD2 для питбайков?</summary>
+<p>Использование сканера безопасно для чтения данных, но запись параметров требует осторожности. Неподходящее ПО может отправить неверные команды в блок управления, что приведет к сбою в работе системы зажигания или впрыска.</p>
+</details>
+
+<details>
+<summary>Зачем производители блокируют возможность простого сброса?</summary>
+<p>Это сделано для защиты покупателей подержанной техники от нечестных продавцов и для обеспечения корректного учета ресурса двигателя при сервисном обслуживании. Моточасы — важный показатель износа.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/p/pl/plastik-na-kayo-evolution.html" class="pb-related-card">
+                <span class="pb-related-title">Пластик на Kayo Evolution: выбор, ремонт и тюнинг (2026)</span>
+                <span class="pb-related-desc">Подробный гайд по пластиковым деталям Kayo Evolution: где купить, как заменить, лучшие материалы и с</span>
+            </a><a href="/articles/c/ch/chto-luchshe-mekhanika-ili-avtomat-na-pitbajke.html" class="pb-related-card">
+                <span class="pb-related-title">Механика или автомат на питбайке: что выбрать новичку и профи</span>
+                <span class="pb-related-desc">Подробное сравнение механической и автоматической КПП на питбайках. Плюсы, минусы, расход топлива и </span>
+            </a><a href="/articles/k/ka/katanie-na-gornykh-velosipedakh.html" class="pb-related-card">
+                <span class="pb-related-title">Горный велосипед: выбор, техника катания и подготовка к экстриму</span>
+                <span class="pb-related-desc">Полное руководство по MTB: как выбрать велосипед, освоить технику катания по бездорожью, подготовить</span>
+            </a><a href="/articles/s/sk/skhema-provodki-na-pitbajke.html" class="pb-related-card">
+                <span class="pb-related-title">Схема проводки питбайка: разбор, ремонт и подключение своими руками</span>
+                <span class="pb-related-desc">Подробная схема электропроводки питбайка с пошаговыми инструкциями, типичными неисправностями и сове</span>
+            </a><a href="/articles/k/ka/kakie-motoboty-vzyat-dlya-enduro.html" class="pb-related-card">
+                <span class="pb-related-title">Мотоботы для эндуро: как выбрать лучшие в 2026 году</span>
+                <span class="pb-related-desc">Экспертный гайд по выбору мотоботов для эндуро: сравнение моделей, советы по подбору, обзор функций </span>
+            </a><a href="/articles/e/en/enduro-eto-chto-takoe-prostymi-slovami-kratko.html" class="pb-related-card">
+                <span class="pb-related-title">Эндуро: что это такое простыми словами и кратко</span>
+                <span class="pb-related-desc">Узнайте, что такое эндуро простыми словами. Виды мотоциклов, отличия от кросса, экипировка и советы </span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🏍️ Мото Гид</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a> · <a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a> · <a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a> · <a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a> · <a href="/category/remont-dvigatelej/">🔧 Ремонт Двигателей</a> · <a href="/category/elektrika-i-provodka/">⚡ Электрика и Проводка</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мото Гид. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

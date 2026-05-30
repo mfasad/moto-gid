@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🏍️</text></svg>">
+    <title>Как узнать модель скутера по VIN-коду: расшифровка и проверка — Мото Гид</title>
+    <meta name="description" content="Пошаговая инструкция по определению марки и модели скутера через VIN-код. Расшифровка символов, базы данных и онлайн-сервисы для проверки.">
+    <link rel="canonical" href="https://moto-gid.vercel.app/articles/n/na/nazvanie-skutera-po-vin-kodu.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как узнать модель скутера по VIN-коду: расшифровка и проверка">
+    <meta property="og:description" content="Пошаговая инструкция по определению марки и модели скутера через VIN-код. Расшифровка символов, базы данных и онлайн-сервисы для проверки.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780130877">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🏍️</span>
+                <span class="pb-logo-text">Мото Гид</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/mopedy-i-skutery/" class="pb-nav-active">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/mopedy-i-skutery/" class="pb-dropdown-item">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/" class="pb-dropdown-item">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/" class="pb-dropdown-item">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/" class="pb-dropdown-item">📐 Самоделки и Чертежи</a>
+<a href="/category/remont-dvigatelej/" class="pb-dropdown-item">🔧 Ремонт Двигателей</a>
+<a href="/category/elektrika-i-provodka/" class="pb-dropdown-item">⚡ Электрика и Проводка</a>
+<a href="/category/zakony-i-prava/" class="pb-dropdown-item">⚖️ Законы и Права</a>
+<a href="/category/raskhodniki-i-masla/" class="pb-dropdown-item">🛢️ Расходники и Масла</a>
+<a href="/category/tyuning-i-modernizatsiya/" class="pb-dropdown-item">🚀 Тюнинг и Модернизация</a>
+<a href="/category/elektromototekhnika/" class="pb-dropdown-item">🔋 Электромототехника</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/mopedy-i-skutery/">Мопеды и Скутеры</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как узнать модель скутера по VIN-коду: расшифровка и проверка</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#где-находится-vin-код-на-скутере-5-мест-для-поиска">Где находится VIN-код на скутере: 5 мест для поиска</a></li><li><a href="#структура-vin-кода-что-означают-17-символов">Структура VIN-кода: что означают 17 символов</a></li><li><a href="#как-определить-модель-скутера-по-vin-пошаговая-инструкция">Как определить модель скутера по VIN: пошаговая инструкция</a></li><li><a href="#расшифровка-vin-для-популярных-брендов-honda-yamaha-suzuki">Расшифровка VIN для популярных брендов: Honda, Yamaha, Suzuki</a></li><li><a href="#китайские-скутеры-как-узнать-модель-если-vin-нестандартный">Китайские скутеры: как узнать модель, если VIN нестандартный</a></li><li><a href="#что-делать-если-vin-не-проходит-проверку-3-возможные-причины">Что делать, если VIN не проходит проверку: 3 возможные причины</a></li><li><a href="#как-проверить-скутер-по-vin-перед-покупкой-чек-лист-безопасности">Как проверить скутер по VIN перед покупкой: чек-лист безопасности</a></li><li><a href="#faq-частые-вопросы-о-определении-модели-скутера-по-vin">FAQ: Частые вопросы о определении модели скутера по VIN</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/v/v-/v-kakom-vozraste-razreshaetsya-ezda-na-mopede-po-dorogam-obshchego-polzovaniya.html">Со скольки лет разрешено ездить на мопеде по дорогам: права и правила</a></li><li><a href="/articles/s/sk/skolko-litrov-bak-v-skutere.html">Объем бака скутера: сколько литров в резервуаре</a></li><li><a href="/articles/a/at/atv-classic-200-lux.html">ATV Classic 200 Lux: обзор, характеристики и отзывы владельцев</a></li><li><a href="/articles/t/t-/t-max-500-yamaha.html">Yamaha TMAX 500: обзор, характеристики, плюсы и минусы (2026)</a></li><li><a href="/articles/k/ka/kak-prokhodit-obkatku-na-skutere.html">Обкатка скутера: пошаговая инструкция для новичков 2026</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Определение модели скутера по VIN-коду: полное руководство с примерами</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#где-находится-vin-код-на-скутере-5-мест-для-поиска">Где находится VIN-код на скутере: 5 мест для поиска</a></li><li><a href="#структура-vin-кода-что-означают-17-символов">Структура VIN-кода: что означают 17 символов</a></li><li><a href="#как-определить-модель-скутера-по-vin-пошаговая-инструкция">Как определить модель скутера по VIN: пошаговая инструкция</a></li><li><a href="#расшифровка-vin-для-популярных-брендов-honda-yamaha-suzuki">Расшифровка VIN для популярных брендов: Honda, Yamaha, Suzuki</a></li><li><a href="#китайские-скутеры-как-узнать-модель-если-vin-нестандартный">Китайские скутеры: как узнать модель, если VIN нестандартный</a></li><li><a href="#что-делать-если-vin-не-проходит-проверку-3-возможные-причины">Что делать, если VIN не проходит проверку: 3 возможные причины</a></li><li><a href="#как-проверить-скутер-по-vin-перед-покупкой-чек-лист-безопасности">Как проверить скутер по VIN перед покупкой: чек-лист безопасности</a></li><li><a href="#faq-частые-вопросы-о-определении-модели-скутера-по-vin">FAQ: Частые вопросы о определении модели скутера по VIN</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Вы купили подержанный скутер, но не уверены в его реальной модели? Или хотите проверить историю транспортного средства перед покупкой? <strong>VIN-код</strong> (Vehicle Identification Number) — это уникальный идентификатор, который хранит ключевую информацию о вашем скутере: от завода-изготовителя до года выпуска и технических характеристик. В отличие от номера двигателя или рамы, VIN содержит зашифрованные данные о модели, которые можно расшифровать даже без документов.</p>
+
+<p>В этой статье мы разберём, где искать VIN на скутере, как его правильно прочитать, и какие <em>онлайн-сервисы</em> помогут определить точную модель по коду. Вы также узнаете, почему некоторые символы в VIN могут вводить в заблуждение, и как избежать ошибок при проверке. Особое внимание уделим популярным брендам — <em>Honda</em>, <em>Yamaha</em>, <em>Suzuki</em> и китайским производителям, чьи коды часто имеют нестандартную структуру.</p>
+
+<h2 id="где-находится-vin-код-на-скутере-5-мест-для-поиска">Где находится VIN-код на скутере: 5 мест для поиска</h2>
+
+<p>Первый шаг — найти сам идентификационный номер. На скутерах он может располагаться в разных местах в зависимости от модели и года выпуска. Вот <strong>наиболее распространённые локации</strong>:</p>
+
+<ul>
+  <li>🔧 <strong>На рулевой колонке</strong> — обычно выбит на металлической табличке или непосредственно на раме под пластиковым обтекателем. Чаще всего его видно, если повернуть руль до упора влево.</li>
+  <li>🛵 <strong>Под сиденьем</strong> — на некоторых моделях (например, <em>Honda Dio</em> или <em>Yamaha NMAX</em>) VIN дублируется на наклейке под сиденьем рядом с номером двигателя.</li>
+  <li>🔍 <strong>На лонжероне рамы</strong> — у китайских скутеров (например, <em>Lexmoto</em> или <em>Znen</em>) код часто выбит на нижней части рамы ближе к заднему колесу.</li>
+  <li>📄 <strong>В документах</strong> — если у вас есть ПТС или свидетельство о регистрации, VIN обязательно указан там (в России — в строке "VIN/номер кузова").</li>
+  <li>🔋 <strong>На аккумуляторном отсеке</strong> — редко, но встречается у старых японских моделей (например, <em>Suzuki Address</em>).</li>
+</ul>
+
+<p>⚠️ <strong>Внимание:</strong> На подержанных скутерах VIN может быть закрашен, повреждён коррозией или даже перебит. Если номер плохо читается, не пытайтесь восстановить его самостоятельно — обратитесь в <strong>ГИБДД</strong> или сервисный центр для экспертизы. Перебитый VIN — признак угнанного транспорта или мошенничества.</p>
+
+<div class="pb-poll" id="poll-f8de4c18"><div class="pb-poll-question">📊 Где вы обычно ищете VIN-код на скутере?</div><div class="pb-poll-option" data-poll="f8de4c18" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">На рулевой колонке</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="f8de4c18" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Под сиденьем</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="f8de4c18" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">В документах</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="f8de4c18" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">На раме</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="f8de4c18" data-idx="4" onclick="pbPollVote(this)"><span class="pb-poll-label">Не знаю, где искать</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="структура-vin-кода-что-означают-17-символов">Структура VIN-кода: что означают 17 символов</h2>
+
+<p>Стандартный VIN состоит из <strong>17 знаков</strong> (цифр и латинских букв, кроме <code>I</code>, <code>O</code> и <code>Q</code>, чтобы избежать путаницы с цифрами). Он делится на три части:</p>
+
+<ol>
+  <li><strong>WMI (World Manufacturer Identifier)</strong> — первые 3 символа, обозначающие производителя и страну. Например:
+    <ul>
+      <li><code>JH2</code> — <em>Honda</em> (Япония)</li>
+      <li><code>L5Y</code> — <em>Yamaha</em> (Тайвань)</li>
+      <li><code>LS2</code> — <em>Suzuki</em> (Япония)</li>
+      <li><code>LJB</code> — <em>Zongshen</em> (Китай)</li>
+    </ol>
+  </li>
+  <li><strong>VDS (Vehicle Descriptor Section)</strong> — символы с 4 по 9, описывают модель, тип двигателя и другие характеристики. Именно здесь зашифровано <mark>название модели скутера</mark>.</li>
+  <li><strong>VIS (Vehicle Identifier Section)</strong> — символы с 10 по 17, содержат информацию о годе выпуска, заводе и серийном номере.</li>
+</ol>
+
+<p>Пример расшифровки VIN для <em>Honda PCX150</em> (2020 года): <code>JH2GE1860LK100123</code>:</p>
+<div class="pb-table-wrap"><table>
+  <thead>
+    <tr>
+      <th>Символы</th>
+      <th>Значение</th>
+      <th>Пример</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1–3</td>
+      <td>Производитель (WMI)</td>
+      <td><code>JH2</code> — Honda (Япония)</td>
+    </tr>
+    <tr>
+      <td>4–6</td>
+      <td>Модель и тип двигателя</td>
+      <td><code>GE1</code> — серия PCX с двигателем 150 см³</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Тип трансмиссии</td>
+      <td><code>8</code> — вариатор (CVT)</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Год выпуска</td>
+      <td><code>L</code> — 2020 год</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Завод-изготовитель</td>
+      <td><code>K</code> — завод в Таиланде</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p>⚠️ <strong>Внимание:</strong> У китайских скутеров (например, <em>Lexmoto</em>, <em>Stels</em>) структура VIN может не соответствовать международному стандарту. Иногда они используют <strong>13-значные коды</strong> или дублируют символы. В таких случаях определить модель только по VIN невозможно — требуется дополнительная проверка по базе производителя.</p>
+
+<details class="pb-accordion"><summary>Как проверить подлинность VIN-кода?</summary><div class="pb-accordion-body"><p>Сравните номер на раме с документами. Обратите внимание на шрифт и глубину нанесения: оригинальный VIN выбит чётко, без следов спиливания. Если есть сомнения, закажите экспертизу через ГИБДД или независимого оценщика.</p></div></details>
+
+<h2 id="как-определить-модель-скутера-по-vin-пошаговая-инструкция">Как определить модель скутера по VIN: пошаговая инструкция</h2>
+
+<p>Если вы нашли VIN, но не знаете, как по нему узнать модель, следуйте этому алгоритму:</p>
+
+<ol>
+  <li><strong>Запишите код без ошибок.</strong> Перепроверьте каждый символ — даже одна опечатка приведёт к неверному результату.</li>
+  <li><strong>Используйте онлайн-сервисы.</strong> Самые надёжные:
+    <ul>
+      <li>🌍 <a><em>VINDecoderz</em></a> — поддерживает японские и европейские бренды.</li>
+      <li>🔍 <a><em>BikeVIN</em></a> — специализируется на мототехнике, включая скутеры.</li>
+      <li>📊 <a><em>2WheelsVIN</em></a> — базы данных по китайским производителям.</li>
+    </ol>
+  </li>
+  <li><strong>Сверьте данные с каталогами.</strong> Если онлайн-сервис не дал результата, найдите <strong>каталог запчастей</strong> для предполагаемого бренда (например, <em>Honda Parts Catalog</em>) и введите VIN в поиске.</li>
+  <li><strong>Обратитесь к дилеру.</strong> Официальные представители (например, <em>Yamaha Motor Russia</em>) могут расшифровать VIN по внутренним базам.</li>
+</ol>
+
+<p>💡 <strong>Полезный совет:</strong> Если скутер китайский, попробуйте ввести VIN в поиск на <em>Alibaba</em> или <em>Made-in-China</em>. Часто производители дублируют коды в описаниях моделей для оптовых покупателей.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка VIN перед покупкой скутера</h4><label class="check-item"><input type="checkbox"><span>Сфотографируйте VIN с рамы и из документов</span></label><label class="check-item"><input type="checkbox"><span>Проверьте код через 2–3 онлайн-сервиса</span></label><label class="check-item"><input type="checkbox"><span>Сравните год выпуска в VIN с данными продавца</span></label><label class="check-item"><input type="checkbox"><span>Убедитесь, что модель совпадает с ПТС</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="расшифровка-vin-для-популярных-брендов-honda-yamaha-suzuki">Расшифровка VIN для популярных брендов: Honda, Yamaha, Suzuki</h2>
+
+<p>У каждого производителя есть свои особенности кодировки. Разберём, как определить модель у самых распространённых марок.</p>
+
+<h3><em>Honda</em></h3>
+<p>У <em>Honda</em> VIN начинается с <code>JH2</code> (Япония) или <code>MLH</code> (Тайланд). Модель зашифрована в <strong>4–8 символах</strong>. Примеры:</p>
+<ul>
+  <li><code>JH2AE150*</code> — <em>Honda PCX150</em></li>
+  <li><code>JH2AC56*</code> — <em>Honda Dio AF34</em></li>
+  <li><code>MLHRC58*</code> — <em>Honda Click 125i</em> (тайландская сборка)</li>
+</ul>
+
+<h3><em>Yamaha</em></h3>
+<p><em>Yamaha</em> использует префиксы <code>L5Y</code> (Тайвань) или <code>JYA</code> (Япония). Особенность — в VIN может быть указан <strong>тип двигателя</strong>, а не модель. Например:</p>
+<ul>
+  <li><code>L5Y116*</code> — <em>Yamaha NMAX 125/155</em></li>
+  <li><code>JYACJ12*</code> — <em>Yamaha Aerox 155</em></li>
+</ul>
+
+<h3><em>Suzuki</em></h3>
+<p>У <em>Suzuki</em> VIN начинается с <code>JS1</code> (Япония) или <code>LS2</code> (Тайланд). Модель обычно указана в <strong>5–6 символах</strong>:</p>
+<ul>
+  <li><code>JS1AN41A*</code> — <em>Suzuki Address 110</em></li>
+  <li><code>LS2PC52*</code> — <em>Suzuki Burgman Street</em></li>
+</ul>
+
+<p>🔹 <strong>Ключевой вывод:</strong> Если в результате расшифровки вы видите не название модели, а аббревиатуру (например, <code>AF18</code> у Honda), ищите её в каталогах запчастей — это внутреннее обозначение производителя.</p>
+
+<h2 id="китайские-скутеры-как-узнать-модель-если-vin-нестандартный">Китайские скутеры: как узнать модель, если VIN нестандартный</h2>
+
+<p>С китайскими скутерами (<em>Lexmoto</em>, <em>Znen</em>, <em>Stels</em>, <em>Irbis</em>) всё сложнее: их VIN часто не соответствует международному стандарту. Вот что делать:</p>
+
+<ol>
+  <li><strong>Проверьте длину кода.</strong> Если он короче 17 символов, скорее всего, это <strong>заводской номер</strong>, а не VIN. Попробуйте найти модель по номеру двигателя (обычно начинается с букв <code>1P</code>, <code>157QMJ</code> и т. д.).</li>
+  <li><strong>Используйте специализированные базы.</strong> Сервисы вроде <em>China VIN Decoder</em> или <em>ScooterHelp</em> собирают данные по китайским производителям.</li>
+  <li><strong>Сравните с аналогами.</strong> Многие китайские скутеры — копии японских моделей. Например, <em>Lexmoto LXR 125</em> внешне идентичен <em>Yamaha NMAX</em>. Сравните фото и технические характеристики.</li>
+</ol>
+
+<p>⚠️ <strong>Внимание:</strong> У китайских скутеров один и тот же VIN может встречаться на разных моделях! Это связано с тем, что производители иногда используют общие платформы для нескольких линеек. В таком случае ориентируйтесь на <strong>номер двигателя</strong> и внешние отличия (форма фар, дизайн пластика).</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если не можете определить модель китайского скутера, сфотографируйте его с нескольких ракурсов и задайте вопрос на форумах вроде <em>Scooter-Fans.ru</em> или <em>MotoForum</em>. Опытные пользователи часто узнают модель по внешнему виду.</p></aside>
+
+<h2 id="что-делать-если-vin-не-проходит-проверку-3-возможные-причины">Что делать, если VIN не проходит проверку: 3 возможные причины</h2>
+
+<p>Иногда даже правильно записанный VIN не распознаётся сервисами. Рассмотрим основные причины и решения:</p>
+
+<ul>
+  <li>🔄 <strong>Опечатка в коде.</strong> Перепроверьте символы, особенно похожие: <code>0</code> и <code>O</code>, <code>1</code> и <code>I</code>, <code>8</code> и <code>B</code>. Попробуйте ввести код в разных регистрах (иногда сервисы чувствительны к заглавным буквам).</li>
+  <li>🏭 <strong>Нестандартный формат VIN.</strong> Как упоминалось ранее, китайские производители могут использовать укороченные или модифицированные коды. В этом случае поможет только обращение к дилеру или экспертная оценка.</li>
+  <li>🚨 <strong>VIN перебит или подделан.</strong> Если код стёрт, закрашен или выглядит подозрительно, это может быть признаком угона. <strong>Не покупайте такой скутер</strong> без проверки через ГИБДД!</li>
+</ul>
+
+<p>📌 <strong>Полезная ссылка:</strong> На сайте <em>ГИБДД России</em> есть <a>сервис проверки истории транспортного средства</a> по VIN. Он покажет, числится ли скутер в угоне, есть ли ограничения на регистрацию или штрафы. Проверка бесплатная, но требует регистрации.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если VIN не распознаётся ни одним сервисом, но внешне выглядит оригинальным, попробуйте ввести его в поисковую строку Google в кавычках. Возможно, кто-то уже обсуждал эту модель на форумах.</p></aside>
+
+<h2 id="как-проверить-скутер-по-vin-перед-покупкой-чек-лист-безопасности">Как проверить скутер по VIN перед покупкой: чек-лист безопасности</h2>
+
+<p>Покупка подержанного скутера — всегда риск. Чтобы избежать проблем, следуйте этому алгоритму:</p>
+
+<ol>
+  <li><strong>Сверьте VIN на раме и в документах.</strong> Они должны совпадать до последнего символа. Если есть расхождения — откажитесь от сделки.</li>
+  <li><strong>Проверьте историю по базе ГИБДД.</strong> Убедитесь, что скутер не в угоне, не в залоге и не имеет ограничений на регистрацию.</li>
+  <li><strong>Узнайте реальный пробег.</strong> Некоторые сервисы (например, <em>AutoHistory</em>) показывают данные одометра по VIN, если скутер ранее проходил техосмотр.</li>
+  <li><strong>Оцените рыночную стоимость.</strong> Сравните цену продавца со средней по модели (можно посмотреть на <em>Avito</em> или <em>Drom.ru</em>). Если цена значительно ниже — ищите подвох.</li>
+</ol>
+
+<p>⚠️ <strong>Внимание:</strong> Если продавец отказывается предоставить VIN для проверки или говорит, что "документы оформляются", это повод насторожиться. Возможно, скутер в розыске или имеет проблемы с регистрацией.</p>
+
+<h2 id="faq-частые-вопросы-о-определении-модели-скутера-по-vin">FAQ: Частые вопросы о определении модели скутера по VIN</h2>
+
+<details>
+  <summary>Можно ли по VIN узнать цвет скутера?</summary>
+  <p>Нет, в стандартном VIN информация о цвете не зашифрована. Однако некоторые производители (например, <em>Honda</em>) указывают код цвета на отдельной табличке рядом с VIN. Также цвет может быть указан в ПТС или свидетельстве о регистрации.</p>
+</details>
+
+<details>
+  <summary>Что делать, если VIN стёрся и не читается?</summary>
+  <p>Если номер стёрся естественным образом (коррозия, время), можно попробовать восстановить его с помощью химических реактивов (например, <strong>травильного раствора</strong>). Если есть подозрения, что VIN спилен умышленно, обратитесь в ГИБДД для экспертизы. Самостоятельное восстановление номера запрещено законом!</p>
+</details>
+
+<details>
+  <summary>Может ли VIN начинаться с цифры?</summary>
+  <p>Да, но только если это китайский или тайваньский производитель. Европейские и японские бренды всегда начинают VIN с буквы (например, <code>J</code> для Японии, <code>S</code> для Великобритании). Если VIN начинается с цифры, но скутер позиционируется как японский, это повод усомниться в его подлинности.</p>
+</details>
+
+<details>
+  <summary>Как узнать год выпуска скутера по VIN?</summary>
+  <p>Год выпуска зашифрован в <strong>10-м символе</strong> VIN. Вот расшифровка для скутеров после 2000 года:
+    <ul>
+      <li><code>A</code> — 2010</li>
+      <li><code>B</code> — 2011</li>
+      <li>...</li>
+      <li><code>L</code> — 2020</li>
+      <li><code>M</code> — 2021</li>
+      <li><code>N</code> — 2022</li>
+      <li><code>P</code> — 2023</li>
+      <li><code>R</code> — 2026</li>
+    </ul>
+<p>Для скутеров до 2000 года используется другая кодировка (например, <code>V</code> — 1997, <code>W</code> — 1998).</p>
+  </p>
+</details>
+
+<details>
+  <summary>Можно ли по VIN узнать, был ли скутер в ДТП?</summary>
+  <p>В России официальных баз ДТП по VIN для скутеров нет. Однако некоторые сервисы (например, <em>AutoHistory</em> или <em>CarVertical</em>) собирают данные о страховых случаях. Для мототехники эта информация часто неполная, поэтому лучше осматривать скутер самостоятельно или заказывать экспертизу.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/v/v-/v-kakom-vozraste-razreshaetsya-ezda-na-mopede-po-dorogam-obshchego-polzovaniya.html" class="pb-related-card">
+                <span class="pb-related-title">Со скольки лет разрешено ездить на мопеде по дорогам: права и правила</span>
+                <span class="pb-related-desc">Подробный разбор: возраст вождения мопеда, категория прав М, штрафы и технические требования. Узнайт</span>
+            </a><a href="/articles/s/sk/skolko-litrov-bak-v-skutere.html" class="pb-related-card">
+                <span class="pb-related-title">Объем бака скутера: сколько литров в резервуаре</span>
+                <span class="pb-related-desc">Узнайте, сколько литров вмещает бак скутера. Таблица объемов для 50, 125, 150 кубов. Расчет запаса х</span>
+            </a><a href="/articles/a/at/atv-classic-200-lux.html" class="pb-related-card">
+                <span class="pb-related-title">ATV Classic 200 Lux: обзор, характеристики и отзывы владельцев</span>
+                <span class="pb-related-desc">Подробный разбор квадроцикла ATV Classic 200 Lux: технические параметры, плюсы и минусы, инструкция </span>
+            </a><a href="/articles/t/t-/t-max-500-yamaha.html" class="pb-related-card">
+                <span class="pb-related-title">Yamaha TMAX 500: обзор, характеристики, плюсы и минусы (2026)</span>
+                <span class="pb-related-desc">Подробный разбор скутера Yamaha TMAX 500: технические параметры, сравнение с конкурентами, советы по</span>
+            </a><a href="/articles/k/ka/kak-prokhodit-obkatku-na-skutere.html" class="pb-related-card">
+                <span class="pb-related-title">Обкатка скутера: пошаговая инструкция для новичков 2026</span>
+                <span class="pb-related-desc">Как правильно обкатывать новый скутер: скоростные режимы, масла, ошибки и советы. Подробное руководс</span>
+            </a><a href="/articles/n/ne/net-iskry-skuter-rejser.html" class="pb-related-card">
+                <span class="pb-related-title">Нет искры на скутере Рейсер: причины и ремонт своими руками</span>
+                <span class="pb-related-desc">Почему пропала искра на скутере Racer? Пошаговая диагностика системы зажигания, проверка катушки, ко</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🏍️ Мото Гид</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a> · <a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a> · <a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a> · <a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a> · <a href="/category/remont-dvigatelej/">🔧 Ремонт Двигателей</a> · <a href="/category/elektrika-i-provodka/">⚡ Электрика и Проводка</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мото Гид. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

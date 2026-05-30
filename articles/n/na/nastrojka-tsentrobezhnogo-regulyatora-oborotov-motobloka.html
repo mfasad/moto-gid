@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🏍️</text></svg>">
+    <title>Настройка центробежного регулятора оборотов мотоблока — Мото Гид</title>
+    <meta name="description" content="Пошаговая инструкция, как настроить центробежный регулятор оборотов двигателя мотоблока. Устранение плавающих оборотов и стабилизация работы.">
+    <link rel="canonical" href="https://moto-gid.vercel.app/articles/n/na/nastrojka-tsentrobezhnogo-regulyatora-oborotov-motobloka.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Настройка центробежного регулятора оборотов мотоблока">
+    <meta property="og:description" content="Пошаговая инструкция, как настроить центробежный регулятор оборотов двигателя мотоблока. Устранение плавающих оборотов и стабилизация работы.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780130877">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🏍️</span>
+                <span class="pb-logo-text">Мото Гид</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/" class="pb-nav-active">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/mopedy-i-skutery/" class="pb-dropdown-item">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/" class="pb-dropdown-item">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/" class="pb-dropdown-item">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/" class="pb-dropdown-item">📐 Самоделки и Чертежи</a>
+<a href="/category/remont-dvigatelej/" class="pb-dropdown-item">🔧 Ремонт Двигателей</a>
+<a href="/category/elektrika-i-provodka/" class="pb-dropdown-item">⚡ Электрика и Проводка</a>
+<a href="/category/zakony-i-prava/" class="pb-dropdown-item">⚖️ Законы и Права</a>
+<a href="/category/raskhodniki-i-masla/" class="pb-dropdown-item">🛢️ Расходники и Масла</a>
+<a href="/category/tyuning-i-modernizatsiya/" class="pb-dropdown-item">🚀 Тюнинг и Модернизация</a>
+<a href="/category/elektromototekhnika/" class="pb-dropdown-item">🔋 Электромототехника</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/motobloki-i-kultivatory/">Мотоблоки и Культиваторы</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Настройка центробежного регулятора оборотов мотоблока</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#принцип-работы-центробежного-регулятора">Принцип работы центробежного регулятора</a></li><li><a href="#диагностика-неисправностей-системы-регулирования">Диагностика неисправностей системы регулирования</a></li><li><a href="#подготовка-к-регулировке-регулятора-оборотов">Подготовка к регулировке регулятора оборотов</a></li><li><a href="#пошаговая-инструкция-по-настройке-регулятора">Пошаговая инструкция по настройке регулятора</a></li><li><a href="#типичные-ошибки-при-самостоятельной-регулировке">Типичные ошибки при самостоятельной регулировке</a></li><li><a href="#обслуживание-и-профилактика-системы">Обслуживание и профилактика системы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-rabotaet-motoblok-video.html">Как работает мотоблок: видео-инструкции и устройство</a></li><li><a href="/articles/r/ru/rul-dlya-motobloka-mtz.html">Руль для мотоблока МТЗ: выбор, замена, регулировка и ремонт</a></li><li><a href="/articles/k/ka/kakoj-motoblok-vybrat-dlya-doma-i-ogoroda-otzyvy-vladeltsev.html">Какой мотоблок выбрать для дома и огорода: отзывы владельцев 2026</a></li><li><a href="/articles/d/dy/dyshlo-dlya-pritsepa-motobloka-kupit.html">Дышло для прицепа мотоблока — как выбрать и где купить в 2026</a></li><li><a href="/articles/o/ot/otval-dlya-motobloka-mtz.html">Отвал для мотоблока МТЗ: выбор, установка и настройка</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как настроить центробежный регулятор оборотов мотоблока</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#принцип-работы-центробежного-регулятора">Принцип работы центробежного регулятора</a></li><li><a href="#диагностика-неисправностей-системы-регулирования">Диагностика неисправностей системы регулирования</a></li><li><a href="#подготовка-к-регулировке-регулятора-оборотов">Подготовка к регулировке регулятора оборотов</a></li><li><a href="#пошаговая-инструкция-по-настройке-регулятора">Пошаговая инструкция по настройке регулятора</a></li><li><a href="#типичные-ошибки-при-самостоятельной-регулировке">Типичные ошибки при самостоятельной регулировке</a></li><li><a href="#обслуживание-и-профилактика-системы">Обслуживание и профилактика системы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Стабильная работа двигателя внутреннего сгорания — это основа производительности любого мотоблока. Часто владельцы техники сталкиваются с ситуацией, когда обороты «плавают», мотор глохнет под нагрузкой или, наоборот, работает на слишком высоких скоростях, вызывая перегрев. В большинстве случаев корень проблемы кроется в неправильной работе системы автоматического регулирования частоты вращения коленвала.</p>
+
+<p>Центробежный регулятор — это механическое устройство, которое автоматически поддерживает заданные обороты двигателя независимо от изменения нагрузки на валу. Когда вы начинаете пахать землю или косить траву, сопротивление возрастает, и без вмешательства регулятора двигатель бы просто заглох. Однако со временем заводские настройки сбиваются из-за вибраций, износа пружин или неправильной эксплуатации.</p>
+
+<p>В этой статье мы детально разберем принцип действия этого узла и дадим пошаговую инструкцию по его регулировке. Правильная настройка позволит вашему мотоблоку <strong>Nebraska</strong> или <em>МТЗ</em> работать ровно, экономить топливо и продлит ресурс силового агрегата.</p>
+
+<h2 id="принцип-работы-центробежного-регулятора">Принцип работы центробежного регулятора</h2>
+
+<p>Понимание физики процесса — ключ к успешной настройке. Устройство основано на использовании центробежной силы, возникающей при вращении грузов. Внутри картера двигателя или снаружи (в зависимости от модели) находятся специальные грузики, которые расходятся в стороны при увеличении скорости вращения коленчатого вала.</p>
+
+<p>Эти грузики механически связаны с дроссельной заслонкой карбюратора через систему тяг и рычагов. Когда обороты растут, грузы расходятся, преодолевая усилие возвратной пружины, и через тягу прикрывают дроссельную заслонку, снижая подачу топливной смеси. Если нагрузка увеличивается и обороты падают, центробежная сила уменьшается, пружина стягивает грузы, и заслонка открывается.</p>
+
+<p>Критически важно состояние <strong>пружинного механизма</strong>. Именно жесткость пружины определяет, на каких оборотах система начнет «душить» двигатель. Слабая пружина приведет к тому, что мотор будет работать на повышенных оборотах постоянно, а слишком жесткая не даст ему развить необходимую мощность под нагрузкой.</p>
+
+<p>Существует два основных типа размещения регуляторов: внутренние (масляные), работающие в ванной картера, и внешние (механические), расположенные снаружи блока цилиндров. Внешние системы проще в обслуживании, так как не требуют слива масла для доступа к механизму.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Никогда не пытайтесь регулировать регулятор на работающем двигателе без предварительной проверки целостности всех тяг. Вибрация может привести к травме рук или попаданию одежды во вращающиеся части.</p>
+</blockquote>
+
+<details class="pb-accordion"><summary>Почему регулятор называют центробежным?</summary><div class="pb-accordion-body"><p>Название происходит от физической силы, которая заставляет грузики отклоняться от оси вращения. Чем быстрее крутится вал, тем сильнее эта сила и тем дальше от центра отлетают грузы.</p></div></details>
+
+<h2 id="диагностика-неисправностей-системы-регулирования">Диагностика неисправностей системы регулирования</h2>
+
+<p>Прежде чем хвататься за инструменты, необходимо точно определить симптомы неисправности. Часто проблему путают с засорением карбюратора или плохим качеством топлива. Если двигатель глохнет при резком открытии газа или обороты хаотично меняются от минимума до максимуса, проблема, скорее всего, в механической связи регулятора.</p>
+
+<p>Первым делом проведите визуальный осмотр тяг. Они должны двигаться свободно, без заеданий в местах прохождения через корпус двигателя. Люфт в соединениях рычагов недопустим — он создает «мертвую зону», где регулятор просто не реагирует на изменение скорости.</p>
+
+<p>Проверьте состояние возвратных пружин. Они не должны быть растянутыми или иметь следы коррозии. Ослабленная пружина — самая частая причина того, что мотоблок <em>Крот</em> или <strong>Нева</strong> работает на слишком высоких оборотах даже на холостом ходу.</p>
+
+<div class="pb-poll" id="poll-f7eb5e66"><div class="pb-poll-question">📊 Как ведет себя ваш двигатель?</div><div class="pb-poll-option" data-poll="f7eb5e66" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Работает ровно</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="f7eb5e66" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Обороты плавают</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="f7eb5e66" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Глохнет под нагрузкой</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="f7eb5e66" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Работает только на максимуме</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<p>Также стоит обратить внимание на рычаг управления газом на рукоятке мотоблока. Иногда тросик управления дросселем перетянут или, наоборот, имеет слишком большой свободный ход, что мешает корректной работе автоматики. Убедитесь, что при отпускании ручки газа заслонка полностью закрывается.</p>
+
+<h2 id="подготовка-к-регулировке-регулятора-оборотов">Подготовка к регулировке регулятора оборотов</h2>
+
+<p>Для выполнения работ вам потребуется минимальный набор инструментов: набор рожковых ключей, плоскогубцы, отвертка и, желательно, тахометр для точной настройки. Хотя опытные мастера часто обходятся на слух, наличие прибора гарантирует лучший результат.</p>
+
+<p>Перед началом работ обязательно заглушите двигатель и дайте ему остыть. Если регулятор внутреннего типа, уровень масла должен быть в норме, так как грузики погружены в масляную ванну. Низкий уровень масла может вызывать неправильную работу механизма из-за недостаточного демпфирования.</p>
+
+<p>Вот список действий, которые необходимо выполнить перед началом настройки:</p>
+
+<ul>
+<li>🔧 Ослабьте гайку крепления рычага регулятора на валу дроссельной заслонки.</li>
+<li>👀 Визуально оцените целостность всех тяг и шарнирных соединений.</li>
+<li>🧹 Очистите зону вокруг регулятора от грязи и масла, чтобы видеть перемещение деталей.</li>
+<li>🛑 Зафиксируйте мотоблок в неподвижном положении, заблокировав колеса.</li>
+</ul>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Подготовка к настройке</h4><label class="check-item"><input type="checkbox"><span>Заглушить двигатель</span></label><label class="check-item"><input type="checkbox"><span>Остудить мотор</span></label><label class="check-item"><input type="checkbox"><span>Подготовить ключи</span></label><label class="check-item"><input type="checkbox"><span>Проверить уровень масла</span></label><label class="check-item"><input type="checkbox"><span>Очистить механизм</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<p>Не забывайте, что на разных моделях двигателей, таких как <em>Lifan</em> или <strong>Briggs & Stratton</strong>, конструкция крепления тяг может отличаться. Всегда сверяйтесь с руководством пользователя вашей конкретной модели, если оно сохранилось.</p>
+
+<h2 id="пошаговая-инструкция-по-настройке-регулятора">Пошаговая инструкция по настройке регулятора</h2>
+
+<p>Процесс регулировки требует аккуратности и последовательности. Основная задача — найти баланс между усилием пружины и положением дроссельной заслонки. Начните с того, что полностью откройте дроссельную заслонку вручную, переведя рычаг газа в максимальное положение.</p>
+
+<p>Ослабьте болт или гайку, которая фиксирует рычаг регулятора на оси дроссельной заслонки карбюратора. Теперь поверните саму ось заслонки в направлении открытия дросселя до упора. Удерживая ось в этом положении, затяните фиксирующий болт рычага регулятора. Это установит базовую точку отсчета.</p>
+
+<p>Далее необходимо отрегулировать длину тяги или положение пружины. Если на вашем мотоблоке предусмотрена регулировочная гайка на тяге, вращайте ее до тех пор, пока при работе двигателя на холостом ходу обороты не стабилизируются на отметке около 1500-1800 об/мин (точное значение зависит от модели).</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если у вас нет тахометра, настройку можно произвести «на слух». Двигатель должен работать ровно, без характерного «рычания» на высоких оборотах, но и не должен глохнуть при малейшем изменении нагрузки.</p></aside>
+
+<p>После предварительной настройки запустите двигатель. Дайте ему прогреться в течение 3-5 минут. Резко откройте газ и отпустите. Если обороты набираются быстро и так же быстро возвращаются к стабильному холостому ходу без «провалов», настройка выполнена верно.</p>
+
+<p>В таблице ниже приведены типовые параметры настройки для популярных типов двигателей:</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип двигателя</th>
+<th>Обороты холостого хода</th>
+<th>Максимальные обороты</th>
+<th>Особенности настройки</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4-тактный (Lifan, Loncin)</td>
+<td>1400-1600 об/мин</td>
+<td>3000-3200 об/мин</td>
+<td>Регулировка винтом качества смеси</td>
+</tr>
+<tr>
+<td>2-тактный (старые модели)</td>
+<td>2000-2200 об/мин</td>
+<td>5000-5500 об/мин</td>
+<td>Чувствителен к положению иглы</td>
+</tr>
+<tr>
+<td>Дизельный (мощные мотоблоки)</td>
+<td>1000-1200 об/мин</td>
+<td>2400-2600 об/мин</td>
+<td>Требуется регулировка ТНВД</td>
+</tr>
+<tr>
+<td>Мощные бензиновые (>10 л.с.)</td>
+<td>1500-1700 об/мин</td>
+<td>3400-3600 об/мин</td>
+<td>Жесткая пружина регулятора</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Если после настройки двигатель продолжает работать нестабильно, возможно, потребуется замена пружины регулятора на более жесткую или мягкую, в зависимости от характера неисправности.</p>
+
+<h2 id="типичные-ошибки-при-самостоятельной-регулировке">Типичные ошибки при самостоятельной регулировке</h2>
+
+<p>Самая распространенная ошибка новичков — попытка компенсировать неисправность регулятора настройкой карбюратора. Если вы начнете крутить винты качества и количества смеси, не устранив механическую проблему в тягах, вы только собьете заводские настройки подачи топлива.</p>
+
+<p>Еще одна ошибка — полное удаление регулятора. Некоторые владельцы считают, что если зафиксировать дроссель в открытом положении, мотоблок будет мощнее. Это опасное заблуждение. Без регулятора при резком сбросе нагрузки (например, когда фреза выходит из земли) двигатель может пойти «вразнос», что приведет к его разрушению.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Эксплуатация мотоблока с отключенным или неправильно настроенным регулятором оборотов может привести к обрыву шатуна или прогоранию клапанов из-за превышения предельных оборотов.</p>
+</blockquote>
+
+<p>Также часто встречается игнорирование состояния троса управления газом. Если трос растянут, вы не сможете полностью закрыть дроссель, и регулятор будет работать в некорректном диапазоне. Всегда проверяйте натяжение троса перед вмешательством в систему регулятора.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Регулятор оборотов — это система безопасности двигателя. Его задача не только экономить топливо, но и предотвращать работу мотора на предельных режимах без нагрузки.</p></aside>
+
+<p>Помните, что на двигателях с электронным зажиганием и современными системами впрыска (встречаются на премиальных моделях) механическая регулировка может быть невозможна или требовать специального диагностического оборудования.</p>
+
+<h2 id="обслуживание-и-профилактика-системы">Обслуживание и профилактика системы</h2>
+
+<p>Чтобы избежать частых настроек, необходимо регулярно обслуживать узел. Раз в сезон смазывайте места соединения тяг и шарниров литиевой смазкой или графитовой смазкой. Это предотвратит заклинивание механизма из-за коррозии или попадания пыли.</p>
+
+<p>Для двигателей с внутренним регулятором критически важно своевременная замена масла. Старое, загустевшее масло затрудняет движение грузиков, делая реакцию регулятора «вялой». Используйте масла, рекомендованные производителем, например, <em>SAE 30</em> или <strong>10W-30</strong> в зависимости от сезона.</p>
+
+<p>При хранении мотоблока в зимний период рекомендуется отсоединять тягу регулятора или оставлять дроссельную заслонку в закрытом положении, чтобы пружина не находилась в постоянно напряженном состоянии. Это сохранит ее упругие свойства.</p>
+
+<p>Если вы заметили, что регулировка приходится делать чаще раза в сезон, inspect the internal components. Возможно, изношен вал, на котором крепятся грузики, или выработка в отверстиях рычагов. В таком случае потребуется ремонт двигателя с заменой изношенных деталей.</p>
+
+<details>
+<summary>Как часто нужно проверять настройки регулятора?</summary>
+<p>Профилактический осмотр рекомендуется проводить перед каждым началом сезона активных работ, а также после длительных простоев. Если мотоблок используется ежедневно в коммерческих целях, проверку стоит делать каждые 50 моточасов.</p>
+</details>
+
+<details>
+<summary>Можно ли настроить регулятор без снятия корпуса?</summary>
+<p>На большинстве моделей с внешним регулятором — да, можно. Доступ к регулировочным гайкам и тягам обычно открыт. Для внутренних регуляторов снятие корпуса может потребоваться только при полной замене механизма.</p>
+</details>
+
+<details>
+<summary>Почему двигатель глохнет при включении передачи?</summary>
+<p>Это классический признак слишком слабой пружины регулятора или неправильно выставленного угла опережения тяги. Регулятор не успевает открыть дроссель при резком возрастании нагрузки, и двигатель глохнет от недостатка мощности.</p>
+</details>
+
+<details>
+<summary>Влияет ли качество бензина на работу регулятора?</summary>
+<p>Косвенно — да. Плохое топливо вызывает детонацию и неравномерное сгорание, что воспринимается регулятором как изменение нагрузки. Он начинает хаотично менять положение дросселя, пытаясь выровнять обороты.</p>
+</details>
+
+<details>
+<summary>Что делать, если пружина регулятора лопнула?</summary>
+<p>Эксплуатировать технику нельзя. Необходимо подобрать аналогичную пружину по длине и диаметру проволоки. Временное решение — использование пружины от клапанов двигателя подходящего размера, но это требует точного подбора по жесткости.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-rabotaet-motoblok-video.html" class="pb-related-card">
+                <span class="pb-related-title">Как работает мотоблок: видео-инструкции и устройство</span>
+                <span class="pb-related-desc">Подробный разбор принципа работы мотоблока. Видео-инструкции по запуску, трансмиссии и навесному обо</span>
+            </a><a href="/articles/r/ru/rul-dlya-motobloka-mtz.html" class="pb-related-card">
+                <span class="pb-related-title">Руль для мотоблока МТЗ: выбор, замена, регулировка и ремонт</span>
+                <span class="pb-related-desc">Как выбрать руль для мотоблока МТЗ: виды, размеры, материалы. Пошаговая инструкция по замене, регули</span>
+            </a><a href="/articles/k/ka/kakoj-motoblok-vybrat-dlya-doma-i-ogoroda-otzyvy-vladeltsev.html" class="pb-related-card">
+                <span class="pb-related-title">Какой мотоблок выбрать для дома и огорода: отзывы владельцев 2026</span>
+                <span class="pb-related-desc">Рейтинг лучших мотоблоков для дачи и огорода по отзывам владельцев. Сравнение характеристик, цены и </span>
+            </a><a href="/articles/d/dy/dyshlo-dlya-pritsepa-motobloka-kupit.html" class="pb-related-card">
+                <span class="pb-related-title">Дышло для прицепа мотоблока — как выбрать и где купить в 2026</span>
+                <span class="pb-related-desc">Полное руководство по выбору дышла для прицепа мотоблока: виды, материалы, совместимость с Нева, МТЗ</span>
+            </a><a href="/articles/o/ot/otval-dlya-motobloka-mtz.html" class="pb-related-card">
+                <span class="pb-related-title">Отвал для мотоблока МТЗ: выбор, установка и настройка</span>
+                <span class="pb-related-desc">Полный гид по выбору и эксплуатации отвала для мотоблока МТЗ-05, 09, 09Н. Характеристики, чертежи, у</span>
+            </a><a href="/articles/k/ka/kartofelekopalka-dlya-motobloka-neva-mb-2-video.html" class="pb-related-card">
+                <span class="pb-related-title">Картофелекопалка для мотоблока Нева МБ 2: настройка и видео</span>
+                <span class="pb-related-desc">Полный обзор картофелекопалок для мотоблока Нева МБ 2. Настройка вибрационного грохота, видео работы</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🏍️ Мото Гид</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a> · <a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a> · <a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a> · <a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a> · <a href="/category/remont-dvigatelej/">🔧 Ремонт Двигателей</a> · <a href="/category/elektrika-i-provodka/">⚡ Электрика и Проводка</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мото Гид. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

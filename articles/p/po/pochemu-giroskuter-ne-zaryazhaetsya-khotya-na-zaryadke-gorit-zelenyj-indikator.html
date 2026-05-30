@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🏍️</text></svg>">
+    <title>Гироскутер не заряжается: горит зеленый индикатор — причины — Мото Гид</title>
+    <meta name="description" content="Почему гироскутер показывает заряд, но не заряжается? Подробный разбор неисправностей BMS, балансировки и блока питания. Диагностика и ремонт.">
+    <link rel="canonical" href="https://moto-gid.vercel.app/articles/p/po/pochemu-giroskuter-ne-zaryazhaetsya-khotya-na-zaryadke-gorit-zelenyj-indikator.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Гироскутер не заряжается: горит зеленый индикатор — причины">
+    <meta property="og:description" content="Почему гироскутер показывает заряд, но не заряжается? Подробный разбор неисправностей BMS, балансировки и блока питания. Диагностика и ремонт.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780130877">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🏍️</span>
+                <span class="pb-logo-text">Мото Гид</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/mopedy-i-skutery/" class="pb-dropdown-item">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/" class="pb-dropdown-item">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/" class="pb-dropdown-item">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/" class="pb-dropdown-item">📐 Самоделки и Чертежи</a>
+<a href="/category/remont-dvigatelej/" class="pb-dropdown-item">🔧 Ремонт Двигателей</a>
+<a href="/category/elektrika-i-provodka/" class="pb-dropdown-item">⚡ Электрика и Проводка</a>
+<a href="/category/zakony-i-prava/" class="pb-dropdown-item">⚖️ Законы и Права</a>
+<a href="/category/raskhodniki-i-masla/" class="pb-dropdown-item">🛢️ Расходники и Масла</a>
+<a href="/category/tyuning-i-modernizatsiya/" class="pb-dropdown-item">🚀 Тюнинг и Модернизация</a>
+<a href="/category/elektromototekhnika/" class="pb-dropdown-item">🔋 Электромототехника</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/elektromototekhnika/">Электромототехника</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Гироскутер не заряжается: горит зеленый индикатор — причины</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#принцип-работы-индикаторов-зарядного-устройства">Принцип работы индикаторов зарядного устройства</a></li><li><a href="#механические-неисправности-разъемы-и-провода">Механические неисправности: разъемы и провода</a></li><li><a href="#срабатывание-защиты-платы-bms">Срабатывание защиты платы BMS</a></li><li><a href="#неисправность-самого-зарядного-устройства">Неисправность самого зарядного устройства</a></li><li><a href="#диагностика-напряжения-на-аккумуляторе">Диагностика напряжения на аккумуляторе</a></li><li><a href="#методы-восстановления-и-ремонта">Методы восстановления и ремонта</a></li><li><a href="#профилактика-и-правила-эксплуатации">Профилактика и правила эксплуатации</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/n/nu/nuzhny-li-prava-na-elektrobajk.html">Нужны ли права на электробайк в 2026 году? Разбираем законы и штрафы</a></li><li><a href="/articles/m/mo/moshchnost-elektroskutera-bez-prav.html">Мощность электроскутера без прав: лимиты, законы и выбор модели в 2026</a></li><li><a href="/articles/e/el/elektrovelosiped-350-vatt-nuzhny-li-prava.html">Нужны ли права на электровелосипед 350 Вт в 2026 году? Разбор закона</a></li><li><a href="/articles/k/ka/kak-uznat-model-giroskutera.html">Как узнать модель гироскутера — 5 проверенных способов</a></li><li><a href="/articles/e/el/elektricheskij-baggi-vzroslyj-2-mestnyj.html">Электрический багги взрослый 2 местный: выбор, обзор, характеристики</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Почему гироскутер не заряжается, хотя индикатор горит зеленым</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#принцип-работы-индикаторов-зарядного-устройства">Принцип работы индикаторов зарядного устройства</a></li><li><a href="#механические-неисправности-разъемы-и-провода">Механические неисправности: разъемы и провода</a></li><li><a href="#срабатывание-защиты-платы-bms">Срабатывание защиты платы BMS</a></li><li><a href="#неисправность-самого-зарядного-устройства">Неисправность самого зарядного устройства</a></li><li><a href="#диагностика-напряжения-на-аккумуляторе">Диагностика напряжения на аккумуляторе</a></li><li><a href="#методы-восстановления-и-ремонта">Методы восстановления и ремонта</a></li><li><a href="#профилактика-и-правила-эксплуатации">Профилактика и правила эксплуатации</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Ситуация, когда вы подключаете <em>гироскутер</em> к сети, а индикатор на зарядном устройстве сразу загорается зеленым цветом, вызывает недоумение и тревогу. Логично предположить, что зеленый свет означает полную зарядку, но если устройство разряжено или не включается, это явный признак сбоя в системе питания. Такая проблема встречается часто как у бюджетных моделей типа <em>Smart Balance</em>, так и у более дорогих версий.</p>
+
+<p>Зеленый индикатор на блоке питания свидетельствует о том, что электрическая цепь разомкнута. Простыми словами: ток от розетки не поступает внутрь аккумулятора. Это может быть вызвано как банальным обрывом провода, так и срабатыванием защиты на плате <strong>BMS</strong> (Battery Management System). Игнорирование этого симптома может привести к полной деградации ячеек литий-ионного аккумулятора.</p>
+
+<p>В этой статье мы детально разберем механические и электронные причины отказа зарядки. Вы узнаете, как провести первичную диагностику мультиметром, проверить предохранители и понять, когда требуется замена контроллера батареи. Важно действовать последовательно, чтобы не усугубить ситуацию коротким замыканием.</p>
+
+<h2 id="принцип-работы-индикаторов-зарядного-устройства">Принцип работы индикаторов зарядного устройства</h2>
+
+<p>Чтобы понять суть проблемы, нужно разобраться в логике работы стандартного зарядного блока. Обычно он оснащен двухцветным светодиодом: красным и зеленым. Красный цвет сигнализирует о том, что идет процесс заряда, то есть ток течет от блока к аккумулятору. Зеленый цвет означает режим ожидания или отсутствие нагрузки.</p>
+
+<p>Когда вы вставляете штекер в разъем гироскутера, внутри блока питания должно происходить замыкание цепи. Если этого не случается, контроллер блока «думает», что к нему ничего не подключено, и выдает зеленый сигнал. Это может указывать на <strong>обрыв цепи</strong> в самом проводе, неисправность гнезда или блокировку со стороны батареи.</p>
+
+<p>В некоторых случаях блок питания исправен, но напряжение на выходе ниже порогового значения, необходимого для старта зарядки. Литий-ионные аккумуляторы требуют определенного вольтажа для начала приема энергии. Если <em>BMS</em> ушла в глубокую защиту из-за переразряда, она может не пропускать ток, имитируя отсутствие батареи.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Проверьте напряжение на выходе зарядного устройства мультиметром перед подключением к гироскутеру. Оно должно соответствовать номиналу, указанному на этикетке (обычно 42В для 36В батарей или 29.4В для 24В).</p></aside>
+
+<blockquote>⚠️ Внимание: Никогда не пытайтесь «разбудить» аккумулятор, подключая зарядное устройство напрямую к клеммам батареи, минуя разъем и плату защиты. Это может привести к возгоранию ячеек.</blockquote>
+
+<h2 id="механические-неисправности-разъемы-и-провода">Механические неисправности: разъемы и провода</h2>
+
+<p>Самая простая и распространенная причина —ческое повреждение элементов передачи тока. Гнездо зарядки на корпусе гироскутера постоянно подвергается нагрузкам при подключении и отключении штекера. Со временем контакты внутри могут окислиться, отойти или сломаться.</p>
+
+<p>Также стоит внимательно осмотреть сам кабель зарядного устройства. В местах выхода провода из вилки или из блока часто происходят внутренние переломы жил. Внешне изоляция может выглядеть целой, но внутри проводник разорван. Это классическая причина, почему цепь не замыкается и индикатор горит зеленым.</p>
+
+<p>Для диагностики используйте мультиметр в режиме прозвонки. Проверьте целостность кабеля от вилки до штекера. Если прибор молчит при замыкании щупов на контакты разъема, значит, провод требует замены. Иногда проблема кроется в самом гнезде: контакты могут быть разведены слишком широко и штекер просто не достает до них.</p>
+
+<ul>
+<li>🔌 Осмотрите гнездо на предмет черного нагара или оплавления пластика.</li>
+<li>🔌 Пошевелите штекер в гнезде: если индикатор моргает, контакт нестабилен.</li>
+<li>🔌 Проверьте предохранитель в вилке зарядного устройства (если конструкция разборная).</li>
+</ul>
+
+<div class="pb-poll" id="poll-3f5e7875"><div class="pb-poll-question">📊 Сталкивались ли вы с поломкой разъема зарядки?</div><div class="pb-poll-option" data-poll="3f5e7875" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Да, гнездо расшаталось</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="3f5e7875" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Да, переломился провод</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="3f5e7875" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Нет, проблема была в аккумуляторе</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="3f5e7875" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Затрудняюсь ответить</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="срабатывание-защиты-платы-bms">Срабатывание защиты платы BMS</h2>
+
+<p>Если механическая часть исправна, проблема с высокой долей вероятности кроется в электронике аккумулятора. Плата <strong>BMS</strong> предназначена для защиты батареи от перезаряда, переразряда и короткого замыкания. При глубоком разряде одна или несколько ячеек могут упасть ниже критического напряжения (обычно 2.5–2.8 Вольта).</p>
+
+<p>В таком состоянии контроллер блокирует входной ток, чтобы предотвратить повреждение химии элемента. Для системы это выглядит как обрыв цепи, поэтому зарядное устройство показывает зеленый свет. Это состояние называется «уход в защиту» или «глубокий разряд».</p>
+
+<p>Иногда BMS блокируется из-за разбалансировки банок. Если разница напряжений между группами ячеек слишком велика, плата не позволит начать зарядку, чтобы избежать перегрева слабых элементов. В этом случае требуется процедура <em>балансировки</em>, которую обычная зарядка выполнить не может.</p>
+
+<details class="pb-accordion"><summary>Как работает балансировка?</summary><div class="pb-accordion-body"><p>Балансировка — это процесс выравнивания напряжения на всех параллельных группах ячеек аккумулятора. Специальное устройство (балансир) заряжает самые слабые группы по отдельности, пока они не сравняются с остальными. Без этого полная емкость батареи не будет доступна.</!</p></div></details>
+
+<p>Существует метод «толчка» аккумулятора, но он требует профессионального оборудования и знаний. Попытка подать повышенное напряжение напрямую на клеммы батареи может активировать цепь, но риск повреждения ячеек остается высоким. Лучше доверить эту процедуру сервисному центру.</p>
+
+<h2 id="неисправность-самого-зарядного-устройства">Неисправность самого зарядного устройства</h2>
+
+<p>Нельзя исключать вариант, что проблема не в гироскутере, а в блоке питания. Электронные компоненты внутри зарядного устройства могут выйти из строя: вздуться конденсаторы, сгореть резисторы или нарушиться пайка. В таком случае блок может выдавать индикацию, но не генерировать необходимое напряжение.</p>
+
+<p>Проверить это можно только путем замера выходного напряжения мультиметром без нагрузки. Если на экране прибора 0 Вольт или значение значительно ниже номинального (например, 10В вместо 42В), блок неисправен. Также блок может уходить в защиту при подключении нагрузки, если его мощность недостаточна или есть внутреннее КЗ.</p>
+
+<blockquote>⚠️ Внимание: Параметры зарядных устройств разных производителей могут отличаться. Использование блока с неподходящим вольтажом или полярностью может мгновенно вывести из строя контроллер гироскутера.</blockquote>
+
+<p>Полярность подключения — критически важный параметр. На большинстве гироскутеров используется схема «плюс в центре» (center positive), но встречаются и обратные варианты. Если вы используете неродную зарядку, обязательно сверьте маркировку на корпусе устройства и на этикетке блока питания.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип батареи</th>
+<th>Номинальное напряжение</th>
+<th>Напряжение заряда (Max)</th>
+<th>Цвет индикатора (Заряд)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>36V (10S)</td>
+<td>36 Вольт</td>
+<td>42.0 Вольт</td>
+<td>Красный</td>
+</tr>
+<tr>
+<td>24V (7S)</td>
+<td>24 Вольта</td>
+<td>29.4 Вольта</td>
+<td>Красный</td>
+</tr>
+<tr>
+<td>48V (13S)</td>
+<td>48 Вольт</td>
+<td>54.6 Вольт</td>
+<td>Красный</td>
+</tr>
+<tr>
+<td>60V (16S)</td>
+<td>60 Вольт</td>
+<td>67.2 Вольта</td>
+<td>Красный</td>
+</tr>
+</tbody>
+</table></div>
+
+<h2 id="диагностика-напряжения-на-аккумуляторе">Диагностика напряжения на аккумуляторе</h2>
+
+<p>Для точного определения причины необходимо измерить напряжение непосредственно на контактах аккумулятора. Для этого придется снять верхнюю платформу гироскутера, открутив винты. Будьте предельно осторожны, чтобы не повредить провода, идущие к мотор-колесам.</p>
+
+<p>Найдите разъем, идущий от батареи к контроллеру или плате BMS. Аккуратно подключите щупы мультиметра, соблюдая полярность. Если напряжение на батарее близко к нулю или значительно ниже минимального порога (например, менее 30В для 36В системы), значит, аккумулятор глубоко разряжен.</p>
+
+<p>Если напряжение в норме (например, 36–40В), но зарядка не идет, проблема может быть в разъеме балансировки или в самом контроллере заряда на плате BMS. В редких случаях неисправен силовой ключ, коммутирующий зарядный ток.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Порядок диагностики мультиметром</h4><label class="check-item"><input type="checkbox"><span>Снять верхнюю крышку гироскутера</span></label><label class="check-item"><input type="checkbox"><span>Найти разъем аккумулятора</span></label><label class="check-item"><input type="checkbox"><span>Замерить общее напряжение батареи</span></label><label class="check-item"><input type="checkbox"><span>Сверить с номиналом на этикетке</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<p>При замере обратите внимание на стабильность показаний. Если цифры скачут или быстро падают под нагрузкой, это признак того, что одна из групп ячеек имеет высокое внутреннее сопротивление или «мертва». Такой аккумулятор требует ремонта или замены.</p>
+
+<h2 id="методы-восстановления-и-ремонта">Методы восстановления и ремонта</h2>
+
+<p>Если выявлен глубокий разряд, иногда помогает зарядка каждой группы ячеек по отдельности с помощью лабораторного блока питания. Этот процесс трудоемкий и требует снятия верхней крышки аккумулятора (если она разборная) и доступа к балансировочным проводам.</p>
+
+<p>В случае выхода из строя платы BMS, ее можно заменить на новую, подходящую по току и количеству серий (S). Однако это требует навыков пайки толстых проводов и понимания схемы подключения. Неправильная пайка может привести к короткому замыканию и пожару.</p>
+
+<p><mark>Критическим фактором является состояние самих ячеек: если они вздулись или имеют следы электролита, восстановление невозможно и опасно.</mark> В таких случаях единственное решение — утилизация старой батареи и покупка нового аккумуляторного блока.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Замена отдельных ячеек в сборке возможна только при наличии точечной сварки и идентичных новых элементов. Пайка паяльником перегревает литий и сокращает его жизнь.</p></aside>
+
+<p>Иногда проблема решается заменой самого разъема зарядки на корпусе. Это недорогая деталь, которую легко установить самостоятельно, имея минимальный набор инструментов. Главное — надежно заизолировать соединения и закрепить гнездо, чтобы оно не болталось.</p>
+
+<h2 id="профилактика-и-правила-эксплуатации">Профилактика и правила эксплуатации</h2>
+
+<p>Чтобы избежать ситуаций, когда гироскутер перестает заряжаться, следует соблюдать правила эксплуатации литий-ионных аккумуляторов. Не оставляйте устройство разряженным «в ноль» на длительное время, особенно в зимний период. Храните гироскутер при заряде 60–80%.</p>
+
+<p>Избегайте перегрева батареи. Не заряжайте устройство сразу после активной езды, дайте ему остыть 20–30 минут. Высокая температура ускоряет деградацию химии ячеек и может спровоцировать срабатывание тепловой защиты BMS.</p>
+
+<ul>
+<li>🛡️ Используйте только оригинальное или сертифицированное зарядное устройство.</li>
+<li>🛡️ Не заряжайте гироскутер на морозе или под прямыми лучами солнца.</li>
+<li>🛡️ Регулярно проверяйте плотность посадки контактов в разъеме.</li>
+</ul>
+
+<blockquote>⚠️ Внимание: Срок службы литий-ионных аккумуляторов ограничен 300–500 циклами заряда-разряда. Даже при идеальном уходе через 2–3 года емкость неизбежно упадет, и риск отказов возрастет.</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если вы не планируете использовать гироскутер более месяца, отключите разъем аккумулятора от контроллера внутри корпуса. Это предотвратит саморазряд и уход в глубокую защиту.</!</p></aside>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Можно ли заряжать гироскутер, если индикатор сразу зеленый?</summary>
+<p>Нет, в таком режиме ток не поступает. Необходимо найти причину разрыва цепи: проверить кабель, гнездо или состояние аккумулятора. Продолжение попыток зарядки без диагностики бесполезно.</p>
+</details>
+
+<details>
+<summary>Почему гироскутер заряжается всего 5 минут и загорается зеленый?</summary>
+<p>Это признак сильной разбалансировки ячеек или неисправности одной из групп. Плата BMS видит, что одна ячейка достигла максимума, и отключает заряд, хотя общая емкость батареи низкая.</p>
+</details>
+
+<details>
+<summary>Сколько стоит замена платы BMS?</summary>
+<p>Стоимость зависит от силы тока и количества ячеек. В среднем цена новой платы варьируется от 1500 до 4000 рублей, плюс стоимость работ по установке.</p>
+</details>
+
+<details>
+<summary>Опасно ли вскрывать аккумулятор гироскутера?</summary>
+<p>Да, это опасно. Внутри находится высокое напряжение, способное нанести удар током, а повреждение оболочки ячеек может вызвать пожар. Работы нужно проводить в защитных очках и перчатках.</p>
+</details>
+
+<details>
+<summary>Что делать, если зарядное устройство гудит и греется?</summary>
+<p>Это признак внутренней неисправности блока питания. Немедленно отключите его от сети. Использование такого устройства может привести к возгоранию или повреждению электроники гироскутера.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/n/nu/nuzhny-li-prava-na-elektrobajk.html" class="pb-related-card">
+                <span class="pb-related-title">Нужны ли права на электробайк в 2026 году? Разбираем законы и штрафы</span>
+                <span class="pb-related-desc">Правила езды на электробайках в России: когда нужны права, какие штрафы за их отсутствие, как оформи</span>
+            </a><a href="/articles/m/mo/moshchnost-elektroskutera-bez-prav.html" class="pb-related-card">
+                <span class="pb-related-title">Мощность электроскутера без прав: лимиты, законы и выбор модели в 2026</span>
+                <span class="pb-related-desc">Какой мощности электроскутер не требует прав в 2026 году? Разбираем лимиты 250 Вт, классы M и B1, шт</span>
+            </a><a href="/articles/e/el/elektrovelosiped-350-vatt-nuzhny-li-prava.html" class="pb-related-card">
+                <span class="pb-related-title">Нужны ли права на электровелосипед 350 Вт в 2026 году? Разбор закона</span>
+                <span class="pb-related-desc">Полный разбор: требуются ли права на электровелосипед 350 Вт, как избежать штрафов, технические норм</span>
+            </a><a href="/articles/k/ka/kak-uznat-model-giroskutera.html" class="pb-related-card">
+                <span class="pb-related-title">Как узнать модель гироскутера — 5 проверенных способов</span>
+                <span class="pb-related-desc">Не знаете, как определить модель своего гироскутера? Рассказываем, где искать маркировку, как расшиф</span>
+            </a><a href="/articles/e/el/elektricheskij-baggi-vzroslyj-2-mestnyj.html" class="pb-related-card">
+                <span class="pb-related-title">Электрический багги взрослый 2 местный: выбор, обзор, характеристики</span>
+                <span class="pb-related-desc">Полный гид по выбору взрослого двухместного электро-багги. Сравнение моделей, характеристики моторов</span>
+            </a><a href="/articles/e/el/elektroskuter-citycoco-gt-x7.html" class="pb-related-card">
+                <span class="pb-related-title">Citycoco GT X7: Обзор, характеристики и тюнинг электроскутера</span>
+                <span class="pb-related-desc">Полный гайд по электроскутеру Citycoco GT X7: разбор характеристик, инструкции по тюнингу, ремонту к</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🏍️ Мото Гид</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a> · <a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a> · <a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a> · <a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a> · <a href="/category/remont-dvigatelej/">🔧 Ремонт Двигателей</a> · <a href="/category/elektrika-i-provodka/">⚡ Электрика и Проводка</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мото Гид. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

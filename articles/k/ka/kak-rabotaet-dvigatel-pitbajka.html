@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🏍️</text></svg>">
+    <title>Как работает двигатель питбайка: устройство и принцип действия — Мото Гид</title>
+    <meta name="description" content="Подробный разбор конструкции и работы двигателя питбайка: 2Т и 4Т моторы, системы смазки, охлаждения, зажигания. Советы по эксплуатации и диагностике.">
+    <link rel="canonical" href="https://moto-gid.vercel.app/articles/k/ka/kak-rabotaet-dvigatel-pitbajka.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как работает двигатель питбайка: устройство и принцип действия">
+    <meta property="og:description" content="Подробный разбор конструкции и работы двигателя питбайка: 2Т и 4Т моторы, системы смазки, охлаждения, зажигания. Советы по эксплуатации и диагностике.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780130877">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🏍️</span>
+                <span class="pb-logo-text">Мото Гид</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/" class="pb-nav-active">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/mopedy-i-skutery/" class="pb-dropdown-item">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/" class="pb-dropdown-item">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/" class="pb-dropdown-item">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/" class="pb-dropdown-item">📐 Самоделки и Чертежи</a>
+<a href="/category/remont-dvigatelej/" class="pb-dropdown-item">🔧 Ремонт Двигателей</a>
+<a href="/category/elektrika-i-provodka/" class="pb-dropdown-item">⚡ Электрика и Проводка</a>
+<a href="/category/zakony-i-prava/" class="pb-dropdown-item">⚖️ Законы и Права</a>
+<a href="/category/raskhodniki-i-masla/" class="pb-dropdown-item">🛢️ Расходники и Масла</a>
+<a href="/category/tyuning-i-modernizatsiya/" class="pb-dropdown-item">🚀 Тюнинг и Модернизация</a>
+<a href="/category/elektromototekhnika/" class="pb-dropdown-item">🔋 Электромототехника</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/pitbajki-i-enduro/">Питбайки и Эндуро</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как работает двигатель питбайка: устройство и принцип действия</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#основные-типы-двигателей-питбайков-2т-vs-4т">Основные типы двигателей питбайков: 2Т vs 4Т</a></li><li><a href="#устройство-двигателя-питбайка-ключевые-узлы">Устройство двигателя питбайка: ключевые узлы</a></li><li><a href="#прицип-работы-четырёхтактного-двигателя-пошагово">Прицип работы четырёхтактного двигателя: пошагово</a></li><li><a href="#как-работает-двухтактный-двигатель-проще-но-хитрее">Как работает двухтактный двигатель: проще, но хитрее</a></li><li><a href="#системы-без-которых-двигатель-не-работает">Системы, без которых двигатель не работает</a></li><li><a href="#тюнинг-и-модификации-что-можно-улучшить">Тюнинг и модификации: что можно улучшить?</a></li><li><a href="#диагностика-неисправностей-симптомы-и-причины">Диагностика неисправностей: симптомы и причины</a></li><li><a href="#faq-частые-вопросы-о-двигателях-питбайков">FAQ: Частые вопросы о двигателях питбайков</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kakie-zvezdy-stavit-na-pitbajk.html">Какие звезды ставить на питбайк: выбор, размеры, материалы</a></li><li><a href="/articles/s/sk/skolko-masla-v-vilke-pitbajka.html">Сколько масла заливать в вилку питбайка: таблица объёмов и инструкция</a></li><li><a href="/articles/p/po/pochemu-pitbajk-glokhnet-na-kholostykh.html">Питбайк глохнет на холостых: 10 причин и как исправить</a></li><li><a href="/articles/u/us/ustanovka-fary-na-pitbajk.html">Установка фары на питбайк: пошаговая инструкция и схемы</a></li><li><a href="/articles/s/sa/samye-bolshie-kolesa-na-pitbajk.html">Самые большие колеса на питбайк: размеры, плюсы и минусы</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как устроен и работает двигатель питбайка: от поршня до выхлопа</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#основные-типы-двигателей-питбайков-2т-vs-4т">Основные типы двигателей питбайков: 2Т vs 4Т</a></li><li><a href="#устройство-двигателя-питбайка-ключевые-узлы">Устройство двигателя питбайка: ключевые узлы</a></li><li><a href="#прицип-работы-четырёхтактного-двигателя-пошагово">Прицип работы четырёхтактного двигателя: пошагово</a></li><li><a href="#как-работает-двухтактный-двигатель-проще-но-хитрее">Как работает двухтактный двигатель: проще, но хитрее</a></li><li><a href="#системы-без-которых-двигатель-не-работает">Системы, без которых двигатель не работает</a></li><li><a href="#тюнинг-и-модификации-что-можно-улучшить">Тюнинг и модификации: что можно улучшить?</a></li><li><a href="#диагностика-неисправностей-симптомы-и-причины">Диагностика неисправностей: симптомы и причины</a></li><li><a href="#faq-частые-вопросы-о-двигателях-питбайков">FAQ: Частые вопросы о двигателях питбайков</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Питбайк — это не просто уменьшенная копия мотоцикла, а отдельный класс техники с уникальными требованиями к двигателю. Компактные габариты, высокая мощность на единицу веса и способность выдерживать экстремальные нагрузки делают его мотор настоящим инженерным шедевром. Но как именно <strong>четырёхтактный или двухтактный двигатель</strong> преобразует бензин в крутящий момент, заставляющий колёса вращаться?</p>
+
+<p>В этой статье мы разберём <strong>принцип работы двигателя питбайка</strong> от момента подачи топлива до выброса отработанных газов, сравним <em>2Т</em> и <em>4Т</em> моторы, а также объясним, почему некоторые питбайки «дымят», а другие — нет. Вы узнаете, как системы <strong>охлаждения</strong>, <strong>смазки</strong> и <strong>зажигания</strong> взаимодействуют друг с другом, и что происходит внутри цилиндра за доли секунды. И да — мы не будем грузить вас формулами, только практика!</p>
+
+<h2 id="основные-типы-двигателей-питбайков-2т-vs-4т">Основные типы двигателей питбайков: 2Т vs 4Т</h2>
+
+<p>Питбайки оснащаются двумя принципиально разными типами двигателей: <em>двухтактными (2Т)</em> и <em>четырёхтактными (4Т)</em>. Выбор между ними зависит от целей эксплуатации, бюджета и готовности к обслуживанию. Давайте разберём ключевые отличия:</p>
+
+<ul>
+  <li>🔥 <strong>Двухтактные двигатели</strong>: Проще в конструкции, легче, дешевле в производстве. Мощность развивают быстрее, но требуют смешивания масла с бензином. Пример: <em>Yamaha PW50</em> или <em>Honda CRF50F</em> (хотя последняя — 4Т).</li>
+  <li>⚙️ <strong>Четырёхтактные двигатели</strong>: Тяговитее на низких оборотах, экономичнее, экологичнее. Масло заливается отдельно (в картер). Пример: <em>Kawasaki KLX110</em> или <em>KTM 50 SX</em> (есть версии с обоими типами моторов).</li>
+</ul>
+
+<p>Главный миф: «<em>2Т</em> моторы всегда мощнее <em>4Т</em>». На практике <strong>лошадиные силы</strong> зависят от объёма, настройки и качества сборки. Например, <em>4Т</em> двигатель <em>Honda CRF125F</em> (125 см³) выдаёт ~9 л.с., а <em>2Т</em> <em>Yamaha YZ85</em> (85 см³) — до 20 л.с. Но первый прослужит дольше при правильном уходе.</p>
+
+<div class="pb-poll" id="poll-3d3d31a3"><div class="pb-poll-question">📊 Какой двигатель у вашего питбайка?</div><div class="pb-poll-option" data-poll="3d3d31a3" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Двухтактный (2Т)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="3d3d31a3" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Четырёхтактный (4Т)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="3d3d31a3" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Не знаю</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="3d3d31a3" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Планирую покупку</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<p><mark>Критический нюанс: двухтактные питбайки запрещены для езды по общественным дорогам в большинстве стран из-за высокого уровня выбросов. Их легально используют только на закрытых трассах или в бездорожье.</mark></p>
+
+<h2 id="устройство-двигателя-питбайка-ключевые-узлы">Устройство двигателя питбайка: ключевые узлы</h2>
+
+<p>Независимо от типа, любой двигатель питбайка состоит из нескольких основных систем. Разберём их на примере <em>4Т</em> мотора (как наиболее распространённого в современных моделях):</p>
+
+<div class="pb-table-wrap"><table>
+  <thead>
+    <tr>
+      <th>Система</th>
+      <th>Компоненты</th>
+      <th>Функция</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Кривошипно-шатунный механизм</strong></td>
+      <td>Поршень, шатун, коленвал, цилиндр</td>
+      <td>Преобразует возвратно-поступательное движение поршня во вращение коленвала</td>
+    </tr>
+    <tr>
+      <td><strong>Газораспределительный механизм (ГРМ)</strong></td>
+      <td>Клапаны, распредвал, цепь/ремень ГРМ</td>
+      <td>Контролирует впуск топливной смеси и выпуск отработанных газов</td>
+    </tr>
+    <tr>
+      <td><strong>Система смазки</strong></td>
+      <td>Масляный насос, фильтр, каналы в блоке</td>
+      <td>Снижает трение между деталями, отводит тепло</td>
+    </tr>
+    <tr>
+      <td><strong>Система охлаждения</strong></td>
+      <td>Радиатор, помпа, термостат, вентилятор</td>
+      <td>Поддерживает оптимальную температуру (обычно 80–100°C)</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p>В <em>двухтактных</em> двигателях нет клапанов — их роль выполняют <strong>окна в цилиндре</strong> (впускные, выпускные и продувочные). Это упрощает конструкцию, но требует точной настройки <strong>фаз газораспределения</strong> (моментов открытия/закрытия окон поршнем).</p>
+
+<details class="pb-accordion"><summary>Почему в 2Т двигателях нет масляного фильтра?</summary><div class="pb-accordion-body"><p>В двухтактных моторах масло сгорает вместе с топливом, поэтому система смазки сводится к подаче масляно-бензиновой смеси. Отдельный фильтр не нужен, но это означает, что масло должно быть высокого качества и специально предназначено для 2Т двигателей (например, <em>Motul 710</em> или <em>Castrol TTS>).</p></div></details>
+
+<h2 id="прицип-работы-четырёхтактного-двигателя-пошагово">Прицип работы четырёхтактного двигателя: пошагово</h2>
+
+<p>Рабочий цикл <em>4Т</em> двигателя состоит из четырёх тактов, каждый из которых соответствует одному ходу поршня (вверх или вниз). Рассмотрим их на примере одного цилиндра:</p>
+
+<ol>
+  <li><strong>Впуск</strong>: Поршень движется вниз, создавая разрежение. Впускной клапан открывается, и топливовоздушная смесь поступает в цилиндр. <em>Дроссельная заслонка</em> регулирует количество смеси (а значит, и мощность).</li>
+  <li><strong>Сжатие</strong>: Поршень движется вверх, сжимая смесь. Температура и давление растут. В конце такта <strong>свеча зажигания</strong> поджигает смесь.</li>
+  <li><strong>Рабочий ход</strong>: Сгорающее топливо толкает поршень вниз, вращая коленвал. Это единственный такт, когда двигатель <strong>производит энергию</strong>.</li>
+  <li><strong>Выпуск</strong>: Поршень снова идёт вверх, выпускной клапан открывается, отработанные газы выталкиваются в выхлопную систему.</li>
+</ol>
+
+<p>Запомните: <strong>коленвал</strong> делает <strong>два оборота</strong> за один рабочий цикл. Это объясняет, почему <em>4Т</em> моторы работают плавнее, но развивают максимальную мощность при более высоких оборотах, чем <em>2Т</em>.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>В четырёхтактных двигателях питбайков часто используется система <strong>жиклёрного карбюратора</strong> (например, <em>Mikuni VM22</em> или <em>Keihin PWK</em>), которая требует регулярной чистки и настройки, особенно после зимнего простоя.</p></aside>
+
+<h2 id="как-работает-двухтактный-двигатель-проще-но-хитрее">Как работает двухтактный двигатель: проще, но хитрее</h2>
+
+<p>В <em>2Т</em> моторе рабочий цикл завершается за <strong>один оборот коленвала</strong> (два такта). Здесь нет клапанов — их заменяют окна в стенках цилиндра, которые открываются/закрываются поршнем. Разберём процесс:</p>
+
+<ol>
+  <li><strong>Такт сжатия + впуск</strong>: Поршень движется вверх, сжимая топливную смесь в камере сгорания. Одновременно в <strong>кривошипной камере</strong> (под поршнем) создаётся разрежение, и через впускное окно поступает новая порция смеси.</li>
+  <li><strong>Рабочий ход + продувка</strong>: Свеча поджигает смесь, поршень идёт вниз. В конце хода он открывает выпускное окно (газы выходят), а затем — продувочное окно. Свежая смесь из кривошипной камеры поступает в цилиндр, вытесняя остатки отработанных газов.</li>
+</ol>
+
+<p>Главная «фишка» <em>2Т</em> моторов — <strong>продувка</strong>. Она бывает трёх типов:
+<ul>
+  <li>🌀 <strong>Петлевая</strong> (наиболее распространена в питбайках): Поток свежей смеси движется по спирали, эффективно вытесняя газы.</li>
+  <li>🔄 <strong>Прямоточная</strong>: Впускные и выпускные окна расположены с противоположных сторон цилиндра.</li>
+  <li>🔀 <strong>Клапанно-щелевая</strong>: Сочетает окна и клапан (например, в некоторых моделях <em>Yamaha Banshee</em>).</li>
+</ul>
+</p>
+
+<blockquote>⚠️ <strong>Внимание:</strong> В двухтактных двигателях <strong>недолив масла</strong> в топливо ведёт к <strong>задирам на поршне и цилиндре</strong> уже через 1–2 часа работы. Пропорция масла к бензину обычно 1:40 или 1:50 (уточните в мануале к вашей модели!).</blockquote>
+
+<h2 id="системы-без-которых-двигатель-не-работает">Системы, без которых двигатель не работает</h2>
+
+<p>Даже идеально собранный двигатель бесполезен без вспомогательных систем. Разберём три критично важные:</p>
+
+<h3>1. Система зажигания</h3>
+<p>В питбайках используется <strong>бесконтактное электронное зажигание</strong> (например, <em>CDI</em> — <em>Capacitor Discharge Ignition</em>). Его преимущества:
+<ul>
+  <li>⚡ Точное время поджига смеси (оптимизирует мощность и расход топлива).</li>
+  <li>🛠️ Минимальное обслуживание (нет контактов, которые нужно чистить).</li>
+  <li>🔋 Работает от генератора, встроенного в двигатель (нет отдельного аккумулятора).</li>
+</ul>
+</p>
+
+<p>Типичные неисправности:
+<ul>
+  <li>🔌 <strong>Обрыв катушки зажигания</strong> (проверяется мультиметром).</li>
+  <li>💡 <strong>Износ свечи</strong> (зазор должен быть 0.6–0.8 мм для большинства питбайков).</li>
+  <li>🔋 <strong>Пробой высоковольтного провода</strong> (видно в темноте по искре).</li>
+</ul>
+</p>
+
+<h3>2. Система охлаждения</h3>
+<p>Питбайки используют <strong>воздушное</strong> или <strong>жидкостное охлаждение</strong>:
+<ul>
+  <li>🌬️ <strong>Воздушное</strong>: Проще, дешевле, но менее эффективно. Пример: <em>Honda CRF50F</em>. Требует регулярной очистки рёбер цилиндра от грязи.</li>
+  <li>💧 <strong>Жидкостное</strong>: Радиатор + помпа + термостат. Пример: <em>Kawasaki KX65</em>. Обязательна проверка уровня антифриза перед каждой поездкой!</li>
+</ul>
+</p>
+
+<blockquote>⚠️ <strong>Внимание:</strong> Если питбайк с жидкостным охлаждением перегревается (стрелка температуры в красной зоне), <strong>не глушите двигатель сразу</strong> — дайте ему поработать 1–2 минуты на холостых оборотах. Резкое охлаждение может вызвать деформацию головки цилиндра.</blockquote>
+
+<h3>3. Система смазки</h3>
+<p>В <em>4Т</em> двигателях масло циркулирует по замкнутому контуру:
+<ol>
+  <li>Масляный насос забирает масло из картера.</li>
+  <li>Прокачивает его через <strong>фильтр</strong> (если есть).</li>
+  <li>Подаёт под давлением к <strong>коренным и шатунным подшипникам</strong>, <strong>распредвалу</strong>.</li>
+  <li>Стекает обратно в картер.</li>
+</ol>
+</p>
+
+<p>В <em>2Т</em> моторах всё иначе: масло смешано с бензином и сгорает вместе с топливом. Поэтому здесь критично:
+<ul>
+  <li>🛢️ Использовать <strong>только специализированное 2Т масло</strong> (не автомобильное!).</li>
+  <li>🔧 Чистить <strong>выпускное окно</strong> от нагара каждые 10–15 моточасов.</li>
+</ul>
+</p>
+
+
+<p>Масло в картере (для 4Т) на уровне между MIN и MAX|</p>
+<p>Отсутствие утечек масла из-под прокладок|</p>
+<p>Чистый масляный фильтр (если есть)|</p>
+<p>Свежая топливная смесь (для 2Т, не старше 2 недель)--></p>
+
+<h2 id="тюнинг-и-модификации-что-можно-улучшить">Тюнинг и модификации: что можно улучшить?</h2>
+
+<p>Стандартные двигатели питбайков часто имеют резерв для улучшений. Вот наиболее эффективные модификации:</p>
+
+<ul>
+  <li>🏁 <strong>Расточка цилиндра</strong> (увеличение объёма). Например, <em>Yamaha PW80</em> можно расточить с 79 до 88 см³. Но это требует замены поршня и колец.</li>
+  <li>🔥 <strong>Спортивный распредвал</strong> (для 4Т). Увеличивает подъём клапанов и время их открытия. Пример: <em>Hot Cams</em> для <em>KTM 50 SX</em>.</li>
+  <li>💨 <strong>Выпускная система</strong>. Замена стандартного глушителя на <em>FMF</em> или <em>Pro Circuit</em> улучшает продувку (для 2Т) и прибавляет 5–15% мощности.</li>
+  <li>⚡ <strong>Перенастройка карбюратора</strong>. Установка жиклёров большего размера (например, главный жиклёр 110 вместо 105) обогащает смесь для агрессивной езды.</li>
+</ul>
+
+<p><strong>Предупреждение:</strong> Любой тюнинг сокращает ресурс двигателя. Например, расточка цилиндра на 1 мм может уменьшить срок службы на 30–40%. Всегда консультируйтесь с мотористами, специализирующимися на питбайках!</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед тюнингом проверьте, поддерживает ли ваша коробка передач увеличенную мощность. Например, стандартная КПП <em>Honda CRF110F</em> не рассчитана на мотор объёмом более 125 см³ — потребуется замена шестерён или всей коробки.</p></aside>
+
+<h2 id="диагностика-неисправностей-симптомы-и-причины">Диагностика неисправностей: симптомы и причины</h2>
+
+<p>Двигатель питбайка «говорит» о проблемах через звуки, вибрации и поведение. Разберём типичные симптомы:</p>
+
+<div class="pb-table-wrap"><table>
+  <thead>
+    <tr>
+      <th>Симптом</th>
+      <th>Вероятная причина</th>
+      <th>Решение</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Двигатель не заводится</td>
+      <td>Нет искры, засорён карбюратор, разряжен аккумулятор (если есть)</td>
+      <td>Проверьте свечу, очистите жиклёры, зарядите АКБ</td>
+    </tr>
+    <tr>
+      <td>Потеря мощности</td>
+      <td>Изношены поршневые кольца, засорён воздушный фильтр, бедная смесь</td>
+      <td>Замерьте компрессию, промойте фильтр, отрегулируйте карбюратор</td>
+    </tr>
+    <tr>
+      <td>Стук в двигателе</td>
+      <td>Износ подшипников коленвала, детонация (из-за низкооктанового бензина)</td>
+      <td>Разберите двигатель для диагностики, используйте бензин АИ-95</td>
+    </tr>
+    <tr>
+      <td>Перегрев</td>
+      <td>Неисправен термостат, низкий уровень антифриза, засорён радиатор</td>
+      <td>Промойте систему охлаждения, проверьте помпу</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p>Для точной диагностики <strong>компрессии</strong> в цилиндре используйте компрессометр. Нормальные значения:
+<ul>
+  <li>🔧 <em>4Т двигатель</em>: 10–12 бар (например, <em>Kawasaki KLX110</em>).</li>
+  <li>🔧 <em>2Т двигатель</em>: 8–10 бар (например, <em>Yamaha YZ65</em>).</li>
+</ul>
+</p>
+
+<blockquote>⚠️ <strong>Внимание:</strong> Если компрессия ниже нормы на 20% и более, двигатель требует <strong>капитального ремонта</strong> (замена колец, поршня, возможно — расточка цилиндра). Езда с низкой компрессией ускорит износ в 3–5 раз.</blockquote>
+
+<h2 id="faq-частые-вопросы-о-двигателях-питбайков">FAQ: Частые вопросы о двигателях питбайков</h2>
+
+<details>
+  <summary>Можно ли заливать автомобильное масло в питбайк?</summary>
+  <p>Нет! Автомобильные масла не рассчитаны на высокие обороты и температуры мототехники. Для <em>4Т</em> питбайков используйте моторные масла класса <strong>JASO MA/MA2</strong> (например, <em>Motul 5100</em>), а для <em>2Т</em> — специализированные масла типа <em>Castrol Power 1 Racing</em>.</p>
+</details>
+
+<details>
+  <summary>Почему мой питбайк дымит синим дымом?</summary>
+  <p>Синий дым указывает на <strong>сгорание масла</strong>. Причины:
+  <ul>
+    <li>Для <em>2Т</em>: слишком богатая масляно-бензиновая смесь (уменьшите пропорцию масла).</li>
+    <li>Для <em>4Т</em>: износ маслосъёмных колец или сальников клапанов.</li>
+  </ul>
+  </p>
+</details>
+
+<details>
+  <summary>Как часто нужно менять масло в 4Т питбайке?</summary>
+  <p>Интервал зависит от интенсивности езды:
+  <ul>
+    <li>🏍️ <strong>Спортивная езда (мотокросс, эндуро)</strong>: каждые 5–7 моточасов.</li>
+    <li>🛣️ <strong>Спокойная езда (пит-байк для начинающих)</strong>: каждые 10–15 моточасов.</li>
+  </ul>
+<p>Используйте полусинтетику или синтетику — минеральные масла быстро теряют свойства.</p></p>
+</details>
+
+<details>
+  <summary>Что будет, если ездить на питбайке без воздушного фильтра?</summary>
+  <p>Отсутствие фильтра приводит к попаданию пыли и грязи в цилиндр, что вызывает:
+  <ul>
+    <li>🔥 <strong>Задиры</strong> на стенках цилиндра и поршне.</li>
+    <li>🛑 <strong>Ускоренный износ колец</strong> (в 5–10 раз быстрее).</li>
+    <li>💥 <strong>Пробои поршня</strong> (если частицы попадают между поршнем и клапаном).</li>
+  </ul>
+<p>Фильтр нужно чистить после каждой поездки по грязи и менять каждые 20–30 моточасов.</p></p>
+</details>
+
+<details>
+  <summary>Можно ли установить двигатель от скутера на питбайк?</summary>
+  <p>Технически возможно, но <strong>нецелесообразно</strong>:
+  <ul>
+    <li>⚠️ Скутерные двигатели (например, <em>139QMB</em>) не рассчитаны на вертикальные нагрузки и удары.</li>
+    <li>⚠️ Потребуется переделка креплений, трансмиссии и системы охлаждения.</li>
+    <li>⚠️ Мощности хватит только для спокойной езды (не для прыжков или бездорожья).</li>
+  </ul>
+<p>Лучше купить б/у питбайк с родным мотором.</p></p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kakie-zvezdy-stavit-na-pitbajk.html" class="pb-related-card">
+                <span class="pb-related-title">Какие звезды ставить на питбайк: выбор, размеры, материалы</span>
+                <span class="pb-related-desc">Подробное руководство по выбору звезд для питбайка: размеры, материалы, совместимость с двигателями </span>
+            </a><a href="/articles/s/sk/skolko-masla-v-vilke-pitbajka.html" class="pb-related-card">
+                <span class="pb-related-title">Сколько масла заливать в вилку питбайка: таблица объёмов и инструкция</span>
+                <span class="pb-related-desc">Точные объёмы масла для вилок питбайков (YCF, Stels, Pitster Pro, Apollo), как проверить уровень, ка</span>
+            </a><a href="/articles/p/po/pochemu-pitbajk-glokhnet-na-kholostykh.html" class="pb-related-card">
+                <span class="pb-related-title">Питбайк глохнет на холостых: 10 причин и как исправить</span>
+                <span class="pb-related-desc">Разбираем почему питбайк глохнет на холостых оборотах: от карбюратора до электрики. Пошаговые инстру</span>
+            </a><a href="/articles/u/us/ustanovka-fary-na-pitbajk.html" class="pb-related-card">
+                <span class="pb-related-title">Установка фары на питбайк: пошаговая инструкция и схемы</span>
+                <span class="pb-related-desc">Как установить фару на питбайк своими руками. Схемы подключения, выбор LED, настройка света и защита</span>
+            </a><a href="/articles/s/sa/samye-bolshie-kolesa-na-pitbajk.html" class="pb-related-card">
+                <span class="pb-related-title">Самые большие колеса на питбайк: размеры, плюсы и минусы</span>
+                <span class="pb-related-desc">Обзор самых больших колес для питбайков: 19, 21 и 23 дюйма. Сравнение 17/14 и 19/16. Влияние размера</span>
+            </a><a href="/articles/e/en/enduro-ot-pervogo-litsa.html" class="pb-related-card">
+                <span class="pb-related-title">Эндуро от первого лица: личный опыт и секреты езды</span>
+                <span class="pb-related-desc">Реальные истории эндуриста: выбор техники, подготовка к соревнованиям, преодоление препятствий и лай</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🏍️ Мото Гид</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a> · <a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a> · <a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a> · <a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a> · <a href="/category/remont-dvigatelej/">🔧 Ремонт Двигателей</a> · <a href="/category/elektrika-i-provodka/">⚡ Электрика и Проводка</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мото Гид. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

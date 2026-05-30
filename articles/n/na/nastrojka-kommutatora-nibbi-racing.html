@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🏍️</text></svg>">
+    <title>Настройка коммутатора Nibbi Racing: искрообразование и угол — Мото Гид</title>
+    <meta name="description" content="Подробная настройка коммутатора Nibbi Racing. Как установить угол опережения, проверить искру и продиагностировать CDI блок на питбайке.">
+    <link rel="canonical" href="https://moto-gid.vercel.app/articles/n/na/nastrojka-kommutatora-nibbi-racing.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Настройка коммутатора Nibbi Racing: искрообразование и угол">
+    <meta property="og:description" content="Подробная настройка коммутатора Nibbi Racing. Как установить угол опережения, проверить искру и продиагностировать CDI блок на питбайке.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780130877">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🏍️</span>
+                <span class="pb-logo-text">Мото Гид</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/mopedy-i-skutery/" class="pb-nav-active">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/mopedy-i-skutery/" class="pb-dropdown-item">🛵 Мопеды и Скутеры</a>
+<a href="/category/pitbajki-i-enduro/" class="pb-dropdown-item">🏁 Питбайки и Эндуро</a>
+<a href="/category/motobloki-i-kultivatory/" class="pb-dropdown-item">🚜 Мотоблоки и Культиваторы</a>
+<a href="/category/samodelki-i-chertezhi/" class="pb-dropdown-item">📐 Самоделки и Чертежи</a>
+<a href="/category/remont-dvigatelej/" class="pb-dropdown-item">🔧 Ремонт Двигателей</a>
+<a href="/category/elektrika-i-provodka/" class="pb-dropdown-item">⚡ Электрика и Проводка</a>
+<a href="/category/zakony-i-prava/" class="pb-dropdown-item">⚖️ Законы и Права</a>
+<a href="/category/raskhodniki-i-masla/" class="pb-dropdown-item">🛢️ Расходники и Масла</a>
+<a href="/category/tyuning-i-modernizatsiya/" class="pb-dropdown-item">🚀 Тюнинг и Модернизация</a>
+<a href="/category/elektromototekhnika/" class="pb-dropdown-item">🔋 Электромототехника</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/mopedy-i-skutery/">Мопеды и Скутеры</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Настройка коммутатора Nibbi Racing: искрообразование и угол</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#принцип-работы-системы-зажигания-nibbi">Принцип работы системы зажигания Nibbi</a></li><li><a href="#диагностика-неисправностей-искрообразования">Диагностика неисправностей искрообразования</a></li><li><a href="#регулировка-угла-опережения-зажигания">Регулировка угла опережения зажигания</a></li><li><a href="#совместимость-коммутаторов-и-распиновка">Совместимость коммутаторов и распиновка</a></li><li><a href="#влияние-настроек-на-работу-двигателя">Влияние настроек на работу двигателя</a></li><li><a href="#частые-ошибки-при-установке-и-эксплуатации">Частые ошибки при установке и эксплуатации</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/t/to/top-kruizerov-dlya-novichkov.html">Топ-7 круизеров для новичков 2026: какой мотоцикл выбрать?</a></li><li><a href="/articles/v/vs/vse-vidy-mopedov-alfa.html">Все виды мопедов Альфа: характеристики, модели и отличия</a></li><li><a href="/articles/s/se/semnik-generatora-dlya-skutera.html">Съемник генератора для скутера: виды, выбор и снятие ротора</a></li><li><a href="/articles/s/st/stels-atv-600-gt-efi.html">Stels ATV 600 GT EFI: обзор, характеристики, ремонт и тюнинг</a></li><li><a href="/articles/k/ka/kak-proverit-kommutator-na-skutere.html">Как проверить коммутатор скутера: полная инструкция диагностики</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Профессиональная настройка коммутатора Nibbi Racing</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#принцип-работы-системы-зажигания-nibbi">Принцип работы системы зажигания Nibbi</a></li><li><a href="#диагностика-неисправностей-искрообразования">Диагностика неисправностей искрообразования</a></li><li><a href="#регулировка-угла-опережения-зажигания">Регулировка угла опережения зажигания</a></li><li><a href="#совместимость-коммутаторов-и-распиновка">Совместимость коммутаторов и распиновка</a></li><li><a href="#влияние-настроек-на-работу-двигателя">Влияние настроек на работу двигателя</a></li><li><a href="#частые-ошибки-при-установке-и-эксплуатации">Частые ошибки при установке и эксплуатации</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Питбайки торговой марки <em>Nibbi</em> заслуженно завоевали популярность среди любителей мотокросса и эндуро благодаря своему соотношению цены и качества. Однако, даже надежная техника требует периодического вмешательства для поддержания пиковой производительности. Одной из критических систем, влияющих на динамику разгона и стабильность работы мотора, является система зажигания.</p>
+
+<p>Неправильная конфигурация или сбой в работе модуля зажигания часто приводят к потере мощности, затрудненному запуску или «провалам» на высоких оборотах. В этой статье мы детально разберем алгоритм настройки и диагностики системы CDI на примере популярных моделей серии <em>Racing</em>.</p>
+
+<p>Процесс требует внимательности и базового понимания принципов работы двухтактных и четырехтактных двигателей. Мы рассмотрим методы ручной регулировки угла опережения и способы проверки исправности самого электронного блока управления.</p>
+
+<h2 id="принцип-работы-системы-зажигания-nibbi">Принцип работы системы зажигания Nibbi</h2>
+<p>Сердцем системы является <strong>коммутатор</strong>, или блок CDI, который формирует высоковольтный импульс для свечи. В моделях <em>Nibbi Racing</em> чаще всего используются бесконтактные системы с магдино, где сигнал формируется датчиком положения коленвала. Своевременность подачи искры напрямую определяет эффективность сгорания топливной смеси.</p>
+
+<p>Угол опережения зажигания — это ключевой параметр. Если искра проскакивает слишком рано, возникает детонация, способная разрушить поршневую группу. Если слишком поздно — двигатель теряет тягу и перегревается. Стандартные значения для стоковых моторов обычно зашиты в память блока, но тюнинговые версии позволяют вносить коррективы.</p>
+
+<p>Стоит отметить, что в некоторых модификациях <em>Nibbi</em> используется система с динамическим углом опережения, который изменяется в зависимости от оборотов двигателя. Это позволяет оптимизировать работу мотора как на холостом ходу, так и под максимальной нагрузкой.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Перед началом любых работ с электрооборудованием обязательно отключите массу аккумулятора или выньте предохранитель цепи зажигания. Кратковременное замыкание может вывести из строя не только коммутатор, но и статор генератора.</p>
+</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Используйте мультиметр с функцией проверки частоты для точной диагностики сигналов датчика Холла, обычная прозвонка часто не показывает нестабильность сигнала на оборотах.</p></aside>
+
+<h2 id="диагностика-неисправностей-искрообразования">Диагностика неисправностей искрообразования</h2>
+<p>Прежде чем приступать к сложной настройке, необходимо убедиться в исправности базовых элементов цепи. Часто проблема кроется не в самом блоке управления, а в плохом контакте или пробое высоковольтной катушки. Первым делом визуально осмотрите все разъемы на предмет окисления или оплавления изоляции.</p>
+
+<p>Проверка высоковольтного провода осуществляется путем замены на заведомо исправный аналог. Если искра становится стабильной и ярко-синей, значит, проблема была в сопротивлении провода. Слабая, красноватая искра свидетельствует о низком напряжении, поступающем от статора или неисправности конденсатора внутри CDI.</p>
+
+<p>Для глубокой диагностики потребуется осциллограф, но в полевых условиях можно воспользоваться методом исключения. Последовательно заменяйте свечи, катушку и только в конце — сам <strong>коммутатор</strong>. Помните, что стоимость нового блока <em>Nibbi</em> относительно невелика, поэтому иногда проще заменить его целиком, чем искать микросхемный дефект.</p>
+
+<ul>
+<li>🔌 Проверьте надежность «массы» двигателя, плохой контакт с рамой часто имитирует поломку электроники.</li>
+<li>🕯️ Осмотрите свечу зажигания: черный налет указывает на богатую смесь, белый — на бедную или раннее зажигание.</li>
+<li>⚡ Измерьте сопротивление первичной и вторичной обмотки катушки зажигания, значения должны соответствовать мануалу.</li>
+</ul>
+
+<p>Особое внимание уделите состоянию магнитов на маховике. Если магнит ослаб или сместился, датчик будет подавать неверный сигнал о положении поршня, что сделает любую программную настройку бессмысленной.</p>
+
+<h2 id="регулировка-угла-опережения-зажигания">Регулировка угла опережения зажигания</h2>
+<p>Настройка угла опережения на питбайках <em>Nibbi</em> может выполняться механическим способом (поворотом статора) или программным, если установлен регулируемый CDI. Механическая регулировка более надежна, но менее точна. Для начала необходимо ослабить крепежные болты статорной пластины.</p>
+
+<p>Поворот статора против часовой стрелки (относительно вращения коленвала) приводит к более раннему зажиганию. Это полезно для двигателей с увеличенной степенью сжатия или тюнингованным впуском. Однако сдвиг даже на 1-2 миллиметра может кардинально изменить характер работы двигателя.</p>
+
+<p>При использовании регулируемого <strong>CDI блока</strong> настройка производится переключением дип-переключателей или поворотом потенциометра на корпусе устройства. В документации к конкретному блоку должна быть таблица соответствия положений переключателей и градусов угла опережения.</p>
+
+<div class="pb-poll" id="poll-15c70355"><div class="pb-poll-question">📊 Какой тип настройки зажигания вы предпочитаете?</div><div class="pb-poll-option" data-poll="15c70355" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Механический поворот статора</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="15c70355" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Замена CDI на тюнинговый</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="15c70355" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Программное перепрошивание</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="15c70355" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Не настраиваю, только сток</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<p>После внесения изменений обязательно проведите тестовый запуск. Двигатель должен работать ровно, без посторонних стуков. Если при резком открытии дросселя слышен металлический лязг — зажигание слишком раннее, необходимо вернуть статор в исходное положение.</p>
+
+<h2 id="совместимость-коммутаторов-и-распиновка">Совместимость коммутаторов и распиновка</h2>
+<p>При замене штатного блока на аналог от другого производителя или тюнинговую версию критически важно проверить распиновку разъемов. Несмотря на внешнее сходство штекеров, назначение контактов у разных моделей <em>Nibbi</em> может отличаться. Неправильное подключение гарантированно сожжет новый блок.</p>
+
+<p>Стандартная цветовая маркировка проводов часто соблюдается, но не всегда. Черный провод обычно является общим минусом, зеленый — сигнальным от датчика, а белый или желто-красный — питающим от катушки освещения. Всегда сверяйтесь с электросхемой конкретной модели мотоцикла.</p>
+
+<p>Некоторые универсальные коммутаторы имеют функцию отсечки по оборотам. Если ваш двигатель не раскручивается до максимальных оборотов и начинает «захлебываться», возможно, установлен блок с ранней отсечкой, не подходящий под вашу конфигурацию мотора.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Цвет провода</th>
+<th>Назначение</th>
+<th>Напряжение (примерное)</th>
+<th>Проверка</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Черный / Зеленый</td>
+<td>Масса (GND)</td>
+<td>0 В</td>
+<td>Прозвонка на раму</td>
+</tr>
+<tr>
+<td>Белый / Желтый</td>
+<td>Питание от генератора</td>
+<td>12-14 В (AC/DC)</td>
+<td>Замер мультиметром</td>
+</tr>
+<tr>
+<td>Зеленый / Белый</td>
+<td>Сигнал датчика (Pickup)</td>
+<td>Импульсный</td>
+<td>Осциллограф</td>
+</tr>
+<tr>
+<td>Красный / Синий</td>
+<td>Выход на катушку</td>
+<td>Высоковольтный импульс</td>
+<td>Визуально (искра)</td>
+</tr>
+</tbody>
+</table></div>
+
+<blockquote>
+<p>⚠️ Внимание: Производитель может менять цветовую маркировку проводов в разных партиях мотоциклов. Не полагайтесь слепо на цвет изоляции, используйте электрическую схему для вашей конкретной модели Nibbi.</p>
+</blockquote>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Диагностика цепи зажигания</h4><label class="check-item"><input type="checkbox"><span>Визуальный осмотр разъемов</span></label><label class="check-item"><input type="checkbox"><span>Замер сопротивления катушки</span></label><label class="check-item"><input type="checkbox"><span>Проверка напряжения на входе CDI</span></label><label class="check-item"><input type="checkbox"><span>Тест искры на свежей свече</span></label><label class="check-item"><input type="checkbox"><span>Контроль состояния массы двигателя</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<h2 id="влияние-настроек-на-работу-двигателя">Влияние настроек на работу двигателя</h2>
+<p>Правильно настроенное зажигание раскрывает потенциал двигателя. При верном угле опережения мотор становится более отзывчивым на ручку газа, улучшается приемистость на низких оборотах и стабилизируется работа на «верхах». Ошибки в настройке ведут к потере КПД и перерасходу топлива.</p>
+
+<p>Слишком позднее зажигание вызывает перегрев выпускной системы и самого цилиндра. Вы можете заметить, что двигатель теряет мощность под нагрузкой, например, при подъеме в гору. В долгосрочной перспективе это приводит к прогоранию поршня и клапанов.</p>
+
+<p>С другой стороны, чрезмерно раннее зажигание создает ударные нагрузки на кривошипно-шатунный механизм. Характерный звон при разгоне — первый признак того, что детонация уже началась. Игнорирование этого симптома может привести к разрушению шатунного подшипника.</p>
+
+<details class="pb-accordion"><summary>Как влияет отсечка на ресурс мотора?</summary><div class="pb-accordion-body"><p>Жесткая отсечка на высоких оборотах создает резкие ударные нагрузки на цепь ГРМ и звездочки. Плавная отсечка, реализуемая в качественных CDI блоках, позволяет безопасно ограничивать максимальные обороты, продлевая жизнь двигателю.</p></div></details>
+
+<p>Экспериментируя с настройками, записывайте каждое изменение. Вернуться к удачной конфигурации без записей будет практически невозможно. Оптимальная настройка всегда является компромиссом между максимальной мощностью и надежностью узла.</p>
+
+<h2 id="частые-ошибки-при-установке-и-эксплуатации">Частые ошибки при установке и эксплуатации</h2>
+<p>Одной из самых распространенных ошибок является установка мощного <strong>коммутатора</strong> на стоковый двигатель без доработки впуска и выпуска. Электроника не добавит лошадиных сил, если двигатель «задушен» заводскими ограничениями. В таких случаях дорогая покупка оказывается бесполезной тратой денег.</p>
+
+<p>Также часто встречается игнорирование качества контактов. Вибрации, характерные для питбайков, быстро ослабляют соединения. Плохой контакт в разъеме CDI приводит к нестабильной работе двигателя, которая проявляется рывками и внезапными остановками.</p>
+
+<p>Не пытайтесь «обмануть» систему, замыкая провода накоротко для проверки. Современные полупроводниковые элементы в блоках <em>Nibbi</em> крайне чувствительны к скачкам напряжения и коротким замыканиям. Ремонт сгоревшей платы часто экономически нецелесообразен.</p>
+
+<ul>
+<li>🛠️ Не используйте герметики для фиксации разъемов, это затруднит будущую диагностику и замену.</li>
+<li>🌡️ Обеспечьте вентиляцию блоку CDI, не накрывайте его пластиковыми кожухами без отверстий.</li>
+<li>🔋 Следите за зарядом аккумулятора, просадки напряжения влияют на энергию искры в системах с DC-питанием.</li>
+</ul>
+
+<blockquote>
+<p>⚠️ Внимание: Использование неоригинальных или дешевых аналогов коммутаторов может привести к нестабильному искрообразованию на высоких оборотах. Для спортивных целей рекомендуется использовать только сертифицированные компоненты.</p>
+</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Качество контакта и надежность крепления блока важнее, чем наличие дополнительных функций в самом коммутаторе. Вибрация — главный враг электроники на питбайке.</p></aside>
+
+<h2 id="faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</h2>
+
+<details>
+<summary>Можно ли установить коммутатор от другого мотоцикла на Nibbi?</summary>
+<p>Технически возможно, если совпадают типы разъемов и логика работы (AC или DC питание, тип датчика). Однако без перепайки штекера и проверки угла опережения запуск может быть невозможен или двигатель будет работать некорректно.</p>
+</details>
+
+<details>
+<summary>Почему пропадает искра на горячем двигателе?</summary>
+<p>Это классический признак неисправности катушки зажигания или самого коммутатора. При нагреве внутреннее сопротивление компонентов меняется, и пробой происходит внутри модуля, а не на свече. Требуется замена нагревающегося элемента.</p>
+</details>
+
+<details>
+<summary>Добавит ли тюнинговый CDI максимальную скорость?</summary>
+<p>Тюнинговый блок снимает ограничитель оборотов, позволяя двигателю крутиться выше. Это может дать прирост скорости только в том случае, если мотор имеет запас мощности и правильные передаточные числа трансмиссии.</p>
+</details>
+
+<details>
+<summary>Как проверить исправность датчика Холла без стенда?</summary>
+<p>Можно измерить сопротивление датчика мультиметром (обычно в пределах 100-500 Ом) и проверить наличие напряжения на сигнальном проводе при прокрутке стартера. Наличие переменного напряжения свидетельствует о работе датчика.</p>
+</details>
+
+<details>
+<summary>Безопасно ли мыть двигатель с установленным CDI?</summary>
+<p>Не рекомендуется направлять струю воды высокого давления непосредственно на электронные блоки и разъемы. Влага может попасть внутрь корпуса через микротрещины или уплотнители, вызвав короткое замыкание.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/t/to/top-kruizerov-dlya-novichkov.html" class="pb-related-card">
+                <span class="pb-related-title">Топ-7 круизеров для новичков 2026: какой мотоцикл выбрать?</span>
+                <span class="pb-related-desc">Рейтинг лучших круизеров для начинающих: сравнение Honda Rebel 500, Kawasaki Vulcan S и других. Сове</span>
+            </a><a href="/articles/v/vs/vse-vidy-mopedov-alfa.html" class="pb-related-card">
+                <span class="pb-related-title">Все виды мопедов Альфа: характеристики, модели и отличия</span>
+                <span class="pb-related-desc">Полный обзор мопедов Альфа: виды двигателей 50cc и 110cc, технические характеристики, различия модел</span>
+            </a><a href="/articles/s/se/semnik-generatora-dlya-skutera.html" class="pb-related-card">
+                <span class="pb-related-title">Съемник генератора для скутера: виды, выбор и снятие ротора</span>
+                <span class="pb-related-desc">Полное руководство по съемнику генератора скутера. Виды инструментов, таблица резьбы, пошаговая инст</span>
+            </a><a href="/articles/s/st/stels-atv-600-gt-efi.html" class="pb-related-card">
+                <span class="pb-related-title">Stels ATV 600 GT EFI: обзор, характеристики, ремонт и тюнинг</span>
+                <span class="pb-related-desc">Полный гид по квадроциклу Stels ATV 600 GT EFI. Технические характеристики, особенности инжектора, р</span>
+            </a><a href="/articles/k/ka/kak-proverit-kommutator-na-skutere.html" class="pb-related-card">
+                <span class="pb-related-title">Как проверить коммутатор скутера: полная инструкция диагностики</span>
+                <span class="pb-related-desc">Подробное руководство по проверке коммутатора (CDI) на скутере. Методы мультиметром, тестером искры,</span>
+            </a><a href="/articles/s/st/stels-gepard-800-otzyvy-vladeltsev.html" class="pb-related-card">
+                <span class="pb-related-title">Стелс Гепард 800: честные отзывы владельцев 2026 года</span>
+                <span class="pb-related-desc">Реальные отзывы о скутере Стелс Гепард 800: плюсы и минусы, проблемы после 10 000 км, сравнение с ан</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🏍️ Мото Гид</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/mopedy-i-skutery/">🛵 Мопеды и Скутеры</a> · <a href="/category/pitbajki-i-enduro/">🏁 Питбайки и Эндуро</a> · <a href="/category/motobloki-i-kultivatory/">🚜 Мотоблоки и Культиваторы</a> · <a href="/category/samodelki-i-chertezhi/">📐 Самоделки и Чертежи</a> · <a href="/category/remont-dvigatelej/">🔧 Ремонт Двигателей</a> · <a href="/category/elektrika-i-provodka/">⚡ Электрика и Проводка</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мото Гид. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>
